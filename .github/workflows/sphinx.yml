@@ -12,9 +12,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Build HTML
-        uses: ammaraskar/sphinx-action@master
-        with:
-          pre-build-command: 'apt-get update -y && apt-get install -y git-core'
+        uses: ammaraskar/sphinx-action@8.2.3
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
