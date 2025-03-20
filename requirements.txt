@@ -2,12 +2,15 @@ alabaster==1.0.0
 babel==2.17.0
 certifi==2025.1.31
 charset-normalizer==3.4.1
-docs_italia_theme @ git+https://github.com/italia/docs-italia-theme.git@f2b9965eeaf6f6a9a2c975d9490e1a8e386c184f
 docutils==0.21.2
 idna==3.10
 imagesize==1.4.1
 Jinja2==3.1.6
+markdown-it-py==3.0.0
 MarkupSafe==3.0.2
+mdit-py-plugins==0.4.2
+mdurl==0.1.2
+myst-parser==4.0.1
 packaging==24.2
 Pygments==2.19.1
 PyYAML==6.0.2
