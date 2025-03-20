@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="it" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>io-Cittadino &#8212; Documentazione Documentazione io-Comune 0.1 </title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=41f723b1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=45930005"></script>
+    <link rel="index" title="Indice" href="../genindex.html" />
+    <link rel="search" title="Cerca" href="../search.html" />
+    <link rel="prev" title="io-Prenoto" href="../io-prenoto/index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="io-cittadino">
+<h1>io-Cittadino<a class="headerlink" href="#io-cittadino" title="Link to this heading">¶</a></h1>
+<!--- -----------------------------------------------------------------
+  Esempio:
+  ---------------------------------------------------------------------
+
+## Versione 7.10.9 (12/09/2023)
+
+### Migliorie
+
+- Fissato il layout di stampa per pagine con Accordion
+
+### Novità
+
+- Nuovo blocco "Informazioni" [`Istruzioni`](https://docs.google.com/document/d/1SThuxa_ah0BuNXukWs564kKPfprK41WLQE8Mome-0xg/edit#heading=h.7ty110jumgmd)
+
+### Fix
+
+- il numero di telefono dentro card ufficio adesso è visibile anche senza indirizzo
+-->
+<!--- -----------------------------------------------------------------
+ TEMPLATE PER RELEASE
+ ----------------------------------------------------------------------
+
+## Versione X.X.X (dd/mm/yyyy)
+
+### Migliorie
+
+- ...
+
+### Novità
+
+- ...  [`Istruzioni`](url della documentazione relativa alla novità)
+
+### Fix
+
+- ...
+-->
+<section id="versione-2-5-2-06-03-2025">
+<h2>Versione 2.5.2 (06/03/2025)<a class="headerlink" href="#versione-2-5-2-06-03-2025" title="Link to this heading">¶</a></h2>
+<section id="migliorie">
+<h3>Migliorie<a class="headerlink" href="#migliorie" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Se sono abilittati sia iocittadino che ioprenoto, le prenotazioni che i cittadini fanno da autenticati adottano il principio di
+onceonly per quello che riguarda l’email (attributo email) e il telefono (attributo phone). Quindi se, ad esempio, il cittadino
+da autenticato fa una prenotazione e imposta una email differente, quella email verrà riproposta per le prenotazioni o
+i servizi richiesti successivamente.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-5-1-25-02-2025">
+<h2>Versione 2.5.1 (25/02/2025)<a class="headerlink" href="#versione-2-5-1-25-02-2025" title="Link to this heading">¶</a></h2>
+<section id="id1">
+<h3>Migliorie<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nella compilazione di una pratica, è stata spostata la popup di notifica salvataggio in bozza nell’angolo destro in alto alla pagina, per permettere all’utente di avere un feedback sul salvataggio, è possibile inoltre chiudere la notifica manualmente o attendere che scompaia in automatico dopo qualche secondo.</p></li>
+</ul>
+</section>
+<section id="fix">
+<h3>Fix<a class="headerlink" href="#fix" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemato active sullo step di una pratica che quando veniva salvata in bozza tornava all’inizio degli step invece di rimanere su quello corrente.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-5-0-24-01-2025">
+<h2>Versione 2.5.0 (24/01/2025)<a class="headerlink" href="#versione-2-5-0-24-01-2025" title="Link to this heading">¶</a></h2>
+<section id="novita">
+<h3>Novità<a class="headerlink" href="#novita" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunto visualizzazione del protocollo di chiusura di una pratica quando si usa l’integrazione con il protocollo</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-4-6-23-01-2025">
+<h2>Versione 2.4.6 (23/01/2025)<a class="headerlink" href="#versione-2-4-6-23-01-2025" title="Link to this heading">¶</a></h2>
+<section id="id2">
+<h3>Fix<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata la visualizzazione delle descrizione dei campi di input nei form delle pratiche.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-4-5-18-12-2024">
+<h2>Versione 2.4.5 (18/12/2024)<a class="headerlink" href="#versione-2-4-5-18-12-2024" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h3>Migliorie<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata visualizzazione delle tab della pratica in versione mobile</p></li>
+<li><p>Aggiunto nuovo campo testuale per la gestione del piè di pagina nel PDF generato dalla pratica (rif. <a class="reference external" href="https://docs.google.com/document/d/1WdaihkxjGKni19x4wCN6gqT0NrY8h9OAE8H5AgffY9M/edit?tab=t.0#heading=h.d0i528lauo0s">Manuale io-Cittadino</a>)</p></li>
+<li><p>Migliorata la gestione di alcuni campi specifici nella generazione del PDF (ad esempio le parti testuali di disclaimer, i campi radiobutton o check, ed i nomi dei file)</p></li>
+<li><p>Gestita la sovrascrittura in onceonly di alcuni dei dati utente che arrivano da SPID/CIE</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>Fix<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Fissato il backend (versione 1.1.4) per la gestione del campo checkbox «Altro»</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-4-3-25-11-2024">
+<h2>Versione 2.4.3 (25/11/2024)<a class="headerlink" href="#versione-2-4-3-25-11-2024" title="Link to this heading">¶</a></h2>
+<section id="id5">
+<h3>Migliorie<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Modificata la dicitura “Finalizza la pratica” in “Completa la pratica”</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-4-0-04-11-2024">
+<h2>Versione 2.4.0 (04/11/2024)<a class="headerlink" href="#versione-2-4-0-04-11-2024" title="Link to this heading">¶</a></h2>
+<section id="id6">
+<h3>Migliorie<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Revisione dei messaggi inviati al cambio di stato</p></li>
+<li><p>Aggiunto campo nel modello pratica per gestire la «firma» per le email (può essere aggiunto ad esempio un ufficio di contatto
+o un generico messaggio «email automatica non rispondere»)</p></li>
+<li><p>Restyling del Report PDF della pratica, riportato uffico nel footer, data e numero della pratica</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-3-3-29-08-2024">
+<h2>Versione 2.3.3 (29/08/2024)<a class="headerlink" href="#versione-2-3-3-29-08-2024" title="Link to this heading">¶</a></h2>
+<section id="id7">
+<h3>Migliorie<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nei modelli pratica ora è possibile inserire il numero di giorni per i prossimi passi, al cittadino vengono proposte nel riepilogo
+le date esatte dei prossimi passi. Richiede intervento redazionale nei modelli pratica per sistemare le informazioni inserite.</p></li>
+<li><p>Nella pagina di riepilogo ora sono stati aggiunti anche i pulsanti «Indietro» e «Salva bozza».</p></li>
+<li><p>Il form di feedback ora ha come titolo «Quanto è stato facile usare questo servizio?» solo dopo che il cittadino ha sottomesso la pratica.</p></li>
+<li><p>Nei modelli pratica è possibile definire un operatore di default tra le persone nel gruppo «operatori pratiche», all’operatore
+verranno assegnate automaticamente le pratiche del modello.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-3-2-28-05-2024">
+<h2>Versione 2.3.2 (28/05/2024)<a class="headerlink" href="#versione-2-3-2-28-05-2024" title="Link to this heading">¶</a></h2>
+<section id="id8">
+<h3>Migliorie<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata la tipografia del pdf generato per le pratiche.</p></li>
+<li><p>Aggiunti dati sulla protocollazione quando il pacchetto di integrazione protocolli è attivo.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-3-1-19-12-2023">
+<h2>Versione 2.3.1 (19/12/2023)<a class="headerlink" href="#versione-2-3-1-19-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id9">
+<h3>Migliorie<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Disabilitato il tasto ESC e il click fuori dalla popup della form di configurazione Modello Pratica per evitare di chiudere la modale perdendo le modifiche fatte, inoltre è stato aggiunto un avviso sulla X della modale.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-2-1-08-11-2023">
+<h2>Versione 2.2.1 (08/11/2023)<a class="headerlink" href="#versione-2-2-1-08-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id10">
+<h3>Fix<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nascosto il campo “Modello” nella creazione di un nuovo “Modello pratica”. Il campo sarà visibile solo quando il modello pratica sarà salvato.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-2-2-0-15-09-2023">
+<h2>Versione 2.2.0 (15/09/2023)<a class="headerlink" href="#versione-2-2-0-15-09-2023" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Documentazione io-Comune</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Vai" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigazione</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../io-comune/index.html">Tema io-Comune</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../io-prenoto/index.html">io-Prenoto</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">io-Cittadino</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../io-prenoto/index.html" title="capitolo precedente">io-Prenoto</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, RedTurtle.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/io-cittadino/index.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

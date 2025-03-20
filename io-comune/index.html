@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+
+<html lang="it" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tema io-Comune &#8212; Documentazione Documentazione io-Comune 0.1 </title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=41f723b1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=45930005"></script>
+    <link rel="index" title="Indice" href="../genindex.html" />
+    <link rel="search" title="Cerca" href="../search.html" />
+    <link rel="next" title="io-Prenoto" href="../io-prenoto/index.html" />
+    <link rel="prev" title="Note di rilascio" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="tema-io-comune">
+<h1>Tema io-Comune<a class="headerlink" href="#tema-io-comune" title="Link to this heading">¶</a></h1>
+<!--- -----------------------------------------------------------------
+  Esempio:
+  ---------------------------------------------------------------------
+
+## Versione 7.10.9 (12/09/2023)
+
+### Migliorie
+
+- Fissato il layout di stampa per pagine con Accordion
+
+### Novità
+
+- Nuovo blocco "Informazioni" [`Istruzioni`](https://docs.google.com/document/d/1SThuxa_ah0BuNXukWs564kKPfprK41WLQE8Mome-0xg/edit#heading=h.7ty110jumgmd)
+
+### Fix
+
+- il numero di telefono dentro card ufficio adesso è visibile anche senza indirizzo
+-->
+<!--- -----------------------------------------------------------------
+ TEMPLATE PER RELEASE
+ ----------------------------------------------------------------------
+
+## Versione X.X.X (dd/mm/yyyy)
+
+### Migliorie
+
+- ...
+
+### Novità
+
+- ...
+
+### Fix
+
+- ...
+ -->
+<section id="versione-11-29-0-07-03-2025">
+<h2>Versione 11.29.0 (07/03/2025)<a class="headerlink" href="#versione-11-29-0-07-03-2025" title="Link to this heading">¶</a></h2>
+<section id="migliorie">
+<h3>Migliorie<a class="headerlink" href="#migliorie" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel CT Documento ora è possibile gestire anche il CT File tramite taglia/incolla, laddove serva spostare dei File dentro uno specifico documento.</p></li>
+<li><p>Correzione del testo visualizzato sul pulsante «Cancella tutti i commenti» per la Customer Satisfaction, migliorando la leggibilità e conformità.</p></li>
+<li><p>Migliorata l’accessibilità per il widget dei campi di tipo Slate che salvano i dati in formato HTML.</p></li>
+<li><p>Migliorata l’accessibilità per gli elementi di tipo blockquote.</p></li>
+<li><p>Migliorata la lettura delle timeline di date nel dettaglio di Bando e Evento.</p></li>
+</ul>
+</section>
+<section id="fix">
+<h3>Fix<a class="headerlink" href="#fix" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemata la visualizzazione su mobile dei blocchi elenco inseriti all’interno dei blocchi griglia.</p></li>
+<li><p>Il titolo della homepage del sito è ora accessibile.</p></li>
+<li><p>Risolto un problema con i link all’interno dei blocchi Accordion.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-28-0-04-03-2025">
+<h2>Versione 11.28.0 (04/03/2025)<a class="headerlink" href="#versione-11-28-0-04-03-2025" title="Link to this heading">¶</a></h2>
+<section id="id1">
+<h3>Migliorie<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Tutti i bottoni della sezione «Accedi al servizio» hanno lo stesso font.</p></li>
+<li><p>Nel blocco “Cerca” ora viene fatto lo scroll automatico nel punto dove iniziano i risultati di ricerca quando vengono modificati i filtri.</p></li>
+</ul>
+</section>
+<section id="novita">
+<h3>Novità<a class="headerlink" href="#novita" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel campo «Assessori di riferimento» nel CT Unità Organizzativa è ora possibile collegare due CT Persona.</p></li>
+<li><p>Per caricare documenti per «Dichiarazioni di insussistenza e incompatibilità» e per «Emolumenti a carico della finanza pubblica» è ora possibile caricare anche documenti multipli dalle cartelle contenute nel CT Persona, non solo dai campi specifici.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Fix<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>I campi del CT Servizio - sezione Accedi al Servizio funzionano correttamente.</p></li>
+<li><p>Sistemato lo stile del focus nelle select del blocco “Cerca”.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-27-0-26-02-2025">
+<h2>Versione 11.27.0 (26/02/2025)<a class="headerlink" href="#versione-11-27-0-26-02-2025" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h3>Migliorie<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata l’accessibilità del blocco Accordion.</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>Fix<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Se su un evento si imposta una ricorrenza mensile per eventi che avvengono in uno specifico giorno della settimana, la ricorrenza viene calcolata correttamente.</p></li>
+<li><p>Aggiunto correttamente il data-element ai link della card con testo animato del blocco Elenco.</p></li>
+<li><p>Aggiunta una nuova condizione per la corretta compilazione dell’attributo <strong>alt</strong> e <strong>title</strong> nelle immagini dei blocchi listing. Ora questi attributi utilizzano correttamente i testi delle didascalie dell’immagine di anteprima o testata se impostati. L’attributo <strong>title</strong> viene valorizzato solo se esiste una didascalia associata all’immagine.</p></li>
+<li><p>Rimosso l’attributo <strong>showTitleAttr</strong> dal componente <em>ListingImage</em> utilizzato nei template del blocco listing: card con immagine, persona, blocco link completo, contenuto in evidenza, gallery a griglia, e in evidenza. Ora gli attributi <strong>title</strong> e <strong>alt</strong> vengono calcolati e impostati direttamente dal componente <em>ListingImage</em>.</p></li>
+<li><p>Condizione per la Label per i select ripristinata.</p></li>
+<li><p>Sistemata la visualizzazione del sottotitolo nel content-type Luogo (in alcuni casi non si vedeva).</p></li>
+<li><p>Rimosse le scrollbar dal widget “Select” dei filtri di ricerca del blocco “Cerca”.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-26-5-06-02-2025">
+<h2>Versione 11.26.5 (06/02/2025)<a class="headerlink" href="#versione-11-26-5-06-02-2025" title="Link to this heading">¶</a></h2>
+<section id="id5">
+<h3>Migliorie<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>La sezione contatti del CT Evento è stata riorganizzata per una maggiore chiarezza e coerenza.</p></li>
+<li><p>Nei blocchi elenco, gli stili dei testi nelle card che richiamano un CT persona sono conformi alle card che rappresentano gli altri CT.</p></li>
+<li><p>Impostando degli heading all’interno delle sezioni di testo nei vari CT, gli stili sono ora coerenti con l’ordine corretto dei titoli utilizzati.</p></li>
+<li><p>Aggiornate le traduzioni italiane.</p></li>
+<li><p>Nella sezione Documenti della vista dei tipi di contenuto Documento vengono ora mostrati sia i Moduli che i Collegamenti.</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>Fix<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>I bottoni del menu nel pannello di controllo dei cookies visualizzano correttamente le icone.</p></li>
+<li><p>Gli argomenti nelle card con immagine sono allineati correttamente.</p></li>
+<li><p>Sistemata l’opzione «Mostra i PDF in anteprima» dell template «Allegati» del blocco elenco, perchè non aveva alcun effetto.</p></li>
+<li><p>Sistemata la visualizzazione del blocco griglia su mobile: disposti verticalmente ogni blocco della griglia</p></li>
+<li><p>Sistemata l’opzione «Mostra i PDF in anteprima» dell template «Allegati» del blocco elenco, perchè non aveva alcun effetto.</p></li>
+<li><p>Sistemata la visualizzazione del blocco griglia su mobile: disposti verticalmente ogni blocco della griglia</p></li>
+<li><p>Sistemata la visualizzazione delle card con immagine in cui il contenuto rappresentato non ha un’immagine da mostrare.</p></li>
+<li><p>Migliorata l’accessibilità in modifica dei blocchi Contatti, Icone, Numeri.</p></li>
+<li><p>Sistemati alcuni problemi di visualizzazione delle card con avatar.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-26-3-15-01-2025">
+<h2>Versione 11.26.3 (15/01/2025)<a class="headerlink" href="#versione-11-26-3-15-01-2025" title="Link to this heading">¶</a></h2>
+<section id="id7">
+<h3>Fix<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>E” possibile caricare moduli in maniera massiva nei documenti all’interno delle aree corrette dentro Documenti e Dati &gt; Modulistica</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-26-1-27-12-2024">
+<h2>Versione 11.26.1 (27/12/2024)<a class="headerlink" href="#versione-11-26-1-27-12-2024" title="Link to this heading">¶</a></h2>
+<section id="id8">
+<h3>Fix<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema riguardante la visualizzazione delle estensioni dei file quando si utilizza un link ad un documento nei blocchi di testo.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-26-0-20-12-2024">
+<h2>Versione 11.26.0 (20/12/2024)<a class="headerlink" href="#versione-11-26-0-20-12-2024" title="Link to this heading">¶</a></h2>
+<section id="id9">
+<h3>Migliorie<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Se vengono aggiunte o rimosse date dalla ricorrenza di un CT evento, nel sottotitolo viene aggiunta l’indicazione di controllare le eccezioni nella sezione apposita.</p></li>
+<li><p>Il sottotitolo del CT Evento mostra il range di date per tutti gli eventi con ricorrenza o con una data di fine diversa dalla data di inizio.</p></li>
+<li><p>Sistemata l’accessibilità riguardante il focus lato operatore.</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>Novità<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco “Cerca” è stata aggiunta l’opzione «Usa l’ordinamento dei risultati di Plone» nella sezione “Controlli”.</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>Fix<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il menu a tendina da cui è possibile filtrare i luoghi nel blocco Ricerca Eventi mostra tutti i luoghi collegati agli eventi presenti nel percorso selezionato dalla Sidebar, senza limitarne il numero.</p></li>
+<li><p>Risolto un problema con il colore del testo del bottone nell’editor.</p></li>
+<li><p>Rimossa l’opzione non selezionabile «nessun valore» dal widget ricorrenza.</p></li>
+<li><p>La pagina non dà più errore quando si imposta una ricorrenza con impostazione «Termina dopo tot. ricorrenze».</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-25-3-12-12-2024">
+<h2>Versione 11.25.3 (12/12/2024)<a class="headerlink" href="#versione-11-25-3-12-12-2024" title="Link to this heading">¶</a></h2>
+<section id="id12">
+<h3>Migliorie<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiornate diverse traduzioni italiane.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-25-1-28-11-2024">
+<h2>Versione 11.25.1 (28/11/2024)<a class="headerlink" href="#versione-11-25-1-28-11-2024" title="Link to this heading">¶</a></h2>
+<section id="id13">
+<h3>Fix<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiustato il collegamento alla UO nella pagina Argomento.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-25-0-26-11-2024">
+<h2>Versione 11.25.0 (26/11/2024)<a class="headerlink" href="#versione-11-25-0-26-11-2024" title="Link to this heading">¶</a></h2>
+<section id="id14">
+<h3>Migliorie<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Rimossa dal CT Evento la data di scadenza del CT per evitare confusione con le date effettive dell’evento</p></li>
+<li><p>Durante la ricerca nel sito dalla popup che compare cliccando sul bottone “Cerca” nella testa del sito, viene mostrato un loader in overlay durante il caricamento della pagina dei risultati perchè questo potrebbe richiedere un po” di tempo. Prima di questa modifica non era chiaro se la ricerca fosse iniziata.</p></li>
+<li><p>Nel CT Evento per una rassegna, se gli eventi figli hanno una ricorrenza o un periodo di date impostato, il range di date verrà mostrato nella card all’interno dell’evento padre.</p></li>
+<li><p>Se l’url di una immagine è rotto, viene mostrato un avviso al posto dell’immagine rotta.</p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>Novità<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>E” ora possibile decidere se mostrare l’immagine di anteprima per tutte le card nel blocco di ricerca Evento e Unità Organizzativa.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-24-5-22-11-2024">
+<h2>Versione 11.24.5 (22/11/2024)<a class="headerlink" href="#versione-11-24-5-22-11-2024" title="Link to this heading">¶</a></h2>
+<section id="id16">
+<h3>Migliorie<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Inserito messaggio di avviso quando si tenta di caricare un file dalla cartella Modulistica all’interno di un Servizio per segnalare limitazione sull’upload</p></li>
+</ul>
+</section>
+<section id="id17">
+<h3>Fix<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>L’impostazione «Solo cookie tecnici» non causa problemi nell’apertura del cookie banner.</p></li>
+<li><p>[WebKit, Safari, iOS] Risolto un problema di visualizzazione grafica di alcuni bottoni che contengono al loro interno un link ad un sito esterno.</p></li>
+<li><p>Quando un evento ha impostata l’opzione «Tutta la giornata», le date sotto il titolo vengono visualizzate in maniera corretta.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-24-4-07-11-2024">
+<h2>Versione 11.24.4 (07/11/2024)<a class="headerlink" href="#versione-11-24-4-07-11-2024" title="Link to this heading">¶</a></h2>
+<section id="id18">
+<h3>Fix<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema di visualizzazione grafica per il bottone di login all’area personale per alcune specifiche dimensioni di schermi</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-24-3-24-10-2024">
+<h2>Versione 11.24.3 (24/10/2024)<a class="headerlink" href="#versione-11-24-3-24-10-2024" title="Link to this heading">¶</a></h2>
+<section id="id19">
+<h3>Migliorie<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Quando viene impostata una ricorrenza, nel tipo di contenuto Evento viene mostrata la data di fine della ricorrenza invece che del singolo evento</p></li>
+</ul>
+</section>
+<section id="id20">
+<h3>Fix<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto problema con i video esterni che puntano a degli mp4: ora non vengono più erroneamente visti come link interni.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-24-0-03-10-2024">
+<h2>Versione 11.24.0 (03/10/2024)<a class="headerlink" href="#versione-11-24-0-03-10-2024" title="Link to this heading">¶</a></h2>
+<section id="id21">
+<h3>Migliorie<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Cambiato il titolo della sezione «fine incarico» nel CT Persona.</p></li>
+</ul>
+</section>
+<section id="id22">
+<h3>Fix<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema con il blocco Form che in alcuni casi poteva dare problemi di validazione dei campi di tipo “testo statico”.</p></li>
+<li><p>Sistemate diverse incogruenze e errori generati dal widget per la creazione delle ricorrenze nel CT Evento.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-23-2-24-09-2024">
+<h2>Versione 11.23.2 (24/09/2024)<a class="headerlink" href="#versione-11-23-2-24-09-2024" title="Link to this heading">¶</a></h2>
+<section id="id23">
+<h3>Migliorie<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Gli utenti SPID vengono ora direttamente rediretti al link finale quando viene utilizzato un CT di tipo Collegamento</p></li>
+</ul>
+</section>
+<section id="id24">
+<h3>Fix<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>L’assegnazione dei ruoli nella vista gruppi funziona correttamente per tutti i gruppi di utenti.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-23-1-19-09-2024">
+<h2>Versione 11.23.1 (19/09/2024)<a class="headerlink" href="#versione-11-23-1-19-09-2024" title="Link to this heading">¶</a></h2>
+<section id="id25">
+<h3>Migliorie<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il colore del focus da tastiera sugli elementi della pagina è ora bianco e nero per garantire sempre un contrasto ottimale su tutti gli sfondi.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-23-0-19-09-2024">
+<h2>Versione 11.23.0 (19/09/2024)<a class="headerlink" href="#versione-11-23-0-19-09-2024" title="Link to this heading">¶</a></h2>
+<section id="id26">
+<h3>Migliorie<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorato il layout della galleria immagini nei CT.</p></li>
+<li><p>Nel blocco Cerca Evento, nel caso di un Evento Rassegna, tra i risultati vengono ora visualizzati solo gli appuntamenti della rassegna e non l’evento contenitore.</p></li>
+</ul>
+</section>
+<section id="id27">
+<h3>Novità<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunto campo per l’inserimento del titolo e della descrizione nel blocco Accordion.</p></li>
+</ul>
+</section>
+<section id="id28">
+<h3>Fix<a class="headerlink" href="#id28" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Rimosso il campo «ID lighthouse» dal blocco elenco con variazione Card con Testo Animato perchè entra in contrasto con asseveratore</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-22-0-05-09-2024">
+<h2>Versione 11.22.0 (05/09/2024)<a class="headerlink" href="#versione-11-22-0-05-09-2024" title="Link to this heading">¶</a></h2>
+<section id="id29">
+<h3>Migliorie<a class="headerlink" href="#id29" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Modificata la lista dei Luoghi per filtrare la ricerca degli eventi. Si prendevano tutti i luoghi, ora solo quelli legati agli eventi per avere una lista più corta.</p></li>
+<li><p>Migliorato l’ordinamento della ricerca nel blocco cerca: la ricerca iniziale rispetta l’eventuale selezione del redattore; nel momento in cui si cerca inserendo un testo allora si ordina per ranking.</p></li>
+<li><p>Mostrato il numero di risultati della ricerca nel blocco cerca.</p></li>
+</ul>
+</section>
+<section id="id30">
+<h3>Novità<a class="headerlink" href="#id30" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il blocco Form ha nuove funzionalità come il limite di iscrizioni e la possibilità di impostare un campo come univoco.</p></li>
+<li><p>Aggiunti al CT Persona i campi per la gestione della Trasparenza per allegare i file sugli emolumenti a carico della finanza pubblica e le dichiarazioni di insussistenza e incompatibilità.</p></li>
+</ul>
+</section>
+<section id="id31">
+<h3>Fix<a class="headerlink" href="#id31" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Ripristinata l’informazione sull’ultimo aggiornamento nel CT Unità Organizzativa.</p></li>
+<li><p>Risolto un problema con la spaziatura nel testo di presentazione dei risultati di ricerca nel blocco cerca.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-21-0-14-08-2024">
+<h2>Versione 11.21.0 (14/08/2024)<a class="headerlink" href="#versione-11-21-0-14-08-2024" title="Link to this heading">¶</a></h2>
+<section id="id32">
+<h3>Fix<a class="headerlink" href="#id32" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Le date delle card nella Ricerca Eventi vengono mostrate correttamente come impostate nell’evento.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-20-2-12-08-2024">
+<h2>Versione 11.20.2 (12/08/2024)<a class="headerlink" href="#versione-11-20-2-12-08-2024" title="Link to this heading">¶</a></h2>
+<section id="id33">
+<h3>Fix<a class="headerlink" href="#id33" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema per cui veniva mostrato temporaneamente un messaggio di errore quando si visitava un indirizzo alternativo creato con lo strumento Gestione URL.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-20-1-09-08-2024">
+<h2>Versione 11.20.1 (09/08/2024)<a class="headerlink" href="#versione-11-20-1-09-08-2024" title="Link to this heading">¶</a></h2>
+<section id="id34">
+<h3>Fix<a class="headerlink" href="#id34" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il testo che descrive la ricorrenza mensile è stato corretto per coprire tutti i casi.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-18-2-25-07-2024">
+<h2>Versione 11.18.2 (25/07/2024)<a class="headerlink" href="#versione-11-18-2-25-07-2024" title="Link to this heading">¶</a></h2>
+<section id="id35">
+<h3>Fix<a class="headerlink" href="#id35" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel CT Persona, tutte le sezioni Incarico appaiono ora nel menu</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-18-1-25-07-2024">
+<h2>Versione 11.18.1 (25/07/2024)<a class="headerlink" href="#versione-11-18-1-25-07-2024" title="Link to this heading">¶</a></h2>
+<section id="id36">
+<h3>Fix<a class="headerlink" href="#id36" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata la visualizzazione delle card risultato nella ricerca Eventi e Unità Organizzativa.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-18-0-19-07-2024">
+<h2>Versione 11.18.0 (19/07/2024)<a class="headerlink" href="#versione-11-18-0-19-07-2024" title="Link to this heading">¶</a></h2>
+<section id="id37">
+<h3>Migliorie<a class="headerlink" href="#id37" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunta la paginazione per le card presenti sotto i campi «Sede di» e «Servizi presenti nel luogo», ora verranno mostrati solo 4 elementi alla volta.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-17-0-16-07-2024">
+<h2>Versione 11.17.0 (16/07/2024)<a class="headerlink" href="#versione-11-17-0-16-07-2024" title="Link to this heading">¶</a></h2>
+<section id="id38">
+<h3>Novità<a class="headerlink" href="#id38" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Ora il titolo, sottotitolo, favicon, logo e logo del footer sono editabili dal pannello di controllo del Sito. Se non impostati, verranno usati quelli definiti dagli sviluppatori.</p></li>
+</ul>
+</section>
+<section id="id39">
+<h3>Fix<a class="headerlink" href="#id39" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Ripristinato il funzionamento del filtro luogo nella ricerca eventi.</p></li>
+</ul>
+</section>
+<section id="id40">
+<h3>Migliorie<a class="headerlink" href="#id40" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Viene ora mostrato un errore parlante nel caso si tenti di caricare un file che superi le dimensioni massime consentite, di default 100mb, come già esplicitato sul manuale utente.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-16-0-10-07-2024">
+<h2>Versione 11.16.0 (10/07/2024)<a class="headerlink" href="#versione-11-16-0-10-07-2024" title="Link to this heading">¶</a></h2>
+<section id="id41">
+<h3>Migliorie<a class="headerlink" href="#id41" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Tutti i campi compilabili nel CT Incarico vengono ora visualizzati nella vista corrispondente.</p></li>
+</ul>
+</section>
+<section id="id42">
+<h3>Novità<a class="headerlink" href="#id42" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunti due campi nel blocco Form che permettono di configurare un testo per l’intestazione e uno a piè di pagina nella mail inviata.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-15-0-05-07-2024">
+<h2>Versione 11.15.0 (05/07/2024)<a class="headerlink" href="#versione-11-15-0-05-07-2024" title="Link to this heading">¶</a></h2>
+<section id="id43">
+<h3>Novità<a class="headerlink" href="#id43" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Le informazioni sulla data di inizio e fine incarico sul CT persona vengono ora mostrate subito dopo l’incarico.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-14-0-21-06-2024">
+<h2>Versione 11.14.0 (21/06/2024)<a class="headerlink" href="#versione-11-14-0-21-06-2024" title="Link to this heading">¶</a></h2>
+<section id="id44">
+<h3>Migliorie<a class="headerlink" href="#id44" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il pulsante di aggiunta dei blocchi è stato spostato nella parte bassa del blocco (non si trova più alla sua sinistra), per migliorare l’usabilità della gestione dei blocchi anche su mobile/tablet.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-13-0-12-06-2024">
+<h2>Versione 11.13.0 (12/06/2024)<a class="headerlink" href="#versione-11-13-0-12-06-2024" title="Link to this heading">¶</a></h2>
+<section id="id45">
+<h3>Migliorie<a class="headerlink" href="#id45" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel CT Persona viene visualizzato anche il testo del campo «Importi di viaggio e/o servizi» impostato nel CT Incarico collegato e, se presente più di un Incarico collegato, vengono mostrati i link a ciascun Incarico nella sezione «Altri incarichi».</p></li>
+</ul>
+</section>
+<section id="id46">
+<h3>Novità<a class="headerlink" href="#id46" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunte informazioni sulle rassegne di eventi nei blocchi elenco.</p></li>
+</ul>
+</section>
+<section id="id47">
+<h3>Fix<a class="headerlink" href="#id47" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il bottone «callout con sfondo» della barra degli strumenti per il testo è nuovamente visibile.</p></li>
+<li><p>Il blocco Ricerca Eventi permette di eliminare il filtro date.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-12-9-06-06-2024">
+<h2>Versione 11.12.9 (06/06/2024)<a class="headerlink" href="#versione-11-12-9-06-06-2024" title="Link to this heading">¶</a></h2>
+<section id="id48">
+<h3>Fix<a class="headerlink" href="#id48" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>La pagina di login e di reset della password usano il font corretto.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-12-6-30-05-2024">
+<h2>Versione 11.12.6 (30/05/2024)<a class="headerlink" href="#versione-11-12-6-30-05-2024" title="Link to this heading">¶</a></h2>
+<section id="id49">
+<h3>Fix<a class="headerlink" href="#id49" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il layout delle card con immagini rimane corretto anche selezionando l’opzione «Non alterare le dimensioni naturali dell’immagine».</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-12-5-30-05-2024">
+<h2>Versione 11.12.5 (30/05/2024)<a class="headerlink" href="#versione-11-12-5-30-05-2024" title="Link to this heading">¶</a></h2>
+<section id="id50">
+<h3>Novità<a class="headerlink" href="#id50" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Per ragioni di conformità alle linee guida Agid, inibito l’inserimento di CT File nella cartella modulistica.</p></li>
+</ul>
+</section>
+<section id="id51">
+<h3>Fix<a class="headerlink" href="#id51" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemato il layout «Card con immagine» dei blocchi elenco quando gli elementi non hanno immagine.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-12-4-30-05-2024">
+<h2>Versione 11.12.4 (30/05/2024)<a class="headerlink" href="#versione-11-12-4-30-05-2024" title="Link to this heading">¶</a></h2>
+<section id="id52">
+<h3>Fix<a class="headerlink" href="#id52" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiustato il layout dei campi nel widget delle ricorrenze.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-12-1-21-05-2024">
+<h2>Versione 11.12.1 (21/05/2024)<a class="headerlink" href="#versione-11-12-1-21-05-2024" title="Link to this heading">¶</a></h2>
+<section id="id53">
+<h3>Migliorie<a class="headerlink" href="#id53" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorate le performance di navigazione per alcuni link agli argomenti nella testata delle pagine.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-12-0-21-05-2024">
+<h2>Versione 11.12.0 (21/05/2024)<a class="headerlink" href="#versione-11-12-0-21-05-2024" title="Link to this heading">¶</a></h2>
+<section id="id54">
+<h3>Migliorie<a class="headerlink" href="#id54" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Se una Unità Organizzativa è collegata a più di 4 servizi, le card dei servizi collegati verranno divise in diverse pagine navigabili da uno strumento di paginazione per rendere lo scorrimento della pagina più semplice.</p></li>
+<li><p>Cambiato il layout delle immagini all’interno del blocco Griglia.</p></li>
+<li><p>Migliorata la visualizzazione delle parole evidenziate nella pagina di Ricerca.</p></li>
+<li><p>Rinominato il contenitore «Altri allegati» dentro i contenuti di tipo Persona in «Altri documenti».</p></li>
+</ul>
+</section>
+<section id="id55">
+<h3>Novità<a class="headerlink" href="#id55" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Le immagini delle Card con Immagine del blocco Elenco sono ora cliccabili. Cliccandole si apre il contenuto della Card.</p></li>
+</ul>
+</section>
+<section id="id56">
+<h3>Fix<a class="headerlink" href="#id56" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Corretto il testo per la ricorrenza eventi nel CT Eventi.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-11-1-02-05-2024">
+<h2>Versione 11.11.1 (02/05/2024)<a class="headerlink" href="#versione-11-11-1-02-05-2024" title="Link to this heading">¶</a></h2>
+<section id="id57">
+<h3>Migliorie<a class="headerlink" href="#id57" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il campo tipologia è ora mostrato all’interno della pagina del CT Evento, se compilato.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-11-0-29-04-2024">
+<h2>Versione 11.11.0 (29/04/2024)<a class="headerlink" href="#versione-11-11-0-29-04-2024" title="Link to this heading">¶</a></h2>
+<section id="id58">
+<h3>Migliorie<a class="headerlink" href="#id58" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunte le date degli eventi figli nel caso questi non presentino immagini nella card.</p></li>
+</ul>
+</section>
+<section id="id59">
+<h3>Novità<a class="headerlink" href="#id59" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Modificato vista del tipo di contenuto Persona per mostrare anche la cartella interna «Altri allegati».</p></li>
+</ul>
+</section>
+<section id="id60">
+<h3>Fix<a class="headerlink" href="#id60" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiustato problema per il blocco elenco, variazione card con Immagine, per gli eventi con ricorrenza.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-10-0-17-04-2024">
+<h2>Versione 11.10.0 (17/04/2024)<a class="headerlink" href="#versione-11-10-0-17-04-2024" title="Link to this heading">¶</a></h2>
+<section id="id61">
+<h3>Migliorie<a class="headerlink" href="#id61" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco Argomenti in Evidenza, è stata rimossa l’obbligatorietà di aggiungere una card argomento, ora si possono inserire anche solo le etichette.</p></li>
+<li><p>Aggiunta la possibilità di inserire testo nel filtro luogo nel blocco Ricerca Eventi.</p></li>
+<li><p>Le opzioni del menu a tendina per il filtro luogo nel blocco Ricerca Eventi sono ordinate alfabeticamente.</p></li>
+<li><p>Il focus quando un elemento (link o pulsante) è cliccato con il mouse non ha più il bordo giallo/arancione.</p></li>
+<li><p>Migliorati gli stili per la stampa del CT pagina.</p></li>
+</ul>
+</section>
+<section id="id62">
+<h3>Novità<a class="headerlink" href="#id62" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Ora i link in testata nell’header slim sono configurabili da pannello di controllo.</p></li>
+<li><p>Nel template Slider del blocco elenco, ora è possibile scegliere l’aspetto degli elementi dello slider (default: slide semplice con immagine e titolo cliccabile, Card semplice, Card con immagine).</p></li>
+<li><p>Nel blocco Argomenti in Evidenza sono state aggiunte due nuove proprietà, una permette di allineare gli «Altri argomenti» al centro e la seconda serve a nascondere o meno il bottone «Vedi tutti» che punta alla pagina argomenti.</p></li>
+</ul>
+</section>
+<section id="id63">
+<h3>Fix<a class="headerlink" href="#id63" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco Argomenti in Evidenza se non ci sono card ma etichette argomento, il blocco non renderizza più lo sfondo per un maggiore contrasto con le etichette, di conseguenza il titolo del blocco rimane nero e non bianco.</p></li>
+<li><p>Aggiunto il titolo per la sezione «Organizzatore esterno» quando il campo è compilato nel tipo di contenuto Evento.</p></li>
+<li><p>I chip che non hanno collegamenti non si comportano più come link al posizionamento del mouse.</p></li>
+<li><p>Sistemato un problema nella vista del CT Evento, che mostrava tra le date aggiuntive della ricorrenza anche le date escluse.</p></li>
+<li><p>Sistemato un problema per cui la visualizzazione della sitemap in presenza di un sito multilingua generava errore.</p></li>
+<li><p>Migliorata l’accessibilità dei link nel footer.</p></li>
+<li><p>Migliorata l’accessibilità del blocco elenco nella variazione Slider.</p></li>
+<li><p>Migliorati gli stili del blocco accordion.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-9-1-03-04-2024">
+<h2>Versione 11.9.1 (03/04/2024)<a class="headerlink" href="#versione-11-9-1-03-04-2024" title="Link to this heading">¶</a></h2>
+<section id="id64">
+<h3>Fix<a class="headerlink" href="#id64" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema dovuto all’assenza di una id specifico nelle traduzioni.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-9-0-03-04-2024">
+<h2>Versione 11.9.0 (03/04/2024)<a class="headerlink" href="#versione-11-9-0-03-04-2024" title="Link to this heading">¶</a></h2>
+<section id="id65">
+<h3>Migliorie<a class="headerlink" href="#id65" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Effettuate diverse migliorie di accessibilità.</p></li>
+</ul>
+</section>
+<section id="id66">
+<h3>Novità<a class="headerlink" href="#id66" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunta una nuova variazione del blocco elenco «Allegati» che permette di scaricare oggetti di tipo File o aprire l’anteprima di file PDF.</p></li>
+</ul>
+</section>
+<section id="id67">
+<h3>Fix<a class="headerlink" href="#id67" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemata la visualizzazione dei blocchi elenco all’interno del blocco griglia.</p></li>
+<li><p>L’etichetta della Card con Nastro (Blocco Elenco) non si sovrappone più all’icona del nastro.</p></li>
+<li><p>Aggiustato il layout della card per le persone quando è impostata un’immagine.</p></li>
+<li><p>Sistemato bug su blocchi di ricerca Bandi, Eventi e UO nei quali rimanevano memorizzati i risultati di ricerca anche abbandonando la pagina.</p></li>
+<li><p>Tradotto il messaggio per Screen Reader del bottone per aprire e chiudere il menu in mobile.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-8-0-19-03-2024">
+<h2>Versione 11.8.0 (19/03/2024)<a class="headerlink" href="#versione-11-8-0-19-03-2024" title="Link to this heading">¶</a></h2>
+<section id="id68">
+<h3>Migliorie<a class="headerlink" href="#id68" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Gli stili del tipo di contenuto Unità Organizzativa sono stati ottimizzati per la stampa.</p></li>
+</ul>
+</section>
+<section id="id69">
+<h3>Novità<a class="headerlink" href="#id69" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>È possibile scaricare il file o l’immagine caricata dal widget di upload file cliccando sul nome del file stesso.</p></li>
+<li><p>È possibile aggiungere un testo alternativo per l’immagine del blocco Card con Immagine.</p></li>
+</ul>
+</section>
+<section id="id70">
+<h3>Fix<a class="headerlink" href="#id70" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco con icone, se era impostata una immagine di sfondo non si vedeva.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-7-0-15-03-2024">
+<h2>Versione 11.7.0 (15/03/2024)<a class="headerlink" href="#versione-11-7-0-15-03-2024" title="Link to this heading">¶</a></h2>
+<section id="id71">
+<h3>Novità<a class="headerlink" href="#id71" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Ora la fascia del footer contenente il logo e il nome del sito è configurabile da pannello di controllo.</p></li>
+<li><p>Nel pannello di controllo dei Feedback, ora gli utenti con permesso di eliminare elementi da questa sezione, possono eliminare i feedback.</p></li>
+</ul>
+</section>
+<section id="id72">
+<h3>Migliorie<a class="headerlink" href="#id72" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco form, se in fase di compilazione ci sono degli errori, viene mostrato un messaggio di errore specifico per ogni campo con errori.</p></li>
+</ul>
+</section>
+<section id="id73">
+<h3>Fix<a class="headerlink" href="#id73" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il bordo destro della variazione Link solo immagine del blocco Elenco è stato ripristinato.</p></li>
+<li><p>Se si mettono due blocchi Form nella stessa pagina, ora funzionano correttamente.</p></li>
+<li><p>Aggiustato il modulo di Feedback quando si cambia valutazione dopo averne già selezionata un’altra.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-6-1-06-03-2024">
+<h2>Versione 11.6.1 (06/03/2024)<a class="headerlink" href="#versione-11-6-1-06-03-2024" title="Link to this heading">¶</a></h2>
+<section id="id74">
+<h3>Fix<a class="headerlink" href="#id74" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Quando si imposta una ricorrenza per giorni feriali negli Eventi, viene visualizzato il testo corretto «ogni giorno feriale».</p></li>
+<li><p>Le icone social nel menu laterale mobile sono tutte dello stesso colore.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-6-0-05-03-2024">
+<h2>Versione 11.6.0 (05/03/2024)<a class="headerlink" href="#versione-11-6-0-05-03-2024" title="Link to this heading">¶</a></h2>
+<section id="id75">
+<h3>Migliorie<a class="headerlink" href="#id75" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco form è stata aggiunta una legenda per i campi obbligatori.</p></li>
+</ul>
+</section>
+<section id="id76">
+<h3>Novità<a class="headerlink" href="#id76" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Rimosso i contatti dalle card che rappresentano Unità Organizzative nelle varie viste dei diversi content type in cui sono implementate.
+La lista delle viste comprende i CT: Persona, Unità Organizzativa, Documento, Bando, Servizio, Notizia, Evento, Incarico, Luogo, Argomento.</p></li>
+<li><p>Aggiornato il plugin del blocco Form, adesso si ha la possibilità di aggiungere un pulsante per resettare i campi e nella sidebar è presente un nuovo campo per creare un messaggio personalizzato dopo l’invio della form, i campi di tipo: testo, email, data e textarea hanno un identificativo che può essere utilizzato per restituire il valore di quei campi nel messaggio personalizzato.</p></li>
+</ul>
+</section>
+<section id="id77">
+<h3>Fix<a class="headerlink" href="#id77" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>L’icona per aprire il menu in mobile è ora visibile anche quando l’header del sito è bianca.</p></li>
+<li><p>La descrizione nelle card per i punti di contatto non mostrano più tutte le iniziali in maiuscolo.</p></li>
+<li><p>Il colore dei link nel menu mobile è ora accessibile per tutti i temi.</p></li>
+<li><p>Titolo e descrizione sistemati su blocco icone. Adesso quando il loro contenuto è cancellato non resta lo spazio vuoto sopra le icone.</p></li>
+<li><p>Migliorata l’accessibilità della sezione dedicata al feedback utente per tutti i contenuti del sito.</p></li>
+<li><p>Rimosso il title dall’immagine di apertura dei contenuti.</p></li>
+<li><p>Rimosso attributo title dall’immagine delle card: card con immagine, persona, blocco link completo, contenuto in evidenza, gallery a griglia, in evidenza.</p></li>
+<li><p>Migliorata l’accessibilità del menu in versione mobile.</p></li>
+<li><p>Il layout dei campi di input «in errore» del blocco Form è stato uniformato.</p></li>
+<li><p>La tendina delle select nel blocco Form non si sovrappone più ai campi sottostanti.</p></li>
+<li><p>Sistemato alert di errore nel blocco Form che nascondeva il form quando un campo non era valido, ora continua a visualizzarsi anche la form.</p></li>
+<li><p>Migliorato il testo alternativo per il logo NextGenerationEU nel footer.</p></li>
+<li><p>Migliorata l’accessibilità del blocco Cerca.</p></li>
+<li><p>Sistemato il contrasto delle icone nei pulsanti «primary» quando si attiva il focus col tab da tastiera.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-5-1-19-02-2024">
+<h2>Versione 11.5.1 (19/02/2024)<a class="headerlink" href="#versione-11-5-1-19-02-2024" title="Link to this heading">¶</a></h2>
+<section id="id78">
+<h3>Migliorie<a class="headerlink" href="#id78" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Il campo «Note aggiornamento» nel Tipo di Contenuto Bandi viene ora mostrato in pagina, se compilato.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-5-0-16-02-2024">
+<h2>Versione 11.5.0 (16/02/2024)<a class="headerlink" href="#versione-11-5-0-16-02-2024" title="Link to this heading">¶</a></h2>
+<section id="id79">
+<h3>Migliorie<a class="headerlink" href="#id79" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Rimosso il campo «Risultati per pagina» che non agiva sulle impostazioni del blocco Calendario.</p></li>
+</ul>
+</section>
+<section id="id80">
+<h3>Fix<a class="headerlink" href="#id80" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema riguardante la visualizzazione delle date nelle card che rappresentano un CT Evento nei vari listati nel caso in cui l’evento si sviluppi su anni diversi</p></li>
+<li><p>Risolto un problema di visualizzazione per la sezione Date e Orari nel CT Evento quando l’evento si sviluppa su anni diversi, ora viene mostrato anche l’anno se si rientra in questa casistica</p></li>
+<li><p>Nel blocco elenco, sono stati sistemati i filtri per percorso quando si clicca sul bottone configurato.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-4-1-08-02-2024">
+<h2>Versione 11.4.1 (08/02/2024)<a class="headerlink" href="#versione-11-4-1-08-02-2024" title="Link to this heading">¶</a></h2>
+<section id="id81">
+<h3>Fix<a class="headerlink" href="#id81" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata l’accessibilità e aggiunto elementi per migliorare l’esperienza d’uso degli utenti che utilizzano screen reader nella vista Cartella FAQ</p></li>
+<li><p>Sistemato lo skiplink «Vai al contenuto» nella pagina principale di ricerca del sito</p></li>
+<li><p>Risolto un problema relativo alla navigazione da tastiera e di gestione del focus nei menu a tendina «Condividi» e «Azioni» nelle testate delle viste dei Content Type che le implementano.</p></li>
+<li><p>Reso il link ai diversi social elencati parlante, ora viene riportato «Seguici su nome_del_social»</p></li>
+<li><p>Rimossi gli heading per alcuni blocchi nel caso il titolo non sia presente al fine di migliorare l’esperienza con l’uso di screen reader</p></li>
+<li><p>Migliorata l’accessibilità per il blocco Contenuti in Evidenza e per i bottoni nei sottositi</p></li>
+<li><p>Sistemato l’html semantico degli heading per i template del Blocco Listing variazione RSS, migliorata l’esperienza d’uso per gli utenti che utilizzano screen reader</p></li>
+<li><p>Migliorata l’accessibilità per i contatti, lo screen reader ora legge anche il tipo di contatto oltre al testo (ad es. Telefono: numero di telefono)</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-4-0-06-02-2024">
+<h2>Versione 11.4.0 (06/02/2024)<a class="headerlink" href="#versione-11-4-0-06-02-2024" title="Link to this heading">¶</a></h2>
+<section id="id82">
+<h3>Novità<a class="headerlink" href="#id82" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunta l’icona per il formato di file CSV</p></li>
+<li><p>Nel pannello di controllo di “Design plone” è stata aggiunta la possibilità di mostrare o meno il footer autogenerato.</p></li>
+</ul>
+</section>
+<section id="id83">
+<h3>Fix<a class="headerlink" href="#id83" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemata la gerarchia per i titoli dentro al blocco semplice</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-3-4-31-01-2024">
+<h2>Versione 11.3.4 (31/01/2024)<a class="headerlink" href="#versione-11-3-4-31-01-2024" title="Link to this heading">¶</a></h2>
+<section id="id84">
+<h3>Migliorie<a class="headerlink" href="#id84" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata l’esperienza redattore per il blocco Immagine con allineamenti laterali rispetto al corpo del testo nell’editor a blocchi</p></li>
+<li><p>Migliorata la resa e la responsività di alcune immagini nel corpo della pagina per diversi content type</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-3-3-30-01-2024">
+<h2>Versione 11.3.3 (30/01/2024)<a class="headerlink" href="#versione-11-3-3-30-01-2024" title="Link to this heading">¶</a></h2>
+<section id="id85">
+<h3>Migliorie<a class="headerlink" href="#id85" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorato il focus sulle immagini in edit del blocco Immagine quando queste sono allineate a sinistra o a destra.</p></li>
+</ul>
+</section>
+<section id="id86">
+<h3>Fix<a class="headerlink" href="#id86" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemato il layout del blocco elenco per i Bandi</p></li>
+<li><p>Sistemato il layout del template Galliery a griglia per il blocco elenco, le immagini più piccole ora sono correttamente contenute dentro il loro riquadro e il titolo non fuoriesce più</p></li>
+<li><p>Sistemati problemi negli stili per i sottositi</p></li>
+<li><p>Risolto un problema di visualizzazione degli argomenti indicati come altri argomenti nel blocco Argomenti quando il loro numero è esiguo</p></li>
+<li><p>Sistemato il layout e la visualizzazione della vista del CT Cartella Modulistica per gestire al meglio gli elementi
+titolo, titolo del modulo e link al download in caso di testi lunghi, specialmente su mobile</p></li>
+<li><p>Colore di sfondo per il blocco icone impostato sul colore primario. Sistemato il contrasto tra descrizione e lo sfondo</p></li>
+<li><p>Sistemata la visualizzazione delle card Uffici (card Unità Organizzativa) nelle risoluzioni tablet più comuni</p></li>
+<li><p>Layout delle card per i luoghi migliorato per dispositivi tablet</p></li>
+<li><p>Risolto un problema di visualizzazione e allineamento delle immagini per le card dei blocchi elenco che rappresentano Persone,
+migliorata la visualizzazione e il layout su dispositivi tablet (intervallo dimensioni: 992px-1199px)</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-3-2-19-01-2024">
+<h2>Versione 11.3.2 (19/01/2024)<a class="headerlink" href="#versione-11-3-2-19-01-2024" title="Link to this heading">¶</a></h2>
+<section id="id87">
+<h3>Fix<a class="headerlink" href="#id87" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema di visualizzazione di alcune icone social.</p></li>
+<li><p>Risolto un problema con il menù di navigazione del footer, in cui a volte scomparivano le voci di secondo livello.</p></li>
+<li><p>Risolto problema di sovrapposizione del bottone «Chiudi» del menu laterale su mobile quando il menu è chiuso.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-3-0-16-01-2024">
+<h2>Versione 11.3.0 (16/01/2024)<a class="headerlink" href="#versione-11-3-0-16-01-2024" title="Link to this heading">¶</a></h2>
+<section id="id88">
+<h3>Novità<a class="headerlink" href="#id88" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunto un campo descrizione nei punti di contatto per aiutare nella disambiguazione.</p></li>
+<li><p>Ora per gli eventi è obbligatorio inserire il campo «Luoghi correlati» oppure compilare i campi dell’indirizzo.</p></li>
+</ul>
+</section>
+<section id="id89">
+<h3>Fix<a class="headerlink" href="#id89" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorati gli stili per i sottositi.</p></li>
+<li><p>Risolto un problema con i filtri per data nel blocco Calendario.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-2-1-15-01-2024">
+<h2>Versione 11.2.1 (15/01/2024)<a class="headerlink" href="#versione-11-2-1-15-01-2024" title="Link to this heading">¶</a></h2>
+<section id="id90">
+<h3>Migliorie<a class="headerlink" href="#id90" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata il testo della ricorrenza di un evento.</p></li>
+</ul>
+</section>
+<section id="id91">
+<h3>Fix<a class="headerlink" href="#id91" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema nell’edit della ricorrenza di un evento.</p></li>
+<li><p>Risolto problema con lo stile «callout», icona megafono dell’editor di testo con sfondo bianco e bordo grigio</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-2-0-11-01-2024">
+<h2>Versione 11.2.0 (11/01/2024)<a class="headerlink" href="#versione-11-2-0-11-01-2024" title="Link to this heading">¶</a></h2>
+<section id="id92">
+<h3>Migliorie<a class="headerlink" href="#id92" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata l’accessibilità nella pagina di Ricerca.</p></li>
+<li><p>Diminuita la larghezza del testo nelle card che indicano i luoghi.</p></li>
+</ul>
+</section>
+<section id="id93">
+<h3>Fix<a class="headerlink" href="#id93" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema nel blocco Video Gallery, per cui alcuni video di youtube non erano riproducibili.</p></li>
+<li><p>Risolto problema nel funzionamento della toolbar per il blocco HTML.</p></li>
+<li><p>Sistemate spaziature e font su mobile del blocco Card con Immagine e Card Semplice, migliorato il layout di quest’ultimo.</p></li>
+<li><p>È stato migliorato il contrasto minimo necessario tra sfondo e testo nei blocchi numeri, countdown e galleria a griglia.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-1-4-05-01-2024">
+<h2>Versione 11.1.4 (05/01/2024)<a class="headerlink" href="#versione-11-1-4-05-01-2024" title="Link to this heading">¶</a></h2>
+<section id="id94">
+<h3>Fix<a class="headerlink" href="#id94" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto il problema di layout nelle card che indicano dei luoghi.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-1-1-22-12-2023">
+<h2>Versione 11.1.1 (22/12/2023)<a class="headerlink" href="#versione-11-1-1-22-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id95">
+<h3>Fix<a class="headerlink" href="#id95" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema con la dimensione delle immagini, che risultava in alcuni casi troppo piccola causando immagini sgranate</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-0-1-19-12-2023">
+<h2>Versione 11.0.1 (19/12/2023)<a class="headerlink" href="#versione-11-0-1-19-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id96">
+<h3>Fix<a class="headerlink" href="#id96" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Risolto un problema con le anteprime dei video embeddati da youtube.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-11-0-0-18-12-2023">
+<h2>Versione 11.0.0 (18/12/2023)<a class="headerlink" href="#versione-11-0-0-18-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id97">
+<h3>Novità<a class="headerlink" href="#id97" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Modificata l’altezza delle immagini delle card, per essere in linea con i template agid.</p></li>
+</ul>
+</section>
+<section id="id98">
+<h3>Fix<a class="headerlink" href="#id98" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemati gli stili per i sottositi per l’accessibilità.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-6-4-18-12-2023">
+<h2>Versione 10.6.4 (18/12/2023)<a class="headerlink" href="#versione-10-6-4-18-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id99">
+<h3>Fix<a class="headerlink" href="#id99" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Colori delle icone che specificano che un link è esterno che in alcuni casi erano errati.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-6-3-15-12-2023">
+<h2>Versione 10.6.3 (15/12/2023)<a class="headerlink" href="#versione-10-6-3-15-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id100">
+<h3>Fix<a class="headerlink" href="#id100" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemati alcuni problemi di visualizzazione nei template disponibili per il blocco Cerca. Ora tutti i template disponibili per questo blocco rispecchiano graficamente quelli per il blocco Elenco sia in visualizzazione che in modifica.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-6-2-14-12-2023">
+<h2>Versione 10.6.2 (14/12/2023)<a class="headerlink" href="#versione-10-6-2-14-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id101">
+<h3>Fix<a class="headerlink" href="#id101" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Ora si vedono correttamente gli stili di allineamento del testo in alcuni editor di testo, ad esempio header e footer dei sottositi.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-6-1-13-12-2023">
+<h2>Versione 10.6.1 (13/12/2023)<a class="headerlink" href="#versione-10-6-1-13-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id102">
+<h3>Novità<a class="headerlink" href="#id102" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>I seguenti campi sono ora riordinabili liberamente: «Timeline tempi e scadenze» per il tipo di contenuto <em>Servizio</em> e «Valore punto di contatto» del tipo di contenuto <em>Punto di contatto</em>.</p></li>
+</ul>
+</section>
+<section id="id103">
+<h3>Fix<a class="headerlink" href="#id103" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Rimosso pager-link automatico dal paginatore perché non riconosciuto dal validatore. È ora possibile inserire a mano il data-element pager-link nei blocchi di testo.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-5-0-06-12-2023">
+<h2>Versione 10.5.0 (06/12/2023)<a class="headerlink" href="#versione-10-5-0-06-12-2023" title="Link to this heading">¶</a></h2>
+<section id="id104">
+<h3>Novità<a class="headerlink" href="#id104" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco elenco, nel criterio di configurazione “Posizione”, è ora presente uno strumento per facilitare la ricerca dei contenuti nel sito, senza dover scrivere il percorso a mano.</p></li>
+</ul>
+</section>
+<section id="id105">
+<h3>Fix<a class="headerlink" href="#id105" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Le immagini nelle card dei contenuti correlati sono centrate verticalmente.</p></li>
+<li><p>Il feedback form ora richiede necessariamente una risposta oltre al voto in stelle.</p></li>
+<li><p>Dimensione del titolo del blocco calendario uniformata ai titoli degli altri blocchi elenco.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-4-3-28-11-2023">
+<h2>Versione 10.4.3 (28/11/2023)<a class="headerlink" href="#versione-10-4-3-28-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id106">
+<h3>Migliorie<a class="headerlink" href="#id106" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Ora nella pagina 404 «Questa pagina non esiste» viene suggerito il proseguimento della navigazione verso la homepage invece che verso la ricerca.</p></li>
+</ul>
+</section>
+<section id="id107">
+<h3>Fix<a class="headerlink" href="#id107" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata l’accessibilità del modulo di valutazione del sito che si trova in fondo ad ogni pagina.</p></li>
+<li><p>Il blocco Elenco con variazione Bandi viene visualizzato correttamente anche su tablet.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-4-2-23-11-2023">
+<h2>Versione 10.4.2 (23/11/2023)<a class="headerlink" href="#versione-10-4-2-23-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id108">
+<h3>Fix<a class="headerlink" href="#id108" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemato il layout della card nella variazione Bandi del Blocco Elenco per la modalità tablet</p></li>
+<li><p>Sistemata accessibilità del read-more nel blocco elenco con variazione «Card con testo animato» quando si è in un sottosito con uno stile applicato.</p></li>
+<li><p>Sistemato errore quando viene impostato «service-link» come ID lighthouse.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-4-1-21-11-2023">
+<h2>Versione 10.4.1 (21/11/2023)<a class="headerlink" href="#versione-10-4-1-21-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id109">
+<h3>Migliorie<a class="headerlink" href="#id109" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorato l’allineamento delle informazioni dei bandi nelle card dei blocchi elenco</p></li>
+</ul>
+</section>
+<section id="id110">
+<h3>Fix<a class="headerlink" href="#id110" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco Cerca, quando viene selezionata la variazione «Colonna a destra» o «Colonna a sinistra» i blocchi si allineano correttamente, e i bottoni nella testata si vedono correttamente in modalità Edit.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-4-0-14-11-2023">
+<h2>Versione 10.4.0 (14/11/2023)<a class="headerlink" href="#versione-10-4-0-14-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id111">
+<h3>Novità<a class="headerlink" href="#id111" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunta la possibilità di selezionare la dimensione dell’immagine nel blocco Alert, inoltre è stato aggiornato anche il widget per la selezione del colore di sfondo.</p></li>
+<li><p>Aggiunte le breadcrumbs nella pagina dei risultati della ricerca</p></li>
+</ul>
+</section>
+<section id="id112">
+<h3>Fix<a class="headerlink" href="#id112" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Quando viene effettuata una ricerca dalla barra di ricerca nelle sezioni Amministrazione, Servizi, Novità, o Documenti e Dati, viene automaticamente impostato il filtro sulla sezione stessa così da mostrare solo i contenuti corrispondenti.</p></li>
+<li><p>Le icone del Blocco Numeri, del Blocco Icone e della Sidebar si aggiornano istantaneamente quando vengono cambiate</p></li>
+<li><p>Sistemato un bug nell’header dei sottositi che mostrava le voci del menu del sito padre anche se queste erano indicate come non visibili nella configurazione del menu.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-3-0-08-11-2023">
+<h2>Versione 10.3.0 (08/11/2023)<a class="headerlink" href="#versione-10-3-0-08-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id113">
+<h3>Fix<a class="headerlink" href="#id113" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemata la visualizzazione della tipologia del bando nel template del blocco elenco “Bandi”</p></li>
+<li><p>Rimosso titolo della pagina nei sottositi senza nessuno stile applicato</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-10-2-0-06-11-2023">
+<h2>Versione 10.2.0 (06/11/2023)<a class="headerlink" href="#versione-10-2-0-06-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id114">
+<h3>Novità<a class="headerlink" href="#id114" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunto data-element pager-link al paginatore per il blocco Cerca per i quali viene impostata l’opzione service-link.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-9-0-1-03-11-2023">
+<h2>Versione 9.0.1 (03/11/2023)<a class="headerlink" href="#versione-9-0-1-03-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id115">
+<h3>Migliorie<a class="headerlink" href="#id115" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorata l’accessibilità dei titoli dei contenuti</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-9-0-03-11-2023">
+<h2>Versione 8.9.0 (03/11/2023)<a class="headerlink" href="#versione-8-9-0-03-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id116">
+<h3>Novità<a class="headerlink" href="#id116" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiunto data-element pager-link al paginatore per i blocchi Elenco per i quali viene impostata l’opzione service-link.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-8-1-03-11-2023">
+<h2>Versione 8.8.1 (03/11/2023)<a class="headerlink" href="#versione-8-8-1-03-11-2023" title="Link to this heading">¶</a></h2>
+<section id="id117">
+<h3>Fix<a class="headerlink" href="#id117" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nei template dei feed RSS ora viene mostrata la sorgente se presente.</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-7-12-27-10-2023">
+<h2>Versione 8.7.12 (27/10/2023)<a class="headerlink" href="#versione-8-7-12-27-10-2023" title="Link to this heading">¶</a></h2>
+<section id="id118">
+<h3>Fix<a class="headerlink" href="#id118" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorato il dimensionamento dell’icona del menù su dispositivi mobile</p></li>
+<li><p>Sistemata dimensione logo e bottone di ricerca su dispositivi mobile</p></li>
+<li><p>Migliorato il comportamento del menu laterale dei contenuti quando si aggiungono file nelle cartelle al loro interno</p></li>
+<li><p>Sistemata sovrapposizione della finestra di selezione blocchi con l’header del sito per alcune dimensioni dello schermo</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-7-10-19-10-2023">
+<h2>Versione 8.7.10 (19/10/2023)<a class="headerlink" href="#versione-8-7-10-19-10-2023" title="Link to this heading">¶</a></h2>
+<section id="id119">
+<h3>Fix<a class="headerlink" href="#id119" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemata validazione del campo Timeline tempi e scadenze</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-7-9-18-10-2023">
+<h2>Versione 8.7.9 (18/10/2023)<a class="headerlink" href="#versione-8-7-9-18-10-2023" title="Link to this heading">¶</a></h2>
+<section id="id120">
+<h3>Migliorie<a class="headerlink" href="#id120" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Migliorato il comportamento per la selezione/deselezione degli elementi multipli nel menù laterale a scomparsa</p></li>
+</ul>
+</section>
+<section id="id121">
+<h3>Fix<a class="headerlink" href="#id121" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Eliminata la sovrapposizione tra immagine e testo nel tipo documento Pagina quando l’immagine è verticale</p></li>
+<li><p>Cambiato il colore del bordo dell’icona Ricerca nell’header dei sottositi per garantire il contrasto per accessibilità</p></li>
+<li><p>Nascosta la fascia colorata del footer di un sottosito quando questo non è compilato</p></li>
+<li><p>Risolto un bug nel selettore dei link nel menù laterale a scomparsa, che permetteva di selezionare più elementi di quelli consentiti</p></li>
+<li><p>Alcune icone mancanti nel widget di selezione delle icone di fontawesome sono state rese nuovamente visibili</p></li>
+<li><p>Sistemate inconsistenze nella visualizzazione di alcuni tipi di elementi della lista degli allegati in Cartella Modulistica</p></li>
+<li><p>Visualizzazione sidebar in edit del blocco Numeri: sistemata la visualizzazione del testo di aiuto</p></li>
+<li><p>Sistemate le dimensioni dei risultati del blocco search con colonne laterali, rimosso overflow sopra ad altri elementi della pagina</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-7-8-12-10-2023">
+<h2>Versione 8.7.8 (12/10/2023)<a class="headerlink" href="#versione-8-7-8-12-10-2023" title="Link to this heading">¶</a></h2>
+<section id="id122">
+<h3>Fix<a class="headerlink" href="#id122" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel blocco Calendario, è stata sistemata la sovrapposizione dei pallini di navigazione con il pulsante per il link agli approfondimenti</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-7-7-12-10-2023">
+<h2>Versione 8.7.7 (12/10/2023)<a class="headerlink" href="#versione-8-7-7-12-10-2023" title="Link to this heading">¶</a></h2>
+<section id="id123">
+<h3>Migliorie<a class="headerlink" href="#id123" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Aggiornata nuova icona di Twitter</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-7-6-06-10-2023">
+<h2>Versione 8.7.6 (06/10/2023)<a class="headerlink" href="#versione-8-7-6-06-10-2023" title="Link to this heading">¶</a></h2>
+<section id="id124">
+<h3>Fix<a class="headerlink" href="#id124" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Uniformato e impostato a sinistra l’allineamento del testo nel blocco Elenco nella variazione Quadratoni con immagine</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-7-3-26-09-2023">
+<h2>Versione 8.7.3 (26/09/2023)<a class="headerlink" href="#versione-8-7-3-26-09-2023" title="Link to this heading">¶</a></h2>
+<section id="id125">
+<h3>Fix<a class="headerlink" href="#id125" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sistemato margine del blocco Alert quando è allineato a sinistra.</p></li>
+<li><p>Sistemato il template degli Rss Card con immagine per mostrare la data corretta di pubblicazione della notizia</p></li>
+</ul>
+</section>
+</section>
+<section id="versione-8-7-0-20-09-2023">
+<h2>Versione 8.7.0 (20/09/2023)<a class="headerlink" href="#versione-8-7-0-20-09-2023" title="Link to this heading">¶</a></h2>
+<section id="id126">
+<h3>Migliorie<a class="headerlink" href="#id126" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Nel template Blocco link solo immagini con link esterni, l’icona per i link esterni (richiesta dall’accessibilità) ora è disattivabile attraverso opzione del template</p></li>
+<li><p>Migliorata l’accessibilità e il supporto Screen Reader per il menu a tendina «Ordina Per» nella pagina di ricerca</p></li>
+<li><p>Migliorata la navigazione da tastiera quando si è in modifica dei blocchi Alert, Card Semplice, Card con Immagine, Accordion</p></li>
+</ul>
+</section>
+<section id="id127">
+<h3>Fix<a class="headerlink" href="#id127" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>sistemati gli oggetti link che puntano a file nella Cartella Modulistica</p></li>
+<li><p>Sistemato l’allineamento degli elementi nel blocco Contatti: se ci sono meno di tre elementi l’allineamento è centrato, se ce ne sono più di 3 l’allineamento è a sinistra.</p></li>
+<li><p>Migliorata accessibilità del calendario nel blocco ricerca Eventi e ricerca Bandi</p></li>
+<li><p>Fissato il layout del template Blocco link solo immagini con link esterni, posizionata l’icona di accessibilità per link esterni in overlay (se presente)</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Documentazione io-Comune</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Vai" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigazione</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tema io-Comune</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../io-prenoto/index.html">io-Prenoto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../io-cittadino/index.html">io-Cittadino</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="capitolo precedente">Note di rilascio</a></li>
+      <li>Next: <a href="../io-prenoto/index.html" title="capitolo successivo">io-Prenoto</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, RedTurtle.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/io-comune/index.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
