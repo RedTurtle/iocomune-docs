@@ -20,7 +20,10 @@ extensions = ["myst_parser"]
 templates_path = ["_templates"]
 exclude_patterns = []
 
+# Locales section
 language = "it"
+locale_dirs = ["locales"]  # Dir dove si trovano i file .mo e .po
+gettext_compact = False  # Imposta su False per ottenere file .pot completi
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -39,7 +42,7 @@ html_theme_options = dict(
     logo_height=59,
     logo="img/logo.png",
     logo_width=45,
-    github_url="https://github.com/RedTurtle/iocomune-docs/blob/main/docs/",
+    github_url="https://github.com/RedTurtle/iocomune-docs/blob/main/docs/source/",
     header_links="Top 1|http://example.com/one, Top 2|http://example.com/two",
     # footer_links=",".join(
     #     [

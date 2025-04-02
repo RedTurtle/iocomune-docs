@@ -146,11 +146,11 @@
 	 
     <div id="main-content" class="container-fluid">
 		<div id="utility-bar" class="sticky-top">
-			<header class="row align-items-baseline">
-				<div class="col">
+			<header class="row align-items-center justify-content-between py-3">
+				<div class="col-sm-6 col-lg-6">
 					{% include "searchbox.html" %}
 				</div>
-				<div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+				<div class="col-sm-6 col-lg-auto">
 					<noscript>
 						<p>{{ _('JavaScript is required to toggle light/dark mode.') }}.</p>
 					</noscript>
@@ -169,14 +169,14 @@
 		</div>
         <div class="row">
             <aside class="col-12 col-lg-3 sidebar-container">
-                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+                <div id="collapseSidebar" class="collapse d-lg-block pt-4">
                     {%- include "globaltoc.html" %}
                     <div class="d-lg-none border-bottom">
                         {# Bottom border for mobile (above content, needs to be expanded.) #}
                     </div>
                 </div>
             </aside>
-            <div class="col-12 col-lg-9 pt-5">
+            <div class="col-12 col-lg-9 pt-5 ">
                 <header class="row align-items-baseline">
                     <div class="col">
                         {% include "breadcrumbs.html" %}
@@ -197,7 +197,7 @@
                         </div>
                     </nav>
                     {% endif %} -->
-					<div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+					<div class="col-12 col-lg-9 px-5 order-last order-lg-first rst-content">
 						<main role="main" id="main">
 							{%- block body %}
 							{% endblock -%}
@@ -210,7 +210,11 @@
     </div>
 	<a href="#" aria-hidden="true" data-attribute="return-to-top" id="return-to-top" class="return-to-top"  onclick="topFunction()">
 		<i class="it-collapse"></i>
-	  </a>
+	</a>
+	<!-- <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+		<span class="navbar-toggler-icon"></span>
+		<span class="sr-only">{{ _('menu') }}</span>
+	</button> -->
     <footer class="container-fluid bg-primary text-light">
         <div class="container">
             {% include "footer.html" %}

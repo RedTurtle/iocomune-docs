@@ -1,3 +1,10 @@
+@font-face {
+  font-family: italia-icon-font;
+  src: url(../fonts/italia-icon-font.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --blue: #0073e6;
   --indigo: #554dff;
@@ -7,15 +14,15 @@
   --orange: #f90;
   --yellow: #ffda73;
   --green: #00cc85;
-  --teal: #0bd9d2;
-  --cyan: #00fff7;
+  --teal: #bffffd;
+  --cyan: #f6fbff;
   --white: #fff;
   --gray: #656566;
   --gray-dark: #323333;
   --italia: #06c;
   --gray-secondary: #5c6f82;
   --gray-tertiary: #5a768a;
-  --gray-quaternary: #fcfdff;
+  --text-dark: #fcfdff;
   --primary: #0073e6;
   --secondary: #5c6f82;
   --success: #00cc85;
@@ -25,6 +32,7 @@
   --light: #e9e6f2;
   --dark: #17324d;
   --text-primary: #596771;
+  --text-secondary: #004e95;
   --100: #e3e4e6;
   --200: #cacacc;
   --300: #b1b1b3;
