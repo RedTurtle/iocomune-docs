@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, RedTurtle
+# This file is distributed under the same license as the Documentazione
+# io-Comune package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentazione io-Comune \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-02 16:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/io-cittadino/index.md:1
+msgid "io-Cittadino"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:41
+msgid "Versione 2.5.2 (06/03/2025)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:43 ../../source/io-cittadino/index.md:52
+#: ../../source/io-cittadino/index.md:74 ../../source/io-cittadino/index.md:87
+#: ../../source/io-cittadino/index.md:93 ../../source/io-cittadino/index.md:102
+#: ../../source/io-cittadino/index.md:113
+#: ../../source/io-cittadino/index.md:120
+msgid "Migliorie"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:45
+msgid ""
+"Se sono abilittati sia iocittadino che ioprenoto, le prenotazioni che i "
+"cittadini fanno da autenticati adottano il principio di onceonly per "
+"quello che riguarda l'email (attributo email) e il telefono (attributo "
+"phone). Quindi se, ad esempio, il cittadino da autenticato fa una "
+"prenotazione e imposta una email differente, quella email verrà "
+"riproposta per le prenotazioni o i servizi richiesti successivamente."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:50
+msgid "Versione 2.5.1 (25/02/2025)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:54
+msgid ""
+"Nella compilazione di una pratica, è stata spostata la popup di notifica "
+"salvataggio in bozza nell'angolo destro in alto alla pagina, per "
+"permettere all'utente di avere un feedback sul salvataggio, è possibile "
+"inoltre chiudere la notifica manualmente o attendere che scompaia in "
+"automatico dopo qualche secondo."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:56 ../../source/io-cittadino/index.md:68
+#: ../../source/io-cittadino/index.md:81 ../../source/io-cittadino/index.md:126
+msgid "Fix"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:58
+msgid ""
+"Sistemato active sullo step di una pratica che quando veniva salvata in "
+"bozza tornava all'inizio degli step invece di rimanere su quello "
+"corrente."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:60
+msgid "Versione 2.5.0 (24/01/2025)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:62
+msgid "Novità"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:64
+msgid ""
+"Aggiunto visualizzazione del protocollo di chiusura di una pratica quando"
+" si usa l'integrazione con il protocollo"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:66
+msgid "Versione 2.4.6 (23/01/2025)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:70
+msgid ""
+"Migliorata la visualizzazione delle descrizione dei campi di input nei "
+"form delle pratiche."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:72
+msgid "Versione 2.4.5 (18/12/2024)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:76
+msgid "Migliorata visualizzazione delle tab della pratica in versione mobile"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:77
+msgid ""
+"Aggiunto nuovo campo testuale per la gestione del piè di pagina nel PDF "
+"generato dalla pratica (rif. [Manuale io-"
+"Cittadino](https://docs.google.com/document/d/1WdaihkxjGKni19x4wCN6gqT0NrY8h9OAE8H5AgffY9M/edit?tab=t.0#heading=h.d0i528lauo0s))"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:78
+msgid ""
+"Migliorata la gestione di alcuni campi specifici nella generazione del "
+"PDF (ad esempio le parti testuali di disclaimer, i campi radiobutton o "
+"check, ed i nomi dei file)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:79
+msgid ""
+"Gestita la sovrascrittura in onceonly di alcuni dei dati utente che "
+"arrivano da SPID/CIE"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:83
+msgid ""
+"Fissato il backend (versione 1.1.4) per la gestione del campo checkbox "
+"\"Altro\""
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:85
+msgid "Versione 2.4.3 (25/11/2024)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:89
+msgid "Modificata la dicitura 'Finalizza la pratica' in 'Completa la pratica'"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:91
+msgid "Versione 2.4.0 (04/11/2024)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:95
+msgid "Revisione dei messaggi inviati al cambio di stato"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:96
+msgid ""
+"Aggiunto campo nel modello pratica per gestire la \"firma\" per le email "
+"(può essere aggiunto ad esempio un ufficio di contatto o un generico "
+"messaggio \"email automatica non rispondere\")"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:98
+msgid ""
+"Restyling del Report PDF della pratica, riportato uffico nel footer, data"
+" e numero della pratica"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:100
+msgid "Versione 2.3.3 (29/08/2024)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:104
+msgid ""
+"Nei modelli pratica ora è possibile inserire il numero di giorni per i "
+"prossimi passi, al cittadino vengono proposte nel riepilogo le date "
+"esatte dei prossimi passi. Richiede intervento redazionale nei modelli "
+"pratica per sistemare le informazioni inserite."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:106
+msgid ""
+"Nella pagina di riepilogo ora sono stati aggiunti anche i pulsanti "
+"\"Indietro\" e \"Salva bozza\"."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:107
+msgid ""
+"Il form di feedback ora ha come titolo \"Quanto è stato facile usare "
+"questo servizio?\" solo dopo che il cittadino ha sottomesso la pratica."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:108
+msgid ""
+"Nei modelli pratica è possibile definire un operatore di default tra le "
+"persone nel gruppo \"operatori pratiche\", all'operatore verranno "
+"assegnate automaticamente le pratiche del modello."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:111
+msgid "Versione 2.3.2 (28/05/2024)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:115
+msgid "Migliorata la tipografia del pdf generato per le pratiche."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:116
+msgid ""
+"Aggiunti dati sulla protocollazione quando il pacchetto di integrazione "
+"protocolli è attivo."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:118
+msgid "Versione 2.3.1 (19/12/2023)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:122
+msgid ""
+"Disabilitato il tasto ESC e il click fuori dalla popup della form di "
+"configurazione Modello Pratica per evitare di chiudere la modale perdendo"
+" le modifiche fatte, inoltre è stato aggiunto un avviso sulla X della "
+"modale."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:124
+msgid "Versione 2.2.1 (08/11/2023)"
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:128
+msgid ""
+"Nascosto il campo 'Modello' nella creazione di un nuovo 'Modello "
+"pratica'. Il campo sarà visibile solo quando il modello pratica sarà "
+"salvato."
+msgstr ""
+
+#: ../../source/io-cittadino/index.md:130
+msgid "Versione 2.2.0 (15/09/2023)"
+msgstr ""
+
