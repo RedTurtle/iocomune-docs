@@ -1,0 +1,1949 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, RedTurtle
+# This file is distributed under the same license as the Documentazione
+# io-Comune package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentazione io-Comune \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-02 16:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/io-comune/index.md:1
+msgid "Tema io-Comune"
+msgstr ""
+
+#: ../../source/io-comune/index.md:41
+msgid "Versione 11.29.0 (07/03/2025)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:43 ../../source/io-comune/index.md:59
+#: ../../source/io-comune/index.md:76 ../../source/io-comune/index.md:92
+#: ../../source/io-comune/index.md:126 ../../source/io-comune/index.md:145
+#: ../../source/io-comune/index.md:157 ../../source/io-comune/index.md:170
+#: ../../source/io-comune/index.md:188 ../../source/io-comune/index.md:198
+#: ../../source/io-comune/index.md:209 ../../source/io-comune/index.md:219
+#: ../../source/io-comune/index.md:225 ../../source/io-comune/index.md:240
+#: ../../source/io-comune/index.md:288 ../../source/io-comune/index.md:302
+#: ../../source/io-comune/index.md:308 ../../source/io-comune/index.md:324
+#: ../../source/io-comune/index.md:330 ../../source/io-comune/index.md:373
+#: ../../source/io-comune/index.md:379 ../../source/io-comune/index.md:396
+#: ../../source/io-comune/index.md:402 ../../source/io-comune/index.md:416
+#: ../../source/io-comune/index.md:449 ../../source/io-comune/index.md:467
+#: ../../source/io-comune/index.md:487 ../../source/io-comune/index.md:506
+#: ../../source/io-comune/index.md:535 ../../source/io-comune/index.md:541
+#: ../../source/io-comune/index.md:577 ../../source/io-comune/index.md:584
+#: ../../source/io-comune/index.md:624 ../../source/io-comune/index.md:635
+#: ../../source/io-comune/index.md:717 ../../source/io-comune/index.md:736
+#: ../../source/io-comune/index.md:772 ../../source/io-comune/index.md:805
+#: ../../source/io-comune/index.md:828 ../../source/io-comune/index.md:847
+msgid "Migliorie"
+msgstr ""
+
+#: ../../source/io-comune/index.md:45
+msgid ""
+"Nel CT Documento ora è possibile gestire anche il CT File tramite "
+"taglia/incolla, laddove serva spostare dei File dentro uno specifico "
+"documento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:46
+msgid ""
+"Correzione del testo visualizzato sul pulsante \"Cancella tutti i "
+"commenti\" per la Customer Satisfaction, migliorando la leggibilità e "
+"conformità."
+msgstr ""
+
+#: ../../source/io-comune/index.md:47
+msgid ""
+"Migliorata l'accessibilità per il widget dei campi di tipo Slate che "
+"salvano i dati in formato HTML."
+msgstr ""
+
+#: ../../source/io-comune/index.md:48
+msgid "Migliorata l'accessibilità per gli elementi di tipo blockquote."
+msgstr ""
+
+#: ../../source/io-comune/index.md:49
+msgid ""
+"Migliorata la lettura delle timeline di date nel dettaglio di Bando e "
+"Evento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:51 ../../source/io-comune/index.md:69
+#: ../../source/io-comune/index.md:80 ../../source/io-comune/index.md:100
+#: ../../source/io-comune/index.md:114 ../../source/io-comune/index.md:120
+#: ../../source/io-comune/index.md:136 ../../source/io-comune/index.md:151
+#: ../../source/io-comune/index.md:174 ../../source/io-comune/index.md:182
+#: ../../source/io-comune/index.md:192 ../../source/io-comune/index.md:202
+#: ../../source/io-comune/index.md:213 ../../source/io-comune/index.md:234
+#: ../../source/io-comune/index.md:251 ../../source/io-comune/index.md:258
+#: ../../source/io-comune/index.md:264 ../../source/io-comune/index.md:270
+#: ../../source/io-comune/index.md:276 ../../source/io-comune/index.md:282
+#: ../../source/io-comune/index.md:298 ../../source/io-comune/index.md:338
+#: ../../source/io-comune/index.md:345 ../../source/io-comune/index.md:351
+#: ../../source/io-comune/index.md:361 ../../source/io-comune/index.md:367
+#: ../../source/io-comune/index.md:390 ../../source/io-comune/index.md:410
+#: ../../source/io-comune/index.md:430 ../../source/io-comune/index.md:443
+#: ../../source/io-comune/index.md:457 ../../source/io-comune/index.md:476
+#: ../../source/io-comune/index.md:491 ../../source/io-comune/index.md:499
+#: ../../source/io-comune/index.md:516 ../../source/io-comune/index.md:545
+#: ../../source/io-comune/index.md:553 ../../source/io-comune/index.md:571
+#: ../../source/io-comune/index.md:588 ../../source/io-comune/index.md:604
+#: ../../source/io-comune/index.md:617 ../../source/io-comune/index.md:628
+#: ../../source/io-comune/index.md:640 ../../source/io-comune/index.md:649
+#: ../../source/io-comune/index.md:655 ../../source/io-comune/index.md:661
+#: ../../source/io-comune/index.md:671 ../../source/io-comune/index.md:677
+#: ../../source/io-comune/index.md:683 ../../source/io-comune/index.md:689
+#: ../../source/io-comune/index.md:699 ../../source/io-comune/index.md:709
+#: ../../source/io-comune/index.md:721 ../../source/io-comune/index.md:728
+#: ../../source/io-comune/index.md:740 ../../source/io-comune/index.md:751
+#: ../../source/io-comune/index.md:759 ../../source/io-comune/index.md:784
+#: ../../source/io-comune/index.md:790 ../../source/io-comune/index.md:799
+#: ../../source/io-comune/index.md:809 ../../source/io-comune/index.md:822
+#: ../../source/io-comune/index.md:834 ../../source/io-comune/index.md:840
+#: ../../source/io-comune/index.md:853
+msgid "Fix"
+msgstr ""
+
+#: ../../source/io-comune/index.md:53
+msgid ""
+"Sistemata la visualizzazione su mobile dei blocchi elenco inseriti "
+"all'interno dei blocchi griglia."
+msgstr ""
+
+#: ../../source/io-comune/index.md:54
+msgid "Il titolo della homepage del sito è ora accessibile."
+msgstr ""
+
+#: ../../source/io-comune/index.md:55
+msgid "Risolto un problema con i link all'interno dei blocchi Accordion."
+msgstr ""
+
+#: ../../source/io-comune/index.md:57
+msgid "Versione 11.28.0 (04/03/2025)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:61
+msgid "Tutti i bottoni della sezione \"Accedi al servizio\" hanno lo stesso font."
+msgstr ""
+
+#: ../../source/io-comune/index.md:62
+msgid ""
+"Nel blocco 'Cerca' ora viene fatto lo scroll automatico nel punto dove "
+"iniziano i risultati di ricerca quando vengono modificati i filtri."
+msgstr ""
+
+#: ../../source/io-comune/index.md:64 ../../source/io-comune/index.md:132
+#: ../../source/io-comune/index.md:164 ../../source/io-comune/index.md:230
+#: ../../source/io-comune/index.md:246 ../../source/io-comune/index.md:294
+#: ../../source/io-comune/index.md:312 ../../source/io-comune/index.md:318
+#: ../../source/io-comune/index.md:334 ../../source/io-comune/index.md:357
+#: ../../source/io-comune/index.md:386 ../../source/io-comune/index.md:406
+#: ../../source/io-comune/index.md:424 ../../source/io-comune/index.md:453
+#: ../../source/io-comune/index.md:471 ../../source/io-comune/index.md:482
+#: ../../source/io-comune/index.md:510 ../../source/io-comune/index.md:566
+#: ../../source/io-comune/index.md:612 ../../source/io-comune/index.md:667
+#: ../../source/io-comune/index.md:695 ../../source/io-comune/index.md:705
+#: ../../source/io-comune/index.md:746 ../../source/io-comune/index.md:766
+#: ../../source/io-comune/index.md:778
+msgid "Novità"
+msgstr ""
+
+#: ../../source/io-comune/index.md:66
+msgid ""
+"Nel campo \"Assessori di riferimento\" nel CT Unità Organizzativa è ora "
+"possibile collegare due CT Persona."
+msgstr ""
+
+#: ../../source/io-comune/index.md:67
+msgid ""
+"Per caricare documenti per \"Dichiarazioni di insussistenza e "
+"incompatibilità\" e per \"Emolumenti a carico della finanza pubblica\" è "
+"ora possibile caricare anche documenti multipli dalle cartelle contenute "
+"nel CT Persona, non solo dai campi specifici."
+msgstr ""
+
+#: ../../source/io-comune/index.md:71
+msgid ""
+"I campi del CT Servizio - sezione Accedi al Servizio funzionano "
+"correttamente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:72
+msgid "Sistemato lo stile del focus nelle select del blocco 'Cerca'."
+msgstr ""
+
+#: ../../source/io-comune/index.md:74
+msgid "Versione 11.27.0 (26/02/2025)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:78
+msgid "Migliorata l'accessibilità del blocco Accordion."
+msgstr ""
+
+#: ../../source/io-comune/index.md:82
+msgid ""
+"Se su un evento si imposta una ricorrenza mensile per eventi che "
+"avvengono in uno specifico giorno della settimana, la ricorrenza viene "
+"calcolata correttamente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:83
+msgid ""
+"Aggiunto correttamente il data-element ai link della card con testo "
+"animato del blocco Elenco."
+msgstr ""
+
+#: ../../source/io-comune/index.md:84
+msgid ""
+"Aggiunta una nuova condizione per la corretta compilazione dell’attributo"
+" **alt** e **title** nelle immagini dei blocchi listing. Ora questi "
+"attributi utilizzano correttamente i testi delle didascalie dell'immagine"
+" di anteprima o testata se impostati. L'attributo **title** viene "
+"valorizzato solo se esiste una didascalia associata all’immagine."
+msgstr ""
+
+#: ../../source/io-comune/index.md:85
+msgid ""
+"Rimosso l’attributo **showTitleAttr** dal componente _ListingImage_ "
+"utilizzato nei template del blocco listing: card con immagine, persona, "
+"blocco link completo, contenuto in evidenza, gallery a griglia, e in "
+"evidenza. Ora gli attributi **title** e **alt** vengono calcolati e "
+"impostati direttamente dal componente _ListingImage_."
+msgstr ""
+
+#: ../../source/io-comune/index.md:86
+msgid "Condizione per la Label per i select ripristinata."
+msgstr ""
+
+#: ../../source/io-comune/index.md:87
+msgid ""
+"Sistemata la visualizzazione del sottotitolo nel content-type Luogo (in "
+"alcuni casi non si vedeva)."
+msgstr ""
+
+#: ../../source/io-comune/index.md:88
+msgid ""
+"Rimosse le scrollbar dal widget 'Select' dei filtri di ricerca del blocco"
+" 'Cerca'."
+msgstr ""
+
+#: ../../source/io-comune/index.md:90
+msgid "Versione 11.26.5 (06/02/2025)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:94
+msgid ""
+"La sezione contatti del CT Evento è stata riorganizzata per una maggiore "
+"chiarezza e coerenza."
+msgstr ""
+
+#: ../../source/io-comune/index.md:95
+msgid ""
+"Nei blocchi elenco, gli stili dei testi nelle card che richiamano un CT "
+"persona sono conformi alle card che rappresentano gli altri CT."
+msgstr ""
+
+#: ../../source/io-comune/index.md:96
+msgid ""
+"Impostando degli heading all'interno delle sezioni di testo nei vari CT, "
+"gli stili sono ora coerenti con l'ordine corretto dei titoli utilizzati."
+msgstr ""
+
+#: ../../source/io-comune/index.md:97
+msgid "Aggiornate le traduzioni italiane."
+msgstr ""
+
+#: ../../source/io-comune/index.md:98
+msgid ""
+"Nella sezione Documenti della vista dei tipi di contenuto Documento "
+"vengono ora mostrati sia i Moduli che i Collegamenti."
+msgstr ""
+
+#: ../../source/io-comune/index.md:102
+msgid ""
+"I bottoni del menu nel pannello di controllo dei cookies visualizzano "
+"correttamente le icone."
+msgstr ""
+
+#: ../../source/io-comune/index.md:103
+msgid "Gli argomenti nelle card con immagine sono allineati correttamente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:104 ../../source/io-comune/index.md:106
+msgid ""
+"Sistemata l'opzione \"Mostra i PDF in anteprima\" dell template "
+"\"Allegati\" del blocco elenco, perchè non aveva alcun effetto."
+msgstr ""
+
+#: ../../source/io-comune/index.md:105 ../../source/io-comune/index.md:107
+msgid ""
+"Sistemata la visualizzazione del blocco griglia su mobile: disposti "
+"verticalmente ogni blocco della griglia"
+msgstr ""
+
+#: ../../source/io-comune/index.md:108
+msgid ""
+"Sistemata la visualizzazione delle card con immagine in cui il contenuto "
+"rappresentato non ha un'immagine da mostrare."
+msgstr ""
+
+#: ../../source/io-comune/index.md:109
+msgid ""
+"Migliorata l'accessibilità in modifica dei blocchi Contatti, Icone, "
+"Numeri."
+msgstr ""
+
+#: ../../source/io-comune/index.md:110
+msgid "Sistemati alcuni problemi di visualizzazione delle card con avatar."
+msgstr ""
+
+#: ../../source/io-comune/index.md:112
+msgid "Versione 11.26.3 (15/01/2025)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:116
+msgid ""
+"E' possibile caricare moduli in maniera massiva nei documenti all'interno"
+" delle aree corrette dentro Documenti e Dati > Modulistica"
+msgstr ""
+
+#: ../../source/io-comune/index.md:118
+msgid "Versione 11.26.1 (27/12/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:122
+msgid ""
+"Risolto un problema riguardante la visualizzazione delle estensioni dei "
+"file quando si utilizza un link ad un documento nei blocchi di testo."
+msgstr ""
+
+#: ../../source/io-comune/index.md:124
+msgid "Versione 11.26.0 (20/12/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:128
+msgid ""
+"Se vengono aggiunte o rimosse date dalla ricorrenza di un CT evento, nel "
+"sottotitolo viene aggiunta l'indicazione di controllare le eccezioni "
+"nella sezione apposita."
+msgstr ""
+
+#: ../../source/io-comune/index.md:129
+msgid ""
+"Il sottotitolo del CT Evento mostra il range di date per tutti gli eventi"
+" con ricorrenza o con una data di fine diversa dalla data di inizio."
+msgstr ""
+
+#: ../../source/io-comune/index.md:130
+msgid "Sistemata l'accessibilità riguardante il focus lato operatore."
+msgstr ""
+
+#: ../../source/io-comune/index.md:134
+msgid ""
+"Nel blocco 'Cerca' è stata aggiunta l'opzione \"Usa l'ordinamento dei "
+"risultati di Plone\" nella sezione 'Controlli'."
+msgstr ""
+
+#: ../../source/io-comune/index.md:138
+msgid ""
+"Il menu a tendina da cui è possibile filtrare i luoghi nel blocco Ricerca"
+" Eventi mostra tutti i luoghi collegati agli eventi presenti nel percorso"
+" selezionato dalla Sidebar, senza limitarne il numero."
+msgstr ""
+
+#: ../../source/io-comune/index.md:139
+msgid "Risolto un problema con il colore del testo del bottone nell'editor."
+msgstr ""
+
+#: ../../source/io-comune/index.md:140
+msgid ""
+"Rimossa l'opzione non selezionabile \"nessun valore\" dal widget "
+"ricorrenza."
+msgstr ""
+
+#: ../../source/io-comune/index.md:141
+msgid ""
+"La pagina non dà più errore quando si imposta una ricorrenza con "
+"impostazione \"Termina dopo tot. ricorrenze\"."
+msgstr ""
+
+#: ../../source/io-comune/index.md:143
+msgid "Versione 11.25.3 (12/12/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:147
+msgid "Aggiornate diverse traduzioni italiane."
+msgstr ""
+
+#: ../../source/io-comune/index.md:149
+msgid "Versione 11.25.1 (28/11/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:153
+msgid "Aggiustato il collegamento alla UO nella pagina Argomento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:155
+msgid "Versione 11.25.0 (26/11/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:159
+msgid ""
+"Rimossa dal CT Evento la data di scadenza del CT per evitare confusione "
+"con le date effettive dell'evento"
+msgstr ""
+
+#: ../../source/io-comune/index.md:160
+msgid ""
+"Durante la ricerca nel sito dalla popup che compare cliccando sul bottone"
+" 'Cerca' nella testa del sito, viene mostrato un loader in overlay "
+"durante il caricamento della pagina dei risultati perchè questo potrebbe "
+"richiedere un po' di tempo. Prima di questa modifica non era chiaro se la"
+" ricerca fosse iniziata."
+msgstr ""
+
+#: ../../source/io-comune/index.md:161
+msgid ""
+"Nel CT Evento per una rassegna, se gli eventi figli hanno una ricorrenza "
+"o un periodo di date impostato, il range di date verrà mostrato nella "
+"card all'interno dell'evento padre."
+msgstr ""
+
+#: ../../source/io-comune/index.md:162
+msgid ""
+"Se l'url di una immagine è rotto, viene mostrato un avviso al posto "
+"dell'immagine rotta."
+msgstr ""
+
+#: ../../source/io-comune/index.md:166
+msgid ""
+"E' ora possibile decidere se mostrare l'immagine di anteprima per tutte "
+"le card nel blocco di ricerca Evento e Unità Organizzativa."
+msgstr ""
+
+#: ../../source/io-comune/index.md:168
+msgid "Versione 11.24.5 (22/11/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:172
+msgid ""
+"Inserito messaggio di avviso quando si tenta di caricare un file dalla "
+"cartella Modulistica all'interno di un Servizio per segnalare limitazione"
+" sull'upload"
+msgstr ""
+
+#: ../../source/io-comune/index.md:176
+msgid ""
+"L'impostazione \"Solo cookie tecnici\" non causa problemi nell'apertura "
+"del cookie banner."
+msgstr ""
+
+#: ../../source/io-comune/index.md:177
+msgid ""
+"[WebKit, Safari, iOS] Risolto un problema di visualizzazione grafica di "
+"alcuni bottoni che contengono al loro interno un link ad un sito esterno."
+msgstr ""
+
+#: ../../source/io-comune/index.md:178
+msgid ""
+"Quando un evento ha impostata l'opzione \"Tutta la giornata\", le date "
+"sotto il titolo vengono visualizzate in maniera corretta."
+msgstr ""
+
+#: ../../source/io-comune/index.md:180
+msgid "Versione 11.24.4 (07/11/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:184
+msgid ""
+"Risolto un problema di visualizzazione grafica per il bottone di login "
+"all'area personale per alcune specifiche dimensioni di schermi"
+msgstr ""
+
+#: ../../source/io-comune/index.md:186
+msgid "Versione 11.24.3 (24/10/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:190
+msgid ""
+"Quando viene impostata una ricorrenza, nel tipo di contenuto Evento viene"
+" mostrata la data di fine della ricorrenza invece che del singolo evento"
+msgstr ""
+
+#: ../../source/io-comune/index.md:194
+msgid ""
+"Risolto problema con i video esterni che puntano a degli mp4: ora non "
+"vengono più erroneamente visti come link interni."
+msgstr ""
+
+#: ../../source/io-comune/index.md:196
+msgid "Versione 11.24.0 (03/10/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:200
+msgid "Cambiato il titolo della sezione \"fine incarico\" nel CT Persona."
+msgstr ""
+
+#: ../../source/io-comune/index.md:204
+msgid ""
+"Risolto un problema con il blocco Form che in alcuni casi poteva dare "
+"problemi di validazione dei campi di tipo 'testo statico'."
+msgstr ""
+
+#: ../../source/io-comune/index.md:205
+msgid ""
+"Sistemate diverse incogruenze e errori generati dal widget per la "
+"creazione delle ricorrenze nel CT Evento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:207
+msgid "Versione 11.23.2 (24/09/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:211
+msgid ""
+"Gli utenti SPID vengono ora direttamente rediretti al link finale quando "
+"viene utilizzato un CT di tipo Collegamento"
+msgstr ""
+
+#: ../../source/io-comune/index.md:215
+msgid ""
+"L'assegnazione dei ruoli nella vista gruppi funziona correttamente per "
+"tutti i gruppi di utenti."
+msgstr ""
+
+#: ../../source/io-comune/index.md:217
+msgid "Versione 11.23.1 (19/09/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:221
+msgid ""
+"Il colore del focus da tastiera sugli elementi della pagina è ora bianco "
+"e nero per garantire sempre un contrasto ottimale su tutti gli sfondi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:223
+msgid "Versione 11.23.0 (19/09/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:227
+msgid "Migliorato il layout della galleria immagini nei CT."
+msgstr ""
+
+#: ../../source/io-comune/index.md:228
+msgid ""
+"Nel blocco Cerca Evento, nel caso di un Evento Rassegna, tra i risultati "
+"vengono ora visualizzati solo gli appuntamenti della rassegna e non "
+"l'evento contenitore."
+msgstr ""
+
+#: ../../source/io-comune/index.md:232
+msgid ""
+"Aggiunto campo per l'inserimento del titolo e della descrizione nel "
+"blocco Accordion."
+msgstr ""
+
+#: ../../source/io-comune/index.md:236
+msgid ""
+"Rimosso il campo \"ID lighthouse\" dal blocco elenco con variazione Card "
+"con Testo Animato perchè entra in contrasto con asseveratore"
+msgstr ""
+
+#: ../../source/io-comune/index.md:238
+msgid "Versione 11.22.0 (05/09/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:242
+msgid ""
+"Modificata la lista dei Luoghi per filtrare la ricerca degli eventi. Si "
+"prendevano tutti i luoghi, ora solo quelli legati agli eventi per avere "
+"una lista più corta."
+msgstr ""
+
+#: ../../source/io-comune/index.md:243
+msgid ""
+"Migliorato l'ordinamento della ricerca nel blocco cerca: la ricerca "
+"iniziale rispetta l'eventuale selezione del redattore; nel momento in cui"
+" si cerca inserendo un testo allora si ordina per ranking."
+msgstr ""
+
+#: ../../source/io-comune/index.md:244
+msgid "Mostrato il numero di risultati della ricerca nel blocco cerca."
+msgstr ""
+
+#: ../../source/io-comune/index.md:248
+msgid ""
+"Il blocco Form ha nuove funzionalità come il limite di iscrizioni e la "
+"possibilità di impostare un campo come univoco."
+msgstr ""
+
+#: ../../source/io-comune/index.md:249
+msgid ""
+"Aggiunti al CT Persona i campi per la gestione della Trasparenza per "
+"allegare i file sugli emolumenti a carico della finanza pubblica e le "
+"dichiarazioni di insussistenza e incompatibilità."
+msgstr ""
+
+#: ../../source/io-comune/index.md:253
+msgid ""
+"Ripristinata l'informazione sull'ultimo aggiornamento nel CT Unità "
+"Organizzativa."
+msgstr ""
+
+#: ../../source/io-comune/index.md:254
+msgid ""
+"Risolto un problema con la spaziatura nel testo di presentazione dei "
+"risultati di ricerca nel blocco cerca."
+msgstr ""
+
+#: ../../source/io-comune/index.md:256
+msgid "Versione 11.21.0 (14/08/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:260
+msgid ""
+"Le date delle card nella Ricerca Eventi vengono mostrate correttamente "
+"come impostate nell'evento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:262
+msgid "Versione 11.20.2 (12/08/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:266
+msgid ""
+"Risolto un problema per cui veniva mostrato temporaneamente un messaggio "
+"di errore quando si visitava un indirizzo alternativo creato con lo "
+"strumento Gestione URL."
+msgstr ""
+
+#: ../../source/io-comune/index.md:268
+msgid "Versione 11.20.1 (09/08/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:272
+msgid ""
+"Il testo che descrive la ricorrenza mensile è stato corretto per coprire "
+"tutti i casi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:274
+msgid "Versione 11.18.2 (25/07/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:278
+msgid "Nel CT Persona, tutte le sezioni Incarico appaiono ora nel menu"
+msgstr ""
+
+#: ../../source/io-comune/index.md:280
+msgid "Versione 11.18.1 (25/07/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:284
+msgid ""
+"Migliorata la visualizzazione delle card risultato nella ricerca Eventi e"
+" Unità Organizzativa."
+msgstr ""
+
+#: ../../source/io-comune/index.md:286
+msgid "Versione 11.18.0 (19/07/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:290
+msgid ""
+"Aggiunta la paginazione per le card presenti sotto i campi \"Sede di\" e "
+"\"Servizi presenti nel luogo\", ora verranno mostrati solo 4 elementi "
+"alla volta."
+msgstr ""
+
+#: ../../source/io-comune/index.md:292
+msgid "Versione 11.17.0 (16/07/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:296
+msgid ""
+"Ora il titolo, sottotitolo, favicon, logo e logo del footer sono "
+"editabili dal pannello di controllo del Sito. Se non impostati, verranno "
+"usati quelli definiti dagli sviluppatori."
+msgstr ""
+
+#: ../../source/io-comune/index.md:300
+msgid "Ripristinato il funzionamento del filtro luogo nella ricerca eventi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:304
+msgid ""
+"Viene ora mostrato un errore parlante nel caso si tenti di caricare un "
+"file che superi le dimensioni massime consentite, di default 100mb, come "
+"già esplicitato sul manuale utente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:306
+msgid "Versione 11.16.0 (10/07/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:310
+msgid ""
+"Tutti i campi compilabili nel CT Incarico vengono ora visualizzati nella "
+"vista corrispondente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:314
+msgid ""
+"Aggiunti due campi nel blocco Form che permettono di configurare un testo"
+" per l'intestazione e uno a piè di pagina nella mail inviata."
+msgstr ""
+
+#: ../../source/io-comune/index.md:316
+msgid "Versione 11.15.0 (05/07/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:320
+msgid ""
+"Le informazioni sulla data di inizio e fine incarico sul CT persona "
+"vengono ora mostrate subito dopo l'incarico."
+msgstr ""
+
+#: ../../source/io-comune/index.md:322
+msgid "Versione 11.14.0 (21/06/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:326
+msgid ""
+"Il pulsante di aggiunta dei blocchi è stato spostato nella parte bassa "
+"del blocco (non si trova più alla sua sinistra), per migliorare "
+"l'usabilità della gestione dei blocchi anche su mobile/tablet."
+msgstr ""
+
+#: ../../source/io-comune/index.md:328
+msgid "Versione 11.13.0 (12/06/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:332
+msgid ""
+"Nel CT Persona viene visualizzato anche il testo del campo \"Importi di "
+"viaggio e/o servizi\" impostato nel CT Incarico collegato e, se presente "
+"più di un Incarico collegato, vengono mostrati i link a ciascun Incarico "
+"nella sezione \"Altri incarichi\"."
+msgstr ""
+
+#: ../../source/io-comune/index.md:336
+msgid "Aggiunte informazioni sulle rassegne di eventi nei blocchi elenco."
+msgstr ""
+
+#: ../../source/io-comune/index.md:340
+msgid ""
+"Il bottone \"callout con sfondo\" della barra degli strumenti per il "
+"testo è nuovamente visibile."
+msgstr ""
+
+#: ../../source/io-comune/index.md:341
+msgid "Il blocco Ricerca Eventi permette di eliminare il filtro date."
+msgstr ""
+
+#: ../../source/io-comune/index.md:343
+msgid "Versione 11.12.9 (06/06/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:347
+msgid "La pagina di login e di reset della password usano il font corretto."
+msgstr ""
+
+#: ../../source/io-comune/index.md:349
+msgid "Versione 11.12.6 (30/05/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:353
+msgid ""
+"Il layout delle card con immagini rimane corretto anche selezionando "
+"l'opzione \"Non alterare le dimensioni naturali dell'immagine\"."
+msgstr ""
+
+#: ../../source/io-comune/index.md:355
+msgid "Versione 11.12.5 (30/05/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:359
+msgid ""
+"Per ragioni di conformità alle linee guida Agid, inibito l'inserimento di"
+" CT File nella cartella modulistica."
+msgstr ""
+
+#: ../../source/io-comune/index.md:363
+msgid ""
+"Sistemato il layout \"Card con immagine\" dei blocchi elenco quando gli "
+"elementi non hanno immagine."
+msgstr ""
+
+#: ../../source/io-comune/index.md:365
+msgid "Versione 11.12.4 (30/05/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:369
+msgid "Aggiustato il layout dei campi nel widget delle ricorrenze."
+msgstr ""
+
+#: ../../source/io-comune/index.md:371
+msgid "Versione 11.12.1 (21/05/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:375
+msgid ""
+"Migliorate le performance di navigazione per alcuni link agli argomenti "
+"nella testata delle pagine."
+msgstr ""
+
+#: ../../source/io-comune/index.md:377
+msgid "Versione 11.12.0 (21/05/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:381
+msgid ""
+"Se una Unità Organizzativa è collegata a più di 4 servizi, le card dei "
+"servizi collegati verranno divise in diverse pagine navigabili da uno "
+"strumento di paginazione per rendere lo scorrimento della pagina più "
+"semplice."
+msgstr ""
+
+#: ../../source/io-comune/index.md:382
+msgid "Cambiato il layout delle immagini all'interno del blocco Griglia."
+msgstr ""
+
+#: ../../source/io-comune/index.md:383
+msgid ""
+"Migliorata la visualizzazione delle parole evidenziate nella pagina di "
+"Ricerca."
+msgstr ""
+
+#: ../../source/io-comune/index.md:384
+msgid ""
+"Rinominato il contenitore \"Altri allegati\" dentro i contenuti di tipo "
+"Persona in \"Altri documenti\"."
+msgstr ""
+
+#: ../../source/io-comune/index.md:388
+msgid ""
+"Le immagini delle Card con Immagine del blocco Elenco sono ora "
+"cliccabili. Cliccandole si apre il contenuto della Card."
+msgstr ""
+
+#: ../../source/io-comune/index.md:392
+msgid "Corretto il testo per la ricorrenza eventi nel CT Eventi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:394
+msgid "Versione 11.11.1 (02/05/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:398
+msgid ""
+"Il campo tipologia è ora mostrato all'interno della pagina del CT Evento,"
+" se compilato."
+msgstr ""
+
+#: ../../source/io-comune/index.md:400
+msgid "Versione 11.11.0 (29/04/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:404
+msgid ""
+"Aggiunte le date degli eventi figli nel caso questi non presentino "
+"immagini nella card."
+msgstr ""
+
+#: ../../source/io-comune/index.md:408
+msgid ""
+"Modificato vista del tipo di contenuto Persona per mostrare anche la "
+"cartella interna \"Altri allegati\"."
+msgstr ""
+
+#: ../../source/io-comune/index.md:412
+msgid ""
+"Aggiustato problema per il blocco elenco, variazione card con Immagine, "
+"per gli eventi con ricorrenza."
+msgstr ""
+
+#: ../../source/io-comune/index.md:414
+msgid "Versione 11.10.0 (17/04/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:418
+msgid ""
+"Nel blocco Argomenti in Evidenza, è stata rimossa l'obbligatorietà di "
+"aggiungere una card argomento, ora si possono inserire anche solo le "
+"etichette."
+msgstr ""
+
+#: ../../source/io-comune/index.md:419
+msgid ""
+"Aggiunta la possibilità di inserire testo nel filtro luogo nel blocco "
+"Ricerca Eventi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:420
+msgid ""
+"Le opzioni del menu a tendina per il filtro luogo nel blocco Ricerca "
+"Eventi sono ordinate alfabeticamente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:421
+msgid ""
+"Il focus quando un elemento (link o pulsante) è cliccato con il mouse non"
+" ha più il bordo giallo/arancione."
+msgstr ""
+
+#: ../../source/io-comune/index.md:422
+msgid "Migliorati gli stili per la stampa del CT pagina."
+msgstr ""
+
+#: ../../source/io-comune/index.md:426
+msgid ""
+"Ora i link in testata nell'header slim sono configurabili da pannello di "
+"controllo."
+msgstr ""
+
+#: ../../source/io-comune/index.md:427
+msgid ""
+"Nel template Slider del blocco elenco, ora è possibile scegliere "
+"l'aspetto degli elementi dello slider (default: slide semplice con "
+"immagine e titolo cliccabile, Card semplice, Card con immagine)."
+msgstr ""
+
+#: ../../source/io-comune/index.md:428
+msgid ""
+"Nel blocco Argomenti in Evidenza sono state aggiunte due nuove proprietà,"
+" una permette di allineare gli \"Altri argomenti\" al centro e la seconda"
+" serve a nascondere o meno il bottone \"Vedi tutti\" che punta alla "
+"pagina argomenti."
+msgstr ""
+
+#: ../../source/io-comune/index.md:432
+msgid ""
+"Nel blocco Argomenti in Evidenza se non ci sono card ma etichette "
+"argomento, il blocco non renderizza più lo sfondo per un maggiore "
+"contrasto con le etichette, di conseguenza il titolo del blocco rimane "
+"nero e non bianco."
+msgstr ""
+
+#: ../../source/io-comune/index.md:433
+msgid ""
+"Aggiunto il titolo per la sezione \"Organizzatore esterno\" quando il "
+"campo è compilato nel tipo di contenuto Evento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:434
+msgid ""
+"I chip che non hanno collegamenti non si comportano più come link al "
+"posizionamento del mouse."
+msgstr ""
+
+#: ../../source/io-comune/index.md:435
+msgid ""
+"Sistemato un problema nella vista del CT Evento, che mostrava tra le date"
+" aggiuntive della ricorrenza anche le date escluse."
+msgstr ""
+
+#: ../../source/io-comune/index.md:436
+msgid ""
+"Sistemato un problema per cui la visualizzazione della sitemap in "
+"presenza di un sito multilingua generava errore."
+msgstr ""
+
+#: ../../source/io-comune/index.md:437
+msgid "Migliorata l'accessibilità dei link nel footer."
+msgstr ""
+
+#: ../../source/io-comune/index.md:438
+msgid "Migliorata l'accessibilità del blocco elenco nella variazione Slider."
+msgstr ""
+
+#: ../../source/io-comune/index.md:439
+msgid "Migliorati gli stili del blocco accordion."
+msgstr ""
+
+#: ../../source/io-comune/index.md:441
+msgid "Versione 11.9.1 (03/04/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:445
+msgid ""
+"Risolto un problema dovuto all'assenza di una id specifico nelle "
+"traduzioni."
+msgstr ""
+
+#: ../../source/io-comune/index.md:447
+msgid "Versione 11.9.0 (03/04/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:451
+msgid "Effettuate diverse migliorie di accessibilità."
+msgstr ""
+
+#: ../../source/io-comune/index.md:455
+msgid ""
+"Aggiunta una nuova variazione del blocco elenco \"Allegati\" che permette"
+" di scaricare oggetti di tipo File o aprire l'anteprima di file PDF."
+msgstr ""
+
+#: ../../source/io-comune/index.md:459
+msgid ""
+"Sistemata la visualizzazione dei blocchi elenco all'interno del blocco "
+"griglia."
+msgstr ""
+
+#: ../../source/io-comune/index.md:460
+msgid ""
+"L'etichetta della Card con Nastro (Blocco Elenco) non si sovrappone più "
+"all'icona del nastro."
+msgstr ""
+
+#: ../../source/io-comune/index.md:461
+msgid ""
+"Aggiustato il layout della card per le persone quando è impostata "
+"un'immagine."
+msgstr ""
+
+#: ../../source/io-comune/index.md:462
+msgid ""
+"Sistemato bug su blocchi di ricerca Bandi, Eventi e UO nei quali "
+"rimanevano memorizzati i risultati di ricerca anche abbandonando la "
+"pagina."
+msgstr ""
+
+#: ../../source/io-comune/index.md:463
+msgid ""
+"Tradotto il messaggio per Screen Reader del bottone per aprire e chiudere"
+" il menu in mobile."
+msgstr ""
+
+#: ../../source/io-comune/index.md:465
+msgid "Versione 11.8.0 (19/03/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:469
+msgid ""
+"Gli stili del tipo di contenuto Unità Organizzativa sono stati "
+"ottimizzati per la stampa."
+msgstr ""
+
+#: ../../source/io-comune/index.md:473
+msgid ""
+"È possibile scaricare il file o l'immagine caricata dal widget di upload "
+"file cliccando sul nome del file stesso."
+msgstr ""
+
+#: ../../source/io-comune/index.md:474
+msgid ""
+"È possibile aggiungere un testo alternativo per l'immagine del blocco "
+"Card con Immagine."
+msgstr ""
+
+#: ../../source/io-comune/index.md:478
+msgid ""
+"Nel blocco con icone, se era impostata una immagine di sfondo non si "
+"vedeva."
+msgstr ""
+
+#: ../../source/io-comune/index.md:480
+msgid "Versione 11.7.0 (15/03/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:484
+msgid ""
+"Ora la fascia del footer contenente il logo e il nome del sito è "
+"configurabile da pannello di controllo."
+msgstr ""
+
+#: ../../source/io-comune/index.md:485
+msgid ""
+"Nel pannello di controllo dei Feedback, ora gli utenti con permesso di "
+"eliminare elementi da questa sezione, possono eliminare i feedback."
+msgstr ""
+
+#: ../../source/io-comune/index.md:489
+msgid ""
+"Nel blocco form, se in fase di compilazione ci sono degli errori, viene "
+"mostrato un messaggio di errore specifico per ogni campo con errori."
+msgstr ""
+
+#: ../../source/io-comune/index.md:493
+msgid ""
+"Il bordo destro della variazione Link solo immagine del blocco Elenco è "
+"stato ripristinato."
+msgstr ""
+
+#: ../../source/io-comune/index.md:494
+msgid ""
+"Se si mettono due blocchi Form nella stessa pagina, ora funzionano "
+"correttamente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:495
+msgid ""
+"Aggiustato il modulo di Feedback quando si cambia valutazione dopo averne"
+" già selezionata un'altra."
+msgstr ""
+
+#: ../../source/io-comune/index.md:497
+msgid "Versione 11.6.1 (06/03/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:501
+msgid ""
+"Quando si imposta una ricorrenza per giorni feriali negli Eventi, viene "
+"visualizzato il testo corretto \"ogni giorno feriale\"."
+msgstr ""
+
+#: ../../source/io-comune/index.md:502
+msgid "Le icone social nel menu laterale mobile sono tutte dello stesso colore."
+msgstr ""
+
+#: ../../source/io-comune/index.md:504
+msgid "Versione 11.6.0 (05/03/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:508
+msgid "Nel blocco form è stata aggiunta una legenda per i campi obbligatori."
+msgstr ""
+
+#: ../../source/io-comune/index.md:512
+msgid ""
+"Rimosso i contatti dalle card che rappresentano Unità Organizzative nelle"
+" varie viste dei diversi content type in cui sono implementate. La lista "
+"delle viste comprende i CT: Persona, Unità Organizzativa, Documento, "
+"Bando, Servizio, Notizia, Evento, Incarico, Luogo, Argomento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:514
+msgid ""
+"Aggiornato il plugin del blocco Form, adesso si ha la possibilità di "
+"aggiungere un pulsante per resettare i campi e nella sidebar è presente "
+"un nuovo campo per creare un messaggio personalizzato dopo l'invio della "
+"form, i campi di tipo: testo, email, data e textarea hanno un "
+"identificativo che può essere utilizzato per restituire il valore di quei"
+" campi nel messaggio personalizzato."
+msgstr ""
+
+#: ../../source/io-comune/index.md:518
+msgid ""
+"L'icona per aprire il menu in mobile è ora visibile anche quando l'header"
+" del sito è bianca."
+msgstr ""
+
+#: ../../source/io-comune/index.md:519
+msgid ""
+"La descrizione nelle card per i punti di contatto non mostrano più tutte "
+"le iniziali in maiuscolo."
+msgstr ""
+
+#: ../../source/io-comune/index.md:520
+msgid "Il colore dei link nel menu mobile è ora accessibile per tutti i temi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:521
+msgid ""
+"Titolo e descrizione sistemati su blocco icone. Adesso quando il loro "
+"contenuto è cancellato non resta lo spazio vuoto sopra le icone."
+msgstr ""
+
+#: ../../source/io-comune/index.md:522
+msgid ""
+"Migliorata l'accessibilità della sezione dedicata al feedback utente per "
+"tutti i contenuti del sito."
+msgstr ""
+
+#: ../../source/io-comune/index.md:523
+msgid "Rimosso il title dall'immagine di apertura dei contenuti."
+msgstr ""
+
+#: ../../source/io-comune/index.md:524
+msgid ""
+"Rimosso attributo title dall'immagine delle card: card con immagine, "
+"persona, blocco link completo, contenuto in evidenza, gallery a griglia, "
+"in evidenza."
+msgstr ""
+
+#: ../../source/io-comune/index.md:525
+msgid "Migliorata l'accessibilità del menu in versione mobile."
+msgstr ""
+
+#: ../../source/io-comune/index.md:526
+msgid ""
+"Il layout dei campi di input \"in errore\" del blocco Form è stato "
+"uniformato."
+msgstr ""
+
+#: ../../source/io-comune/index.md:527
+msgid ""
+"La tendina delle select nel blocco Form non si sovrappone più ai campi "
+"sottostanti."
+msgstr ""
+
+#: ../../source/io-comune/index.md:528
+msgid ""
+"Sistemato alert di errore nel blocco Form che nascondeva il form quando "
+"un campo non era valido, ora continua a visualizzarsi anche la form."
+msgstr ""
+
+#: ../../source/io-comune/index.md:529
+msgid "Migliorato il testo alternativo per il logo NextGenerationEU nel footer."
+msgstr ""
+
+#: ../../source/io-comune/index.md:530
+msgid "Migliorata l'accessibilità del blocco Cerca."
+msgstr ""
+
+#: ../../source/io-comune/index.md:531
+msgid ""
+"Sistemato il contrasto delle icone nei pulsanti \"primary\" quando si "
+"attiva il focus col tab da tastiera."
+msgstr ""
+
+#: ../../source/io-comune/index.md:533
+msgid "Versione 11.5.1 (19/02/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:537
+msgid ""
+"Il campo \"Note aggiornamento\" nel Tipo di Contenuto Bandi viene ora "
+"mostrato in pagina, se compilato."
+msgstr ""
+
+#: ../../source/io-comune/index.md:539
+msgid "Versione 11.5.0 (16/02/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:543
+msgid ""
+"Rimosso il campo \"Risultati per pagina\" che non agiva sulle "
+"impostazioni del blocco Calendario."
+msgstr ""
+
+#: ../../source/io-comune/index.md:547
+msgid ""
+"Risolto un problema riguardante la visualizzazione delle date nelle card "
+"che rappresentano un CT Evento nei vari listati nel caso in cui l'evento "
+"si sviluppi su anni diversi"
+msgstr ""
+
+#: ../../source/io-comune/index.md:548
+msgid ""
+"Risolto un problema di visualizzazione per la sezione Date e Orari nel CT"
+" Evento quando l'evento si sviluppa su anni diversi, ora viene mostrato "
+"anche l'anno se si rientra in questa casistica"
+msgstr ""
+
+#: ../../source/io-comune/index.md:549
+msgid ""
+"Nel blocco elenco, sono stati sistemati i filtri per percorso quando si "
+"clicca sul bottone configurato."
+msgstr ""
+
+#: ../../source/io-comune/index.md:551
+msgid "Versione 11.4.1 (08/02/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:555
+msgid ""
+"Migliorata l'accessibilità e aggiunto elementi per migliorare "
+"l'esperienza d'uso degli utenti che utilizzano screen reader nella vista "
+"Cartella FAQ"
+msgstr ""
+
+#: ../../source/io-comune/index.md:556
+msgid ""
+"Sistemato lo skiplink \"Vai al contenuto\" nella pagina principale di "
+"ricerca del sito"
+msgstr ""
+
+#: ../../source/io-comune/index.md:557
+msgid ""
+"Risolto un problema relativo alla navigazione da tastiera e di gestione "
+"del focus nei menu a tendina \"Condividi\" e \"Azioni\" nelle testate "
+"delle viste dei Content Type che le implementano."
+msgstr ""
+
+#: ../../source/io-comune/index.md:558
+msgid ""
+"Reso il link ai diversi social elencati parlante, ora viene riportato "
+"\"Seguici su nome_del_social\""
+msgstr ""
+
+#: ../../source/io-comune/index.md:559
+msgid ""
+"Rimossi gli heading per alcuni blocchi nel caso il titolo non sia "
+"presente al fine di migliorare l'esperienza con l'uso di screen reader"
+msgstr ""
+
+#: ../../source/io-comune/index.md:560
+msgid ""
+"Migliorata l'accessibilità per il blocco Contenuti in Evidenza e per i "
+"bottoni nei sottositi"
+msgstr ""
+
+#: ../../source/io-comune/index.md:561
+msgid ""
+"Sistemato l'html semantico degli heading per i template del Blocco "
+"Listing variazione RSS, migliorata l'esperienza d'uso per gli utenti che "
+"utilizzano screen reader"
+msgstr ""
+
+#: ../../source/io-comune/index.md:562
+msgid ""
+"Migliorata l'accessibilità per i contatti, lo screen reader ora legge "
+"anche il tipo di contatto oltre al testo (ad es. Telefono: numero di "
+"telefono)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:564
+msgid "Versione 11.4.0 (06/02/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:568
+msgid "Aggiunta l'icona per il formato di file CSV"
+msgstr ""
+
+#: ../../source/io-comune/index.md:569
+msgid ""
+"Nel pannello di controllo di 'Design plone' è stata aggiunta la "
+"possibilità di mostrare o meno il footer autogenerato."
+msgstr ""
+
+#: ../../source/io-comune/index.md:573
+msgid "Sistemata la gerarchia per i titoli dentro al blocco semplice"
+msgstr ""
+
+#: ../../source/io-comune/index.md:575
+msgid "Versione 11.3.4 (31/01/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:579
+msgid ""
+"Migliorata l'esperienza redattore per il blocco Immagine con allineamenti"
+" laterali rispetto al corpo del testo nell'editor a blocchi"
+msgstr ""
+
+#: ../../source/io-comune/index.md:580
+msgid ""
+"Migliorata la resa e la responsività di alcune immagini nel corpo della "
+"pagina per diversi content type"
+msgstr ""
+
+#: ../../source/io-comune/index.md:582
+msgid "Versione 11.3.3 (30/01/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:586
+msgid ""
+"Migliorato il focus sulle immagini in edit del blocco Immagine quando "
+"queste sono allineate a sinistra o a destra."
+msgstr ""
+
+#: ../../source/io-comune/index.md:590
+msgid "Sistemato il layout del blocco elenco per i Bandi"
+msgstr ""
+
+#: ../../source/io-comune/index.md:591
+msgid ""
+"Sistemato il layout del template Galliery a griglia per il blocco elenco,"
+" le immagini più piccole ora sono correttamente contenute dentro il loro "
+"riquadro e il titolo non fuoriesce più"
+msgstr ""
+
+#: ../../source/io-comune/index.md:592
+msgid "Sistemati problemi negli stili per i sottositi"
+msgstr ""
+
+#: ../../source/io-comune/index.md:593
+msgid ""
+"Risolto un problema di visualizzazione degli argomenti indicati come "
+"altri argomenti nel blocco Argomenti quando il loro numero è esiguo"
+msgstr ""
+
+#: ../../source/io-comune/index.md:594
+msgid ""
+"Sistemato il layout e la visualizzazione della vista del CT Cartella "
+"Modulistica per gestire al meglio gli elementi titolo, titolo del modulo "
+"e link al download in caso di testi lunghi, specialmente su mobile"
+msgstr ""
+
+#: ../../source/io-comune/index.md:596
+msgid ""
+"Colore di sfondo per il blocco icone impostato sul colore primario. "
+"Sistemato il contrasto tra descrizione e lo sfondo"
+msgstr ""
+
+#: ../../source/io-comune/index.md:597
+msgid ""
+"Sistemata la visualizzazione delle card Uffici (card Unità Organizzativa)"
+" nelle risoluzioni tablet più comuni"
+msgstr ""
+
+#: ../../source/io-comune/index.md:598
+msgid "Layout delle card per i luoghi migliorato per dispositivi tablet"
+msgstr ""
+
+#: ../../source/io-comune/index.md:599
+msgid ""
+"Risolto un problema di visualizzazione e allineamento delle immagini per "
+"le card dei blocchi elenco che rappresentano Persone, migliorata la "
+"visualizzazione e il layout su dispositivi tablet (intervallo dimensioni:"
+" 992px-1199px)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:602
+msgid "Versione 11.3.2 (19/01/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:606
+msgid "Risolto un problema di visualizzazione di alcune icone social."
+msgstr ""
+
+#: ../../source/io-comune/index.md:607
+msgid ""
+"Risolto un problema con il menù di navigazione del footer, in cui a volte"
+" scomparivano le voci di secondo livello."
+msgstr ""
+
+#: ../../source/io-comune/index.md:608
+msgid ""
+"Risolto problema di sovrapposizione del bottone \"Chiudi\" del menu "
+"laterale su mobile quando il menu è chiuso."
+msgstr ""
+
+#: ../../source/io-comune/index.md:610
+msgid "Versione 11.3.0 (16/01/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:614
+msgid ""
+"Aggiunto un campo descrizione nei punti di contatto per aiutare nella "
+"disambiguazione."
+msgstr ""
+
+#: ../../source/io-comune/index.md:615
+msgid ""
+"Ora per gli eventi è obbligatorio inserire il campo \"Luoghi correlati\" "
+"oppure compilare i campi dell'indirizzo."
+msgstr ""
+
+#: ../../source/io-comune/index.md:619
+msgid "Migliorati gli stili per i sottositi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:620
+msgid "Risolto un problema con i filtri per data nel blocco Calendario."
+msgstr ""
+
+#: ../../source/io-comune/index.md:622
+msgid "Versione 11.2.1 (15/01/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:626
+msgid "Migliorata il testo della ricorrenza di un evento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:630
+msgid "Risolto un problema nell'edit della ricorrenza di un evento."
+msgstr ""
+
+#: ../../source/io-comune/index.md:631
+msgid ""
+"Risolto problema con lo stile \"callout\", icona megafono dell'editor di "
+"testo con sfondo bianco e bordo grigio"
+msgstr ""
+
+#: ../../source/io-comune/index.md:633
+msgid "Versione 11.2.0 (11/01/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:637
+msgid "Migliorata l'accessibilità nella pagina di Ricerca."
+msgstr ""
+
+#: ../../source/io-comune/index.md:638
+msgid "Diminuita la larghezza del testo nelle card che indicano i luoghi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:642
+msgid ""
+"Risolto un problema nel blocco Video Gallery, per cui alcuni video di "
+"youtube non erano riproducibili."
+msgstr ""
+
+#: ../../source/io-comune/index.md:643
+msgid "Risolto problema nel funzionamento della toolbar per il blocco HTML."
+msgstr ""
+
+#: ../../source/io-comune/index.md:644
+msgid ""
+"Sistemate spaziature e font su mobile del blocco Card con Immagine e Card"
+" Semplice, migliorato il layout di quest'ultimo."
+msgstr ""
+
+#: ../../source/io-comune/index.md:645
+msgid ""
+"È stato migliorato il contrasto minimo necessario tra sfondo e testo nei "
+"blocchi numeri, countdown e galleria a griglia."
+msgstr ""
+
+#: ../../source/io-comune/index.md:647
+msgid "Versione 11.1.4 (05/01/2024)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:651
+msgid "Risolto il problema di layout nelle card che indicano dei luoghi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:653
+msgid "Versione 11.1.1 (22/12/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:657
+msgid ""
+"Risolto un problema con la dimensione delle immagini, che risultava in "
+"alcuni casi troppo piccola causando immagini sgranate"
+msgstr ""
+
+#: ../../source/io-comune/index.md:659
+msgid "Versione 11.0.1 (19/12/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:663
+msgid "Risolto un problema con le anteprime dei video embeddati da youtube."
+msgstr ""
+
+#: ../../source/io-comune/index.md:665
+msgid "Versione 11.0.0 (18/12/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:669
+msgid ""
+"Modificata l'altezza delle immagini delle card, per essere in linea con i"
+" template agid."
+msgstr ""
+
+#: ../../source/io-comune/index.md:673
+msgid "Sistemati gli stili per i sottositi per l'accessibilità."
+msgstr ""
+
+#: ../../source/io-comune/index.md:675
+msgid "Versione 10.6.4 (18/12/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:679
+msgid ""
+"Colori delle icone che specificano che un link è esterno che in alcuni "
+"casi erano errati."
+msgstr ""
+
+#: ../../source/io-comune/index.md:681
+msgid "Versione 10.6.3 (15/12/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:685
+msgid ""
+"Sistemati alcuni problemi di visualizzazione nei template disponibili per"
+" il blocco Cerca. Ora tutti i template disponibili per questo blocco "
+"rispecchiano graficamente quelli per il blocco Elenco sia in "
+"visualizzazione che in modifica."
+msgstr ""
+
+#: ../../source/io-comune/index.md:687
+msgid "Versione 10.6.2 (14/12/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:691
+msgid ""
+"Ora si vedono correttamente gli stili di allineamento del testo in alcuni"
+" editor di testo, ad esempio header e footer dei sottositi."
+msgstr ""
+
+#: ../../source/io-comune/index.md:693
+msgid "Versione 10.6.1 (13/12/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:697
+msgid ""
+"I seguenti campi sono ora riordinabili liberamente: \"Timeline tempi e "
+"scadenze\" per il tipo di contenuto _Servizio_ e \"Valore punto di "
+"contatto\" del tipo di contenuto _Punto di contatto_."
+msgstr ""
+
+#: ../../source/io-comune/index.md:701
+msgid ""
+"Rimosso pager-link automatico dal paginatore perché non riconosciuto dal "
+"validatore. È ora possibile inserire a mano il data-element pager-link "
+"nei blocchi di testo."
+msgstr ""
+
+#: ../../source/io-comune/index.md:703
+msgid "Versione 10.5.0 (06/12/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:707
+msgid ""
+"Nel blocco elenco, nel criterio di configurazione 'Posizione', è ora "
+"presente uno strumento per facilitare la ricerca dei contenuti nel sito, "
+"senza dover scrivere il percorso a mano."
+msgstr ""
+
+#: ../../source/io-comune/index.md:711
+msgid ""
+"Le immagini nelle card dei contenuti correlati sono centrate "
+"verticalmente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:712
+msgid ""
+"Il feedback form ora richiede necessariamente una risposta oltre al voto "
+"in stelle."
+msgstr ""
+
+#: ../../source/io-comune/index.md:713
+msgid ""
+"Dimensione del titolo del blocco calendario uniformata ai titoli degli "
+"altri blocchi elenco."
+msgstr ""
+
+#: ../../source/io-comune/index.md:715
+msgid "Versione 10.4.3 (28/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:719
+msgid ""
+"Ora nella pagina 404 \"Questa pagina non esiste\" viene suggerito il "
+"proseguimento della navigazione verso la homepage invece che verso la "
+"ricerca."
+msgstr ""
+
+#: ../../source/io-comune/index.md:723
+msgid ""
+"Migliorata l'accessibilità del modulo di valutazione del sito che si "
+"trova in fondo ad ogni pagina."
+msgstr ""
+
+#: ../../source/io-comune/index.md:724
+msgid ""
+"Il blocco Elenco con variazione Bandi viene visualizzato correttamente "
+"anche su tablet."
+msgstr ""
+
+#: ../../source/io-comune/index.md:726
+msgid "Versione 10.4.2 (23/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:730
+msgid ""
+"Sistemato il layout della card nella variazione Bandi del Blocco Elenco "
+"per la modalità tablet"
+msgstr ""
+
+#: ../../source/io-comune/index.md:731
+msgid ""
+"Sistemata accessibilità del read-more nel blocco elenco con variazione "
+"\"Card con testo animato\" quando si è in un sottosito con uno stile "
+"applicato."
+msgstr ""
+
+#: ../../source/io-comune/index.md:732
+msgid ""
+"Sistemato errore quando viene impostato \"service-link\" come ID "
+"lighthouse."
+msgstr ""
+
+#: ../../source/io-comune/index.md:734
+msgid "Versione 10.4.1 (21/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:738
+msgid ""
+"Migliorato l'allineamento delle informazioni dei bandi nelle card dei "
+"blocchi elenco"
+msgstr ""
+
+#: ../../source/io-comune/index.md:742
+msgid ""
+"Nel blocco Cerca, quando viene selezionata la variazione \"Colonna a "
+"destra\" o \"Colonna a sinistra\" i blocchi si allineano correttamente, e"
+" i bottoni nella testata si vedono correttamente in modalità Edit."
+msgstr ""
+
+#: ../../source/io-comune/index.md:744
+msgid "Versione 10.4.0 (14/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:748
+msgid ""
+"Aggiunta la possibilità di selezionare la dimensione dell'immagine nel "
+"blocco Alert, inoltre è stato aggiornato anche il widget per la selezione"
+" del colore di sfondo."
+msgstr ""
+
+#: ../../source/io-comune/index.md:749
+msgid "Aggiunte le breadcrumbs nella pagina dei risultati della ricerca"
+msgstr ""
+
+#: ../../source/io-comune/index.md:753
+msgid ""
+"Quando viene effettuata una ricerca dalla barra di ricerca nelle sezioni "
+"Amministrazione, Servizi, Novità, o Documenti e Dati, viene "
+"automaticamente impostato il filtro sulla sezione stessa così da mostrare"
+" solo i contenuti corrispondenti."
+msgstr ""
+
+#: ../../source/io-comune/index.md:754
+msgid ""
+"Le icone del Blocco Numeri, del Blocco Icone e della Sidebar si "
+"aggiornano istantaneamente quando vengono cambiate"
+msgstr ""
+
+#: ../../source/io-comune/index.md:755
+msgid ""
+"Sistemato un bug nell'header dei sottositi che mostrava le voci del menu "
+"del sito padre anche se queste erano indicate come non visibili nella "
+"configurazione del menu."
+msgstr ""
+
+#: ../../source/io-comune/index.md:757
+msgid "Versione 10.3.0 (08/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:761
+msgid ""
+"Sistemata la visualizzazione della tipologia del bando nel template del "
+"blocco elenco 'Bandi'"
+msgstr ""
+
+#: ../../source/io-comune/index.md:762
+msgid "Rimosso titolo della pagina nei sottositi senza nessuno stile applicato"
+msgstr ""
+
+#: ../../source/io-comune/index.md:764
+msgid "Versione 10.2.0 (06/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:768
+msgid ""
+"Aggiunto data-element pager-link al paginatore per il blocco Cerca per i "
+"quali viene impostata l'opzione service-link."
+msgstr ""
+
+#: ../../source/io-comune/index.md:770
+msgid "Versione 9.0.1 (03/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:774
+msgid "Migliorata l'accessibilità dei titoli dei contenuti"
+msgstr ""
+
+#: ../../source/io-comune/index.md:776
+msgid "Versione 8.9.0 (03/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:780
+msgid ""
+"Aggiunto data-element pager-link al paginatore per i blocchi Elenco per i"
+" quali viene impostata l'opzione service-link."
+msgstr ""
+
+#: ../../source/io-comune/index.md:782
+msgid "Versione 8.8.1 (03/11/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:786
+msgid "Nei template dei feed RSS ora viene mostrata la sorgente se presente."
+msgstr ""
+
+#: ../../source/io-comune/index.md:788
+msgid "Versione 8.7.12 (27/10/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:792
+msgid "Migliorato il dimensionamento dell'icona del menù su dispositivi mobile"
+msgstr ""
+
+#: ../../source/io-comune/index.md:793
+msgid "Sistemata dimensione logo e bottone di ricerca su dispositivi mobile"
+msgstr ""
+
+#: ../../source/io-comune/index.md:794
+msgid ""
+"Migliorato il comportamento del menu laterale dei contenuti quando si "
+"aggiungono file nelle cartelle al loro interno"
+msgstr ""
+
+#: ../../source/io-comune/index.md:795
+msgid ""
+"Sistemata sovrapposizione della finestra di selezione blocchi con "
+"l'header del sito per alcune dimensioni dello schermo"
+msgstr ""
+
+#: ../../source/io-comune/index.md:797
+msgid "Versione 8.7.10 (19/10/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:801
+msgid "Sistemata validazione del campo Timeline tempi e scadenze"
+msgstr ""
+
+#: ../../source/io-comune/index.md:803
+msgid "Versione 8.7.9 (18/10/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:807
+msgid ""
+"Migliorato il comportamento per la selezione/deselezione degli elementi "
+"multipli nel menù laterale a scomparsa"
+msgstr ""
+
+#: ../../source/io-comune/index.md:811
+msgid ""
+"Eliminata la sovrapposizione tra immagine e testo nel tipo documento "
+"Pagina quando l'immagine è verticale"
+msgstr ""
+
+#: ../../source/io-comune/index.md:812
+msgid ""
+"Cambiato il colore del bordo dell'icona Ricerca nell'header dei sottositi"
+" per garantire il contrasto per accessibilità"
+msgstr ""
+
+#: ../../source/io-comune/index.md:813
+msgid ""
+"Nascosta la fascia colorata del footer di un sottosito quando questo non "
+"è compilato"
+msgstr ""
+
+#: ../../source/io-comune/index.md:814
+msgid ""
+"Risolto un bug nel selettore dei link nel menù laterale a scomparsa, che "
+"permetteva di selezionare più elementi di quelli consentiti"
+msgstr ""
+
+#: ../../source/io-comune/index.md:815
+msgid ""
+"Alcune icone mancanti nel widget di selezione delle icone di fontawesome "
+"sono state rese nuovamente visibili"
+msgstr ""
+
+#: ../../source/io-comune/index.md:816
+msgid ""
+"Sistemate inconsistenze nella visualizzazione di alcuni tipi di elementi "
+"della lista degli allegati in Cartella Modulistica"
+msgstr ""
+
+#: ../../source/io-comune/index.md:817
+msgid ""
+"Visualizzazione sidebar in edit del blocco Numeri: sistemata la "
+"visualizzazione del testo di aiuto"
+msgstr ""
+
+#: ../../source/io-comune/index.md:818
+msgid ""
+"Sistemate le dimensioni dei risultati del blocco search con colonne "
+"laterali, rimosso overflow sopra ad altri elementi della pagina"
+msgstr ""
+
+#: ../../source/io-comune/index.md:820
+msgid "Versione 8.7.8 (12/10/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:824
+msgid ""
+"Nel blocco Calendario, è stata sistemata la sovrapposizione dei pallini "
+"di navigazione con il pulsante per il link agli approfondimenti"
+msgstr ""
+
+#: ../../source/io-comune/index.md:826
+msgid "Versione 8.7.7 (12/10/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:830
+msgid "Aggiornata nuova icona di Twitter"
+msgstr ""
+
+#: ../../source/io-comune/index.md:832
+msgid "Versione 8.7.6 (06/10/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:836
+msgid ""
+"Uniformato e impostato a sinistra l'allineamento del testo nel blocco "
+"Elenco nella variazione Quadratoni con immagine"
+msgstr ""
+
+#: ../../source/io-comune/index.md:838
+msgid "Versione 8.7.3 (26/09/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:842
+msgid "Sistemato margine del blocco Alert quando è allineato a sinistra."
+msgstr ""
+
+#: ../../source/io-comune/index.md:843
+msgid ""
+"Sistemato il template degli Rss Card con immagine per mostrare la data "
+"corretta di pubblicazione della notizia"
+msgstr ""
+
+#: ../../source/io-comune/index.md:845
+msgid "Versione 8.7.0 (20/09/2023)"
+msgstr ""
+
+#: ../../source/io-comune/index.md:849
+msgid ""
+"Nel template Blocco link solo immagini con link esterni, l'icona per i "
+"link esterni (richiesta dall'accessibilità) ora è disattivabile "
+"attraverso opzione del template"
+msgstr ""
+
+#: ../../source/io-comune/index.md:850
+msgid ""
+"Migliorata l'accessibilità e il supporto Screen Reader per il menu a "
+"tendina \"Ordina Per\" nella pagina di ricerca"
+msgstr ""
+
+#: ../../source/io-comune/index.md:851
+msgid ""
+"Migliorata la navigazione da tastiera quando si è in modifica dei blocchi"
+" Alert, Card Semplice, Card con Immagine, Accordion"
+msgstr ""
+
+#: ../../source/io-comune/index.md:855
+msgid "sistemati gli oggetti link che puntano a file nella Cartella Modulistica"
+msgstr ""
+
+#: ../../source/io-comune/index.md:856
+msgid ""
+"Sistemato l'allineamento degli elementi nel blocco Contatti: se ci sono "
+"meno di tre elementi l'allineamento è centrato, se ce ne sono più di 3 "
+"l'allineamento è a sinistra."
+msgstr ""
+
+#: ../../source/io-comune/index.md:857
+msgid ""
+"Migliorata accessibilità del calendario nel blocco ricerca Eventi e "
+"ricerca Bandi"
+msgstr ""
+
+#: ../../source/io-comune/index.md:858
+msgid ""
+"Fissato il layout del template Blocco link solo immagini con link "
+"esterni, posizionata l'icona di accessibilità per link esterni in overlay"
+" (se presente)"
+msgstr ""
+

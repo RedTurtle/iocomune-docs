@@ -1,0 +1,32 @@
+<div class="site-toc">
+    <nav class="toc mt-3" aria-label="{{ _('Main menu') }}">
+        {{ toctree(includehidden=False, collapse=True, maxdepth=2, titles_only=False) }}
+    </nav>
+	
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">{{ _('Toggle menu contents') }}</span>
+        </button>
+    </template>
+	<script type="text/javascript">
+		function updateCurrentToc(event) {
+			console.log(event, window.location.hash)
+			const hash = window.location.hash;
+			const tocLinks = document.querySelectorAll(".toctree-l2 a");
+			tocLinks.forEach((link) => {
+				if (hash && link.href.includes(hash)) {
+					link.classList.add("active");
+					link.closest("li").classList.add("current");
+					
+				} else {
+					link.classList.remove("active");
+					link.closest("li").classList.remove("current");
+				}
+			});
+		}
+		// highlight current TOC link manually
+		addEventListener("DOMContentLoaded", updateCurrentToc);
+		addEventListener("hashchange", updateCurrentToc);
+
+	</script>
+</div>
