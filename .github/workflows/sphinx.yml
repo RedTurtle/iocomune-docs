@@ -20,8 +20,8 @@ jobs:
           pip install -r requirements.txt
       - name: Generate translation files
         run: |
-          make i18n-init
-          make i18n
+          make -C docs i18n-init
+          make -C docs i18n
       - name: Build HTML
         run: |
           make -C docs html
