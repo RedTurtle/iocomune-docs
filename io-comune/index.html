@@ -1,40 +1,667 @@
-<!DOCTYPE html>
-
-<html lang="it" data-content_root="../">
-  <head>
+<!-- Direct copy of https://github.com/wagtail/sphinx-wagtail-theme/blob/main/sphinx_wagtail_theme/layout.html
+	Doing this to add our custom header
+--><!DOCTYPE html>
+<html class="no-js" lang="it" data-content_root="../">
+<head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tema io-Comune &#8212; Documentazione Documentazione io-Comune 0.1 </title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
-    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
-    <script src="../_static/documentation_options.js?v=41f723b1"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/translations.js?v=45930005"></script>
-    <link rel="index" title="Indice" href="../genindex.html" />
-    <link rel="search" title="Cerca" href="../search.html" />
-    <link rel="next" title="io-Prenoto" href="../io-prenoto/index.html" />
-    <link rel="prev" title="Note di rilascio" href="../index.html" />
-   
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Tema io-Comune &mdash; Documentazione Documentazione io-Comune 0.1 </title>
+    
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
 
-  
-  
+		function scrollFunction() {
+			let rtt = document.getElementById("return-to-top");
+			if(rtt){
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					rtt.style.display = "block";
+				} else {
+					rtt.style.display = "none";
+				}
+			}
+		}
 
-  </head><body>
-  
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const progressBar = document.getElementById("progress-bar");
+			const progressBarContainer = document.getElementById("progress-bar-container");
+			window.addEventListener("scroll", function() {
+				let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				progressBarContainer.style.display = scrollTop? 'block': 'none'
+				let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				let progress = (scrollTop / scrollHeight) * 100;
+				progressBar.style.width = progress + "%";
+			});
+		});
+	</script>
+    <link rel="stylesheet" type="text/css" href="../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=5c7bbc3b" />
+            <link rel="index" title="Indice" href="../genindex.html" />
+            <link rel="search" title="Cerca" href="../search.html" />
+            <link rel="top" title="Documentazione Documentazione io-Comune 0.1 " href="#" />
+            <link rel="next" title="io-Prenoto" href="../io-prenoto/index.html" />
+            <link rel="prev" title="Note di rilascio" href="../index.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Salta al contenuto</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="/"
+                        title="Documentazione io-Comune"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../_static/img/logo.png" width="45" height="59" alt="Documentazione io-Comune"
+                            class="logo-img"
+                        />
+                        Documentazione io-Comune
+                    </a>
+                
+                
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            
+                                
+                                
+                                <li class="nav-item"><a class="nav-link"  href="http://example.com/one">Top 1</a></li>
+                            
+                                
+                                
+                                <li class="nav-item"><a class="nav-link"  href="http://example.com/two"> Top 2</a></li>
+                            
+                        </ul>
+                    </div>
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+	 
+    <div id="main-content" class="container-fluid">
+		<div id="utility-bar" class="sticky-top">
+			<header class="row align-items-center justify-content-between py-3">
+				<div class="col-sm-6 col-lg-6">
+					
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Cerca nella documentazione" aria-label="Cerca nella documentazione" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+				</div>
+				<div class="col-sm-6 col-lg-auto">
+					<noscript>
+						<p>JavaScript è necessario per attivare la modalità chiaro/scuro..</p>
+					</noscript>
+					<button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+						<span class="dark-only"><i class="fas fa-sun"></i> Modalità chiara</span>
+						<span class="light-only"><i class="fas fa-moon"></i> Modalità scura</span>
+					</button>
+    <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/RedTurtle/iocomune-docs/blob/main/docs/source/io-comune/index.md" rel="nofollow">
+        <span class="btn-icon"><span class="fab fa-github"></span></span>
+        <span class="btn-text">Modifica su GitHub</span>
+    </a>
+    <a class="btn btn-sm btn-light text-decoration-none" href="../_sources/io-comune/index.md.txt" rel="nofollow" aria-label="Mostra codice sorgente">
+        <span class="btn-icon"><span class="fas fa-code"></span></span>
+        <span class="btn-text"></span>
+    </a>
+					
+				</div>
+			</header>
+			<div id="progress-bar-container">
+				<div id="progress-bar"></div>
+			</div>
+		</div>
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse d-lg-block pt-4"><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Menu principale">
+        <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tema io-Comune</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-29-0-07-03-2025">Versione 11.29.0 (07/03/2025)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-28-0-04-03-2025">Versione 11.28.0 (04/03/2025)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-27-0-26-02-2025">Versione 11.27.0 (26/02/2025)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-26-5-06-02-2025">Versione 11.26.5 (06/02/2025)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-26-3-15-01-2025">Versione 11.26.3 (15/01/2025)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-26-1-27-12-2024">Versione 11.26.1 (27/12/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-26-0-20-12-2024">Versione 11.26.0 (20/12/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-25-3-12-12-2024">Versione 11.25.3 (12/12/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-25-1-28-11-2024">Versione 11.25.1 (28/11/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-25-0-26-11-2024">Versione 11.25.0 (26/11/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-24-5-22-11-2024">Versione 11.24.5 (22/11/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-24-4-07-11-2024">Versione 11.24.4 (07/11/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-24-3-24-10-2024">Versione 11.24.3 (24/10/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-24-0-03-10-2024">Versione 11.24.0 (03/10/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-23-2-24-09-2024">Versione 11.23.2 (24/09/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-23-1-19-09-2024">Versione 11.23.1 (19/09/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-23-0-19-09-2024">Versione 11.23.0 (19/09/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-22-0-05-09-2024">Versione 11.22.0 (05/09/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-21-0-14-08-2024">Versione 11.21.0 (14/08/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-20-2-12-08-2024">Versione 11.20.2 (12/08/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-20-1-09-08-2024">Versione 11.20.1 (09/08/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-18-2-25-07-2024">Versione 11.18.2 (25/07/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-18-1-25-07-2024">Versione 11.18.1 (25/07/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-18-0-19-07-2024">Versione 11.18.0 (19/07/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-17-0-16-07-2024">Versione 11.17.0 (16/07/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-16-0-10-07-2024">Versione 11.16.0 (10/07/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-15-0-05-07-2024">Versione 11.15.0 (05/07/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-14-0-21-06-2024">Versione 11.14.0 (21/06/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-13-0-12-06-2024">Versione 11.13.0 (12/06/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-12-9-06-06-2024">Versione 11.12.9 (06/06/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-12-6-30-05-2024">Versione 11.12.6 (30/05/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-12-5-30-05-2024">Versione 11.12.5 (30/05/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-12-4-30-05-2024">Versione 11.12.4 (30/05/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-12-1-21-05-2024">Versione 11.12.1 (21/05/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-12-0-21-05-2024">Versione 11.12.0 (21/05/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-11-1-02-05-2024">Versione 11.11.1 (02/05/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-11-0-29-04-2024">Versione 11.11.0 (29/04/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-10-0-17-04-2024">Versione 11.10.0 (17/04/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-9-1-03-04-2024">Versione 11.9.1 (03/04/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-9-0-03-04-2024">Versione 11.9.0 (03/04/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-8-0-19-03-2024">Versione 11.8.0 (19/03/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-7-0-15-03-2024">Versione 11.7.0 (15/03/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-6-1-06-03-2024">Versione 11.6.1 (06/03/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-6-0-05-03-2024">Versione 11.6.0 (05/03/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-5-1-19-02-2024">Versione 11.5.1 (19/02/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-5-0-16-02-2024">Versione 11.5.0 (16/02/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-4-1-08-02-2024">Versione 11.4.1 (08/02/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-4-0-06-02-2024">Versione 11.4.0 (06/02/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-3-4-31-01-2024">Versione 11.3.4 (31/01/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-3-3-30-01-2024">Versione 11.3.3 (30/01/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-3-2-19-01-2024">Versione 11.3.2 (19/01/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-3-0-16-01-2024">Versione 11.3.0 (16/01/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-2-1-15-01-2024">Versione 11.2.1 (15/01/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-2-0-11-01-2024">Versione 11.2.0 (11/01/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-1-4-05-01-2024">Versione 11.1.4 (05/01/2024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-1-1-22-12-2023">Versione 11.1.1 (22/12/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-0-1-19-12-2023">Versione 11.0.1 (19/12/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-11-0-0-18-12-2023">Versione 11.0.0 (18/12/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-6-4-18-12-2023">Versione 10.6.4 (18/12/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-6-3-15-12-2023">Versione 10.6.3 (15/12/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-6-2-14-12-2023">Versione 10.6.2 (14/12/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-6-1-13-12-2023">Versione 10.6.1 (13/12/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-5-0-06-12-2023">Versione 10.5.0 (06/12/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-4-3-28-11-2023">Versione 10.4.3 (28/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-4-2-23-11-2023">Versione 10.4.2 (23/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-4-1-21-11-2023">Versione 10.4.1 (21/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-4-0-14-11-2023">Versione 10.4.0 (14/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-3-0-08-11-2023">Versione 10.3.0 (08/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-10-2-0-06-11-2023">Versione 10.2.0 (06/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-9-0-1-03-11-2023">Versione 9.0.1 (03/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-9-0-03-11-2023">Versione 8.9.0 (03/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-8-1-03-11-2023">Versione 8.8.1 (03/11/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-7-12-27-10-2023">Versione 8.7.12 (27/10/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-7-10-19-10-2023">Versione 8.7.10 (19/10/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-7-9-18-10-2023">Versione 8.7.9 (18/10/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-7-8-12-10-2023">Versione 8.7.8 (12/10/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-7-7-12-10-2023">Versione 8.7.7 (12/10/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-7-6-06-10-2023">Versione 8.7.6 (06/10/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-7-3-26-09-2023">Versione 8.7.3 (26/09/2023)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versione-8-7-0-20-09-2023">Versione 8.7.0 (20/09/2023)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../io-prenoto/index.html">io-Prenoto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../io-cittadino/index.html">io-Cittadino</a></li>
+</ul>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
+    </nav>
+	
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Espandi/riduci contenuti del menu</span>
+        </button>
+    </template>
+	<script type="text/javascript">
+		function updateCurrentToc(event) {
+			console.log(event, window.location.hash)
+			const hash = window.location.hash;
+			const tocLinks = document.querySelectorAll(".toctree-l2 a");
+			tocLinks.forEach((link) => {
+				if (hash && link.href.includes(hash)) {
+					link.classList.add("active");
+					link.closest("li").classList.add("current");
+					
+				} else {
+					link.classList.remove("active");
+					link.closest("li").classList.remove("current");
+				}
+			});
+		}
+		// highlight current TOC link manually
+		addEventListener("DOMContentLoaded", updateCurrentToc);
+		addEventListener("hashchange", updateCurrentToc);
 
-          <div class="body" role="main">
-            
-  <section id="tema-io-comune">
+	</script>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5 ">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../index.html">Docs</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Tema io-Comune</li>
+    </ol>
+</nav>
+                    </div>
+                    
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+					<!-- 
+                    <nav class="col-12 col-lg-3 pb-4 order-lg-last">
+						<div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+							<p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Tema io-Comune</a><ul>
+<li><a class="reference internal" href="#versione-11-29-0-07-03-2025">Versione 11.29.0 (07/03/2025)</a><ul>
+<li><a class="reference internal" href="#migliorie">Migliorie</a></li>
+<li><a class="reference internal" href="#fix">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-28-0-04-03-2025">Versione 11.28.0 (04/03/2025)</a><ul>
+<li><a class="reference internal" href="#id1">Migliorie</a></li>
+<li><a class="reference internal" href="#novita">Novità</a></li>
+<li><a class="reference internal" href="#id2">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-27-0-26-02-2025">Versione 11.27.0 (26/02/2025)</a><ul>
+<li><a class="reference internal" href="#id3">Migliorie</a></li>
+<li><a class="reference internal" href="#id4">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-26-5-06-02-2025">Versione 11.26.5 (06/02/2025)</a><ul>
+<li><a class="reference internal" href="#id5">Migliorie</a></li>
+<li><a class="reference internal" href="#id6">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-26-3-15-01-2025">Versione 11.26.3 (15/01/2025)</a><ul>
+<li><a class="reference internal" href="#id7">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-26-1-27-12-2024">Versione 11.26.1 (27/12/2024)</a><ul>
+<li><a class="reference internal" href="#id8">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-26-0-20-12-2024">Versione 11.26.0 (20/12/2024)</a><ul>
+<li><a class="reference internal" href="#id9">Migliorie</a></li>
+<li><a class="reference internal" href="#id10">Novità</a></li>
+<li><a class="reference internal" href="#id11">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-25-3-12-12-2024">Versione 11.25.3 (12/12/2024)</a><ul>
+<li><a class="reference internal" href="#id12">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-25-1-28-11-2024">Versione 11.25.1 (28/11/2024)</a><ul>
+<li><a class="reference internal" href="#id13">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-25-0-26-11-2024">Versione 11.25.0 (26/11/2024)</a><ul>
+<li><a class="reference internal" href="#id14">Migliorie</a></li>
+<li><a class="reference internal" href="#id15">Novità</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-24-5-22-11-2024">Versione 11.24.5 (22/11/2024)</a><ul>
+<li><a class="reference internal" href="#id16">Migliorie</a></li>
+<li><a class="reference internal" href="#id17">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-24-4-07-11-2024">Versione 11.24.4 (07/11/2024)</a><ul>
+<li><a class="reference internal" href="#id18">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-24-3-24-10-2024">Versione 11.24.3 (24/10/2024)</a><ul>
+<li><a class="reference internal" href="#id19">Migliorie</a></li>
+<li><a class="reference internal" href="#id20">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-24-0-03-10-2024">Versione 11.24.0 (03/10/2024)</a><ul>
+<li><a class="reference internal" href="#id21">Migliorie</a></li>
+<li><a class="reference internal" href="#id22">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-23-2-24-09-2024">Versione 11.23.2 (24/09/2024)</a><ul>
+<li><a class="reference internal" href="#id23">Migliorie</a></li>
+<li><a class="reference internal" href="#id24">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-23-1-19-09-2024">Versione 11.23.1 (19/09/2024)</a><ul>
+<li><a class="reference internal" href="#id25">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-23-0-19-09-2024">Versione 11.23.0 (19/09/2024)</a><ul>
+<li><a class="reference internal" href="#id26">Migliorie</a></li>
+<li><a class="reference internal" href="#id27">Novità</a></li>
+<li><a class="reference internal" href="#id28">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-22-0-05-09-2024">Versione 11.22.0 (05/09/2024)</a><ul>
+<li><a class="reference internal" href="#id29">Migliorie</a></li>
+<li><a class="reference internal" href="#id30">Novità</a></li>
+<li><a class="reference internal" href="#id31">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-21-0-14-08-2024">Versione 11.21.0 (14/08/2024)</a><ul>
+<li><a class="reference internal" href="#id32">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-20-2-12-08-2024">Versione 11.20.2 (12/08/2024)</a><ul>
+<li><a class="reference internal" href="#id33">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-20-1-09-08-2024">Versione 11.20.1 (09/08/2024)</a><ul>
+<li><a class="reference internal" href="#id34">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-18-2-25-07-2024">Versione 11.18.2 (25/07/2024)</a><ul>
+<li><a class="reference internal" href="#id35">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-18-1-25-07-2024">Versione 11.18.1 (25/07/2024)</a><ul>
+<li><a class="reference internal" href="#id36">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-18-0-19-07-2024">Versione 11.18.0 (19/07/2024)</a><ul>
+<li><a class="reference internal" href="#id37">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-17-0-16-07-2024">Versione 11.17.0 (16/07/2024)</a><ul>
+<li><a class="reference internal" href="#id38">Novità</a></li>
+<li><a class="reference internal" href="#id39">Fix</a></li>
+<li><a class="reference internal" href="#id40">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-16-0-10-07-2024">Versione 11.16.0 (10/07/2024)</a><ul>
+<li><a class="reference internal" href="#id41">Migliorie</a></li>
+<li><a class="reference internal" href="#id42">Novità</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-15-0-05-07-2024">Versione 11.15.0 (05/07/2024)</a><ul>
+<li><a class="reference internal" href="#id43">Novità</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-14-0-21-06-2024">Versione 11.14.0 (21/06/2024)</a><ul>
+<li><a class="reference internal" href="#id44">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-13-0-12-06-2024">Versione 11.13.0 (12/06/2024)</a><ul>
+<li><a class="reference internal" href="#id45">Migliorie</a></li>
+<li><a class="reference internal" href="#id46">Novità</a></li>
+<li><a class="reference internal" href="#id47">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-12-9-06-06-2024">Versione 11.12.9 (06/06/2024)</a><ul>
+<li><a class="reference internal" href="#id48">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-12-6-30-05-2024">Versione 11.12.6 (30/05/2024)</a><ul>
+<li><a class="reference internal" href="#id49">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-12-5-30-05-2024">Versione 11.12.5 (30/05/2024)</a><ul>
+<li><a class="reference internal" href="#id50">Novità</a></li>
+<li><a class="reference internal" href="#id51">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-12-4-30-05-2024">Versione 11.12.4 (30/05/2024)</a><ul>
+<li><a class="reference internal" href="#id52">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-12-1-21-05-2024">Versione 11.12.1 (21/05/2024)</a><ul>
+<li><a class="reference internal" href="#id53">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-12-0-21-05-2024">Versione 11.12.0 (21/05/2024)</a><ul>
+<li><a class="reference internal" href="#id54">Migliorie</a></li>
+<li><a class="reference internal" href="#id55">Novità</a></li>
+<li><a class="reference internal" href="#id56">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-11-1-02-05-2024">Versione 11.11.1 (02/05/2024)</a><ul>
+<li><a class="reference internal" href="#id57">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-11-0-29-04-2024">Versione 11.11.0 (29/04/2024)</a><ul>
+<li><a class="reference internal" href="#id58">Migliorie</a></li>
+<li><a class="reference internal" href="#id59">Novità</a></li>
+<li><a class="reference internal" href="#id60">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-10-0-17-04-2024">Versione 11.10.0 (17/04/2024)</a><ul>
+<li><a class="reference internal" href="#id61">Migliorie</a></li>
+<li><a class="reference internal" href="#id62">Novità</a></li>
+<li><a class="reference internal" href="#id63">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-9-1-03-04-2024">Versione 11.9.1 (03/04/2024)</a><ul>
+<li><a class="reference internal" href="#id64">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-9-0-03-04-2024">Versione 11.9.0 (03/04/2024)</a><ul>
+<li><a class="reference internal" href="#id65">Migliorie</a></li>
+<li><a class="reference internal" href="#id66">Novità</a></li>
+<li><a class="reference internal" href="#id67">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-8-0-19-03-2024">Versione 11.8.0 (19/03/2024)</a><ul>
+<li><a class="reference internal" href="#id68">Migliorie</a></li>
+<li><a class="reference internal" href="#id69">Novità</a></li>
+<li><a class="reference internal" href="#id70">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-7-0-15-03-2024">Versione 11.7.0 (15/03/2024)</a><ul>
+<li><a class="reference internal" href="#id71">Novità</a></li>
+<li><a class="reference internal" href="#id72">Migliorie</a></li>
+<li><a class="reference internal" href="#id73">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-6-1-06-03-2024">Versione 11.6.1 (06/03/2024)</a><ul>
+<li><a class="reference internal" href="#id74">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-6-0-05-03-2024">Versione 11.6.0 (05/03/2024)</a><ul>
+<li><a class="reference internal" href="#id75">Migliorie</a></li>
+<li><a class="reference internal" href="#id76">Novità</a></li>
+<li><a class="reference internal" href="#id77">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-5-1-19-02-2024">Versione 11.5.1 (19/02/2024)</a><ul>
+<li><a class="reference internal" href="#id78">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-5-0-16-02-2024">Versione 11.5.0 (16/02/2024)</a><ul>
+<li><a class="reference internal" href="#id79">Migliorie</a></li>
+<li><a class="reference internal" href="#id80">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-4-1-08-02-2024">Versione 11.4.1 (08/02/2024)</a><ul>
+<li><a class="reference internal" href="#id81">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-4-0-06-02-2024">Versione 11.4.0 (06/02/2024)</a><ul>
+<li><a class="reference internal" href="#id82">Novità</a></li>
+<li><a class="reference internal" href="#id83">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-3-4-31-01-2024">Versione 11.3.4 (31/01/2024)</a><ul>
+<li><a class="reference internal" href="#id84">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-3-3-30-01-2024">Versione 11.3.3 (30/01/2024)</a><ul>
+<li><a class="reference internal" href="#id85">Migliorie</a></li>
+<li><a class="reference internal" href="#id86">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-3-2-19-01-2024">Versione 11.3.2 (19/01/2024)</a><ul>
+<li><a class="reference internal" href="#id87">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-3-0-16-01-2024">Versione 11.3.0 (16/01/2024)</a><ul>
+<li><a class="reference internal" href="#id88">Novità</a></li>
+<li><a class="reference internal" href="#id89">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-2-1-15-01-2024">Versione 11.2.1 (15/01/2024)</a><ul>
+<li><a class="reference internal" href="#id90">Migliorie</a></li>
+<li><a class="reference internal" href="#id91">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-2-0-11-01-2024">Versione 11.2.0 (11/01/2024)</a><ul>
+<li><a class="reference internal" href="#id92">Migliorie</a></li>
+<li><a class="reference internal" href="#id93">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-1-4-05-01-2024">Versione 11.1.4 (05/01/2024)</a><ul>
+<li><a class="reference internal" href="#id94">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-1-1-22-12-2023">Versione 11.1.1 (22/12/2023)</a><ul>
+<li><a class="reference internal" href="#id95">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-0-1-19-12-2023">Versione 11.0.1 (19/12/2023)</a><ul>
+<li><a class="reference internal" href="#id96">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-11-0-0-18-12-2023">Versione 11.0.0 (18/12/2023)</a><ul>
+<li><a class="reference internal" href="#id97">Novità</a></li>
+<li><a class="reference internal" href="#id98">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-6-4-18-12-2023">Versione 10.6.4 (18/12/2023)</a><ul>
+<li><a class="reference internal" href="#id99">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-6-3-15-12-2023">Versione 10.6.3 (15/12/2023)</a><ul>
+<li><a class="reference internal" href="#id100">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-6-2-14-12-2023">Versione 10.6.2 (14/12/2023)</a><ul>
+<li><a class="reference internal" href="#id101">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-6-1-13-12-2023">Versione 10.6.1 (13/12/2023)</a><ul>
+<li><a class="reference internal" href="#id102">Novità</a></li>
+<li><a class="reference internal" href="#id103">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-5-0-06-12-2023">Versione 10.5.0 (06/12/2023)</a><ul>
+<li><a class="reference internal" href="#id104">Novità</a></li>
+<li><a class="reference internal" href="#id105">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-4-3-28-11-2023">Versione 10.4.3 (28/11/2023)</a><ul>
+<li><a class="reference internal" href="#id106">Migliorie</a></li>
+<li><a class="reference internal" href="#id107">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-4-2-23-11-2023">Versione 10.4.2 (23/11/2023)</a><ul>
+<li><a class="reference internal" href="#id108">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-4-1-21-11-2023">Versione 10.4.1 (21/11/2023)</a><ul>
+<li><a class="reference internal" href="#id109">Migliorie</a></li>
+<li><a class="reference internal" href="#id110">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-4-0-14-11-2023">Versione 10.4.0 (14/11/2023)</a><ul>
+<li><a class="reference internal" href="#id111">Novità</a></li>
+<li><a class="reference internal" href="#id112">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-3-0-08-11-2023">Versione 10.3.0 (08/11/2023)</a><ul>
+<li><a class="reference internal" href="#id113">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-10-2-0-06-11-2023">Versione 10.2.0 (06/11/2023)</a><ul>
+<li><a class="reference internal" href="#id114">Novità</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-9-0-1-03-11-2023">Versione 9.0.1 (03/11/2023)</a><ul>
+<li><a class="reference internal" href="#id115">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-9-0-03-11-2023">Versione 8.9.0 (03/11/2023)</a><ul>
+<li><a class="reference internal" href="#id116">Novità</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-8-1-03-11-2023">Versione 8.8.1 (03/11/2023)</a><ul>
+<li><a class="reference internal" href="#id117">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-7-12-27-10-2023">Versione 8.7.12 (27/10/2023)</a><ul>
+<li><a class="reference internal" href="#id118">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-7-10-19-10-2023">Versione 8.7.10 (19/10/2023)</a><ul>
+<li><a class="reference internal" href="#id119">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-7-9-18-10-2023">Versione 8.7.9 (18/10/2023)</a><ul>
+<li><a class="reference internal" href="#id120">Migliorie</a></li>
+<li><a class="reference internal" href="#id121">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-7-8-12-10-2023">Versione 8.7.8 (12/10/2023)</a><ul>
+<li><a class="reference internal" href="#id122">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-7-7-12-10-2023">Versione 8.7.7 (12/10/2023)</a><ul>
+<li><a class="reference internal" href="#id123">Migliorie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-7-6-06-10-2023">Versione 8.7.6 (06/10/2023)</a><ul>
+<li><a class="reference internal" href="#id124">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-7-3-26-09-2023">Versione 8.7.3 (26/09/2023)</a><ul>
+<li><a class="reference internal" href="#id125">Fix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versione-8-7-0-20-09-2023">Versione 8.7.0 (20/09/2023)</a><ul>
+<li><a class="reference internal" href="#id126">Migliorie</a></li>
+<li><a class="reference internal" href="#id127">Fix</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                     -->
+					<div class="col-12 col-lg-9 px-5 order-last order-lg-first rst-content">
+						<main role="main" id="main">
+    <section id="tema-io-comune">
 <h1>Tema io-Comune<a class="headerlink" href="#tema-io-comune" title="Link to this heading">¶</a></h1>
 <!--- -----------------------------------------------------------------
   Esempio:
@@ -1233,73 +1860,105 @@ migliorata la visualizzazione e il layout su dispositivi tablet (intervallo dime
 </section>
 </section>
 
+</main>
+						<nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="../index.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Note di rilascio
+    </a>
+    <a class="float-right" href="../io-prenoto/index.html" title="Next">
+        io-Prenoto <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<a href="#" aria-hidden="true" data-attribute="return-to-top" id="return-to-top" class="return-to-top"  onclick="topFunction()">
+		<i class="it-collapse"></i>
+	</a>
+	<!-- <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+		<span class="navbar-toggler-icon"></span>
+		<span class="sr-only">Menu</span>
+	</button> -->
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            
 
+    <div class="px-3 pt-md-3 pb-md-2 mx-md-5 mb-4 mb-md-0">
+      <div class="row align-items-center d-flex">
+        <div class="col-xs-12 col-sm-6 col-lg-4 pt-4 pt-sm-5">
+          <a href="http://teamdigitale.governo.it/" target="_blank" class="d-inline-block" rel="noopener">
+            <div class="d-flex align-items-center">
+              <div class="px-2">
+                <img class="team-logo--icon" src="../_static/images/team-digitale-logo.svg" alt="Team per la Trasformazione Digitale">
+              </div>
+              <div class="px-2 border-white border-left team-logo--text text-white">
+                Team per la Trasformazione Digitale
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <span class="d-block m-2 in-collaboration">in collaborazione con</span>
+          <a href="https://www.agid.gov.it/" target="_blank" class="d-inline-block" rel="noopener">
+            <div class="d-flex align-items-center">
+              <div class="px-2">
+                <img class="agid-logo--icon" src="../_static/images/agid-logo.svg" alt="Agenzia per l'Italia Digitale">
+              </div>
+              <span class="agid-logo--separator border-white border-left"></span>
+              <div class="px-2 agid-logo--text text-white">
+                Agenzia per l'Italia Digitale
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-lg-4 pt-4 pt-sm-5">
+          <div class="text-center text-lg-right social d-flex align-items-center justify-content-center justify-content-lg-end flex-column flex-lg-row">
+            <div class="mr-lg-1 mb-2 mb-lg-0">Seguici su</div>
+            <div>
+              <a href="https://github.com/italia/" class="d-inline-flex small-prints mx-1 social__link"><i class="d-inline-block it-github"></i></a>
+              <a href="https://twitter.com/teamdigitaleIT" class="d-inline-flex small-prints mx-1 social__link"><i class="d-inline-block it-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/teamdigitale/" class="d-finline-lex small-prints mx-1 social__link"><i class="d-inline-block it-linkedin"></i></a>
+            </div>
           </div>
+        </div>
+      </div>
+  
+      <div class="row pb-4 colophon mt-md-5 mt-sm-3 pt-3 pt-sm-2">
+        <ul class="col list-inline small">
           
-        </div>
+          <li class="list-inline-item">
+            <strong><a class="footer-menu__link text-light-blue small-prints" href="/privacy-policy/">Privacy policy</a></strong>
+          </li>
+          
+          <li class="list-inline-item">
+            <strong><a class="footer-menu__link text-light-blue small-prints" href="/cookies-policy/">Cookie policy</a></strong>
+          </li>
+          
+          <li class="list-inline-item">
+            <strong><a class="footer-menu__link text-light-blue small-prints" href="/note-legali/">Note legali</a></strong>
+          </li>
+          
+        </ul>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">Documentazione io-Comune</a></h1>
-
-
-
-
-
-
-
-
-
-<search id="searchbox" style="display: none" role="search">
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
-      <input type="submit" value="Vai" />
-    </form>
     </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigazione</h3>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tema io-Comune</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../io-prenoto/index.html">io-Prenoto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../io-cittadino/index.html">io-Cittadino</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../index.html" title="capitolo precedente">Note di rilascio</a></li>
-      <li>Next: <a href="../io-prenoto/index.html" title="capitolo successivo">io-Prenoto</a></li>
-  </ul></li>
-</ul>
-</div>
-
-
-
-
-
-
-
 
         </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &#169;2025, RedTurtle.
-      
-      |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
-      
-      |
-      <a href="../_sources/io-comune/index.md.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+    </footer>
+        <script src="../_static/documentation_options.js?v=41f723b1"></script>
+        <script src="../_static/doctools.js?v=9bcbadda"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script src="../_static/translations.js?v=45930005"></script>
+        <script type="text/javascript" src="../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
 </html>
