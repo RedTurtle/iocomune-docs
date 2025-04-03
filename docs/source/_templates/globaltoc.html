@@ -17,12 +17,7 @@
 				if (hash && link.href.includes(hash)) {
 					link.classList.add("active");
 					link.closest("li").classList.add("current");
-					// optionally expand parents
-					// let parent = link.closest("ul");
-					// while (parent && parent.classList.contains("toctree")) {
-					// 	parent.style.display = "block";
-					// 	parent = parent.parentElement.closest("ul");
-					// }
+					
 				} else {
 					link.classList.remove("active");
 					link.closest("li").classList.remove("current");
