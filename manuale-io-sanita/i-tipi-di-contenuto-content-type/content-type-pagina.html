@@ -1,0 +1,1514 @@
+<!-- Direct copy of https://github.com/wagtail/sphinx-wagtail-theme/blob/main/sphinx_wagtail_theme/layout.html
+	Doing this to add our custom header
+--><!DOCTYPE html>
+<html class="no-js" lang="it" data-content_root="../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    
+        <title>Content-type “Pagina” &mdash; Documentazione Manuali d&#39;uso 0.1 </title>
+    
+        <link rel="shortcut icon" href="../../_static/favicon-redturtle.png" />
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			let rtt = document.getElementById("return-to-top");
+			if(rtt){
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					rtt.style.display = "block";
+				} else {
+					rtt.style.display = "none";
+				}
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const progressBar = document.getElementById("progress-bar");
+			const progressBarContainer = document.getElementById("progress-bar-container");
+			window.addEventListener("scroll", function() {
+				let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				progressBarContainer.style.display = scrollTop? 'block': 'none'
+				let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				let progress = (scrollTop / scrollHeight) * 100;
+				progressBar.style.width = progress + "%";
+			});
+		});
+	</script>
+    <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=8cc4808c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/redturtle.css?v=8fe9cb8c" />
+            <link rel="index" title="Indice" href="../../genindex.html" />
+            <link rel="search" title="Cerca" href="../../search.html" />
+            <link rel="top" title="Documentazione Manuali d&#39;uso 0.1 " href="#" />
+            <link rel="up" title="I tipi di contenuto (content-type)" href="index.html" />
+            <link rel="next" title="Undo/Redo sulle pagine" href="undo-redo-sulle-pagine.html" />
+            <link rel="prev" title="Tipi di contenuto specializzati per AgID" href="tipi-di-contenuto-specializzati-per-agid.html" />
+    </head>
+<body><script>try { localStorage.removeItem("wagtail-theme"); } catch (e) {}</script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Salta al contenuto</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="/"
+                        title="RedTurtle"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../_static/img/tartaruga-cerchio.svg" width="48" height="48" alt="RedTurtle"
+                            class="logo-img"
+                        />
+                        Manuali d'uso
+                    </a>
+                
+                
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            
+                                
+                                
+                                <li class="nav-item"><a class="nav-link"  href="https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F">Help-desk</a></li>
+                            
+                                
+                                
+                                <li class="nav-item"><a class="nav-link"  href="https://www.redturtle.it/">redturtle.it</a></li>
+                            
+                        </ul>
+                    </div>
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+	 
+    <div id="main-content" class="container-fluid">
+		<div id="utility-bar" class="sticky-top">
+			<header class="row align-items-center justify-content-between py-3">
+				<div class="col-sm-6 col-lg-6">
+					
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Cerca nella documentazione" aria-label="Cerca nella documentazione" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+				</div>
+				<div class="col-sm-6 col-lg-auto"><button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none d-none" type="button" hidden aria-hidden="true" tabindex="-1">
+						<span class="dark-only"><i class="fas fa-sun"></i> Modalità chiara</span>
+						<span class="light-only"><i class="fas fa-moon"></i> Modalità scura</span>
+					</button></div>
+			</header>
+			<div id="progress-bar-container">
+				<div id="progress-bar"></div>
+			</div>
+		</div>
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse d-lg-block pt-4"><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Menu principale">
+        <p class="caption" role="heading"><span class="caption-text">Manuali d'uso</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../manuale-io-comune/index.html">Manuale io-Comune</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html">Autenticazione e interfaccia di backend</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html#edit-della-pagina">Edit della pagina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html#navigazione-del-piano-editoriale">Navigazione del piano editoriale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/back-end-della-navigazione-autenticata.html">Back-end della navigazione autenticata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/account-e-ruoli.html">Account e ruoli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/account-e-ruoli.html#gestione-utenti-a-livello-di-cartelle-o-particolari-contenuti">Gestione utenti a livello di cartelle o particolari contenuti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/workflow.html">Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/risorse-utili.html">Risorse utili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/index.html">I tipi di contenuto (content-type)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/tipi-di-contenuto-specializzati-per-agid.html">Tipi di contenuto specializzati per AgID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-pagina.html">Content-type “Pagina”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/undo-redo-sulle-pagine.html">Undo/Redo sulle pagine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-cartella.html">Content-type “Cartella”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-file.html">Content-type “File”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-immagine.html">Content-type “Immagine”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-collegamento.html">Content-type “Collegamento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-argomento.html">Content-type “Argomento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-in-testata-leadimage.html">Dimensioni dell’immagine in testata (leadimage)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-di-anteprima.html">Dimensioni dell’immagine di anteprima</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-evento.html">Content-type “Evento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-luogo.html">Content-type “Luogo”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-notizie-e-comunicati-stampa.html">Content-type “Notizie e comunicati stampa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-persona-pubblica.html">Content-type “Persona pubblica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-incarico.html">Content-type “Incarico”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-servizio.html">Content-type “Servizio”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-unita-organizzativa.html">Content-type “Unità organizzativa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-dataset.html">Content-type “Dataset”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-documento.html">Content-type “Documento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-cartella-modulistica.html">Content-type “Cartella Modulistica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-open-data.html">Content-type “Open-data”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-bando.html">Content-type “Bando”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-punto-di-contatto.html">Content-type “Punto di contatto”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/i-tipi-di-contenuto-content-type/gestione-di-io-prenoto-integrato-in-io-comune-per-il-pnrr.html">Gestione di io-Prenoto integrato in io-Comune per il PNRR</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/dimensioni-immagini.html">Dimensioni consigliate delle immagini</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/dimensioni-immagini.html#immagini-dei-contenuti">Immagini dei contenuti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/dimensioni-immagini.html#blocco-elenco">Blocco Elenco</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/dimensioni-immagini.html#slider">Slider</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/dimensioni-immagini.html#altri-blocchi">Altri blocchi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/faq.html">FAQ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/faq.html#cartella-faq">Cartella FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/faq.html#id1">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/sottositi.html">Sottositi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/multilinguismo.html">Multilinguismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/menu-di-configurazione-del-sito.html">Menu di configurazione del sito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/menu-configurabile.html">Menu configurabile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/menu-configurabile.html#configurazione-del-menu-di-testata">Configurazione del menu di testata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/menu-configurabile.html#voci-di-un-menu">Voci di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/menu-configurabile.html#configurazione-header-slim">Configurazione header “slim”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/menu-secondario-in-testata.html">Menu secondario in testata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/menu-secondario-in-testata.html#configurazione-di-un-menu">Configurazione di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/menu-secondario-in-testata.html#voci-di-un-menu">Voci di un menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/voci-aggiuntive-nel-footer.html">Voci aggiuntive nel footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/configurazione-dei-blocchi-di-ricerca.html">Configurazione dei blocchi di ricerca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/configurazione-dei-vocabolari.html">Configurazione dei vocabolari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/configuratore-del-blocco-contatti.html">Configuratore del blocco contatti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/configuratore-del-footer.html">Configuratore del footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/configuratore-subfooter.html">Configuratore subfooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/configuratore-dei-social-testata-e-footer.html">Configuratore dei social (testata e footer)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/configuratore-dei-social-testata-e-footer.html#lista-icone-social">Lista icone social</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/customer-satisfaction.html">Customer satisfaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/configuratore-cookie-banner.html">Configuratore Cookie Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/newsletter.html">Newsletter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/newsletter.html#messaggi-inviabili">Messaggi inviabili</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/newsletter.html#configurazione-dellhtml-del-canale">Configurazione dell’HTML del canale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/volto-alerts.html">Volto Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/configurazioni-varie.html">Configurazioni varie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/configurazioni-varie.html#geolocalizzazione-mappe">Geolocalizzazione mappe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/configurazioni-varie.html#impostazioni-per-linvio-della-posta-attraverso-smtp-del-portale">Impostazioni per l’invio della posta attraverso SMTP del portale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html">Data-element per l’asseverazione PNRR</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#menu-principale">Menu principale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#menu-secondario">Menu secondario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#pagina-argomenti">Pagina Argomenti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#footer">Footer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#pagina-servizi">Pagina Servizi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#altre-pagine-di-secondo-livello">Altre pagine di secondo livello</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#area-personale">Area personale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#note-legali">Note legali</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#scheda-servizio">Scheda servizio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/data-element-pnrr.html#verifica-delle-buone-pratiche">Verifica delle buone pratiche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-comune/appendice.html">Appendice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-comune/appendice.html#campi-speciali-per-la-seo">Campi speciali per la SEO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../manuale-io-prenoto/index.html">Manuale io-Prenoto</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-prenoto/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-prenoto/integrazione-con-io-comune.html">Integrazione con io-Comune</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-prenoto/integrazione-con-io-comune.html#attori-coinvolti-nel-processo">Attori coinvolti nel processo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-prenoto/integrazione-con-io-comune.html#content-type-cartella-prenotazioni">Content-type “Cartella prenotazioni”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-prenoto/integrazione-con-io-comune.html#gestione-delle-prenotazioni-pervenute-da-parte-degli-operatori">Gestione delle prenotazioni pervenute da parte degli operatori</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-prenoto/criteri-di-presentazione-degli-slot-di-prenotazione.html">Criteri di presentazione degli slot di prenotazione - cittadino vs operatore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-prenoto/notifiche-personalizzate-sms-e-appio.html">Notifiche personalizzate (SMS e AppIO)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../manuale-io-cittadino/index.html">Manuale io-Cittadino</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-cittadino/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-cittadino/integrazione-con-io-comune.html">Integrazione con io-Comune</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-cittadino/integrazione-con-io-comune.html#attori-coinvolti-nel-processo">Attori coinvolti nel processo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-cittadino/integrazione-con-io-comune.html#content-type-modello-pratica">Content-type “Modello pratica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-cittadino/integrazione-con-io-comune.html#creazione-della-form-del-modello-pratica">Creazione della form del Modello pratica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-cittadino/integrazione-con-io-comune.html#pratica-lato-cittadino-collegamento-al-servizio">Pratica lato cittadino - collegamento al Servizio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-cittadino/integrazione-con-il-software-di-protocollo-maggioli.html">Integrazione con il software di Protocollo Maggioli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-cittadino/integrazione-con-il-software-di-protocollo-maggioli.html#configurazione">Configurazione</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../manuale-io-segnalo/index.html">Manuale io-Segnalo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-segnalo/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-segnalo/integrazione-con-io-comune.html">Integrazione con io-Comune</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-segnalo/attori-coinvolti-nel-processo.html">Attori coinvolti nel processo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-segnalo/manuale-admin-creazione-oggetto-segnalazioni.html">Manuale admin (creazione oggetto Segnalazioni)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-segnalo/manuale-admin-creazione-oggetto-segnalazioni.html#content-type-segnalazioni">Content-type “Segnalazioni”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-segnalo/manuale-operatore.html">Manuale Operatore</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-segnalo/manuale-operatore.html#workflow-delle-segnalazioni">Workflow delle segnalazioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-segnalo/manuale-operatore.html#gestione-delle-segnalazioni-pervenute">Gestione delle segnalazioni pervenute</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manuale-io-segnalo/manuale-cittadino.html">Manuale Cittadino</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-segnalo/manuale-cittadino.html#autorizzazioni-e-condizioni">Autorizzazioni e Condizioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-segnalo/manuale-cittadino.html#dati-di-segnalazione">Dati di Segnalazione</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../manuale-io-segnalo/manuale-cittadino.html#validazione-e-sicurezza-otp">Validazione e Sicurezza (OTP)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Manuale io-Sanità</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autenticazione-e-interfaccia-di-backend.html">Autenticazione e interfaccia di backend</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autenticazione-e-interfaccia-di-backend.html#edit-della-pagina">Edit della pagina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autenticazione-e-interfaccia-di-backend.html#navigazione-del-piano-editoriale">Navigazione del piano editoriale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../back-end-della-navigazione-autenticata.html">Back-end della navigazione autenticata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../account-e-ruoli.html">Account e ruoli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../account-e-ruoli.html#gestione-utenti-a-livello-di-cartelle-o-particolari-contenuti">Gestione utenti a livello di cartelle o particolari contenuti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow.html">Workflow</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">I tipi di contenuto (content-type)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tipi-di-contenuto-specializzati-per-agid.html">Tipi di contenuto specializzati per AgID</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Content-type “Pagina”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="undo-redo-sulle-pagine.html">Undo/Redo sulle pagine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-cartella.html">Content-type “Cartella”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-file.html">Content-type “File”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-immagine.html">Content-type “Immagine”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-collegamento.html">Content-type “Collegamento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dimensioni-dell-immagine-in-testata-leadimage.html">Dimensioni dell’immagine in testata (leadimage)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dimensioni-dell-immagine-di-anteprima.html">Dimensioni dell’immagine di anteprima</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-evento.html">Content-type “Evento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-notizie-e-comunicati-stampa.html">Content-type “Notizie e comunicati stampa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-persona.html">Content-type “Persona”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-servizio.html">Content-type “Servizio”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-unita-organizzativa.html">Content-type “Unità organizzativa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-documento.html">Content-type “Documento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-cartella-modulistica.html">Content-type “Cartella Modulistica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-bando.html">Content-type “Bando”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-punto-di-contatto.html">Content-type “Punto di contatto”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="content-type-come-fare-per.html">Content-type “Come fare per”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pagine-di-ricerca-per-argomenti-del-modello-agid.html">Pagine di ricerca per argomenti del modello AgID</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sottositi.html">Sottositi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accessibility-checker.html">Accessibility checker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility-checker.html#come-si-usa">Come si usa</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../multilinguismo.html">Multilinguismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../menu-di-configurazione-del-sito.html">Menu di configurazione del sito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../menu-configurabile.html">Menu configurabile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../menu-configurabile.html#configurazione-del-menu-di-testata">Configurazione del menu di testata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../menu-configurabile.html#voci-di-un-menu">Voci di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../menu-configurabile.html#configurazione-header-slim">Configurazione header “slim”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../menu-secondario-in-testata.html">Menu secondario in testata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../menu-secondario-in-testata.html#configurazione-di-un-menu">Configurazione di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../menu-secondario-in-testata.html#voci-di-un-menu">Voci di un menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../voci-aggiuntive-nel-footer.html">Voci aggiuntive nel footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configurazione-dei-blocchi-di-ricerca.html">Configurazione dei blocchi di ricerca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configurazione-dei-vocabolari.html">Configurazione dei vocabolari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuratore-del-footer.html">Configuratore del footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuratore-subfooter.html">Configuratore subfooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuratore-dei-social-testata-e-footer.html">Configuratore dei social (testata e footer)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../configuratore-dei-social-testata-e-footer.html#lista-icone-social">Lista icone social</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../customer-satisfaction.html">Customer satisfaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuratore-cookie-banner.html">Configuratore Cookie Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../newsletter.html">Newsletter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../newsletter.html#gestione-di-backoffice-del-canale-newsletter">Gestione di backoffice del canale newsletter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../newsletter.html#configurazione-dellhtml-del-canale">Configurazione dell’HTML del canale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../configurazioni-varie.html">Configurazioni varie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../configurazioni-varie.html#geolocalizzazione-mappe">Geolocalizzazione mappe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configurazioni-varie.html#impostazioni-per-linvio-della-posta-attraverso-smtp-del-portale">Impostazioni per l’invio della posta attraverso SMTP del portale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../appendice.html">Appendice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../appendice.html#campi-speciali-per-la-seo">Campi speciali per la SEO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+	
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Espandi/riduci contenuti del menu</span>
+        </button>
+    </template>
+	<script type="text/javascript">
+		function updateCurrentToc(event) {
+						const hash = window.location.hash;
+			// solo i link ad ancore interne (es. versioni nelle note di rilascio):
+			// le pagine vere mantengono l'evidenziazione impostata da Sphinx
+			const tocLinks = Array.from(document.querySelectorAll(".toctree-l2 a")).filter((link) => { const h = link.getAttribute("href"); return h.startsWith("#") && h.length > 1; });
+			tocLinks.forEach((link) => {
+				if (hash && link.href.includes(hash)) {
+					link.classList.add("active");
+					link.closest("li").classList.add("current");
+					
+				} else {
+					link.classList.remove("active");
+					link.closest("li").classList.remove("current");
+				}
+			});
+		}
+		// highlight current TOC link manually
+		addEventListener("DOMContentLoaded", updateCurrentToc);
+		// nelle note di rilascio le versioni sono ancore: non mostrare il livello sotto (Migliorie, Fix...)
+		addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".site-toc .toctree-l2").forEach((li) => {
+				const a = li.querySelector(":scope > a");
+				const h = a ? a.getAttribute("href") : "";
+				// link a una versione: "#versione-..." sulla stessa pagina, "pagina.html#versione-..." dalle altre
+				if (/#.+/.test(h)) {
+					li.querySelectorAll(":scope > ul, :scope > .toctree-expand").forEach((el) => el.remove());
+				}
+			});
+		});
+		// segnala ai lettori di schermo la pagina corrente
+		addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".site-toc a.current").forEach((link) => {
+				const h = link.getAttribute("href"); if (!(h.startsWith("#") && h.length > 1)) link.setAttribute("aria-current", "page");
+			});
+		});
+		addEventListener("hashchange", updateCurrentToc);
+		// porta in vista nel menu laterale la voce della pagina corrente
+		addEventListener("load", () => {
+			const cur = document.querySelector('.site-toc a[aria-current="page"]');
+			if (!cur) return;
+			let box = cur.parentElement;
+			while (box && box !== document.body) {
+				const st = getComputedStyle(box);
+				if (/(auto|scroll)/.test(st.overflowY) && box.scrollHeight > box.clientHeight) break;
+				box = box.parentElement;
+			}
+			if (!box || box === document.body) return;
+			const offset = cur.getBoundingClientRect().top - box.getBoundingClientRect().top;
+			box.scrollTop += offset - box.clientHeight / 3;
+		});
+
+	</script>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5 ">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="Percorso di navigazione">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../index.html">Manuali d'uso</a></li>
+            <li class="breadcrumb-item"><a href="../index.html">Manuale io-Sanità</a></li>
+            <li class="breadcrumb-item"><a href="index.html">I tipi di contenuto (content-type)</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Content-type “Pagina”</li>
+    </ol>
+</nav>
+                    </div>
+                    
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+					<!-- 
+                    <nav class="col-12 col-lg-3 pb-4 order-lg-last">
+						<div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+							<p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Content-type “Pagina”</a><ul>
+<li><a class="reference internal" href="#come-creare-una-nuova-pagina-allinterno-di-un-percorso">Come creare una nuova pagina all’interno di un percorso</a></li>
+<li><a class="reference internal" href="#pagine-di-disambiguazione-di-secondo-livello">Pagine di disambiguazione di secondo livello</a></li>
+<li><a class="reference internal" href="#editing-di-un-oggetto-a-blocchi">Editing di un oggetto a blocchi</a></li>
+<li><a class="reference internal" href="#composizione-a-blocchi">Composizione a blocchi</a><ul>
+<li><a class="reference internal" href="#blocco-testo">Blocco Testo</a><ul>
+<li><a class="reference internal" href="#gestione-dei-data-element">Gestione dei data-element</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#blocco-immagine">Blocco Immagine</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#blocco-elenco">Blocco Elenco</a><ul>
+<li><a class="reference internal" href="#id-di-controllo-lighthouse-per-verifiche-pnrr">ID di controllo LightHouse per verifiche PNRR</a></li>
+<li><a class="reference internal" href="#filtri-supplementari-per-i-blocchi-elenco">Filtri supplementari per i blocchi elenco</a></li>
+<li><a class="reference internal" href="#variazioni-template-per-il-blocco-elenco">Variazioni (Template) per il blocco elenco</a><ul>
+<li><a class="reference internal" href="#nota-importante-per-la-visualizzazione-delle-immagini-nelle-card">Nota importante per la visualizzazione delle immagini nelle card</a></li>
+<li><a class="reference internal" href="#variazione-bandi">Variazione “Bandi”</a></li>
+<li><a class="reference internal" href="#variazione-card-con-immagine">Variazione ‘Card con immagine’</a></li>
+<li><a class="reference internal" href="#variazione-mappa">Variazione ‘Mappa’</a></li>
+<li><a class="reference internal" href="#variazione-slider">Variazione ‘Slider’</a></li>
+<li><a class="reference internal" href="#variazione-in-evidenza">Variazione ‘In evidenza’</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#variazione-contenuto-in-evidenza">Variazione ‘Contenuto in evidenza’</a></li>
+<li><a class="reference internal" href="#variazione-card-semplice">Variazione ‘Card semplice’</a></li>
+<li><a class="reference internal" href="#id5">Variazione ‘Contenuto in evidenza’</a></li>
+<li><a class="reference internal" href="#variazione-quadratoni-con-immagine">Variazione ‘Quadratoni con immagine’</a></li>
+<li><a class="reference internal" href="#variazione-card-con-testo-animato">Variazione ‘Card con testo animato’</a></li>
+<li><a class="reference internal" href="#variazione-photogallery">Variazione ‘Photogallery’</a></li>
+<li><a class="reference internal" href="#variazione-tabella">Variazione ‘Tabella’</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#blocco-video">Blocco “Video”</a></li>
+<li><a class="reference internal" href="#blocco-card-semplice">Blocco “Card semplice”</a></li>
+<li><a class="reference internal" href="#blocco-testo-in-riquadro-immagine">Blocco “Testo in riquadro immagine”</a></li>
+<li><a class="reference internal" href="#blocco-contenuto-in-primo-piano">Blocco “Contenuto in primo piano”</a></li>
+<li><a class="reference internal" href="#blocco-rss">Blocco “RSS”</a></li>
+<li><a class="reference internal" href="#blocco-ricerca-nelle-sezioni">Blocco “Ricerca nelle sezioni”</a></li>
+<li><a class="reference internal" href="#blocco-argomenti-in-evidenza">Blocco “Argomenti in evidenza”</a></li>
+<li><a class="reference internal" href="#blocco-alert">Blocco “Alert”</a></li>
+<li><a class="reference internal" href="#blocco-interruzione-di-pagina">Blocco “Interruzione di pagina”</a></li>
+<li><a class="reference internal" href="#blocco-indice-dei-contenuti">Blocco “Indice dei contenuti”</a><ul>
+<li><a class="reference internal" href="#creazione-di-ancore-nel-testo">Creazione di ancore nel testo</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#blocco-hero-con-bottoni-per-il-download-dagli-store">Blocco “Hero” con bottoni per il download dagli store</a></li>
+<li><a class="reference internal" href="#blocco-mappa">Blocco “Mappa”</a></li>
+<li><a class="reference internal" href="#blocco-html">Blocco “HTML”</a></li>
+<li><a class="reference internal" href="#blocco-tabella">Blocco “Tabella”</a></li>
+<li><a class="reference internal" href="#blocco-calendario">Blocco “Calendario”</a></li>
+<li><a class="reference internal" href="#blocco-accordion">Blocco “Accordion”</a></li>
+<li><a class="reference internal" href="#blocco-form">Blocco “Form”</a></li>
+<li><a class="reference internal" href="#blocco-ricerca-eventi">Blocco “Ricerca Eventi”</a></li>
+<li><a class="reference internal" href="#blocco-ricerca-bandi">Blocco “Ricerca Bandi”</a></li>
+<li><a class="reference internal" href="#blocco-icone">Blocco “Icone”</a></li>
+<li><a class="reference internal" href="#blocco-cta-call-to-action">Blocco “CTA” (Call to Action)</a></li>
+<li><a class="reference internal" href="#blocco-numeri">Blocco «Numeri»</a></li>
+<li><a class="reference internal" href="#blocco-countdown">Blocco «Countdown»</a></li>
+<li><a class="reference internal" href="#blocco-cerca">Blocco «Cerca»</a><ul>
+<li><a class="reference internal" href="#opzioni-per-il-widget">Opzioni per il widget</a></li>
+<li><a class="reference internal" href="#ulteriori-controlli-per-il-blocco">Ulteriori controlli per il blocco</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#blocco-cerca-servizi-o-prestazioni">Blocco «Cerca servizi o prestazioni»</a></li>
+<li><a class="reference internal" href="#blocco-griglia">Blocco «Griglia»</a></li>
+<li><a class="reference internal" href="#blocco-cerca-con-mappa">Blocco «Cerca con Mappa»</a></li>
+<li><a class="reference internal" href="#blocco-ricerca-rapida">Blocco «Ricerca rapida»</a></li>
+<li><a class="reference internal" href="#blocco-tutto-per">Blocco «Tutto per»</a></li>
+<li><a class="reference internal" href="#blocco-contatti">Blocco “Contatti“</a></li>
+<li><a class="reference internal" href="#copia-incolla-di-blocchi-tra-pagine-differenti">Copia/incolla di blocchi tra pagine differenti</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                     -->
+					<div class="col-12 px-5 order-last order-lg-first rst-content">
+						<main role="main" id="main">
+    <section id="content-type-pagina">
+<h1>Content-type “Pagina”<a class="headerlink" href="#content-type-pagina" title="Link to this heading">¶</a></h1>
+<p>Una pagina rappresenta il contenuto informativo di base del sistema, ed ha le stesse regole di workflow di tutti gli altri tipi di contenuto. Può essere utilizzato per creare contenuti foglia, ma anche per creare le pagine di disambiguazione delle varie sezioni e sottosezioni.</p>
+<p>Tipicamente le pagine vengono utilizzate per creare contenuti “trasversali” al sito, o per creare delle pagine di disambiguazione.</p>
+<p>Oltre ai classici campi titolo e descrizione, nella pagina sono presenti anche i campi per configurare la testata nel caso in cui si voglia costruire una pagina di disambiguazione.</p>
+<p>I campi per la gestione della testata sono i seguenti:</p>
+<p><img alt="Schermata: Content-type “Pagina”" src="../../_images/p021-02.png" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Immagine per la testata</p></th>
+<th class="head"><p>Se impostata, verrà mostrata l’immagine appena prima del testo inserito nel campo ‘Informazioni aggiuntive per la testata’. Questo campo non è la leadimage, quindi non viene usato come immagine di anteprima della pagina negli elenchi, ma solamente per mostrare un’immagine nella testata.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Immagine in anteprima (preview image)</strong></p></td>
+<td><p>Serve per mostrare un’immagine diversa da quella del dettaglio nell’anteprima dell’oggetto</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>negli elenchi.<a class="footnote-reference brackets" href="#n1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Ricerca in testata</strong></p></td>
+<td><p>Se attivato, mostrerà un campo di ricerca nella testata che consentirà all’utente di effettuare una ricerca di contenuti all’interno di quella sezione</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mostra la data di modifica</strong></p></td>
+<td><p>Mostra in fondo alla pagina, la data di ultima modifica della pagina<a class="footnote-reference brackets" href="#n2" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Mostra i bottoni per la condivisione sui social</strong></p></td>
+<td><p>Se attivato, abilita i pulsanti di condivisione</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Informazioni aggiuntive per la testata</strong></p></td>
+<td><p>Testo libero in cui è possibile inserire informazioni aggiuntive per quella pagina/sezione. Verrà mostrato nella parte di destra della testata</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Parliamo di</strong> <br></p></td>
+<td><p>Campo collegato al vocabolario degli argomenti (tale vocabolario si imposta qui)<a class="footnote-reference brackets" href="#n3" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>La caratteristica principale dell’oggetto pagina è che può essere costruita in modalità “blocchi”: ogni blocco concettualmente può essere visto come un paragrafo (&lt;p&gt;) di pagina, all’interno del quale è possibile inserire del testo semplice, formattato, a blocchi più complessi, come blocco immagine, blocco RSS, blocchi elenco, ecc.</p>
+<p>Vedremo successivamente in rassegna tutti i blocchi disponibili, ed il loro utilizzo.</p>
+<section id="come-creare-una-nuova-pagina-allinterno-di-un-percorso">
+<h2>Come creare una nuova pagina all’interno di un percorso<a class="headerlink" href="#come-creare-una-nuova-pagina-allinterno-di-un-percorso" title="Link to this heading">¶</a></h2>
+<p>Supponiamo di essere in una determinata pagina X, e vogliamo inserirne una pagina (Y) per creare il percorso X -&gt; Y</p>
+<p>Da autenticati, posizionandoci su una pagina (es. <strong>Azienda</strong> ), ne abbiamo l’anteprima ( <strong>http:/&lt;sito&gt;/azienda/</strong> )</p>
+<p><img alt="Schermata: Come creare una nuova pagina all’interno di un percorso" src="../../_images/p023-01.png" /></p>
+<p>Nella barra di sinistra è presente il pulsante <img alt="Aggiungi contenuto" src="../../_images/icon-p023-0.png" /> per inserire la nuova pagina <em>“Servizi in staff e</em> <em>direzione”</em> (ricordiamo che tutti gli oggetti inseriti hanno di default lo stato “privato”). Se si procede ad inserire la nuova pagina avremo creato il nuovo percorso</p>
+<p><strong>Azienda -&gt; Servizi in staff e direzione</strong></p>
+</section>
+<section id="pagine-di-disambiguazione-di-secondo-livello">
+<h2>Pagine di disambiguazione di secondo livello<a class="headerlink" href="#pagine-di-disambiguazione-di-secondo-livello" title="Link to this heading">¶</a></h2>
+<p>Le pagine di disambiguazione di secondo livello vengono gestite attraverso il content-type “Pagina”</p>
+</section>
+<section id="editing-di-un-oggetto-a-blocchi">
+<h2>Editing di un oggetto a blocchi<a class="headerlink" href="#editing-di-un-oggetto-a-blocchi" title="Link to this heading">¶</a></h2>
+<p>I tipi di contenuto che si costruiscono “nativamente” con i blocchi sono:</p>
+<ul class="simple">
+<li><p>Pagina</p></li>
+</ul>
+<p><img alt="Schermata: Editing di un oggetto a blocchi" src="../../_images/p023-1.png" /></p>
+<ul class="simple">
+<li><p>Cartella Modulistica</p></li>
+<li><p>Sottosito</p></li>
+</ul>
+<p>Questo significa, visivamente, che sulla parte sinistra si presenta l’editor a blocchi, e nella parte destra la sidebar con i campi accessori. Gli oggetti di sistema che <strong>non</strong> si costruiscono attraverso i blocchi, visualmente hanno una disposizione differente dei campi disponibili, rispetto a Pagina, Cartella modulistica e Sottosito: se prendiamo ad esempio il content-type “Evento”, che non è un content-type a blocchi, la sua form di editing è di questo tipo:</p>
+<p>Possiamo notare quindi come nella parte centrale della form siano presenti tutti i campi, organizzati in Tab,  necessari all’inserimento dei contenuti e delle diverse proprietà. Nel caso invece di una pagina a blocchi, la form sarà la seguente:</p>
+<p><img alt="Schermata: Editing di un oggetto a blocchi" src="../../_images/p024-01.png" /></p>
+<p><img alt="Schermata: Editing di un oggetto a blocchi" src="../../_images/p024-11.png" /></p>
+<p>Possiamo notare quindi come nella parte sinistra della pagina siano presenti i blocchi per l’editing dei contenuti della pagina stessa, e nella parte destra è presente una sidebar che racchiude i campi principali quali titolo, descrizione, elementi correlati, data di pubblicazione ecc. I campi sono aggregati logicamente in “sezioni” NB: il titolo che compare nella parte sinistra è lo stesso titolo che viene scritto nella parte destra della toolbar, corrispondente appunto al campo “titolo”.</p>
+<p>La sidebar può essere espansa a finestra intera, per una gestione più comoda, utilizzando l’apposito pulsante:</p>
+<p>Tuttavia, anche nei content-type che non sono nativamente a blocchi è possibile gestire la maggior parte dei campi attraverso un editor a blocchi: ad esempio, per il content-type “Unità Organizzativa”</p>
+<p><img alt="Schermata: Editing di un oggetto a blocchi" src="../../_images/p025-02.png" /></p>
+<p><img alt="Schermata: Editing di un oggetto a blocchi" src="../../_images/p026-02.png" /></p>
+<p>In questo caso, il campo “Competenze” all’interno della tab “Competenze” è un campo editabile con i blocchi, come se si trattasse di una pagina. I blocchi disponibili però, in questo caso, saranno meno rispetto a quelli disponibili per un blocco di una Pagina (questo per evitare che la vista di quel contenuto possa risultare sbilanciato, nel caso per esempio si inserissero dei blocchi elenco molto lunghi). Tipicamente è possibile inserire blocchi di testo di diversi formati, immagini, video, tabelle, RSS, campi HTML ecc..)</p>
+</section>
+<section id="composizione-a-blocchi">
+<h2>Composizione a blocchi<a class="headerlink" href="#composizione-a-blocchi" title="Link to this heading">¶</a></h2>
+<p>Per aggiungere un nuovo blocco, andare in “Modifica” su una Pagina preesistente (bottone con la matita), oppure aggiungendo una nuova Pagina.</p>
+<p>Premere sul <strong>(+)</strong> sotto all’ultimo blocco, che di default è un blocco di testo vuoto.</p>
+<p>Per aggiungere blocchi, in fondo al testo o in mezzo ad altri già impostati, selezionare un blocco presente e premere “Invio”, verrà creato un blocco vuoto sotto a quello selezionato.</p>
+<p>L’idea è di trattare i blocchi di testo come i paragrafi di un documento, e di utilizzare altri blocchi per formattazioni particolari.</p>
+<p><img alt="Schermata: Composizione a blocchi" src="../../_images/p026-12.png" /></p>
+<p>Per eliminare un blocco, non serve altro che cliccare sull’icona “cestino” presente alla sua destra, una volta selezionato (facendo click al suo interno).</p>
+<p>Oltre ad eliminarlo, è possibile ordinarlo tra i blocchi presenti trascinandolo attraverso l’icona alla</p>
+<p>sua sinistra <img alt="Trascina il blocco" src="../../_images/icon-p027-0.png" /> .</p>
+<p><img alt="Schermata: Composizione a blocchi" src="../../_images/p027-02.png" /></p>
+<section id="blocco-testo">
+<h3>Blocco Testo<a class="headerlink" href="#blocco-testo" title="Link to this heading">¶</a></h3>
+<p>Utilizzando un blocco di testo (ma è applicabile anche al testo di una Notizia o di un Evento), se si seleziona una porzione di testo (o tutto il testo nel blocco) compariranno i bottoni per la formattazione:</p>
+<p>Analizziamo nel dettaglio i vari bottoni di formattazione:</p>
+<ul class="simple">
+<li><p>Il pulsante <img alt="Allineamento del testo" src="../../_images/icon-p028-0.png" /> consente di selezionare l’allineamento del testo: a sinistra, a destra, centrato, giustificato.</p></li>
+<li><p>Vi sono poi i classici pulsanti di formattazione in stile ‘Word’ per:</p>
+<ul>
+<li><p>testo in grassetto <img alt="Grassetto" src="../../_images/icon-p028-1.png" /></p></li>
+<li><p>testo in italico <img alt="Corsivo" src="../../_images/icon-p028-2.png" /></p></li>
+<li><p>testo sottolineato <img alt="Sottolineato" src="../../_images/icon-p028-3.png" /></p></li>
+<li><p>Testo strikethrough <img alt="Barrato" src="../../_images/icon-p028-4.png" /></p></li>
+</ul>
+</li>
+<li><p>Il pulsante <img alt="Dimensione del testo" src="../../_images/icon-p028-5.png" /> consente di aumentare la dimensione di un testo selezionato</p></li>
+<li><p>Il pulsante <img alt="Intestazione" src="../../_images/icon-p028-6.png" /> permette di applicare uno stile per le intestazioni. Ci sono 5 tipi di intestazioni, con una dimensione del testo dalla più grande alla più piccola.</p></li>
+<li><p>Il pulsante <img alt="Collegamento" src="../../_images/icon-p028-7.png" /> consente di creare un collegamento ad altre pagine interne o esterne al sito, oppure di inserire un indirizzo email.<a class="footnote-reference brackets" href="#n4" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p></li>
+<li><p>Il pulsante <img alt="Trasforma i link in bottoni" src="../../_images/icon-p028-8.png" /> trasforma tutti i link in bottoni. Ovvero: se nel testo sono presenti dei link, questi appariranno con lo stile di un bottone.</p></li>
+<li><p>Vi sono poi tutti i classici pulsanti di formattazione in stile ‘Word’ per:</p>
+<ul>
+<li><p>punto elenco <img alt="Elenco puntato" src="../../_images/icon-p028-9.png" /></p></li>
+<li><p>elenco numerato <img alt="Elenco numerato" src="../../_images/icon-p028-10.png" /></p></li>
+<li><p>box per mettere in evidenza una porzione di testo <img alt="Callout" src="../../_images/icon-p028-11.png" /> .secondo diversi layout</p></li>
+</ul>
+</li>
+</ul>
+<p>Una menzione particolare per il pulsante “collegamento”: nel campo di testo che appare, si può inserire un link ad un indirizzo esterno al sito, oppure un indirizzo email. Cliccando sull’icona di destra, invece sarà possibile navigare l’alberatura del sito e selezionare una risorsa presente sul sito stesso.</p>
+<p><img alt="Schermata: Blocco Testo" src="../../_images/p028-02.png" /></p>
+<p>Per creare una nuova riga di testo (a capo) all’interno dello stesso blocco, è necessario premere SHIFT+Invio.</p>
+<section id="gestione-dei-data-element">
+<h4>Gestione dei data-element<a class="headerlink" href="#gestione-dei-data-element" title="Link to this heading">¶</a></h4>
+<p>Un <strong>data-element</strong> è un particolare valore che viene attribuito, a livello HTML, al link costruito. E’ impostabile soltanto da un set di valori predefinito. Il data-element serve al validatore automatico di AgID per le verifiche PNRR, attualmente nella versione per il Modello Sanità non viene considerato, ma lo potrebbe essere in futuro in caso di asseverazione. <strong>Non considerare</strong></p>
+</section>
+</section>
+<section id="blocco-immagine">
+<h3>Blocco Immagine<a class="headerlink" href="#blocco-immagine" title="Link to this heading">¶</a></h3>
+<p>Consente di inserire un’immagine, prelevandola o da filesystem (2) oppure da un’immagine precaricata a sistema (1)</p>
+<p><em>NB: se si sta creando una pagina e si vuole inserire un blocco immagine attraverso il pulsante (2), dal</em> <em>momento tale immagine viene caricata sul sistema (e la pagina non è ancora stata salvata), il sistema</em></p>
+<p><img alt="Schermata: Blocco Immagine" src="../../_images/p029-02.png" /></p>
+<p><img alt="Schermata: Blocco Immagine" src="../../_images/p029-11.png" /></p>
+<p><em>stesso cerca di salvare la risorsa immagine nella prima posizione disponibile (ovvero, non sarà dentro la</em> <em>pagina stessa, ma ad un livello dell’alberatura immediatamente superiore). Questo potrebbe “sporcare”</em> <em>l’alberatura: si consiglia quindi di salvare sempre preventivamente l’oggetto (anche soltanto con il</em> <em>“titolo”), poi rientrare in modifica e completare la composizione del blocco immagine.</em></p>
+</section>
+</section>
+<section id="blocco-elenco">
+<h2>Blocco Elenco<a class="headerlink" href="#blocco-elenco" title="Link to this heading">¶</a></h2>
+<p>Con questo tipo di blocco, è possibile visualizzare un elenco di oggetti presenti sul sito, definendo i criteri di ricerca degli elementi da visualizzare.</p>
+<p>Agli elementi ottenuti dalla ricerca, si possono applicare diverse visualizzazioni ( <strong>Variazioni</strong> ).</p>
+<p>Per creare un Blocco Elenco selezionare il tipo di blocco ‘Blocco Elenco’ dal menu di aggiunta di un nuovo blocco.</p>
+<p>Di default, verrà mostrato nel blocco il contenuto dell’oggetto in cui ci troviamo in questo momento, con una visualizzazione (template) di default.</p>
+<p>E’ possibile, dalla sidebar di destra, impostare i criteri di ricerca degli elementi da visualizzare nel blocco, e altre funzionalità che ora analizzeremo nel dettaglio:</p>
+<ul class="simple">
+<li><p><strong>Variazione</strong> : serve per cambiare la visualizzazione dei risultati nel blocco</p></li>
+</ul>
+<p><strong>-</strong> **** <strong>ID Ligthouse:</strong> serve per impostare il valore del data-element che viene assegnato ad ogni link sulla card risultato del blocco. <strong>NON CONSIDERARE</strong></p>
+<ul class="simple">
+<li><p><strong>Aspetto</strong> : per visualizzare le card in maniera differente (vengono applicati differenti layout):</p>
+<ul>
+<li><p>Compatto</p></li>
+<li><p>Collegamenti a “come fare per”</p></li>
+<li><p>Collegamenti a «Categorie»</p></li>
+<li><p>Strutture/Luoghi</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Schermata: Blocco Elenco" src="../../_images/p030-02.png" /></p>
+<ul class="simple">
+<li><p><strong>Titolo</strong> : il titolo da attribuire al blocco</p></li>
+</ul>
+<p><strong>-</strong> **** <strong>Opzioni del blocco</strong> : consentono di agire a livello di card, per modificarne l’aspetto</p>
+<ul class="simple">
+<li><p>Mostra lo sfondo del blocco</p></li>
+<li><p>Mostra l’Icona</p></li>
+<li><p>Nascondi le date</p></li>
+<li><p>Mostra la sezione</p></li>
+<li><p>Mostra il tipo (content-type)</p></li>
+<li><p>Mostra la descrizione (il campo descrizione impostato su ogni oggetto)</p></li>
+<li><p>Mostra il link al dettaglio (ulteriore link “vedi” in fondo alla card), con possibilità di personalizzare il testo del link</p></li>
+<li><p><strong>Contenuto</strong> : qui è possibile impostare uno o più criteri di ricerca degli elementi da visualizzare nel blocco. Ad esempio, se volessimo visualizzare le ultime 10 notizie, imposteremo i seguenti criteri:</p></li>
+<li><p><em><strong>Criterio</strong></em> : Tipo di contenuto | Corrispondente a | Notizia</p></li>
+</ul>
+<p><img alt="Schermata: Blocco Elenco" src="../../_images/p031-02.png" /></p>
+<ul class="simple">
+<li><p><em><strong>Profondità di ricerca</strong></em> (nel caso di criterio “Posizione”, consente di specificare la profondità di ricerca -&gt; cartelle e sottocartelle a partire dalla posizione in cui si trova la pagina in cui si costruisce il blocco)</p></li>
+</ul>
+<p><img alt="Schermata: Blocco Elenco" src="../../_images/p032-02.png" /></p>
+<ul class="simple">
+<li></li>
+<li><p><em><strong>Ordina per</strong></em> : data di creazione</p></li>
+<li><p><em><strong>Ordine inverso</strong></em> : SI</p></li>
+<li><p><em><strong>Numero massimo di risultati</strong></em> : 8</p></li>
+</ul>
+<p>Applicando il template ‘Default’ avremo le ultime 8 notizie, di cui la prima corrisponderà all’ultima che è stata pubblicata, e il risultato sarà il seguente:</p>
+<p><img alt="Schermata: Blocco Elenco" src="../../_images/p032-12.png" /></p>
+<p><img alt="Schermata: Blocco Elenco" src="../../_images/p033-02.png" /></p>
+<p>In questo caso, se diciamo di applicare soltanto 3 risultati per pagina, il sistema colleziona più di 3 notizie, il blocco si presenterà con lo strumento di paginazione che permette di scorrere le diverse pagine</p>
+<p><strong>NB:</strong> per ordinare gli oggetti secondo la data di pubblicazione, utilizzare nel campo “Ordina per” il valore <strong>“Data effettiva” (è un modo alternativo per indicare la data</strong> <strong>di pubblicazione)</strong></p>
+<ul class="simple">
+<li><p><strong>Link ad altro</strong> : Definisce un link per accedere ad una sezione in cui saranno presenti più contenuti (Link ad altro)</p></li>
+<li><p>In questo caso cliccando sul pulsante evidenziato con la freccia, verrà aperto un menù contestuale che permette di navigare all’interno del sito per cercare la risorsa da linkare. In questo caso le risorse disponibili saranno evidenziate con un colore nero (1), mentre le risorse che servono soltanto per scorrere l’alberatura del sito verranno presentate con un</p></li>
+</ul>
+<p><img alt="Schermata: Blocco Elenco" src="../../_images/p033-11.png" /></p>
+<p><img alt="Schermata: Blocco Elenco" src="../../_images/p033-2.png" /></p>
+<p>colore più chiaro (grigio). Attraverso il pulsante con la lente (2) sarà possibile digitare il nome della risorsa in modo tale che il sistema automaticamente filtri tutti i contenuti che corrispondono a quel criterio di ricerca testuale</p>
+<ul class="simple">
+<li><p>Tale link è mostrato sotto forma di pulsante</p></li>
+</ul>
+<section id="id-di-controllo-lighthouse-per-verifiche-pnrr">
+<h3>ID di controllo LightHouse per verifiche PNRR<a class="headerlink" href="#id-di-controllo-lighthouse-per-verifiche-pnrr" title="Link to this heading">¶</a></h3>
+<p>Nei blocchi elenco è possibile la presenza di un particolare campo a scelta singola, che serve ad attribuire un particolare ID ai link delle card.</p>
+<p><img alt="Schermata: ID di controllo LightHouse per verifiche PNRR" src="../../_images/p034-02.png" /></p>
+<p><img alt="Schermata: ID di controllo LightHouse per verifiche PNRR" src="../../_images/p034-12.png" /></p>
+<p><img alt="Schermata: ID di controllo LightHouse per verifiche PNRR" src="../../_images/p034-2.png" /></p>
+<p>L’impostazione di tale valore non ha impatti sulla visualizzazione del blocco, è puramente un campo di servizio necessario ai controlli di AgID per le verifiche inerenti al bando PNRR “ <em>Avviso</em> <em>Misura 1.4.1 «Esperienza del Cittadino nei servizi pubblici</em> ”.</p>
+</section>
+<section id="filtri-supplementari-per-i-blocchi-elenco">
+<h3>Filtri supplementari per i blocchi elenco<a class="headerlink" href="#filtri-supplementari-per-i-blocchi-elenco" title="Link to this heading">¶</a></h3>
+<p>Nel template del blocco elenco che si chiama “Card semplice”, è stata aggiunta un’opzione per permettere di aggiungere filtri ulteriori applicabili dall’utente.</p>
+<ul class="simple">
+<li><p>In un blocco elenco, impostare i criteri di ricerca per selezionare i contenuti da mostrare in questo blocco.</p></li>
+<li><p>Spuntare successivamente l’opzione “ <strong>mostra filtri per percorso</strong> “,</p></li>
+<li><p>configurare fino a 5 bottoni di filtro che l’utente potrà utilizzare per filtrare ulteriormente gli elementi mostrati nel blocco “per percorso”, ovvero soltanto nel percorso dell’albero di navigazione configurato per ogni bottone.</p></li>
+<li><p>per ogni bottone indicare:</p>
+<ul>
+<li><p>l’etichetta che verrà mostrata sul bottone</p></li>
+<li><p>il percorso che verrà usato come filtro aggiuntivo ai criteri base del blocco</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Schermata: Filtri supplementari per i blocchi elenco" src="../../_images/p035-02.png" /></p>
+<p><img alt="Schermata: Filtri supplementari per i blocchi elenco" src="../../_images/p035-12.png" /></p>
+<p><img alt="Schermata: Filtri supplementari per i blocchi elenco" src="../../_images/p036-02.png" /></p>
+</section>
+<section id="variazioni-template-per-il-blocco-elenco">
+<h3>Variazioni (Template) per il blocco elenco<a class="headerlink" href="#variazioni-template-per-il-blocco-elenco" title="Link to this heading">¶</a></h3>
+<p>Nel “blocco elenco” è possibile impostare diversi template di visualizzazione, ovvero il layout che avrà ogni oggetto recuperato nel blocco elenco dal criterio di selezione. Il template del blocco viene impostato nell’apposito campo</p>
+<p>In questo esempio, impostiamo il template “ <strong>Photogallery</strong> ” che, se applicato ad una lista di immagini</p>
+<p><img alt="Schermata: Variazioni (Template) per il blocco elenco" src="../../_images/p036-11.png" /></p>
+<p><img alt="Schermata: Variazioni (Template) per il blocco elenco" src="../../_images/p037-02.png" /></p>
+<p>permetterà di creare un carousel di immagini</p>
+<p><strong>NB:</strong> di default, la creazione di un blocco elenco all’interno di una pagina, non appena lo si inserisce, mostra di default l’elenco degli oggetti (qualunque essi siano) contenuti in quella pagina (ricordiamo che ogni pagina è essa stessa un contenitore “folderish”). Quindi, ad esempio, se una pagina contiene delle immagini e si crea nella pagina un blocco elenco, esso mostrerà immediatamente l’elenco delle immagini. Dal momento che il template di default del blocco elenco, quando lo si crea, è “Card semplice”, questo mostrerà delle card con il nome degli oggetti. Se si tratta di immagini, l’esigenza è quella di fare una gallery di immagini: se si impostasse soltanto il template “Photogallery” al blocco, si può notare come l’anteprima dell’immagine non verrà mostrata. In questo caso (e solo nel caso di un blocco “Photogallery” per mostrare la galleria immagini) è necessario nel blocco impostare anche il criterio posizione (percorso) in cui si trovano le immagini e il criterio “tipo di contenuto = immagine”</p>
+<p>Le altre variazioni disponibili, oltre alla sopradescritta “Photogallery”, consentono di visualizzare il risultato del blocco con layout differenti (si consiglia di testare ogni variante)</p>
+<section id="nota-importante-per-la-visualizzazione-delle-immagini-nelle-card">
+<h4>Nota importante per la visualizzazione delle immagini nelle card<a class="headerlink" href="#nota-importante-per-la-visualizzazione-delle-immagini-nelle-card" title="Link to this heading">¶</a></h4>
+<p>Per alcuni tipi di contenuti è possibile inserire un’immagine predefinita: qualora fosse necessario mostrare delle immagini in un blocco elenco è necessario apportare alcune considerazioni. Quando viene creato per la prima volta un <strong>blocco elenco</strong>, il sistema mostrerà automaticamente le card degli oggetti che si trovano all’interno del contenitore in cui si sta creando il blocco elenco.</p>
+<p><img alt="Schermata: Nota importante per la visualizzazione delle immagini nelle card" src="../../_images/p037-11.png" /></p>
+<p>Nel caso in cui fosse necessario visualizzare anche le immagini associate a ciascuna card è necessario impostare almeno un criterio, perché questo fa sì che il sistema riesca ad ottenere le informazioni sulle immagini da mostrare.</p>
+<p>Quindi, nella creazione del blocco elenco sarà necessario per esempio dare come tipo di contenuto il tipo che si vuole mostrare (es. <em>Tipo di contenuto=Persona</em> ), e per esempio la posizione uguale al path relativo (es. <em>Posizione=Path relativo</em> ) In questo modo il blocco non recupererà tutti i tipi che se vogliono mostrare, e che sono presenti in tutto il sistema, ma soltanto quelli che si trovano all’interno del contenitore in cui ci si trova. In sostanza</p>
+<p><em>●</em> <em>Posizione = Path relativo</em> <em>●</em> <em>Profondità di ricerca = 1</em></p>
+<p>Questo criterio sta dicendo al blocco: “ <em>Recupera tutti gli elementi che stanno al mio interno, soltanto al</em> <em>primo livello, senza cioè mostrare ulteriori contenuti dentro ai vari oggetti</em> ”</p>
+<p>E’ tipicamente il criterio che si imposta per i blocchi di navigazione nelle pagine di disambiguazione</p>
+</section>
+<section id="variazione-bandi">
+<h4>Variazione “Bandi”<a class="headerlink" href="#variazione-bandi" title="Link to this heading">¶</a></h4>
+<p>Una volta scelto il template bandi, occorre impostare i criteri sulle date per avere i bandi necessari in ogni blocco.</p>
+<ul class="simple">
+<li><p>Se filtriamo per “Scadenza termini partecipazione” e impostiamo come criterio “da domani”, avremo tutti i <strong>bandi attivi</strong> nel momento in cui si guarda la pagina.</p></li>
+<li><p>Se filtriamo per “Chiusura procedimento bando” e impostiamo come criterio “prima di oggi”, avremo tutti i <strong>bandi scaduti</strong> nel momento in cui si guarda la pagina.</p></li>
+<li><p>Se filtriamo per “Chiusura procedimento bando” e impostiamo come criterio “da domani” e filtriamo anche per “Scadenza termini di partecipazione” con criterio “prima di oggi”, avremo i <strong>bandi in corso</strong> .</p></li>
+</ul>
+<p>Questo il template:</p>
+<p><img alt="Schermata: Variazione “Bandi”" src="../../_images/p038-01.png" /></p>
+<p><img alt="Schermata: Variazione “Bandi”" src="../../_images/p038-11.png" /></p>
+<p><img alt="Schermata: Variazione “Bandi”" src="../../_images/p039-01.png" /></p>
+</section>
+<section id="variazione-card-con-immagine">
+<h4>Variazione ‘Card con immagine’<a class="headerlink" href="#variazione-card-con-immagine" title="Link to this heading">¶</a></h4>
+<p>Questo template mostra gli elementi sottoforma di ‘card’ con l’immagine sui primi tre elementi (se l’elemento ha una immagine). Dalle opzioni della sidebar è possibile decidere se mostrarla per tutti gli elementi. Nella sidebar, sono disponibili altre opzioni per gli elementi da mostrare o meno nel blocco.</p>
+<p><strong>Dimensione delle immagini:</strong> In questo template l’immagine che viene mostrata ha una proporzione di 1:0,30. Quindi si consiglia di caricare immagini di almeno 700x210px.</p>
+<p>E’ inoltre possibile scegliere l’opzione ‘non alterare le dimensioni naturali dell’immagine’. In questo caso, vengono mantenute le proporzioni dell’immagine originale. Rimane comunque valida la dimensione minima di almeno 700px di larghezza.</p>
+<p><img alt="Schermata: Variazione ‘Card con immagine’" src="../../_images/p039-11.png" /></p>
+<p>Tutti gli altri parametri del blocco sono definiti nelle opzioni del blocco stesso, e sono autoesplicativi.</p>
+</section>
+<section id="variazione-mappa">
+<h4>Variazione ‘Mappa’<a class="headerlink" href="#variazione-mappa" title="Link to this heading">¶</a></h4>
+<p>Questo template permette di mostrare sulla mappa oggetti che sono geolocalizzati, come ad esempio Luoghi, Eventi e Unità Organizzative. Tali oggetti naturalmente devono prima essere impostati nel criterio di ricerca del blocco elenco.</p>
+<p>Una volta selezionato il template ‘Mappa’, è possibile scegliere:</p>
+<ul class="simple">
+<li><p>Se mostrare la mappa a tutta larghezza</p></li>
+<li><p>La dimensione (altezza) della mappa (piccola, media, grande)</p></li>
+</ul>
+</section>
+<section id="variazione-slider">
+<h4>Variazione ‘Slider’<a class="headerlink" href="#variazione-slider" title="Link to this heading">¶</a></h4>
+<p>Consente di mostrare i contenuti risultanti, sotto forma di slider di immagini, mostrandolo con il layout come in figura</p>
+<p><img alt="Schermata: Variazione ‘Slider’" src="../../_images/p040-01.png" /></p>
+<p><img alt="Schermata: Variazione ‘Slider’" src="../../_images/p041-01.png" /></p>
+<p>Dalla sidebar laterale è possibile scegliere quante slide mostrare (su mobile ne verrà sempre mostrata una alla volta).</p>
+<p>Dimensioni delle immagini:</p>
+<ul class="simple">
+<li><p>Una slide: le proporzioni sono di 1:0,36 e le dimensioni minime consigliate sono di 1080x400px</p></li>
+<li><p>Due slide: le proporzioni sono di 1:0,50 e le dimensioni minime consigliate sono di 600x300px.</p></li>
+</ul>
+<p><img alt="Schermata: Variazione ‘Slider’" src="../../_images/p041-1.png" /></p>
+</section>
+<section id="variazione-in-evidenza">
+<h4>Variazione ‘In evidenza’<a class="headerlink" href="#variazione-in-evidenza" title="Link to this heading">¶</a></h4>
+<p>Utilizzato nei blocchi elenco (ad esempio, per le news), mostrerà un blocco in formato 1-2-2, per i primi 5 elementi, in cui la prima card è a tutto schermo, come in figura</p>
+<p><img alt="Schermata: Variazione ‘In evidenza’" src="../../_images/p042-01.png" /></p>
+<p><img alt="Schermata: Variazione ‘In evidenza’" src="../../_images/p043-01.png" /></p>
+<p>Dimensione delle immagini: L’immagine viene mostrata solo per il primo elemento. Le proporzioni consigliate sono di 1:0,62 e le dimensioni minime sono di 700x434px. Quindi anche un’immagine di 1000x620px va bene.</p>
+</section>
+</section>
+<section id="variazione-contenuto-in-evidenza">
+<h3>Variazione ‘Contenuto in evidenza’<a class="headerlink" href="#variazione-contenuto-in-evidenza" title="Link to this heading">¶</a></h3>
+<p>Utilizzato nei blocchi elenco (ad esempio, per le news), mostrerà un blocco in cui le card sono a tutto schermo, come in figura</p>
+<p><img alt="Schermata: Variazione ‘Contenuto in evidenza’" src="../../_images/p043-11.png" /></p>
+<p><img alt="Schermata: Variazione ‘Contenuto in evidenza’" src="../../_images/p044-01.png" /></p>
+</section>
+<section id="variazione-card-semplice">
+<h3>Variazione ‘Card semplice’<a class="headerlink" href="#variazione-card-semplice" title="Link to this heading">¶</a></h3>
+<p>Mostra i risultati del blocco elenco con card semplici, secondo questo layout</p>
+<p><strong>Opzioni per il blocco:</strong></p>
+<ul class="simple">
+<li><p>Aspetto: diverse possibilità di visualizzazione</p></li>
+<li><p>Sfondo del blocco</p></li>
+<li><p>Icona</p></li>
+<li><p>Nascondere le date</p></li>
+<li><p>Mostrare la sezione</p></li>
+<li><p>Mostrare il tipo</p></li>
+<li><p>Mostrare la descrizione</p></li>
+<li><p>Mostrare il link al dettaglio</p></li>
+</ul>
+<p><img alt="Schermata: Variazione ‘Card semplice’" src="../../_images/p044-1.png" /></p>
+</section>
+<section id="id5">
+<h3>Variazione ‘Contenuto in evidenza’<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<p>Ha la stessa funzione del blocco ‘Contenuto in evidenza’ ma con la differenza di caricare dinamicamente il contenuto rispettando i criteri di ricerca impostati.</p>
+<p><img alt="Schermata: Variazione ‘Contenuto in evidenza’" src="../../_images/p045-01.png" /></p>
+<p><strong>Dimensione dell’immagine:</strong> Vengono mantenute le proporzioni naturali dell’immagine. La dimensione consigliata è di almeno 700px di larghezza.</p>
+</section>
+<section id="variazione-quadratoni-con-immagine">
+<h3>Variazione ‘Quadratoni con immagine’<a class="headerlink" href="#variazione-quadratoni-con-immagine" title="Link to this heading">¶</a></h3>
+<p>Utilizzato nei blocchi elenco (ad esempio, per le news), mostrerà un blocco in formato da una griglia a quadrati (4 colonne), come in figura</p>
+<p><img alt="Schermata: Variazione ‘Quadratoni con immagine’" src="../../_images/p046-01.png" /></p>
+<p><img alt="Schermata: Variazione ‘Quadratoni con immagine’" src="../../_images/p047-01.png" /></p>
+<p><strong>Dimensioni delle immagini</strong> : Su desktop e su tablet vengono mostrate in formato ‘quadrato’ mentre su mobile vengono impilate e ogni elemento ha un formato rettangolare. Ci sono due strade:</p>
+<ul class="simple">
+<li><p>Caricare l’immagine quadrata per una ottimale visualizzazione su desktop. La dimensione consigliata è di almeno 400px400 px. In questo caso su mobile verrà mostrata solamente la parte centrale dell’immagine e verranno ritagliate le parti sopra e sotto dell’immagine che eccedono lo spazio a disposizone.</p></li>
+<li><p>Caricare l’immagine per una visualizzazione ottimale su mobile. La dimensione consigliata è di almeno 500x195 px, ovvero un’immagine con proporzioni 1:0,39. In questo caso, su desktop verranno ritagliate le parti eccedenti lo spazio quadrato centrale.</p></li>
+</ul>
+</section>
+<section id="variazione-card-con-testo-animato">
+<h3>Variazione ‘Card con testo animato’<a class="headerlink" href="#variazione-card-con-testo-animato" title="Link to this heading">¶</a></h3>
+<p>Mostra i contenuti in questa forma. Posizionando il cursore su un elemento, appare l’eventuale descrizione del contenuto e il link al dettaglio.</p>
+<p><img alt="Schermata: Variazione ‘Card con testo animato’" src="../../_images/p048-01.png" /></p>
+<p><strong>Dimensioni delle immagini:</strong> L’immagine deve avere proporzioni 1:1 e deve essere di almeno 400x400px. Se viene caricata un’immagine con proporzioni differenti le parti eccedenti verranno ritagliate.</p>
+</section>
+<section id="variazione-photogallery">
+<h3>Variazione ‘Photogallery’<a class="headerlink" href="#variazione-photogallery" title="Link to this heading">¶</a></h3>
+<p>Consente di creare una galleria di immagini. L’immagine mostrata è quella del singolo elemento risultante dalla ricerca corrispondente ai criteri impostati.</p>
+<p><strong>Dimensione delle immagini:</strong> La dimensione consigliata per le immagini è di almeno 400px di larghezza con una proporzione di 1:0,83. Quindi un’immagine di almeno 400x332px.</p>
+</section>
+<section id="variazione-tabella">
+<h3>Variazione ‘Tabella’<a class="headerlink" href="#variazione-tabella" title="Link to this heading">¶</a></h3>
+<p>Propone il risultato del blocco con un layout tabellare, fornendo la possibilità di decidere quali colonne mostrare a seconda del criterio impostato.</p>
+<p><img alt="Schermata: Variazione ‘Tabella’" src="../../_images/p048-11.png" /></p>
+<p><img alt="Schermata: Variazione ‘Tabella’" src="../../_images/p048-21.png" /></p>
+<p>La logica è quella di proporre, come colonne selezionabili, quelle riferite ai tipi di contenuto impostati nei criteri per essere visualizzati, sebbene il criterio per “tipo di contenuto” non sia necessariamente da impostare.</p>
+<p>Opzioni per il blocco:</p>
+<ul class="simple">
+<li><p>Righe di colore alternato</p></li>
+<li><p>Pulsante di aggiunta delle colonne, in cui specificare:</p>
+<ul>
+<li><p>la selezione del tipo di contenuto da mostrare, anche se tra i criteri generali questo criterio è già stato impostato</p></li>
+<li><p>la selezione del campo tra quelli disponibili per il tipo di contenuto scelto</p></li>
+<li><p>Titolo del campo (di default viene proposto il nome stesso del campo, ma può essere modificato</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="blocco-video">
+<h2>Blocco “Video”<a class="headerlink" href="#blocco-video" title="Link to this heading">¶</a></h2>
+<p>Consente di caricare un video il cui sorgente è URL (ad esempio preso da YouTube)</p>
+<p><a class="reference external" href="http://youtube.com/watch?v=uX-zufH5yLY">Ad esempio (http://youtube.com/watch?v=uX-zufH5yLY)</a></p>
+<p><strong>NB: in seguito alla modifica delle politiche GDPR in materia di privacy, l’utilizzo del blocco</strong> <strong>“Video” è sconsigliato, in quanto recupera direttamente da fonti esterne (server di</strong> <strong>Youtube/Vimeo) alcune informazioni, il che comporta una profilazione dell’utente: si consiglia</strong> <strong>di utilizzare questo blocco unitamente alla specifica di un’immagine in anteprima</strong></p>
+<p><img alt="Schermata: Blocco “Video”" src="../../_images/p049-01.png" /></p>
+<p><img alt="Schermata: Blocco “Video”" src="../../_images/p049-11.png" /></p>
+</section>
+<section id="blocco-card-semplice">
+<h2>Blocco “Card semplice”<a class="headerlink" href="#blocco-card-semplice" title="Link to this heading">¶</a></h2>
+<p>Consente di inserire un blocco stile “card” con un titolo e del testo. SI ottiene un layout di questo tipo:</p>
+<p><img alt="Schermata: Blocco “Card semplice”" src="../../_images/p050-01.png" /></p>
+<p><img alt="Schermata: Blocco “Card semplice”" src="../../_images/p050-1.png" /></p>
+</section>
+<section id="blocco-testo-in-riquadro-immagine">
+<h2>Blocco “Testo in riquadro immagine”<a class="headerlink" href="#blocco-testo-in-riquadro-immagine" title="Link to this heading">¶</a></h2>
+<p>Consente di inserire un blocco stile “card” con un titolo e del testo e un’immagine posizionata a sinistra. SI ottiene un layout di questo tipo:</p>
+<p>L’immagine può essere selezionata da file-system nella barra delle proprietà del blocco nella parte destra. Per adempiere alle linee guida per l’accessibilità, è necessario impostare un testo alternativo per gli utenti che utilizzano lo Screen Reader. È possibile impostare il testo alternativo per l’immagine compilando il campo apposito:</p>
+<p><img alt="Schermata: Blocco “Testo in riquadro immagine”" src="../../_images/p051-0.png" /></p>
+<p><img alt="Schermata: Blocco “Testo in riquadro immagine”" src="../../_images/p051-1.png" /></p>
+<p><img alt="Schermata: Blocco “Testo in riquadro immagine”" src="../../_images/p051-2.png" /></p>
+<p><strong>Dimensione dell’immagine</strong> : Viene mostrata la parte centrale dell’immagine. Le parti che eccedono lo spazio in verticale vengono tagliate. Dalla sidebar, è possibile scegliere se mantenere o meno le proporzioni naturali dall’immagine. La dimensione consigliata è di almeno 600px di larghezza.</p>
+</section>
+<section id="blocco-contenuto-in-primo-piano">
+<h2>Blocco “Contenuto in primo piano”<a class="headerlink" href="#blocco-contenuto-in-primo-piano" title="Link to this heading">¶</a></h2>
+<p>Consente di selezionare un contenuto da mostrare come contenuto in primo piano. Il contenuto da mostrare, dovrà essere ricercato all’interno del Piano editoriale utilizzando l’apposito menù che consente di scorrere all’interno dell’alberatura, oppure di ricercare direttamente attraverso il nome del contenuto. A tale notizia verrà dato un particolare layout come quello in figura</p>
+<p>Dopo avere selezionato il contenuto, sarà possibile decidere se:</p>
+<ul class="simple">
+<li><p>Mantenere le proporzioni originali dell’immagine per evitare che venga ritagliata per adattarsi allo spazio disponibile.</p></li>
+<li><p>Decidere se mostrare il tipo e / o la sezione prima del titolo</p></li>
+<li><p>Decidere se mostrare o meno un colore di sfondo fra quelli principali del sito</p></li>
+<li><p>Decidere se mostrare o meno il link di approfondimento</p></li>
+</ul>
+<p><img alt="Schermata: Blocco “Contenuto in primo piano”" src="../../_images/p052-0.png" /></p>
+<p><img alt="Schermata: Blocco “Contenuto in primo piano”" src="../../_images/p052-11.png" /></p>
+<ul class="simple">
+<li><p>Decidere se mostrare o meno la data del contenuto</p></li>
+</ul>
+<p><strong>Dimensioni dell’immagine</strong> : Nel caso in cui la non venga scelta l’opzione ‘ <em>non alterare le dimensioni naturali dell’immagine</em> ’, verrà mostrata la porzione centrale dell’immagine del contenuto. Verranno rimosse le porzioni di immagine sopra e sotto che sbordano dal contenitore. Le dimensioni consigliate per l’immagine sono indicate qui. Poi dipende sempre dalla scelta che si fa nel blocco per la dimensione dell’immagine.</p>
+<p><img alt="Schermata: Blocco “Contenuto in primo piano”" src="../../_images/p053-01.png" /></p>
+</section>
+<section id="blocco-rss">
+<h2>Blocco “RSS”<a class="headerlink" href="#blocco-rss" title="Link to this heading">¶</a></h2>
+<p>Consente di creare un blocco a partire da una fonte RSS</p>
+<p>Ad esempio se prendiamo come fonte RSS il seguente URL <a class="reference external" href="https://allertameteo.regione.emilia-romagna.it/compila-allerta-portlet/feed?feed=allerte-bollettini">(https://allertameteo.regione.emilia-romagna.it/compila-allerta-portlet/feed?feed=allerte-bollettini</a> ), definiamo il numero di elementi da mostrare e il tipo di template grafico da utilizzare otterremo questo risultato:</p>
+<p><img alt="Schermata: Blocco “RSS”" src="../../_images/p054-01.png" /></p>
+<p><img alt="Schermata: Blocco “RSS”" src="../../_images/p054-11.png" /></p>
+</section>
+<section id="blocco-ricerca-nelle-sezioni">
+<h2>Blocco “Ricerca nelle sezioni”<a class="headerlink" href="#blocco-ricerca-nelle-sezioni" title="Link to this heading">¶</a></h2>
+<p>Consente di creare un blocco di ricerca rapido che può agire a livello di particolari sezioni presenti all’interno del sistema <strong>(3)</strong> . Ad esempio le sezioni possono essere: Amministrazione, Documenti e dati, Novità (News e comunicati stampa), Servizi. Le sezioni di ricerca si possono impostare nel pannello di controllo “Impostazioni Design Plone” alla voce “sezioni ricerca”</p>
+<p>C’è Inoltre la possibilità di impostare alcuni link rapidi per andare direttamente a particolari aree del sito <strong>(4)</strong></p>
+<p><img alt="Schermata: Blocco “Ricerca nelle sezioni”" src="../../_images/p055-01.png" /></p>
+<p><img alt="Schermata: Blocco “Ricerca nelle sezioni”" src="../../_images/p055-1.png" /></p>
+</section>
+<section id="blocco-argomenti-in-evidenza">
+<h2>Blocco “Argomenti in evidenza”<a class="headerlink" href="#blocco-argomenti-in-evidenza" title="Link to this heading">¶</a></h2>
+<p>Questo blocco può essere configurato in Homepage, o in un qualsiasi content-type che preveda la gestione a blocchi.</p>
+<p><img alt="Schermata: Blocco “Argomenti in evidenza”" src="../../_images/p056-01.png" /></p>
+<p><img alt="Schermata: Blocco “Argomenti in evidenza”" src="../../_images/p056-11.png" /></p>
+<p>Viene proposto un blocco configurabile, nel quale si possono definire quanti si vogliano blocchi interni, ciascuno riferito ad un “argomento”</p>
+<p>Per ciascun blocco che si inserisce, nella sidebar laterale è possibile andare a selezionare l’argomento che si vuole mostrare, scorrendo nell’alberatura del sito fino a recuperare l’oggetto argomento desiderato</p>
+<p>Il campo “ <strong>Titolo</strong> ” imposta il titolo dell’intero blocco (es. “Argomenti in evidenza”) Il campo “ <strong>Seleziona gli altri argomenti</strong> ” permette di aggiungere nella parte in basso i collegamenti veloci ad altri argomenti di interesse (visualizzate in modalità “chips”)</p>
+<p><img alt="Schermata: Blocco “Argomenti in evidenza”" src="../../_images/p057-01.png" /></p>
+<p><img alt="Schermata: Blocco “Argomenti in evidenza”" src="../../_images/p057-11.png" /></p>
+<p><img alt="Schermata: Blocco “Argomenti in evidenza”" src="../../_images/p057-2.png" /></p>
+<p><img alt="Schermata: Blocco “Argomenti in evidenza”" src="../../_images/p058-01.png" /></p>
+<p>Il pulsante “ <strong>Aggiungi blocco</strong> ” consente di creare i collegamenti ad altri argomenti, nella stessa modalità. Di default, il blocco viene popolato con “ <strong>Titolo</strong> ” e “ <strong>Descrizione</strong> ”, ma può essere arricchito con altro testo, digitando nell’apposito campo del blocco “Digita testo”</p>
+<p>Il link “ <strong>Esplora argomento</strong> ” viene inserito automaticamente, così come il pulsante “ <strong>Vedi tutti</strong> ”, che permette di accedere alla pagina di disambiguazione “Tutti gli argomenti”</p>
+<p><img alt="Schermata: Blocco “Argomenti in evidenza”" src="../../_images/p058-11.png" /></p>
+</section>
+<section id="blocco-alert">
+<h2>Blocco “Alert”<a class="headerlink" href="#blocco-alert" title="Link to this heading">¶</a></h2>
+<p>Il blocco alert consente di creare una fascia ad alto contrasto, per mettere in evidenza particolari informazioni. Consente inoltre di “temporizzare” la visibilità del blocco stesso, in modo tale da oscurarlo automaticamente allo scadere della data di visibilità</p>
+<p>La fascia può essere connotata con un colore (giallo, rosso, arancione) All’interno della fascia, si può inserire del testo formattabile (bold, link, bottoni, elenchi puntati ecc) E’ possibile inserire anche una immagine a sinistra del testo Le date di “inizio” e “scadenza” ne regolano la visibilità (se impostate), altrimenti il blocco è sempre visibile agli utenti anonimi.</p>
+<p>NB: per gli utenti redattori il blocco è sempre visibile, ma è presente un messaggio sopra al blocco che fa capire se è attivo alla data odierna.</p>
+<p><img alt="Schermata: Blocco “Alert”" src="../../_images/p059-01.png" /></p>
+<p><img alt="Schermata: Blocco “Alert”" src="../../_images/p059-11.png" /></p>
+<p><img alt="Schermata: Blocco “Alert”" src="../../_images/p059-21.png" /></p>
+</section>
+<section id="blocco-interruzione-di-pagina">
+<h2>Blocco “Interruzione di pagina”<a class="headerlink" href="#blocco-interruzione-di-pagina" title="Link to this heading">¶</a></h2>
+<p>Nel caso in cui sia necessario inserire una “interruzione di pagina”, è possibile utilizzare questo blocco.</p>
+<p>Può essere usato, ad esempio, se si vuole mettere un’immagine allineata a sinistra facendo in modo che il testo non venga disposto attorno all’immagine. In questo caso bisognerà quindi:</p>
+<ul class="simple">
+<li><p>Creare un blocco immagine e caricare/scegliere l’immagine</p></li>
+<li><p>Impostare l’allineamento dell’immagine a destra (o sinistra) dalla barra laterale di destra delle impostazioni del blocco</p></li>
+<li><p>Creare un nuovo blocco di tipo ‘Interruzione di pagina’, dopo il blocco immagine.</p></li>
+</ul>
+<p><img alt="Schermata: Blocco “Interruzione di pagina”" src="../../_images/p060-01.png" /></p>
+</section>
+<section id="blocco-indice-dei-contenuti">
+<h2>Blocco “Indice dei contenuti”<a class="headerlink" href="#blocco-indice-dei-contenuti" title="Link to this heading">¶</a></h2>
+<p>Qualora in una pagina sia presente testo formattato con intestazioni &lt;h1&gt;, &lt;h2&gt; ecc.., questo blocco consente di creare immediatamente l’indice di tali contenuti. Ogni voce dell’indice sarà un link cliccabile che con un sistema ad ancore posiziona automaticamente nel punto del testo cliccato</p>
+<section id="creazione-di-ancore-nel-testo">
+<h3>Creazione di ancore nel testo<a class="headerlink" href="#creazione-di-ancore-nel-testo" title="Link to this heading">¶</a></h3>
+<p>In un blocco di testo è possibile inserire “ancore” ad altre parti della pagina: l’ancora si costruisce inserendo su un testo un link che riporti alla fine l’id dell’ancora, come ad esempio:</p>
+<p>https://&lt;sito&gt;/pagina <strong>#id_ancora</strong></p>
+<p>In questo caso l’ID dell’ancora deve essere ricavato attraverso l’inspector della pagina (strumento del browser). Il personale RedTurtle è a disposizione per supportare in questa attività.</p>
+<p><img alt="Schermata: Creazione di ancore nel testo" src="../../_images/p061-01.png" /></p>
+<p><img alt="Schermata: Creazione di ancore nel testo" src="../../_images/p061-11.png" /></p>
+</section>
+</section>
+<section id="blocco-hero-con-bottoni-per-il-download-dagli-store">
+<h2>Blocco “Hero” con bottoni per il download dagli store<a class="headerlink" href="#blocco-hero-con-bottoni-per-il-download-dagli-store" title="Link to this heading">¶</a></h2>
+<p>Consente di inserire un blocco particolare formato da un’immagine a sinistra e del testo sulla destra ed eventualmente i bottoni per il download dagli store.</p>
+<p>L’immagine deve essere uploadata dalla filesystem, e nella parte destra compilare titolo e descrizione</p>
+<p><img alt="Schermata: Blocco “Hero” con bottoni per il download dagli store" src="../../_images/p062-01.png" /></p>
+<p><img alt="Schermata: Blocco “Hero” con bottoni per il download dagli store" src="../../_images/p062-1.png" /></p>
+<p><img alt="Schermata: Blocco “Hero” con bottoni per il download dagli store" src="../../_images/p062-2.png" /></p>
+<p><strong>Dimensioni dell’immagine</strong> : La dimensione consigliata per l’immagine è di almeno 600px di larghezza. Il comportamento dell’immagine varia a seconda della lunghezza del testo presente nella parte di destra.</p>
+<p>Dalla sidebar, è possibile anche scegliere se mostrare o meno lo sfondo del blocco, e se mostrare i link per il download dagli store (AppStore e PlayStore). Se vengono indicati i link per il download, verranno mostrati i rispettivi bottoni dopo la descrizione.</p>
+<p><img alt="Schermata: Blocco “Hero” con bottoni per il download dagli store" src="../../_images/p063-01.png" /></p>
+<p><img alt="Schermata: Blocco “Hero” con bottoni per il download dagli store" src="../../_images/p063-11.png" /></p>
+</section>
+<section id="blocco-mappa">
+<h2>Blocco “Mappa”<a class="headerlink" href="#blocco-mappa" title="Link to this heading">¶</a></h2>
+<p><strong>ATTENZIONE: Il blocco verrà momentaneamente disattivato a causa della violazione delle</strong> <strong>normative GDPR in fatto di profilazione. Si consiglia di rimuovere tale blocco nei contenuti</strong> <strong>dov’è stato utilizzato.</strong></p>
+<p>Consente di inserire una mappa (ad esempio Google) attraverso codice di incorporamento. Sulla mappa di Google è sufficiente posizionarsi sulla mappa che si desidera, cliccare sul pulsante di condivisione e copiare il codice di incorporamento come da figura</p>
+<p><img alt="Schermata: Blocco “Mappa”" src="../../_images/p064-01.png" /></p>
+<p><img alt="Schermata: Blocco “Mappa”" src="../../_images/p064-11.png" /></p>
+<p><img alt="Schermata: Blocco “Mappa”" src="../../_images/p065-01.png" /></p>
+</section>
+<section id="blocco-html">
+<h2>Blocco “HTML”<a class="headerlink" href="#blocco-html" title="Link to this heading">¶</a></h2>
+<p>Consente di incorporare codice html</p>
+<p><img alt="Schermata: Blocco “HTML”" src="../../_images/p065-11.png" /></p>
+<p><img alt="Schermata: Blocco “HTML”" src="../../_images/p066-01.png" /></p>
+<p><img alt="Schermata: Blocco “HTML”" src="../../_images/p066-11.png" /></p>
+<p>NB: Prestare sempre particolare attenzione alla accessibilità del codice HTML che viene incorporato. Ad esempio, se si inserisce un elemento iframe, ricordarsi di aggiungere l’attributo “title” con un titolo parlante per il contenuto che si va ad inserire. Per tale blocco, è possibile definire anche lo sfondo (eventualmente espandendolo a tutta larghezza), lo sfondo avrà il colore terziario del sito:</p>
+<p><img alt="Schermata: Blocco “HTML”" src="../../_images/p066-2.png" /></p>
+<p><img alt="Schermata: Blocco “HTML”" src="../../_images/p066-3.png" /></p>
+</section>
+<section id="blocco-tabella">
+<h2>Blocco “Tabella”<a class="headerlink" href="#blocco-tabella" title="Link to this heading">¶</a></h2>
+<p>Consente di inserire una tabella dati</p>
+<p>Questo blocco utilizza un proprio plugin per agire in maniera rapida a livello di righe e colonne, è possibile agire su alcune delle caratteristiche della tabella stessa in termini di layout</p>
+<p><img alt="Schermata: Blocco “Tabella”" src="../../_images/p067-01.png" /></p>
+<p><img alt="Schermata: Blocco “Tabella”" src="../../_images/p067-11.png" /></p>
+<p><img alt="Schermata: Blocco “Tabella”" src="../../_images/p067-2.png" /></p>
+</section>
+<section id="blocco-calendario">
+<h2>Blocco “Calendario”<a class="headerlink" href="#blocco-calendario" title="Link to this heading">¶</a></h2>
+<p>Consente di visualizzare un calendario, il contenuto visualizzato è personalizzabile dalla vista di modifica del blocco. Il componente recupererà in automatico tutti gli elementi raggruppati per giorno mostrandoli come da immagine qui sotto:</p>
+<p>Il blocco in modifica si presenta come un template di listing ed è possibile quindi personalizzare completamente i dati che si vogliono mostrare.</p>
+<p>Modificando la voce “Massimo numero di risultati” si decide il numero di eventi da mostrare nel calendario.</p>
+<p><img alt="Schermata: Blocco “Calendario”" src="../../_images/p068-01.png" /></p>
+<p><img alt="Schermata: Blocco “Calendario”" src="../../_images/p068-11.png" /></p>
+</section>
+<section id="blocco-accordion">
+<h2>Blocco “Accordion”<a class="headerlink" href="#blocco-accordion" title="Link to this heading">¶</a></h2>
+<p>Consiste in un blocco che permette di inserire titoli di sezione “ad espansione“ (collassabili), all’interno dei quali è possibile inserire del testo</p>
+<p>Il numero di blocchi espandibili è illimitato: l’aggiunta di un nuovo blocco si ottiene attraverso il pulsante “Aggiungi elemento”</p>
+<p>Il testo all’interno di ciascun blocco è formattabile</p>
+<p>Nella sidebar di destra, nelle caratteristiche del blocco accordion, è possibile inserire un eventuali link ad altre risorse</p>
+<p><img alt="Schermata: Blocco “Accordion”" src="../../_images/p069-01.png" /></p>
+<p><img alt="Schermata: Blocco “Accordion”" src="../../_images/p069-11.png" /></p>
+<p><img alt="Schermata: Blocco “Accordion”" src="../../_images/p069-21.png" /></p>
+<p><img alt="Schermata: Blocco “Accordion”" src="../../_images/p070-11.png" /></p>
+<p><img alt="Schermata: Blocco “Accordion”" src="../../_images/p070-01.png" /></p>
+</section>
+<section id="blocco-form">
+<h2>Blocco “Form”<a class="headerlink" href="#blocco-form" title="Link to this heading">¶</a></h2>
+<p>E’ un blocco che consente di creare un form di campi compilabili, con un numero di campi a piacimento di diverso tipo (testo, area di testo, scelta singola, scelta multipla ecc.)</p>
+<p>Il blocco si aggiunge in una pagina a blocchi attraverso</p>
+<p>Per ogni campo è possibile definirne o meno l’obbligatorietà, attraverso l’apposita checkbox. Inoltre, ogni campo è rappresentato da:</p>
+<ul class="simple">
+<li><p><strong>Etichetta:</strong> label descrittiva del campo</p></li>
+<li><p><strong>Descrizione:</strong> testo che descrive cosa rappresenta il campo</p></li>
+<li><p><strong>Tipo di campo:</strong> rappresenta la tipologia del campo inserito, è possibile definire:</p>
+<ul>
+<li><p><strong>Testo:</strong> campo testuale singola riga</p></li>
+<li><p><strong>Area di testo:</strong> campo testuale a righe multiple</p></li>
+<li><p><strong>Lista:</strong> consente di inserire una lista di valori, che verranno proposti in una lista a discesa (se il valore descritto non è presente, è possibile crearlo cliccando su</p></li>
+</ul>
+</li>
+</ul>
+<p>“Create XXX”</p>
+<p><img alt="Schermata: Blocco “Form”" src="../../_images/p071-01.png" /></p>
+<p><img alt="Schermata: Blocco “Form”" src="../../_images/p071-11.png" /></p>
+<ul class="simple">
+<li><p><strong>Scelta singola:</strong> consente di creare un radiobutton a scelta singola</p></li>
+<li><p><strong>Scelta multipla:</strong> consente di creare una checkbox a scelta multipla</p></li>
+<li><p><strong>Data:</strong> consente di creare un campo data con calendario</p></li>
+<li><p><strong>Allegato:</strong> consente la selezione di un allegato da inviare</p></li>
+<li><p><strong>Testo statico:</strong> consente di definire un semplice campo di testo formattabile</p></li>
+<li></li>
+</ul>
+<p>Al blocco form, è possibile associare due comportamenti, non esclusivi tra loro (queste impostazioni sono presenti nel pannello di configurazione del blocco stesso, cliccando sul blocco) :</p>
+<ul class="simple">
+<li><p>Invio di una email a uno o più destinatari <strong>(1)<a class="footnote-reference brackets" href="#n5" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></strong></p></li>
+<li><p>Salvataggio dei dati inseriti in un file csv <strong>(2)</strong> - in questo caso, compariranno i pulsanti per l’esportazione dei dati salvati fino a quel momento <strong>(3)</strong>, oppure la cancellazione dei dati salvati fino a quel momento attraverso quella form <strong>(4)<a class="footnote-reference brackets" href="#n6" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a></strong></p></li>
+</ul>
+<p><img alt="Schermata: Blocco “Form”" src="../../_images/p072-01.png" /></p>
+</section>
+<section id="blocco-ricerca-eventi">
+<h2>Blocco “Ricerca Eventi”<a class="headerlink" href="#blocco-ricerca-eventi" title="Link to this heading">¶</a></h2>
+<p>Consente di inserire in una qualsiasi pagina a blocchi un blocco per la ricerca eventi</p>
+<p>Tale blocco, naturalmente, agirà automaticamente soltanto su oggetti di tipo “Evento” Il blocco deve essere configurato per stabilire i filtri di ricerca (fino a 3 possibili), che sono:</p>
+<ul class="simple">
+<li><p>Testo (cercherà una stringa all’interno del titolo evento)</p></li>
+<li><p>Luogo (cercherà tutti gli eventi a cui è stato attribuito un determinato luogo)</p></li>
+<li><p>Date (cercherà tutti gli eventi che cadono all’interno del range di date impostato)</p>
+<ul>
+<li><p>Possibilità di visualizzare automaticamente i risultati della data odierna</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Schermata: Blocco “Ricerca Eventi”" src="../../_images/p073-01.png" /></p>
+<p><img alt="Schermata: Blocco “Ricerca Eventi”" src="../../_images/p073-11.png" /></p>
+<p>E’ consigliabile non ripetere lo stesso filtro più volte, sebbene sia possibile</p>
+<p>La lista dei luoghi possibili verrà alimentata automaticamente in base agli oggetti Luogo presenti sul portale.</p>
+<p>Questo ad esempio è il blocco nel caso siano stati impostati tutti e tre i filtri</p>
+<p>L’opzione “Di default, mostra i risultati” consente di mostrare da subito il risultato della ricerca (in questo caso, la lista degli eventi) senza necessariamente dover impostare alcun valore nei filtri.</p>
+</section>
+<section id="blocco-ricerca-bandi">
+<h2>Blocco “Ricerca Bandi”<a class="headerlink" href="#blocco-ricerca-bandi" title="Link to this heading">¶</a></h2>
+<p>Consente di inserire in una qualsiasi pagina a blocchi un blocco per la ricerca dei bandi.</p>
+<p>Tale blocco, naturalmente, agirà automaticamente soltanto su oggetti di tipo “Bando” Il blocco deve essere configurato per stabilire i filtri di ricerca (fino a 3 possibili), che sono:</p>
+<ul class="simple">
+<li><p>Testo (cercherà una stringa all’interno del bando)</p></li>
+</ul>
+<p><img alt="Schermata: Blocco “Ricerca Bandi”" src="../../_images/p074-01.png" /></p>
+<p><img alt="Schermata: Blocco “Ricerca Bandi”" src="../../_images/p074-1.png" /></p>
+<ul class="simple">
+<li><p>Tipologia (cercherà tutti i bandi a cui è stata attribuita una determinata tipologia)</p></li>
+<li><p>Ente (cercherà tutti i bandi di un determinato ente)</p></li>
+<li><p>Ufficio responsabile (cercherà tutti i bandi il cui ufficio responsabile è quello indicato)</p></li>
+<li><p>Categoria (cercherà tutti i bandi di una determinata categoria)</p></li>
+<li><p>Data di scadenza del bando (cercherà tutti i bandi che scadono all’interno del range di date impostato)</p></li>
+</ul>
+<p>E’ possibile ordinare il risultato della ricerca per uno dei criteri disponibili.</p>
+<p><img alt="Schermata: Blocco “Ricerca Bandi”" src="../../_images/p075-01.png" /></p>
+<p><img alt="Schermata: Blocco “Ricerca Bandi”" src="../../_images/p075-11.png" /></p>
+<p>E’ consigliabile non ripetere lo stesso filtro più volte, sebbene sia possibile.</p>
+<p>La lista degli uffici responsabili e degli enti possibili verrà alimentata automaticamente in base agli oggetti Bando presenti sul portale.</p>
+<p>Questo ad esempio è il blocco nel caso siano stati impostati tutti e tre i filtri</p>
+</section>
+<section id="blocco-icone">
+<h2>Blocco “Icone”<a class="headerlink" href="#blocco-icone" title="Link to this heading">¶</a></h2>
+<p><img alt="Schermata: Blocco “Icone”" src="../../_images/p076-01.png" /></p>
+<p><img alt="Schermata: Blocco “Icone”" src="../../_images/p076-1.png" /></p>
+<p>Consente di creare una fascia composta da un titolo e una descrizione principali (opzionali), un numero infinito di blocchi disposti su 4 colonne, un link ad altro (bottone in basso), un’immagine di sfondo.</p>
+<p>Per crearlo, selezionare ‘Blocco icone’ dalla sezione dei blocchi “Più usati’ oppure dalla sezione ‘Testo’:</p>
+<p><img alt="Schermata: Blocco “Icone”" src="../../_images/p077-01.png" /></p>
+<p>Per ogni blocco è possibile definire:</p>
+<ul class="simple">
+<li><p>Icona</p></li>
+<li><p>Titolo</p></li>
+<li><p>Descrizione</p></li>
+<li><p>Testo per il link ad altro</p></li>
+<li><p>Link ad altro (può essere un link interno o esterno al sito)</p></li>
+</ul>
+<p>Dalla sidebar laterale è possibile scegliere quindi:</p>
+<ul class="simple">
+<li><p>L’immagine di sfondo del blocco, che verrà opacizzata con il colore principale del sito. <strong>Dimensione dell’immagine:</strong> **** La dimensione dell’immagine di sfondo varia a seconda del numero di card che vengono inserite e alla lunghezza del testo all’interno di ogni card. La dimensione minima consigliata per una buona resa è di almeno 1920px di larghezza.</p></li>
+<li><p>Il link ad altro e il testo per il link ad altro, che se presenti verranno mostrati dopo i blocchi delle icone</p></li>
+<li><p>Per ogni blocco, sarà possibile scegliere l’icona e il link ad altro. Il titolo e la descrizione del blocco icona sono editabili direttamente sul blocco stesso nella parte di destra.</p></li>
+</ul>
+<p><img alt="Schermata: Blocco “Icone”" src="../../_images/p077-11.png" /></p>
+<p>Blocco “Numeri”</p>
+<p>Consente di creare una fascia per mettere in evidenza dei numeri. E’ possibile definire un numero illimitato di “numeri”, nell’esempio qui sopra ne sono stati definiti solamente due. Il primo spazio a sinistra è dedicato al titolo del blocco ed è possibile anche inserire fino a 3 icone prima del titolo.</p>
+<p>Per crearlo, selezionare “Blocco numeri” dalla sezione dei blocchi «Più usati” oppure dalla sezione dei blocchi “Testo”:</p>
+<p>Nel blocco è possibile definire:</p>
+<ul class="simple">
+<li><p>L’immagine di sfondo da utilizzare. Verrà sempre opacizzata per permettere una corretta lettura del testo in sovrapposizione. E’ possibile selezionare l’immagine dalla sidebar a lato. <strong>Dimensione dell’immagine:</strong> **** La dimensione dell’immagine di sfondo varia a seconda del numero di card che vengono inserite e alla lunghezza del testo all’interno di ogni card. La dimensione minima consigliata per una buona resa è di almeno 1920px di larghezza.</p></li>
+</ul>
+<p><img alt="Schermata: Blocco “Icone”" src="../../_images/p078-01.png" /></p>
+<p><img alt="Schermata: Blocco “Icone”" src="../../_images/p078-11.png" /></p>
+<ul class="simple">
+<li><p>Fino a 3 icone da mostrare prima del titolo. E’ possibile scegliere le icone dalla sidebar a lato.</p></li>
+<li><p>Il titolo del blocco, che verrà mostrato nel primo spazio a sinistra (nell’esempio sopra il titolo del blocco è “I numeri di IO-Comune”).</p></li>
+<li><p>Numero illimitato di blocchi con numero, per ognuno dei quali è possibile indicare un titolo (numero) e una descrizione</p></li>
+</ul>
+<p><img alt="Schermata: Blocco “Icone”" src="../../_images/p079-01.png" /></p>
+<p><img alt="Schermata: Blocco “Icone”" src="../../_images/p080-01.png" /></p>
+<p>Quando si è in modifica del blocco, è possibile aggiungere un nuovo “blocco numero” cliccando su “Aggiungi un elemento”. E’ possibile modificare l’ordine dei “blocchi numero” tenendo premuto il primo pulsante azzurro a sinistra e trascinandolo nella posizione desiderata.</p>
+</section>
+<section id="blocco-cta-call-to-action">
+<h2>Blocco “CTA” (Call to Action)<a class="headerlink" href="#blocco-cta-call-to-action" title="Link to this heading">¶</a></h2>
+<p>Consente di creare una fascia per una Call To Action.</p>
+<p>E’ possibile definire:</p>
+<ul class="simple">
+<li><p>Colore di sfondo</p></li>
+<li><p>Immagine predefinita</p></li>
+</ul>
+<p><img alt="Schermata: Blocco “CTA” (Call to Action)" src="../../_images/p080-1.png" /></p>
+<p><img alt="Schermata: Blocco “CTA” (Call to Action)" src="../../_images/p080-2.png" /></p>
+<p><img alt="Schermata: Blocco “CTA” (Call to Action)" src="../../_images/p080-3.png" /></p>
+<ul class="simple">
+<li><p>Immagine di sfondo (vince sull’eventuale immagine predefinita)</p></li>
+<li><p>Titolo della CTA</p></li>
+<li><p>Link della CTA</p>
+<ul>
+<li><p>Aprire il link in una nuova scheda</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Dimensione dell’immagine di sfondo</strong> : E’ consigliato caricare un’immagine di sfondo di almeno 1920px di larghezza. A seconda della larghezza del blocco, l’immagine di sfondo si comporta diversamente:</p>
+<ul class="simple">
+<li><p><em>Blocco a tutta larghezza</em> : le dimensioni consigliate sono di almeno 1920x500px. Meglio se l’immagine è un po’ più alta, l’eccedenza verrà eventualmente ritagliata. Le proporzioni consigliate sono quindi <strong>1:0,27</strong> <em>●</em> <em>Blocco a larghezza del contenuto:</em> La dimensione del blocco varia a seconda del testo inserito nella cta. Le dimensioni consigliate sono di almeno 1200px di larghezza.</p></li>
+</ul>
+</section>
+<section id="blocco-numeri">
+<h2>Blocco «Numeri»<a class="headerlink" href="#blocco-numeri" title="Link to this heading">¶</a></h2>
+<p>Consente di creare una fascia con numeri. E’ possibile definire:</p>
+<ul class="simple">
+<li><p>Icone</p></li>
+<li><p>Titolo</p></li>
+<li><p>Numeri con descrizione</p></li>
+<li><p>Immagine di sfondo</p></li>
+</ul>
+<p>Per crearlo, selezionare ‘Blocco numeri’ dalla sezione dei blocchi ‘Testo’.</p>
+<p>Se non si seleziona un’immagine, verrà usato come sfondo il colore secondario del sito:</p>
+<p><img alt="Schermata: Blocco &quot;Numeri&quot;" src="../../_images/p081-01.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Numeri&quot;" src="../../_images/p082-01.png" /></p>
+<p><strong>Dimensione dell’immagine di sfondo</strong> : E’ consigliato caricare un’immagine di sfondo di almeno 1920px di larghezza. A seconda della larghezza del blocco, l’immagine di sfondo si comporta diversamente:</p>
+<ul class="simple">
+<li><p><em>Blocco a tutta larghezza</em> : le dimensioni consigliate sono di almeno 1920x500px. Meglio se l’immagine è un po’ più alta, l’eccedenza verrà eventualmente ritagliata. Le proporzioni consigliate sono quindi <strong>1:0,27</strong> <em>●</em> <em>Blocco a larghezza del contenuto:</em> La dimensione del blocco varia a seconda del testo inserito nella cta. Le dimensioni consigliate sono di almeno 1200px di larghezza.</p></li>
+</ul>
+</section>
+<section id="blocco-countdown">
+<h2>Blocco «Countdown»<a class="headerlink" href="#blocco-countdown" title="Link to this heading">¶</a></h2>
+<p>Consente di creare un contatore alla rovescia (giorni-ore-minuti-secondi) riferiti ad una determinata data, per porre evidenza ad una particolare scadenza. E’ possibile definire:</p>
+<ul class="simple">
+<li><p>Immagine di sfondo per il blocco</p></li>
+<li><p>Titolo del blocco</p></li>
+<li><p>Posizione del contatore rispetto al titolo del blocco</p></li>
+<li><p>Ulteriore testo al di sotto del contatore</p></li>
+<li><p>Data di scadenza di riferimento (il contatore mostrerà il tempo che resta dal momento in cui si consulta il blocco alla data di scadenza stessa impostata - nel caso di evento passato verrà mostrata la dicitura “Scaduto il GG/MM/AAAA HH:MM”)</p></li>
+<li><p>Possibilità di nascondere il contatore di Ore, Minuti, Secondi, se non necessari. Il contatore dei giorni viene sempre mostrato</p></li>
+</ul>
+<p><img alt="Schermata: Blocco &quot;Countdown&quot;" src="../../_images/p082-11.png" /></p>
+</section>
+<section id="blocco-cerca">
+<h2>Blocco «Cerca»<a class="headerlink" href="#blocco-cerca" title="Link to this heading">¶</a></h2>
+<p>Permette di creare un blocco di ricerca customizzabile.</p>
+<p>Fondamentalmente il blocco crea automaticamente i vari strumenti (ricerca per testo), nonchè un numero configurabili di ulteriori criteri, personalizzabili dal redattore.</p>
+<p>Ad esempio, se su alcuni elementi sono state applicate delle categorie, si può aggiungere al blocco il criterio di ricerca per tali categorie: automaticamente il sistema propone il filtro contenente i valori di tutte le categorie. Ai risultati della ricerca possono essere applicate le stesse variazioni (layout) già viste nella sezione dei Blocchi Elenco (campo “template dei risultati”), potendo definire inoltre:</p>
+<ul class="simple">
+<li><p>Se mostrare un elemento per riga, oppure no</p></li>
+<li><p>Se mostrare la colonna con i criteri di ricerca nella parte destra o sinistra, rispetto ai risultati</p></li>
+</ul>
+<p>Il blocco, nella sezione “RICERCA INIZIALE”, dà la possibilità di impostare un criterio generico in modo da filtrare eventualmente i contenuti che devono essere ricercati da quel blocco (il meccanismo dei criteri è analogo a quello già visto per i blocchi elenco).</p>
+<p><img alt="Schermata: Blocco &quot;Cerca&quot;" src="../../_images/p083-01.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Cerca&quot;" src="../../_images/p083-11.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Cerca&quot;" src="../../_images/p084-01.png" /></p>
+<p>Successivamente è possibile aggiungere ulteriori filtri</p>
+<p><strong>Opzioni del filtro:</strong></p>
+<ul class="simple">
+<li><p>Titolo della sezione filtri</p></li>
+<li><p>Etichetta del filtro</p></li>
+</ul>
+<p><img alt="Schermata: Blocco &quot;Cerca&quot;" src="../../_images/p084-1.png" /></p>
+<ul class="simple">
+<li><p>Campo su cui applicare la scelta</p></li>
+<li><p>Aspetto del widget di selezione (select, checkbox, Data Range, Toggle, Select con opzioni fisse, Checkbox con opzioni fisse)</p></li>
+<li><p>Scelta singola o multipla dei valori del campo del filtro</p></li>
+<li><p>Possibilità di nascondere il filtro</p></li>
+</ul>
+<section id="opzioni-per-il-widget">
+<h3>Opzioni per il widget<a class="headerlink" href="#opzioni-per-il-widget" title="Link to this heading">¶</a></h3>
+<p>Il filtro può essere configurato in diverse modalità:</p>
+<ul class="simple">
+<li><p>Select: imposta una tendina a discesa con determinati valori recuperati dal campo di scelta, con valori singoli o multipli a seconda dell’impostazione</p></li>
+<li><p>Checkbox: imposta una serie di checkbox con determinati valori recuperati dal campo di scelta, con valori singoli o multipli a seconda dell’impostazione</p></li>
+<li><p>Data Range: permette di impostare un date-picker (dal-al) che agisce sulla data su cui si è deciso di filtrare (chiaramente, affinchè il filtro funzioni, occorre che si agisca su un campo di tipo data, come ad esempio la data di creazione, o la data di pubblicazione (data effettiva) di un oggetto</p></li>
+<li><p>Toggle: abilita un selettore “on-off”, che può agire solo se il campo selezionato per la ricerca ha valori “Si/No”</p></li>
+<li><p>Select con Opzioni fisse: consente di selezionare, a seconda del campo con cui si è impostato il filtro, i valori da mostrare nella select (quindi, di filtrare tutti i possibili valori restituiti di default). Si veda l’esempio che segue</p></li>
+<li><p>Checkbox con Opzioni fisse: consente di selezionare, a seconda del campo con cui si è impostato il filtro, i valori da mostrare nella checkbox (quindi, di filtrare tutti i possibili valori restituiti di default). Si veda l’esempio che segue</p></li>
+</ul>
+</section>
+<section id="ulteriori-controlli-per-il-blocco">
+<h3>Ulteriori controlli per il blocco<a class="headerlink" href="#ulteriori-controlli-per-il-blocco" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Mostrare o nascondere il campo di ricerca testuale (NB: i risultati vengono automaticamente filtrati man mano che si digitano le lettere)</p></li>
+<li><p>Mostrare esplicitamente il pulsante di ricerca (in questo caso la ricerca effettiva non avviene automaticamente, ma soltanto sulla effettiva pressione del pulsante)</p></li>
+<li><p>Mostrare o meno il numero totale dei risultati della ricerca</p></li>
+</ul>
+<p><img alt="Schermata: Ulteriori controlli per il blocco" src="../../_images/p085-01.png" /></p>
+<p><img alt="Schermata: Ulteriori controlli per il blocco" src="../../_images/p086-01.png" /></p>
+<p>Racchiude tutti i parametri del blocco elenco, a seconda del tipo di variazione</p>
+<p>Consente di inserire informazioni nella colonna laterale (sinistra o destra, a seconda dell’impostazione), accanto ai risultati della ricerca</p>
+<p><img alt="Schermata: Ulteriori controlli per il blocco" src="../../_images/p086-11.png" /></p>
+</section>
+</section>
+<section id="blocco-cerca-servizi-o-prestazioni">
+<h2>Blocco «Cerca servizi o prestazioni»<a class="headerlink" href="#blocco-cerca-servizi-o-prestazioni" title="Link to this heading">¶</a></h2>
+<p>Consente di creare un blocco di ricerca che agisce sui servizi inseriti, proponendo automaticamente a sinistra un meccanismo di selezione di filtri a livello di:</p>
+<ul class="simple">
+<li><p>Utenti: gli utenti impostati nel campo tassonomia utenti (“A chi si rivolge”) sul servizio</p></li>
+<li><p>Argomenti: i valori impostati nel campo “Parliamo di” sul servizio</p></li>
+</ul>
+<p>Fornisce inoltre un campo di ricerca testuale che filtra automaticamente i risultati ottenuti alla digitazione dei caratteri.</p>
+<p><img alt="Schermata: Blocco &quot;Cerca servizi o prestazioni&quot;" src="../../_images/p087-01.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Cerca servizi o prestazioni&quot;" src="../../_images/p087-11.png" /></p>
+</section>
+<section id="blocco-griglia">
+<h2>Blocco «Griglia»<a class="headerlink" href="#blocco-griglia" title="Link to this heading">¶</a></h2>
+<p>Consente di inserire una griglia, fino a 4 colonne, in cui è poi possibile inserire ulteriori blocchi (immagine, elenco, blocchi di testo)</p>
+<p>Può essere utile, per esempio, per creare delle strutture affiancate (ad esempio, 4 immagini allineate sulla stessa riga) Una volta definito il numero di colonne, si inserisce il blocco corrispondente per ogni colonna.</p>
+<p><img alt="Schermata: Blocco &quot;Griglia&quot;" src="../../_images/p088-01.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Griglia&quot;" src="../../_images/p088-1.png" /></p>
+</section>
+<section id="blocco-cerca-con-mappa">
+<h2>Blocco «Cerca con Mappa»<a class="headerlink" href="#blocco-cerca-con-mappa" title="Link to this heading">¶</a></h2>
+<p><img alt="Schermata: Blocco &quot;Cerca con Mappa&quot;" src="../../_images/p089-01.png" /></p>
+<p>Blocco che consente di ricercare due tipologie di oggetti:</p>
+<ul class="simple">
+<li><p>Medici professionisti</p></li>
+<li><p>Strutture</p></li>
+</ul>
+<p>In ciascuno dei casi, il blocco disegna automaticamente:</p>
+<ul class="simple">
+<li><p>Area di testo per la ricerca, che agisce sia a livello di nome struttura/medico, sia sull’indirizzo della struttura/medico</p></li>
+<li><p>Chips con le categorie attribuite sulle strutture/medici</p></li>
+<li><p>Mappa geolocalizzata che mostra i PIN delle strutture/medici trovate/filtrate</p></li>
+<li><p>Cards con l’elenco delle strutture/medici trovate/filtrate</p></li>
+</ul>
+<p><img alt="Schermata: Blocco &quot;Cerca con Mappa&quot;" src="../../_images/p089-11.png" /></p>
+<p><strong>Opzioni per il blocco</strong></p>
+<ul class="simple">
+<li><p><strong>Titolo</strong> : sostituisce la frase standard “ <em>Cerca strutture vicino a te</em> ” e “ <em>Cerca medici di base e</em> <em>pediatri vicino a te</em> ”</p></li>
+<li><p><strong>Posizione in cui cercare:</strong> consente di restringere la ricerca ad un particolare percorso del piano editoriale</p></li>
+<li><p><strong>Tipo di contenuto</strong> : selezionabile tra “Medico” e “Struttura”</p></li>
+<li><p><strong>Mostra la barra di ricerca:</strong> possibilità di nascondere tali filtri</p></li>
+<li><p><strong>Mostra i filtri per tipologia</strong> : possibilità di nascondere tali filtri</p></li>
+</ul>
+<p>NB: i “medici” che vengono considerati dalla mappa sono tutti e soli quelli che hanno una tipologia di incarico (campo “Incarico” sulla persona) appartenente alla sezione degli incarichi “Professionale”, valori definiti nella tassonomia di AgID</p>
+<p><img alt="Schermata: Blocco &quot;Cerca con Mappa&quot;" src="../../_images/p090-01.png" /></p>
+</section>
+<section id="blocco-ricerca-rapida">
+<h2>Blocco «Ricerca rapida»<a class="headerlink" href="#blocco-ricerca-rapida" title="Link to this heading">¶</a></h2>
+<p>E’ un blocco che si può inserire all’interno di una pagina, e si presenta in questo modo:</p>
+<p>E’ possibile inserire un testo nell’apposito campo. E’ inoltre possibile configurare delle voci di ricerca rapida: si tratta di link che autocompilano il box di ricerca. Tali testi sono configurabili dall’amministratore del sito nell’apposito pannello di controllo.</p>
+<p><img alt="Schermata: Blocco &quot;Ricerca rapida&quot;" src="../../_images/p091-01.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Ricerca rapida&quot;" src="../../_images/p091-1.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Ricerca rapida&quot;" src="../../_images/p091-2.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Ricerca rapida&quot;" src="../../_images/p091-3.png" /></p>
+<p>Le scorciatoie sono configurabili per percorso, ovvero vengono proposte voci differenti (nel caso di diversi percorsi in cui si vuole inserire il blocco). Ad esempio se si impostano le voci per il percorso “/”, allora quelle voci verranno proposte nel blocco inserito nell Homepage, se se ne configurano altre per esempio per il percorso “/amministrazione”, verranno proposte nel blocco che verrà inserito nella pagina /amministrazione, ecc. Se non sono definiti percorsi differenti da “/” il blocco proporrà le stesse voci indipendentemente dal percorso.</p>
+<p>NB: le stesse impostazioni si riflettono nella ricerca generale del sito (lente in alto a destra) quando ci si trova a ricercare in una determinata posizione.</p>
+</section>
+<section id="blocco-tutto-per">
+<h2>Blocco «Tutto per»<a class="headerlink" href="#blocco-tutto-per" title="Link to this heading">¶</a></h2>
+<p>E’ un blocco che si può inserire all’interno di una pagina, e si presenta in questo modo:</p>
+<p><img alt="Schermata: Blocco &quot;Tutto per&quot;" src="../../_images/p092-01.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Tutto per&quot;" src="../../_images/p092-1.png" /></p>
+<p><img alt="Schermata: Blocco &quot;Tutto per&quot;" src="../../_images/p093-01.png" /></p>
+<p>Il blocco è configurabile aggiungendo quanti si vogliano card riferite a:</p>
+<ul class="simple">
+<li><p>Tassonomia “A chi si rivolge”</p></li>
+<li><p>Tassonomia “Parliamo di”</p></li>
+</ul>
+<p>NB: A seconda della tassonomia scelta, il link costruito sulla card sarà quello che manda alla ricerca tassonomica corrispondente. Ad esempio, selezionando la tassonomia del “parliamo di” corrispondente al valore “Alcool e dipendenza», il link manderà alla pagina dei risultati di quella ricerca tassonomica (per il valore “Alcool e dipendenza”)</p>
+<p><img alt="Schermata: Blocco &quot;Tutto per&quot;" src="../../_images/p094-01.png" /></p>
+<p>L’icona di base per la card (a destra ) è quella standard di AgID ma può essere personalizzata facendo riferimento alle icone di <a class="reference external" href="https://fontawesome.com/search?o=r&amp;amp;m=free">font-awesome 6.</a></p>
+<p>Nel caso di configurazione di entrambe le tassonomie, vince sempre la prima (“A chi si rivolge”)</p>
+</section>
+<section id="blocco-contatti">
+<h2>Blocco “Contatti“<a class="headerlink" href="#blocco-contatti" title="Link to this heading">¶</a></h2>
+<p>Si aggiunge attraverso il seguente blocco</p>
+<p><img alt="Schermata: Blocco “Contatti“" src="../../_images/p094-11.png" /></p>
+<p>E’ un editor di sottoblocchi; per il blocco generale si imposta:</p>
+<ul class="simple">
+<li><p>Titolo</p></li>
+<li><p>Testo e per ciascun sottoblocco si imposta</p></li>
+<li><p>Titolo</p></li>
+<li><p>Testo</p></li>
+<li><p>Numero di telefono</p></li>
+<li><p>email</p></li>
+</ul>
+<p><img alt="Schermata: Blocco “Contatti“" src="../../_images/p095-01.png" /></p>
+</section>
+<section id="copia-incolla-di-blocchi-tra-pagine-differenti">
+<h2>Copia/incolla di blocchi tra pagine differenti<a class="headerlink" href="#copia-incolla-di-blocchi-tra-pagine-differenti" title="Link to this heading">¶</a></h2>
+<p>E’ possibile copiare la configurazione a blocchi di una pagina, per replicarla velocemente su un’altra pagina a blocchi (NB: naturalmente funziona solo tra pagine a blocchi)</p>
+<p>Se per esempio una pagina contiene diversi blocchi e si vogliono replicare tali e quali in un’altra pagina (evitando quindi di dover configurare a mano ogni singolo blocco), è possibile fare una operazione di copia/incolla rapida. E’ possibile copiare blocchi sparsi nella pagina: attenzione che se per esempio si selezionano prima il terzo blocco poi il primo, <strong>esattamente in quest’ordine</strong>, verranno incollati nella pagina rispettando tale ordine. I blocchi vengono sempre incollati in cima, a partire dal secondo blocco, nell’ordine stabilito al momento della copia.</p>
+<p>Per utilizzare questa funzionalità occorre:</p>
+<ul class="simple">
+<li><p>Andare in edit della pagina</p></li>
+<li><p>Cliccare sul blocco tenendo premuto il tasto CTRL (il primo blocco di una pagina è sempre il blocco riservato al “Titolo”, e risulta potenzialmente selezionabile, ma se si incolla non sortisce effetto)</p>
+<ul>
+<li><p>se ad esempio si clicca sul terzo e secondo blocco della pagina, verranno selezionati automaticamente il terzo e il secondo</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Schermata: Copia/incolla di blocchi tra pagine differenti" src="../../_images/p096-01.png" /></p>
+<ul class="simple">
+<li><p>i blocchi appariranno evidenziati, e nella barra laterale compariranno nuovi bottoni che permettono di copiare, tagliare o eliminare i blocchi</p></li>
+<li><p>A questo punto, andare in edit sulla pagina di destinazione, comparirà un pulsante nella barra laterale degli strumenti per incollare i blocchi</p></li>
+<li><p>Premendo il pulsante di incolla, i blocchi verranno copiati dal secondo blocco in poi, rispettando l’ordine di selezione fatto precedentemente</p></li>
+</ul>
+<p><img alt="Schermata: Copia/incolla di blocchi tra pagine differenti" src="../../_images/p097-01.png" /></p>
+<p><img alt="Schermata: Copia/incolla di blocchi tra pagine differenti" src="../../_images/p097-11.png" /></p>
+</section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="n1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Se sono compilati entrambi i campi, l’immagine del campo “immagine in testata” verrà mostrata nel dettaglio, mentre l’immagine “immagine di anteprima” verrà mostrata negli elenchi.</p>
+<ul class="simple">
+<li><p>se è compilato solamente il campo “immagine in testata” verrà utilizzata quell’immagine anche per l’anteprima dell’elemento negli elenchi.</p></li>
+<li><p>se è compilato solamente il campo “immagine di anteprima” nel dettaglio non verrà mostrata nessuna immagine, e negli elenchi verrà usata l’immagine del campo “immagine di anteprima”.</p></li>
+</ul>
+</aside>
+<aside class="footnote brackets" id="n2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>La data di ultima modifica è impostabile di default su tutti i tipi di contenuto abilitati ad averla (come ad esempio le pagine) settando l’apposito flag nella sezione <strong>https://&lt;sito&gt;/controlpanel/design-plone-settings</strong></p>
+</aside>
+<aside class="footnote brackets" id="n3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>Si veda la sezione di ricerca dedicata</p>
+</aside>
+<aside class="footnote brackets" id="n4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>Nel caso di costruzione di un link ad una risorsa scaricabile (ad esempio un file) per il quale si vuole ottenere il download diretto, è sufficiente inserire nel link questo particolare costrutto: https://&lt;sito&gt;/nomefile.pdf <strong>/&#64;&#64;download/file.</strong> Nel caso si voglia aprire un file utilizzando il plugin integrato nel browser (es. per i pdf), è sufficiente inserire il link nel formato https://&lt;sito&gt;/nomefile.pdf <strong>/&#64;&#64;display-file/file</strong></p>
+</aside>
+<aside class="footnote brackets" id="n5" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">5</a><span class="fn-bracket">]</span></span>
+<p>Il campo “ <strong>Mittente di default</strong> ” può essere scritto ad esempio nel formato “ <em>No Reply - Comune di</em> <em>io-comune &lt;sito_no_reply&#64;io-comune.redturtle.it&gt;</em></p>
+</aside>
+<aside class="footnote brackets" id="n6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">6</a><span class="fn-bracket">]</span></span>
+<p>Nel caso la form presenti un campo allegato, l’allegato stesso verrà <strong>solo</strong> inviato via mail, ma non viene salvato nel csv, nè altrove</p>
+</aside>
+</aside>
+
+</main>
+						<nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="tipi-di-contenuto-specializzati-per-agid.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Tipi di contenuto specializzati per AgID
+    </a>
+    <a class="float-right" href="undo-redo-sulle-pagine.html" title="Next">
+        Undo/Redo sulle pagine <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<a href="#" aria-hidden="true" data-attribute="return-to-top" id="return-to-top" class="return-to-top"  onclick="topFunction()">
+		<i class="it-collapse"></i>
+	</a>
+	<!-- <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+		<span class="navbar-toggler-icon"></span>
+		<span class="sr-only">Menu</span>
+	</button> -->
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            
+    <div class="rt-footer px-3 py-4">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <p class="rt-footer__title">RedTurtle Technology S.r.l.</p>
+          <address class="mb-0">
+            Via Nino Bixio, 4<br>
+            44122 Ferrara (FE)<br>
+            C.F. e P.IVA 01467600381
+          </address>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <p class="rt-footer__title">Contatti</p>
+          <ul class="list-unstyled mb-0">
+            <li>Telefono: <a href="tel:+3905321915958">(+39) 0532 1915958</a></li>
+            <li>Email: <a href="mailto:info@redturtle.it">info@redturtle.it</a></li>
+            <li>PEC: <a href="mailto:redturtle@postecert.it">redturtle@postecert.it</a></li>
+            <li>Sito web: <a href="https://www.redturtle.it/">www.redturtle.it</a></li>
+            <li class="mt-2"><a href="https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F"><i class="fas fa-life-ring mr-1" aria-hidden="true"></i>Help-desk</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 mb-4">
+          <p class="rt-footer__title">Seguici su</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/redturtle-technology-s.r.l./" class="rt-social"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+            <li class="list-inline-item"><a href="https://github.com/RedTurtle" class="rt-social"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+            <li class="list-inline-item"><a href="https://medium.redturtle.it/" class="rt-social"><i class="fab fa-medium" aria-hidden="true"></i>Medium</a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/redturtle/" class="rt-social"><i class="fab fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row rt-footer__colophon pt-3">
+        <div class="col">
+          <ul class="list-inline small mb-0">
+            <li class="list-inline-item"><a href="https://www.redturtle.it/privacy">Privacy policy</a></li>
+            <li class="list-inline-item"><a href="https://www.redturtle.it/cookie">Cookie policy</a></li>
+            <li class="list-inline-item"><a href="https://www.redturtle.it/contatti">Contatti</a></li>
+            <li class="list-inline-item">&copy; 2026, RedTurtle Technology S.r.l.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+        </div>
+    </footer>
+        <script src="../../_static/documentation_options.js?v=3586afa7"></script>
+        <script src="../../_static/doctools.js?v=9bcbadda"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
+        <script src="../../_static/translations.js?v=45930005"></script>
+        <script type="text/javascript" src="../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>

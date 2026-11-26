@@ -1,0 +1,1189 @@
+<!-- Direct copy of https://github.com/wagtail/sphinx-wagtail-theme/blob/main/sphinx_wagtail_theme/layout.html
+	Doing this to add our custom header
+--><!DOCTYPE html>
+<html class="no-js" lang="it" data-content_root="../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    
+        <title>Integrazione con io-Comune &mdash; Documentazione Manuali d&#39;uso 0.1 </title>
+    
+        <link rel="shortcut icon" href="../_static/favicon-redturtle.png" />
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			let rtt = document.getElementById("return-to-top");
+			if(rtt){
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					rtt.style.display = "block";
+				} else {
+					rtt.style.display = "none";
+				}
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const progressBar = document.getElementById("progress-bar");
+			const progressBarContainer = document.getElementById("progress-bar-container");
+			window.addEventListener("scroll", function() {
+				let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				progressBarContainer.style.display = scrollTop? 'block': 'none'
+				let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				let progress = (scrollTop / scrollHeight) * 100;
+				progressBar.style.width = progress + "%";
+			});
+		});
+	</script>
+    <link rel="stylesheet" type="text/css" href="../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=8cc4808c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/redturtle.css?v=8fe9cb8c" />
+            <link rel="index" title="Indice" href="../genindex.html" />
+            <link rel="search" title="Cerca" href="../search.html" />
+            <link rel="top" title="Documentazione Manuali d&#39;uso 0.1 " href="#" />
+            <link rel="up" title="Manuale io-Cittadino" href="index.html" />
+            <link rel="next" title="Integrazione con il software di Protocollo Maggioli" href="integrazione-con-il-software-di-protocollo-maggioli.html" />
+            <link rel="prev" title="Panoramica" href="panoramica.html" />
+    </head>
+<body><script>try { localStorage.removeItem("wagtail-theme"); } catch (e) {}</script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Salta al contenuto</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="/"
+                        title="RedTurtle"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../_static/img/tartaruga-cerchio.svg" width="48" height="48" alt="RedTurtle"
+                            class="logo-img"
+                        />
+                        Manuali d'uso
+                    </a>
+                
+                
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            
+                                
+                                
+                                <li class="nav-item"><a class="nav-link"  href="https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F">Help-desk</a></li>
+                            
+                                
+                                
+                                <li class="nav-item"><a class="nav-link"  href="https://www.redturtle.it/">redturtle.it</a></li>
+                            
+                        </ul>
+                    </div>
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+	 
+    <div id="main-content" class="container-fluid">
+		<div id="utility-bar" class="sticky-top">
+			<header class="row align-items-center justify-content-between py-3">
+				<div class="col-sm-6 col-lg-6">
+					
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Cerca nella documentazione" aria-label="Cerca nella documentazione" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+				</div>
+				<div class="col-sm-6 col-lg-auto"><button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none d-none" type="button" hidden aria-hidden="true" tabindex="-1">
+						<span class="dark-only"><i class="fas fa-sun"></i> Modalità chiara</span>
+						<span class="light-only"><i class="fas fa-moon"></i> Modalità scura</span>
+					</button></div>
+			</header>
+			<div id="progress-bar-container">
+				<div id="progress-bar"></div>
+			</div>
+		</div>
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse d-lg-block pt-4"><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Menu principale">
+        <p class="caption" role="heading"><span class="caption-text">Manuali d'uso</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../manuale-io-comune/index.html">Manuale io-Comune</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html">Autenticazione e interfaccia di backend</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html#edit-della-pagina">Edit della pagina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html#navigazione-del-piano-editoriale">Navigazione del piano editoriale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/back-end-della-navigazione-autenticata.html">Back-end della navigazione autenticata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/account-e-ruoli.html">Account e ruoli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/account-e-ruoli.html#gestione-utenti-a-livello-di-cartelle-o-particolari-contenuti">Gestione utenti a livello di cartelle o particolari contenuti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/workflow.html">Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/risorse-utili.html">Risorse utili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/index.html">I tipi di contenuto (content-type)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/tipi-di-contenuto-specializzati-per-agid.html">Tipi di contenuto specializzati per AgID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-pagina.html">Content-type “Pagina”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/undo-redo-sulle-pagine.html">Undo/Redo sulle pagine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-cartella.html">Content-type “Cartella”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-file.html">Content-type “File”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-immagine.html">Content-type “Immagine”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-collegamento.html">Content-type “Collegamento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-argomento.html">Content-type “Argomento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-in-testata-leadimage.html">Dimensioni dell’immagine in testata (leadimage)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-di-anteprima.html">Dimensioni dell’immagine di anteprima</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-evento.html">Content-type “Evento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-luogo.html">Content-type “Luogo”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-notizie-e-comunicati-stampa.html">Content-type “Notizie e comunicati stampa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-persona-pubblica.html">Content-type “Persona pubblica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-incarico.html">Content-type “Incarico”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-servizio.html">Content-type “Servizio”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-unita-organizzativa.html">Content-type “Unità organizzativa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-dataset.html">Content-type “Dataset”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-documento.html">Content-type “Documento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-cartella-modulistica.html">Content-type “Cartella Modulistica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-open-data.html">Content-type “Open-data”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-bando.html">Content-type “Bando”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-punto-di-contatto.html">Content-type “Punto di contatto”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/gestione-di-io-prenoto-integrato-in-io-comune-per-il-pnrr.html">Gestione di io-Prenoto integrato in io-Comune per il PNRR</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html">Dimensioni consigliate delle immagini</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html#immagini-dei-contenuti">Immagini dei contenuti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html#blocco-elenco">Blocco Elenco</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html#slider">Slider</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html#altri-blocchi">Altri blocchi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/faq.html">FAQ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/faq.html#cartella-faq">Cartella FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/faq.html#id1">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/sottositi.html">Sottositi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/multilinguismo.html">Multilinguismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/menu-di-configurazione-del-sito.html">Menu di configurazione del sito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/menu-configurabile.html">Menu configurabile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-configurabile.html#configurazione-del-menu-di-testata">Configurazione del menu di testata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-configurabile.html#voci-di-un-menu">Voci di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-configurabile.html#configurazione-header-slim">Configurazione header “slim”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/menu-secondario-in-testata.html">Menu secondario in testata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-secondario-in-testata.html#configurazione-di-un-menu">Configurazione di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-secondario-in-testata.html#voci-di-un-menu">Voci di un menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/voci-aggiuntive-nel-footer.html">Voci aggiuntive nel footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configurazione-dei-blocchi-di-ricerca.html">Configurazione dei blocchi di ricerca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configurazione-dei-vocabolari.html">Configurazione dei vocabolari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-del-blocco-contatti.html">Configuratore del blocco contatti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-del-footer.html">Configuratore del footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-subfooter.html">Configuratore subfooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-dei-social-testata-e-footer.html">Configuratore dei social (testata e footer)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/configuratore-dei-social-testata-e-footer.html#lista-icone-social">Lista icone social</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/customer-satisfaction.html">Customer satisfaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-cookie-banner.html">Configuratore Cookie Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/newsletter.html">Newsletter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/newsletter.html#messaggi-inviabili">Messaggi inviabili</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/newsletter.html#configurazione-dellhtml-del-canale">Configurazione dell’HTML del canale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/volto-alerts.html">Volto Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configurazioni-varie.html">Configurazioni varie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/configurazioni-varie.html#geolocalizzazione-mappe">Geolocalizzazione mappe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/configurazioni-varie.html#impostazioni-per-linvio-della-posta-attraverso-smtp-del-portale">Impostazioni per l’invio della posta attraverso SMTP del portale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html">Data-element per l’asseverazione PNRR</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#menu-principale">Menu principale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#menu-secondario">Menu secondario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#pagina-argomenti">Pagina Argomenti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#footer">Footer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#pagina-servizi">Pagina Servizi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#altre-pagine-di-secondo-livello">Altre pagine di secondo livello</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#area-personale">Area personale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#note-legali">Note legali</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#scheda-servizio">Scheda servizio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#verifica-delle-buone-pratiche">Verifica delle buone pratiche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/appendice.html">Appendice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/appendice.html#campi-speciali-per-la-seo">Campi speciali per la SEO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manuale-io-prenoto/index.html">Manuale io-Prenoto</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-prenoto/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-prenoto/integrazione-con-io-comune.html">Integrazione con io-Comune</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-prenoto/integrazione-con-io-comune.html#attori-coinvolti-nel-processo">Attori coinvolti nel processo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-prenoto/integrazione-con-io-comune.html#content-type-cartella-prenotazioni">Content-type “Cartella prenotazioni”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-prenoto/integrazione-con-io-comune.html#gestione-delle-prenotazioni-pervenute-da-parte-degli-operatori">Gestione delle prenotazioni pervenute da parte degli operatori</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-prenoto/criteri-di-presentazione-degli-slot-di-prenotazione.html">Criteri di presentazione degli slot di prenotazione - cittadino vs operatore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-prenoto/notifiche-personalizzate-sms-e-appio.html">Notifiche personalizzate (SMS e AppIO)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Manuale io-Cittadino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="panoramica.html">Panoramica</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Integrazione con io-Comune</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#attori-coinvolti-nel-processo">Attori coinvolti nel processo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#content-type-modello-pratica">Content-type “Modello pratica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creazione-della-form-del-modello-pratica">Creazione della form del Modello pratica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pratica-lato-cittadino-collegamento-al-servizio">Pratica lato cittadino - collegamento al Servizio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="integrazione-con-il-software-di-protocollo-maggioli.html">Integrazione con il software di Protocollo Maggioli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="integrazione-con-il-software-di-protocollo-maggioli.html#configurazione">Configurazione</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manuale-io-segnalo/index.html">Manuale io-Segnalo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/integrazione-con-io-comune.html">Integrazione con io-Comune</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/attori-coinvolti-nel-processo.html">Attori coinvolti nel processo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/manuale-admin-creazione-oggetto-segnalazioni.html">Manuale admin (creazione oggetto Segnalazioni)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-admin-creazione-oggetto-segnalazioni.html#content-type-segnalazioni">Content-type “Segnalazioni”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/manuale-operatore.html">Manuale Operatore</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-operatore.html#workflow-delle-segnalazioni">Workflow delle segnalazioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-operatore.html#gestione-delle-segnalazioni-pervenute">Gestione delle segnalazioni pervenute</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/manuale-cittadino.html">Manuale Cittadino</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-cittadino.html#autorizzazioni-e-condizioni">Autorizzazioni e Condizioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-cittadino.html#dati-di-segnalazione">Dati di Segnalazione</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-cittadino.html#validazione-e-sicurezza-otp">Validazione e Sicurezza (OTP)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manuale-io-sanita/index.html">Manuale io-Sanità</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/autenticazione-e-interfaccia-di-backend.html">Autenticazione e interfaccia di backend</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/autenticazione-e-interfaccia-di-backend.html#edit-della-pagina">Edit della pagina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/autenticazione-e-interfaccia-di-backend.html#navigazione-del-piano-editoriale">Navigazione del piano editoriale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/back-end-della-navigazione-autenticata.html">Back-end della navigazione autenticata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/account-e-ruoli.html">Account e ruoli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/account-e-ruoli.html#gestione-utenti-a-livello-di-cartelle-o-particolari-contenuti">Gestione utenti a livello di cartelle o particolari contenuti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/workflow.html">Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/index.html">I tipi di contenuto (content-type)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/tipi-di-contenuto-specializzati-per-agid.html">Tipi di contenuto specializzati per AgID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-pagina.html">Content-type “Pagina”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/undo-redo-sulle-pagine.html">Undo/Redo sulle pagine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-cartella.html">Content-type “Cartella”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-file.html">Content-type “File”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-immagine.html">Content-type “Immagine”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-collegamento.html">Content-type “Collegamento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-in-testata-leadimage.html">Dimensioni dell’immagine in testata (leadimage)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-di-anteprima.html">Dimensioni dell’immagine di anteprima</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-evento.html">Content-type “Evento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-notizie-e-comunicati-stampa.html">Content-type “Notizie e comunicati stampa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-persona.html">Content-type “Persona”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-servizio.html">Content-type “Servizio”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-unita-organizzativa.html">Content-type “Unità organizzativa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-documento.html">Content-type “Documento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-cartella-modulistica.html">Content-type “Cartella Modulistica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-bando.html">Content-type “Bando”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-punto-di-contatto.html">Content-type “Punto di contatto”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/content-type-come-fare-per.html">Content-type “Come fare per”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/faq.html">FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/i-tipi-di-contenuto-content-type/pagine-di-ricerca-per-argomenti-del-modello-agid.html">Pagine di ricerca per argomenti del modello AgID</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/sottositi.html">Sottositi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/accessibility-checker.html">Accessibility checker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/accessibility-checker.html#come-si-usa">Come si usa</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/multilinguismo.html">Multilinguismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/menu-di-configurazione-del-sito.html">Menu di configurazione del sito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/menu-configurabile.html">Menu configurabile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/menu-configurabile.html#configurazione-del-menu-di-testata">Configurazione del menu di testata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/menu-configurabile.html#voci-di-un-menu">Voci di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/menu-configurabile.html#configurazione-header-slim">Configurazione header “slim”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/menu-secondario-in-testata.html">Menu secondario in testata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/menu-secondario-in-testata.html#configurazione-di-un-menu">Configurazione di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/menu-secondario-in-testata.html#voci-di-un-menu">Voci di un menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/voci-aggiuntive-nel-footer.html">Voci aggiuntive nel footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/configurazione-dei-blocchi-di-ricerca.html">Configurazione dei blocchi di ricerca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/configurazione-dei-vocabolari.html">Configurazione dei vocabolari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/configuratore-del-footer.html">Configuratore del footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/configuratore-subfooter.html">Configuratore subfooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/configuratore-dei-social-testata-e-footer.html">Configuratore dei social (testata e footer)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/configuratore-dei-social-testata-e-footer.html#lista-icone-social">Lista icone social</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/customer-satisfaction.html">Customer satisfaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/configuratore-cookie-banner.html">Configuratore Cookie Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/newsletter.html">Newsletter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/newsletter.html#gestione-di-backoffice-del-canale-newsletter">Gestione di backoffice del canale newsletter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/newsletter.html#configurazione-dellhtml-del-canale">Configurazione dell’HTML del canale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/configurazioni-varie.html">Configurazioni varie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/configurazioni-varie.html#geolocalizzazione-mappe">Geolocalizzazione mappe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/configurazioni-varie.html#impostazioni-per-linvio-della-posta-attraverso-smtp-del-portale">Impostazioni per l’invio della posta attraverso SMTP del portale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-sanita/appendice.html">Appendice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-sanita/appendice.html#campi-speciali-per-la-seo">Campi speciali per la SEO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+	
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Espandi/riduci contenuti del menu</span>
+        </button>
+    </template>
+	<script type="text/javascript">
+		function updateCurrentToc(event) {
+						const hash = window.location.hash;
+			// solo i link ad ancore interne (es. versioni nelle note di rilascio):
+			// le pagine vere mantengono l'evidenziazione impostata da Sphinx
+			const tocLinks = Array.from(document.querySelectorAll(".toctree-l2 a")).filter((link) => { const h = link.getAttribute("href"); return h.startsWith("#") && h.length > 1; });
+			tocLinks.forEach((link) => {
+				if (hash && link.href.includes(hash)) {
+					link.classList.add("active");
+					link.closest("li").classList.add("current");
+					
+				} else {
+					link.classList.remove("active");
+					link.closest("li").classList.remove("current");
+				}
+			});
+		}
+		// highlight current TOC link manually
+		addEventListener("DOMContentLoaded", updateCurrentToc);
+		// nelle note di rilascio le versioni sono ancore: non mostrare il livello sotto (Migliorie, Fix...)
+		addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".site-toc .toctree-l2").forEach((li) => {
+				const a = li.querySelector(":scope > a");
+				const h = a ? a.getAttribute("href") : "";
+				// link a una versione: "#versione-..." sulla stessa pagina, "pagina.html#versione-..." dalle altre
+				if (/#.+/.test(h)) {
+					li.querySelectorAll(":scope > ul, :scope > .toctree-expand").forEach((el) => el.remove());
+				}
+			});
+		});
+		// segnala ai lettori di schermo la pagina corrente
+		addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".site-toc a.current").forEach((link) => {
+				const h = link.getAttribute("href"); if (!(h.startsWith("#") && h.length > 1)) link.setAttribute("aria-current", "page");
+			});
+		});
+		addEventListener("hashchange", updateCurrentToc);
+		// porta in vista nel menu laterale la voce della pagina corrente
+		addEventListener("load", () => {
+			const cur = document.querySelector('.site-toc a[aria-current="page"]');
+			if (!cur) return;
+			let box = cur.parentElement;
+			while (box && box !== document.body) {
+				const st = getComputedStyle(box);
+				if (/(auto|scroll)/.test(st.overflowY) && box.scrollHeight > box.clientHeight) break;
+				box = box.parentElement;
+			}
+			if (!box || box === document.body) return;
+			const offset = cur.getBoundingClientRect().top - box.getBoundingClientRect().top;
+			box.scrollTop += offset - box.clientHeight / 3;
+		});
+
+	</script>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5 ">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="Percorso di navigazione">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../index.html">Manuali d'uso</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Manuale io-Cittadino</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Integrazione con io-Comune</li>
+    </ol>
+</nav>
+                    </div>
+                    
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+					<!-- 
+                    <nav class="col-12 col-lg-3 pb-4 order-lg-last">
+						<div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+							<p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Integrazione con io-Comune</a><ul>
+<li><a class="reference internal" href="#attori-coinvolti-nel-processo">Attori coinvolti nel processo</a><ul>
+<li><a class="reference internal" href="#gestione-del-gruppo-operatori-pratiche">Gestione del gruppo “Operatori Pratiche”</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#content-type-modello-pratica">Content-type “Modello pratica”</a></li>
+<li><a class="reference internal" href="#creazione-della-form-del-modello-pratica">Creazione della form del Modello pratica</a><ul>
+<li><a class="reference internal" href="#utilizzo-delleditor-di-form-surveyjs">Utilizzo dell’editor di form SurveyJS</a><ul>
+<li><a class="reference internal" href="#gruppo-di-campi">Gruppo di campi</a></li>
+<li><a class="reference internal" href="#tab-informativa-sulla-privacy">Tab “Informativa sulla privacy”</a></li>
+<li><a class="reference internal" href="#tab-informazioni-generali-del-richiedente">Tab “Informazioni generali del richiedente”</a><ul>
+<li><a class="reference internal" href="#gestione-campi-particolari-specifici-per-le-pratiche">Gestione campi particolari, specifici per le pratiche</a></li>
+<li><a class="reference internal" href="#gestione-dei-campi-html">Gestione dei campi HTML</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#altre-tab-della-pratica">Altre tab della pratica</a></li>
+<li><a class="reference internal" href="#collegamento-dei-campi-ai-dati-spid">Collegamento dei campi ai dati SPID</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pratica-lato-cittadino-collegamento-al-servizio">Pratica lato cittadino - collegamento al Servizio</a><ul>
+<li><a class="reference internal" href="#stati-della-pratica">Stati della pratica</a><ul>
+<li><a class="reference internal" href="#tabella-degli-stati-pratica-delle-azioni-possibili-e-degli-eventi-conseguenti">Tabella degli stati pratica, delle azioni possibili e degli eventi conseguenti</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#esportazione-delle-pratiche">Esportazione delle pratiche</a><ul>
+<li><a class="reference internal" href="#esportazione-della-vista-pratiche">Esportazione della vista pratiche</a></li>
+<li><a class="reference internal" href="#esportazione-dei-dati-pratiche">Esportazione dei dati pratiche</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#area-personale-cittadino">Area personale cittadino</a><ul>
+<li><a class="reference internal" href="#dashboard">Dashboard</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#area-personale-operatore">Area personale operatore</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                     -->
+					<div class="col-12 px-5 order-last order-lg-first rst-content">
+						<main role="main" id="main">
+    <section id="integrazione-con-io-comune">
+<h1>Integrazione con io-Comune<a class="headerlink" href="#integrazione-con-io-comune" title="Link to this heading">¶</a></h1>
+<p>Una modello pratica è lo strumento con cui, da un Servizio di io-Comune, si crea la rappresentazione digitale della pratica, attraverso la quale il cittadino può sottomettere le sue richieste.</p>
+<p>Una pratica è sostanzialmente una sorta di form online, suddiviso in step, attraverso il quale vengono sottomessi i dati che poi vengono elaborati dagli operatori del Comune che li riceve.</p>
+<p>Un esempio di pratica online è la “richiesta di iscrizione ad una graduatoria”, oppure una “richiesta di pass per la ZTL”, ecc.</p>
+<section id="attori-coinvolti-nel-processo">
+<h2>Attori coinvolti nel processo<a class="headerlink" href="#attori-coinvolti-nel-processo" title="Link to this heading">¶</a></h2>
+<p>I principali attori coinvolti nella costruzione, utilizzo e manutenzione delle pratiche sono:</p>
+<ul class="simple">
+<li><p><strong>Redattore</strong> : colui che crea le nuove pratiche (form), grazie agli appositi strumenti redazionali</p></li>
+<li><p><strong>Cittadino:</strong> colui che utilizza le pratiche online, sottomette i dati e controlla lo stato di avanzamento delle pratiche stesse sottoposte all’Ente</p></li>
+<li><p><strong>Operatore:</strong> utente o gruppo di utenti dell’Ente che si occupa della gestione delle pratiche in tutti i suoi step di avanzamento, fino alla conclusione.</p></li>
+</ul>
+<section id="gestione-del-gruppo-operatori-pratiche">
+<h3>Gestione del gruppo “Operatori Pratiche”<a class="headerlink" href="#gestione-del-gruppo-operatori-pratiche" title="Link to this heading">¶</a></h3>
+<p>Questo gruppo comprende gli utenti o i gruppi di utenti dell’Ente che sono responsabili della gestione e dell’avanzamento delle pratiche in tutti i loro stati, dalla ricezione alla conclusione.</p>
+<p><strong>Ruoli e operatività:</strong></p>
+<ul class="simple">
+<li><p><strong>Assegnazione delle pratiche:</strong> Gli operatori possono assegnare le pratiche ad altri specifici operatori, garantendo una distribuzione efficiente del carico di lavoro.</p></li>
+<li><p><strong>Modifica dello stato della pratica:</strong> Sono autorizzati a modificare lo stato di una pratica (es. «In elaborazione», «Sospesa», «Annullata», «Completata»), riflettendo l’avanzamento del processo.</p></li>
+<li><p><strong>Comunicazione con il cittadino:</strong> Possono inviare messaggi ai cittadini in relazione alle loro pratiche, fornendo aggiornamenti, richieste di integrazioni o comunicazioni ufficiali.</p></li>
+<li><p><strong>Accesso ai dati della pratica:</strong> Hanno accesso completo ai dati compilati nelle pratiche, sia in bozza che finalizzate, per la lavorazione e la verifica.</p></li>
+</ul>
+<p><strong>Configurazione e gestione:</strong></p>
+<p>La gestione del gruppo «Operatori Pratiche» avviene tramite le funzionalità di amministrazione del CMS Plone. Gli amministratori di sistema possono:</p>
+<ul class="simple">
+<li><p>Creare e modificare il gruppo «Operatori Pratiche».</p></li>
+<li><p>Assegnare singoli utenti a questo gruppo.</p></li>
+</ul>
+<p><strong>Visibilità delle pratiche:</strong></p>
+<p>Gli operatori hanno una dashboard dedicata che consente loro di visualizzare e gestire tutte le pratiche pervenute, filtrate per stato, data, tipo di pratica e assegnazione. Questa dashboard fornisce una panoramica completa del flusso di lavoro delle pratiche.</p>
+<p>Di default, gli appartenenti al gruppo “ <strong>Operatori pratiche</strong> ” gestiscono qualsiasi pratica, per le operatività descritte sopra. Tuttavia, è possibile, sul singolo Modello Pratica, definire singoli operatori (che devono appartenere al gruppo “Operatori pratiche”) responsabili della gestione di quel particolare modello, e la visibilità di quella tipologia di Modello Pratica sarà riservata esclusivamente a loro. Tali utenti sono definiti in un apposito campo del Modello pratica (si veda l’apposita sezione)</p>
+<p>Nel caso in cui nessun utente sia definito nel campo, tutti gli utenti appartenenti al gruppo “Operatori pratiche” sono abilitati alla consultazione e gestione di quel modello pratica.</p>
+</section>
+</section>
+<section id="content-type-modello-pratica">
+<h2>Content-type “Modello pratica”<a class="headerlink" href="#content-type-modello-pratica" title="Link to this heading">¶</a></h2>
+<p>Essendo la pratica la rappresentazione digitale di un servizio, è di fatto un tipo di contenuto del CMS aggiungibile soltanto all’interno di un CT servizio.</p>
+<p><img alt="Schermata: Content-type “Modello pratica”" src="../_images/p005-0.png" /></p>
+<p>Il CT Modello Pratica consiste nei seguenti campi:</p>
+<ul class="simple">
+<li><p><strong>Tab “Default”</strong></p>
+<ul>
+<li><p><strong>Titolo</strong> : il titolo della pratica (es. “Richiesta di occupazione del suolo pubblico”)</p></li>
+<li><p><strong>Descrizione:</strong> campo descrittivo</p></li>
+<li><p><strong>Modello:</strong> lista di valori precaricata con modelli pratica già implementati, di fatto riutilizzabili (sarà poi sempre possibile modificare il form a seconda delle proprie necessità specifiche), oppure “Custom” nel caso si intenda disegnare la form ex-novo</p></li>
+<li><p><strong>Servizi collegati:</strong> eventuali link ad altri servizi sul portale, per i quali si vuole porre in evidenza la loro correlazione (es. se la pratica riguarda l’iscrizione all’asilo, e il sito istituzionale contiene anche il servizio di iscrizione alla scuola elementare, può essere utile porre la correlazione tra la pratica a tale servizio, in modo da mettere in evidenza e facilitare la navigazione dell’utente verso tali servizi al momento della finalizzazione della pratica - ultimo step di conferma di inserimento)</p></li>
+<li><p><strong>Prossimi passi:</strong> consentono di evidenziare una timeline riassuntiva, al momento della finalizzazione della pratica (step finale), che mostra la successione degli eventi temporali che accadranno. Questa timeline, per indicazioni AgID, deve rispecchiare le indicazioni dei “tempi e scadenze” impostate sul servizio di riferimento della pratica nell’apposito campo. E’ possibile inserire un qualsivoglia numero di step</p></li>
+<li><p><strong>Messaggio al cambio di stato della pratica:</strong> campo precompilato in cui è possibile personalizzare il messaggio della mail che giunge all’operatore al cambio di stato delle pratiche (secondo le indicazioni mostrate nell’helptext del campo), con alcuni campi dinamici</p></li>
+<li><p><strong>Email notifica:</strong> indirizzi email a cui notificare la creazione di nuove pratiche. Possono essere inseriti più indirizzi email. Rappresentano di fatto gli indirizzi email degli operatori pratiche a cui notificare la creazione di nuove pratiche</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Schermata: Content-type “Modello pratica”" src="../_images/p006-0.png" /></p>
+<p><img alt="Schermata: Content-type “Modello pratica”" src="../_images/p006-1.png" /></p>
+<ul class="simple">
+<li><p><strong>Firma Email:</strong> campo di testo multilinea che viene inserito alla fine delle mail di notifica, ad esempio</p></li>
+<li><p><strong>Numero massimo di pratiche aperte per cittadino:</strong> campo che consente di definire quanto pratiche di quel tipo il cittadino loggato può aprire, dipendentemente dal fatto che le pratiche precedenti abbiano concluso l’iter. Il default è “1”, il che significa che il cittadino non può aprire la stessa pratica la seconda volta senza che la prima sia stata completata dagli operatori. Aumentando tale valore, si definisce sino a che numero è possibile aprire la stessa pratica</p></li>
+<li><p><strong>Operatore predefinito:</strong> campo che consente di specificare un utente definito nel gruppo Operatori Pratiche, in modo che alla creazione della pratica essa sia automaticamente assegnata</p></li>
+<li><p><strong>Tab “Ricevuta PDF”</strong></p>
+<ul>
+<li><p><strong>Testo nel footer della ricevuta PDF:</strong> campo di testo multilinea che viene inserito, se specificato, nel piè di pagina del PDF pratica prodotto. Se omesso, viene riportato l’indirizzo dell’ufficio collegato</p></li>
+</ul>
+</li>
+</ul>
+<p>NB: Il CT Modello pratica, una volta finalizzato, deve essere nello stato di workflow “ <strong>Pubblicato”:</strong> nonostante lo stato pubblicato di un elemento, di default, dovrebbe rendere visibile il contenuto agli utenti anonimi, per i CT Modello Pratica esiste un controllo che ne permette l’accesso solo attraverso autenticazione (SPID nel caso di un cittadino, oppure classica, nel caso di utente operatore/redattore).</p>
+</section>
+<section id="creazione-della-form-del-modello-pratica">
+<h2>Creazione della form del Modello pratica<a class="headerlink" href="#creazione-della-form-del-modello-pratica" title="Link to this heading">¶</a></h2>
+<p>La creazione del modello pratica necessita del “disegno” vero e proprio della form. Per la composizione della form si utilizza una libreria apposita, denominata <a class="reference external" href="https://surveyjs.io/">SurveyJS.</a> Per accedere allo strumento di creazione della form è presente l’apposito pulsante sul modello pratica</p>
+<p><img alt="Schermata: Creazione della form del Modello pratica" src="../_images/p007-0.png" /></p>
+<p><img alt="Schermata: Creazione della form del Modello pratica" src="../_images/p008-0.png" /></p>
+<p><strong>NB: per visualizzare il pulsante “Gestisci la form” è necessario aver salvato il modello pratica.</strong> <strong>Rientrando in modifica il pulsante compare e sarà possibile interagire con SurveyJS sui campi del</strong> <strong>modello.</strong></p>
+<p>Nel caso venga utilizzato il modello “Custom”, la form verrà creata da zero, mentre potrà essere possibile precaricare un modello già in gran parte impostato, selezionandolo tra quelli presenti</p>
+<p><img alt="Schermata: Creazione della form del Modello pratica" src="../_images/p008-1.png" /></p>
+<section id="utilizzo-delleditor-di-form-surveyjs">
+<h3>Utilizzo dell’editor di form SurveyJS<a class="headerlink" href="#utilizzo-delleditor-di-form-surveyjs" title="Link to this heading">¶</a></h3>
+<p>La pratica è composta da step, ciascuno step può racchiudere uno o più gruppi di campi (di diversa natura e formato) all’interno delle <strong>Pagine</strong> messe a disposizione di default dall’Editor</p>
+<p>Idealmente la struttura di una form è la seguente</p>
+<ul class="simple">
+<li><p><strong>Pagina</strong> : rappresenta ciascuna “tab” o “step” della pratica, come ad esempio:</p></li>
+</ul>
+<p><img alt="Schermata: Utilizzo dell’editor di form SurveyJS" src="../_images/p009-0.png" /></p>
+<p><img alt="Schermata: Utilizzo dell’editor di form SurveyJS" src="../_images/p009-1.png" /></p>
+<p>Una pagina è aggiungibile:</p>
+<ul class="simple">
+<li><p>cliccando al di fuori di tutti i campi, sulla form generale</p></li>
+<li><p>si attiva il pannello in figura, cliccare sul pulsante ‘+’ per inserire una nuova pagina</p></li>
+<li><p>inserire l’identificativo della pagina <strong>(1)</strong> e il nome <strong>(2)</strong> : quest’ultimo dato è un semplice valore mnemonico.</p></li>
+</ul>
+<p>Andando poi sulle proprietà della pagina, sarà possibile stabilire la voce che comparirà nella tab di navigazione dell’utente finale</p>
+<p><img alt="Schermata: Utilizzo dell’editor di form SurveyJS" src="../_images/p010-0.png" /></p>
+<p><img alt="Schermata: Utilizzo dell’editor di form SurveyJS" src="../_images/p010-1.png" /></p>
+<p><img alt="Schermata: Utilizzo dell’editor di form SurveyJS" src="../_images/p011-0.png" /></p>
+<p><img alt="Schermata: Utilizzo dell’editor di form SurveyJS" src="../_images/p011-1.png" /></p>
+<p>Gli step sono rappresentati in figura dai numeri (1,2,3,4): tipicamente il passaggio da uno step al successivo avviene soltanto se lo step precedente è stato completato, e sono navigabili soltanto attraverso gli appositi pulsanti “Avanti” e “Indietro”. Ciascuno di essi è una <strong>pagina.</strong></p>
+<section id="gruppo-di-campi">
+<h4>Gruppo di campi<a class="headerlink" href="#gruppo-di-campi" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>Gruppo di campi : all’interno di ciascuna pagina si possono raggruppare più campi (che</p></li>
+</ul>
+<p>intuitivamente devono comparire nello stesso blocco, come ad esempio i dati del richiedente Nome, Cognome, Data di nascita ecc…)</p>
+<ul class="simple">
+<li><p>Ogni gruppo di campi rappresenta l’aggregazione dei campi (area grigia) della form online</p></li>
+</ul>
+<p><img alt="Schermata: Gruppo di campi" src="../_images/p011-2.png" /></p>
+<p>Ciascuno step (ad esempio, “Informativa sulla privacy”<a class="footnote-reference brackets" href="#n1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>) si realizza con SurveyJS utilizzando un “ <strong>Gruppo</strong></p>
+<p><strong>di campi</strong> ”</p>
+<p>Un gruppo di campi si traduce graficamente sulla form con un pannello di sfondo grigio, con titolo e descrizione, che racchiude una serie di campi ad esempio:</p>
+<p>La configurazione del gruppo di campi, affinché vengano mostrate le label degli step, sono</p>
+<ul class="simple">
+<li><p><strong>“Nome del campo”</strong> <strong>(1)</strong> : è l’identificativo, che può essere riferito per eventuali espressioni condizionali, deve essere univoco</p></li>
+<li><p><strong>“Titolo del campo”</strong> <strong>(2)</strong></p></li>
+</ul>
+<p><img alt="Schermata: Gruppo di campi" src="../_images/p012-0.png" /></p>
+<p><img alt="Schermata: Gruppo di campi" src="../_images/p012-1.png" /></p>
+<ul class="simple">
+<li><p><strong>“Titolo navigazione”</strong> <strong>(3):</strong> compare come nome della Tab/Step della pratica lato cittadino,</p></li>
+</ul>
+<p>Come si può notare, il <strong>Titolo di navigazione</strong> impostato diventa il nome della tab riproposto nella visualizzazione della pratica sul sito</p>
+<p>Il <strong>Titolo</strong> invece viene riproposto come identificativo del campo</p>
+<p>NOTA BENE: lo step finale di <strong>RIEPILOGO</strong> viene sempre creato automaticamente dal sistema</p>
+<p><img alt="Schermata: Gruppo di campi" src="../_images/p013-0.png" /></p>
+<p><img alt="Schermata: Gruppo di campi" src="../_images/p013-1.png" /></p>
+<p><img alt="Schermata: Gruppo di campi" src="../_images/p013-2.png" /></p>
+</section>
+<section id="tab-informativa-sulla-privacy">
+<h4>Tab “Informativa sulla privacy”<a class="headerlink" href="#tab-informativa-sulla-privacy" title="Link to this heading">¶</a></h4>
+<p>Queste istruzioni consentono di realizzare il primo step della pratica, ovvero la sezione “ <strong>Informativa</strong> <strong>sulla privacy</strong> ”. Questo step iniziale è sempre richiesto da AgID per il prosieguo degli step successivi</p>
+<p>Ad esempio, per impostare la sezione “Informativa sulla privacy” con la casella di controllo per l’accettazione bisogna procedere come segue:</p>
+<ul class="simple">
+<li><p>Creare un “Gruppo di campi”</p>
+<ul>
+<li><p>Nel tab “Generale”</p></li>
+</ul>
+</li>
+</ul>
+<p>impostare</p>
+<ul class="simple">
+<li><p><strong>Nome</strong> (univoco, ad esempio “informativa-privacy”)</p></li>
+<li><p><strong>Titolo</strong> (compare a livello di presentazione della pagina)</p></li>
+<li><p>Inserire un campo di tipo “Casella di controllo”, dopo aver premuto “ <strong>Aggiungi campo</strong> ” all’interno del contenitore “Gruppo di campi”</p></li>
+</ul>
+<p><img alt="Schermata: Tab “Informativa sulla privacy”" src="../_images/p014-0.png" /></p>
+<p><img alt="Schermata: Tab “Informativa sulla privacy”" src="../_images/p014-1.png" /></p>
+<p><img alt="Schermata: Tab “Informativa sulla privacy”" src="../_images/p014-2.png" /></p>
+<ul class="simple">
+<li><p>Eliminare le opzioni non necessarie (pulsante <strong>(-)</strong> ) dai valori proposti nella casella di controllo</p></li>
+<li><p>Modificare la label, rendere il campo obbligatorio</p></li>
+</ul>
+<p>A questo punto, terminata la configurazione del campo “Accettazione”, è necessario:</p>
+<ul class="simple">
+<li><p>Gestire il messaggio di errore in caso di omissione del valore (sezione “Validazione”)</p></li>
+<li><p><strong>Salvare</strong> con l’apposito pulsante evidenziato dalla freccia</p></li>
+</ul>
+<p>In ogni caso, come detto precedentemente, questo primo step viene sempre creato automaticamente dal sistema, anche in caso di creazione ex-novo di una pratica.</p>
+</section>
+<section id="tab-informazioni-generali-del-richiedente">
+<h4>Tab “Informazioni generali del richiedente”<a class="headerlink" href="#tab-informazioni-generali-del-richiedente" title="Link to this heading">¶</a></h4>
+<p>Procediamo quindi con il secondo tab “ <strong>Informazioni generali del richiedente</strong> ”</p>
+<p>NB: alcuni campi destinati a raccogliere i dati del richiedente, come il nome e cognome e l’email, sono già proposti automaticamente nella seconda tab (alcuni in sola lettura) perchè vengono recuperati direttamente dall’autenticazione con SPID. E’ comunque possibile da parte dell’editor modificare tali campi a propria discrezione.</p>
+<p><img alt="Schermata: Tab “Informazioni generali del richiedente”" src="../_images/p015-0.png" /></p>
+<p><img alt="Schermata: Tab “Informazioni generali del richiedente”" src="../_images/p015-1.png" /></p>
+<p><img alt="Schermata: Tab “Informazioni generali del richiedente”" src="../_images/p015-2.png" /></p>
+<p><img alt="Schermata: Tab “Informazioni generali del richiedente”" src="../_images/p016-0.png" /></p>
+<p>Come visto in precedenza sarà necessario:</p>
+<ul class="simple">
+<li><p>creare un “Gruppo di campi”, per ogni “raggruppamento logico” di campi (evidenziati dallo sfondo grigio), seguendo le indicazioni dei campi nella tab “generale” già spiegate</p></li>
+</ul>
+<p>Ad esempio, i campi testuali come “Il sottoscritto” vengono creati utilizzando “Aggiungi campo” e scegliendo un “Campo di testo semplice”</p>
+<p>Anche per questo tipo di campo, è possibile gestirne l’obbligatorietà con l’apposito flag</p>
+<p><img alt="Schermata: Tab “Informazioni generali del richiedente”" src="../_images/p016-2.png" /></p>
+<p><img alt="Schermata: Tab “Informazioni generali del richiedente”" src="../_images/p016-1.png" /></p>
+<p><img alt="Schermata: Tab “Informazioni generali del richiedente”" src="../_images/p017-0.png" /></p>
+<p>Nel caso si necessiti di inserire campi di natura diversa (ad esempio un campo di richiesta “Data di nascita”), si può modificare il tipo di campo utilizzando l’apposita sezione “ <strong>Tipo di inserimento</strong> ”</p>
+<p>Su ogni campo è possibile impostare poi diverse proprietà, come il tipo di inserimento (numerico, testuale, intervallo, ecc.), e in caso di campo obbligatorio, personalizzare il messaggio da esporre in caso di mancata compilazione (sezione “ <strong>Validazione</strong> ”)</p>
+<section id="gestione-campi-particolari-specifici-per-le-pratiche">
+<h5>Gestione campi particolari, specifici per le pratiche<a class="headerlink" href="#gestione-campi-particolari-specifici-per-le-pratiche" title="Link to this heading">¶</a></h5>
+<p>Se ad esempio fosse necessario inserire un campo testuale che deve ricevere un <strong>codice fiscale</strong>, è possibile impostare un criterio di validazione (REGEXP), nell’apposita sezione “ <strong>Validazione</strong> ” del campo</p>
+<p><img alt="Schermata: Gestione campi particolari, specifici per le pratiche" src="../_images/p017-1.png" /></p>
+<p><img alt="Schermata: Gestione campi particolari, specifici per le pratiche" src="../_images/p017-2.png" /></p>
+<p><img alt="Schermata: Gestione campi particolari, specifici per le pratiche" src="../_images/p018-0.png" /></p>
+<p>L’esempio di regexp da inserire per la validazione del formato del codice fiscale è la seguente (anche nel nuovo formato che comprende l’identificazione fiscale):</p>
+<p><em>^(TINIT-)?[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]\d\d[A-Za-z]\d\d[A-Za-z]\d\d\d[A-Za-z]</em></p>
+<p>Se ad esempio fosse necessario inserire un campo numerico che deve ricevere un numero per la “ <strong>marca da bollo</strong> ” (che deve rispettare il formato numerico esattamente di 14 digit), è possibile impostare un criterio di validazione (REGEXP), nell’apposita sezione “ <strong>Validazione</strong> ” del campo:</p>
+<p><em>^[0-9]{14}$</em></p>
+<p>In questo caso però non utilizzare un campo numerico, ma un campo testuale. Questo permetterà di accettare anche marche da bollo con numero seriale che inizia con il numero 0.</p>
+<p><img alt="Schermata: Gestione campi particolari, specifici per le pratiche" src="../_images/p018-1.png" /></p>
+</section>
+<section id="gestione-dei-campi-html">
+<h5>Gestione dei campi HTML<a class="headerlink" href="#gestione-dei-campi-html" title="Link to this heading">¶</a></h5>
+<p>Nel caso in cui si vogliano inserire testi statici tra campi, compresi link ipertestuali ad altre pagine, è necessario utilizzare il <strong>tipo di campo HTML</strong>, che presuppone la conoscenza del codice HTML di base, per la formattazione del testo (utilizzo dei tag <a class="reference external" href="https://www.w3schools.com/tags/tag_strong.asp">&lt;strong&gt;</a> <a class="reference external" href="https://www.w3schools.com/tags/tag_ul.asp">per il bold, &lt;ul&gt;&lt;li&gt;</a> per la creazione di elenchi puntati, l’utilizzo del tag <a class="reference external" href="https://www.w3schools.com/tags/tag_a.asp">&lt;a&gt; per la creazione di link ipertestuali)</a></p>
+<p>Un esempio di campo HTML potrebbe essere il seguente</p>
+<p>Nella toolbar laterale, è presente il campo dove descrivere il codice HTML da mostrare</p>
+</section>
+</section>
+<section id="altre-tab-della-pratica">
+<h4>Altre tab della pratica<a class="headerlink" href="#altre-tab-della-pratica" title="Link to this heading">¶</a></h4>
+<p>Tutte le altre tab della pratica possono essere create seguendo le indicazioni esposte in precedenza.</p>
+<p><img alt="Schermata: Altre tab della pratica" src="../_images/p019-0.png" /></p>
+<p><img alt="Schermata: Altre tab della pratica" src="../_images/p019-1.png" /></p>
+<p><img alt="Schermata: Altre tab della pratica" src="../_images/p019-2.png" /></p>
+</section>
+<section id="collegamento-dei-campi-ai-dati-spid">
+<h4>Collegamento dei campi ai dati SPID<a class="headerlink" href="#collegamento-dei-campi-ai-dati-spid" title="Link to this heading">¶</a></h4>
+<p>Dal momento che le pratiche sono fruibili da parte dei cittadini soltanto attraverso l’autenticazione SPID, per il principio del <em>once-only</em>, i dati che possono essere recuperati da SPID vengono automaticamente riproposti nella form di compilazione. Per predisporre i campi è necessario inserire opportuni nomi identificativi nei campi (sezione “ <strong>Dati</strong> ”) e particolari opzioni</p>
+<p>Ad esempio</p>
+<ul class="simple">
+<li><p><strong>Nome e cognome</strong> (completo)</p>
+<ul>
+<li><p>Si ottiene specificando il nome <em>fullname</em> nel valore del campo</p></li>
+<li><p>Impostare la proprietà “ <em>sola lettura</em> ” per evitare che si possa sovrascrivere il valore recuperato da spid</p></li>
+</ul>
+</li>
+</ul>
+<p>Gli altri campi presi automaticamente da SPID che possono essere utilizzati sono i seguenti:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dato</p></th>
+<th class="head"><p>Identificativo (case sensitive)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Nome della persona</p></td>
+<td><p>nome</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cognome della persona</p></td>
+<td><p>cognome</p></td>
+</tr>
+<tr class="row-even"><td><p>Nome e cognome in un unico campo</p></td>
+<td><p>fullname</p></td>
+</tr>
+<tr class="row-odd"><td><p>Codice fiscale</p></td>
+<td><p>fiscalNumber<a class="footnote-reference brackets" href="#n2" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Numero di telefono</p></td>
+<td><p>mobile</p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Schermata: Collegamento dei campi ai dati SPID" src="../_images/p020-0.png" /></p>
+<p><img alt="Schermata: Collegamento dei campi ai dati SPID" src="../_images/p020-1.png" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Sesso</p></th>
+<th class="head"><p>gender</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data di nascita</p></td>
+<td><p>dateOfBirth</p></td>
+</tr>
+<tr class="row-odd"><td><p>Luogo di nascita</p></td>
+<td><p>placeOfBirth<a class="footnote-reference brackets" href="#n3" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Luogo di nascita (nome)</p></td>
+<td><p>placeOfBirthName</p></td>
+</tr>
+<tr class="row-odd"><td><p>Luogo di nascita (codice ISTAT)</p></td>
+<td><p>placeOfBirthIstatCode</p></td>
+</tr>
+<tr class="row-even"><td><p>Provincia di nascita</p></td>
+<td><p>countyOfBirth</p></td>
+</tr>
+<tr class="row-odd"><td><p>Indirizzo di residenza</p></td>
+<td><p>address</p></td>
+</tr>
+<tr class="row-even"><td><p>Indirizzo digitale</p></td>
+<td><p>digitalAddress</p></td>
+</tr>
+<tr class="row-odd"><td><p>Indirizzo mail</p></td>
+<td><p>email</p></td>
+</tr>
+<tr class="row-even"><td><p>Codice Carta Identità</p></td>
+<td><p>idCard</p></td>
+</tr>
+<tr class="row-odd"><td><p>Data di scadenza credenziali<br></p></td>
+<td><p>expirationDate</p></td>
+</tr>
+</tbody>
+</table>
+<p>Verificare il mapping dei campi dall’immagine seguente<a class="footnote-reference brackets" href="#n4" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>:</p>
+<p>Impostazioni dei campi per la gestione del principio “ <em>once-only</em> ”</p>
+<p>Come definito nel paragrafo precedente, il principio “once-only” consente di recuperare automaticamente i dati dell’utente durante la compilazione dei dati della form, per evitare che se l’utente li ha già inseriti nella stessa form pratica, oppure in un’altra form che richiede lo stesso dato, debba necessariamente reinserirli.</p>
+<p><img alt="Schermata: Collegamento dei campi ai dati SPID" src="../_images/p021-0.png" /></p>
+<p>Questo aspetto riguarda due tipologie di campi della form:</p>
+<ul class="simple">
+<li><p>quelli che arrivano dall’autenticazione SPID</p></li>
+<li><p>qualsiasi altro campo che l’operatore pratiche (colui che disegna le form) ritiene necessario memorizzare, perché comuni a pratiche differenti</p></li>
+</ul>
+<p>Per implementare questo comportamento, è necessario utilizzare per un determinato campo, al momento del disegno della form della pratica, l’attributo “ <strong>Nome valore</strong> ” nella sezione “ <strong>Dati</strong> ”</p>
+<p>Sostanzialmente all’interno di quel campo è possibile definire un nome qualsiasi a proprio piacimento, per riutilizzarlo poi nelle successive pratiche<a class="footnote-reference brackets" href="#n5" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>.</p>
+<p>Un esempio reale: due pratiche diverse richiedono il campo ISEE all’utente (ad esempio per “l’iscrizione al servizio scolastico” e per “l’iscrizione al servizio mensa”, ovvero in due diverse pratiche). Se l’utente compila la prima pratica, specificando il campo ISEE, è verosimile che lo stesso utente che compila la seconda pratica non debba voler reinserire a mano lo stesso valore per il campo ISEE.</p>
+<p>Quello che è necessario fare è specificare un nome per il campo ISEE della prima pratica, ed utilizzare poi lo stesso nome per il campo ISEE della seconda pratica, ad esempio:</p>
+<p><img alt="Schermata: Collegamento dei campi ai dati SPID" src="../_images/p022-0.png" /></p>
+<p><img alt="Schermata: Collegamento dei campi ai dati SPID" src="../_images/p023-0.png" /></p>
+<p><strong>NB: la label “ISEE” è puramente indicativa, e a discrezione di chi disegna la form.</strong></p>
+<p>In questo caso, al salvataggio dei dati da parte del cittadino sulla prima pratica, il sistema è istruito per memorizzare sul suo profilo utente il valore immesso. Se tale attributo (“ISEE”) è specificato in un altro campo della seconda pratica, il cittadino che vi accede se lo ritroverà compilato automaticamente.</p>
+<p>Il numero di campi definibili per la gestione in modalità “once-only” è illimitato, richiede però estrema attenzione da parte di chi costruisce la form pratica, nell’utilizzare la stessa nomenclatura.</p>
+<p>Chiaramente il sistema funziona con lo stesso principio anche se il cittadino compila più volte la stessa pratica, non necessariamente per pratiche differenti.</p>
+<p>Indicazioni sui campi da sottoporre al principio del “ <em>once-only</em> ”</p>
+<p>AgID fornisce le indicazioni precise su quali campi delle form delle diverse pratiche sottoporre al principio:</p>
+<ul class="simple">
+<li><p><strong>Dati anagrafici</strong> : nome, cognome, luogo di nascita, data di nascita, codice fiscale; <em>(dove possibile, si suggerisce di utilizzare il valore corrispondente ai campi SPID)</em></p></li>
+<li><p><strong>Residenza</strong> : Comune, Provincia, Indirizzo (ed eventuale numero civico), CAP; <em>(dove possibile, si suggerisce di utilizzare il valore corrispondente ai campi SPID)</em></p></li>
+<li><p><strong>Dati di contatto</strong> : numero di telefono, email, PEC; <em>(dove possibile, si suggerisce di utilizzare il valore corrispondente ai campi SPID)</em></p></li>
+<li><p><strong>Composizione del nucleo familiare</strong> : numero componenti del nucleo familiare, nominativi completi dei componenti del nucleo familiare, anno di nascita dei componenti del nucleo familiare;</p></li>
+<li><p><strong>Indicatori di situazione economica</strong> : ISEE;</p></li>
+<li><p><strong>Indicatori catastali per ciascun immobile</strong> : Comune catastale, numero di particella, subalterno, sezione, foglio;</p></li>
+<li><p><strong>Informazioni per ciascun autoveicolo</strong> : tipo veicolo, modello veicolo, targa veicolo;</p></li>
+<li><p><strong>Informazioni finanziarie</strong> : IBAN;</p></li>
+<li><p><strong>Informazioni aziendali</strong> : denominazione sociale, P.IVA, numero REA, indirizzo sede legale, recapiti (telefono, mail, PEC).</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="pratica-lato-cittadino-collegamento-al-servizio">
+<h2>Pratica lato cittadino - collegamento al Servizio<a class="headerlink" href="#pratica-lato-cittadino-collegamento-al-servizio" title="Link to this heading">¶</a></h2>
+<p>Una volta creato il Modello Pratica, sarà necessario collegarla al servizio di riferimento, inserendo il link alla stessa all’interno del Servizio di io-Comune</p>
+<p>Questo collegamento, di fatto, si traduce nel pulsante di accesso dal dettaglio del servizio</p>
+<p>Un esempio di modello pratica presentata al cittadino è la seguente:</p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p025-0.png" /></p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p025-1.png" /></p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p025-2.png" /></p>
+<p>Per accedere alla pratica, il cittadino deve autenticarsi preventivamente attraverso SPID, accedendo dall’apposito pulsante in alto a destra del portale, oppure dalla pagina di accesso che viene proposta nel momento in cui si tenta di accedere alla pratica senza essersi autenticati</p>
+<p>Il cittadino dovrà utilizzare il pulsante “ <strong>Accedi con Spid</strong> ” ed espletare le operazioni di login. A questo punto, il cittadino si trova loggato con le sue credenziali, può accedere alla sua area personale</p>
+<p>ed eventualmente compilare una pratica attraverso il pulsante “Accedi al servizio” presente sul Servizio</p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p026-0.png" /></p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p026-1.png" /></p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p026-2.png" /></p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p027-0.png" /></p>
+<p>In ogni momento, nei vari step della pratica, il cittadino può salvare la sua pratica in uno stato temporaneo, in attesa di finalizzarla o completarla successivamente, attraverso l’apposito pulsante “ <strong>Salva bozza</strong> ”.</p>
+<p>NOTA BENE: se un cittadino ha già una pratica di un certo tipo già instradata verso l’ente, in un qualche stato che non sia “Annullata” o “Completata”, quindi anche in “Bozza”, non potrà presentare un’ulteriore pratica di quel tipo.<a class="footnote-reference brackets" href="#n6" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a></p>
+<p>Il cittadino potrà in ogni momento tornare ad uno step precedente della pratica (pulsante “ <strong>Indietro</strong> ”), a patto che lo step precedente sia stato completato in ogni suo dato obbligatorio.</p>
+<p>Prima della finalizzazione della pratica, viene presentato uno step di “ <strong>Riepilogo</strong> ”, che consente al cittadino di verificare i dati inseriti, ed eventualmente ritornare direttamente ad una sezione dei vari step per modificare i dati inseriti (pulsanti “ <strong>Modifica</strong> ”)</p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p027-1.png" /></p>
+<p><img alt="Schermata: Pratica lato cittadino - collegamento al Servizio" src="../_images/p028-0.png" /></p>
+<section id="stati-della-pratica">
+<h3>Stati della pratica<a class="headerlink" href="#stati-della-pratica" title="Link to this heading">¶</a></h3>
+<p>Gli stati attribuiti ad una pratica sono i seguenti:</p>
+<ul class="simple">
+<li><p><strong>In bozza</strong> (quando una pratica è in fase di compilazione da parte del cittadino, che la salva temporaneamente prima di finalizzarla con il pulsante “ <strong>Salva bozza</strong> ”) È consultabile/visibile dal cittadino nella sua area personale nello stato “ <strong>da completare</strong> ”</p></li>
+</ul>
+<p><img alt="Schermata: Stati della pratica" src="../_images/p028-1.png" /></p>
+<ul class="simple">
+<li><p>Il cittadino può entrare nella pratica per finalizzarla attraverso l’apposito pulsante, espandendo la linguetta “Da completare” e accedendo attraverso il pulsante “ <strong>Finalizza</strong> <strong>la pratica</strong> ”</p></li>
+<li><p>Lato operatore pratiche, è consultabile dall’operatore pratiche, che può accedere in sola visualizzazione nella dashboard delle pratiche pervenute (sezione “ <strong>in bozza</strong> ” <strong>(1)</strong> ), con la possibilità di vedere i dati compilati fino a quel momento <strong>(2)</strong></p></li>
+<li><p><strong>In elaborazione</strong> (quando una pratica è stata correttamente inviata dal cittadino all’Ente, ovvero la pratica è stata completata in tutti i suoi step)</p>
+<ul>
+<li><p>È consultabile/visibile dal cittadino nella sua area personale nello stato “in elaborazione”</p></li>
+<li><p>È consultabile dall’operatore pratiche, che può accedere in visualizzazione nella dashboard delle pratiche pervenute (sezione “ <strong>In elaborazione</strong> ”), con la possibilità di vedere i dati compilati finalizzati (cliccando sul link della pratica)</p></li>
+<li><p>L’operatore a questo punto lavora la pratica in back-office, e può decidere di:</p>
+<ul>
+<li><p>Assegnare quella pratica ad un operatore specifico</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Schermata: Stati della pratica" src="../_images/p029-0.png" /></p>
+<p><img alt="Schermata: Stati della pratica" src="../_images/p029-1.png" /></p>
+<p><img alt="Schermata: Stati della pratica" src="../_images/p029-2.png" /></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- Modificare lo stato della pratica (Completata, Annullata, Sospesa, In bozza[^riporta-in-bozza])
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Completata:</strong> (quando una pratica è stata elaborata in ogni sua parte dagli operatori all’Ente idealmente significa che la pratica è <strong>conclusa</strong> )</p>
+<ul>
+<li><p>È consultabile/visibile dal cittadino nella sua area personale nello stato “Conclusa”</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Schermata: Stati della pratica" src="../_images/p030-0.png" /></p>
+<ul class="simple">
+<li><p>In nessun modo un operatore può portare in uno stato differente una pratica conclusa</p></li>
+<li><p>Il cittadino riceve sia l’email di conferma della pratica completata, sia la notifica di un messaggio nella sua Area Personale</p></li>
+<li><p><strong>Sospesa:</strong> (quando una pratica viene sospesa da un operatore dell’Ente, ad esempio perchè la pratica non è stata compilata correttamente o necessita di integrazioni di ulteriori informazioni)</p>
+<ul>
+<li><p>La sospensione della pratica obbliga l’operatore ad inserire una motivazione della sospensione, che verrà comunicata attraverso un messaggio sull’area personale del cittadino ed eventualmente attraverso una notifica email che riporterà la motivazione della sospensione stessa (l’invio della mail è facoltativo da parte dell’operatore)</p></li>
+<li><p>È consultabile/visibile dal cittadino nella sua area personale nello stato “Sospesa”</p></li>
+<li><p>Il cittadino, a completamento della pratica, la riporta allo stato “in elaborazione”</p></li>
+</ul>
+</li>
+<li><p><strong>Annullata:</strong> (quando una pratica viene annullata da un operatore dell’Ente, ad esempio perchè la pratica è stata inserita per errore. E’ uno stato che, per motivi di trasparenza dell’Ente nei confronti dei cittadini, evita la cancellazione fisica della pratica)</p>
+<ul>
+<li><p>La pratica può essere eventualmente riportata nello stato “in bozza”</p></li>
+</ul>
+</li>
+</ul>
+<section id="tabella-degli-stati-pratica-delle-azioni-possibili-e-degli-eventi-conseguenti">
+<h4>Tabella degli stati pratica, delle azioni possibili e degli eventi conseguenti<a class="headerlink" href="#tabella-degli-stati-pratica-delle-azioni-possibili-e-degli-eventi-conseguenti" title="Link to this heading">¶</a></h4>
+<p>Per ogni operazione la tabella indica lo stato in cui finisce la pratica, gli stati in cui può passare in seguito e gli eventi che l’operazione genera (✔ = l’evento avviene).</p>
+<div class="rt-tabella-compatta docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operazione</p></th>
+<th class="head"><p>Stato della pratica</p></th>
+<th class="head"><p>Stati possibili in seguito</p></th>
+<th class="head text-center"><p>Messaggio in area personale</p></th>
+<th class="head text-center"><p>Mail al cittadino</p></th>
+<th class="head text-center"><p>Mail agli operatori</p></th>
+<th class="head text-center"><p>Assegnazione ad altri operatori</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Il cittadino <strong>salva</strong> la pratica in bozza</p></td>
+<td><p>In bozza</p></td>
+<td><p>–</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Il cittadino <strong>finalizza</strong> la pratica</p></td>
+<td><p>In elaborazione</p></td>
+<td><p>Sospesa, Annullata, Completata, In bozza</p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+</tr>
+<tr class="row-even"><td><p>L’operatore <strong>assegna</strong> la pratica a un altro operatore</p></td>
+<td><p>In elaborazione, Annullata, Completata, In bozza</p></td>
+<td><p>Sospesa, Annullata, Completata, In bozza</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>L’operatore <strong>sospende</strong> la pratica</p></td>
+<td><p>Sospesa</p></td>
+<td><p>In elaborazione, Annullata, Completata, In bozza</p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>L’operatore <strong>annulla</strong> la pratica</p></td>
+<td><p>Annullata</p></td>
+<td><p>In bozza</p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>L’operatore <strong>completa</strong> la pratica</p></td>
+<td><p>Completata</p></td>
+<td><p>–</p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>L’operatore <strong>riporta in bozza</strong> la pratica<a class="footnote-reference brackets" href="#riporta-in-bozza" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a></p></td>
+<td><p>In bozza</p></td>
+<td><p>–</p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><span class="rt-si"><span aria-hidden="true">✔</span><span class="sr-only">Sì</span></span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="esportazione-delle-pratiche">
+<h3>Esportazione delle pratiche<a class="headerlink" href="#esportazione-delle-pratiche" title="Link to this heading">¶</a></h3>
+<div class="funzionalita-aggiuntiva admonition">
+<p class="admonition-title">Funzionalità aggiuntiva</p>
+<p>Questa funzionalità non è compresa nella dotazione di base: è disponibile solo se è stata attivata per il tuo Ente. Per informazioni puoi contattare RedTurtle tramite l’<a class="reference external" href="https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F">Help-desk</a>.</p>
+</div>
+<section id="esportazione-della-vista-pratiche">
+<h4>Esportazione della vista pratiche<a class="headerlink" href="#esportazione-della-vista-pratiche" title="Link to this heading">¶</a></h4>
+<p>Tramite il “Pannello di controllo pratiche” è possibile esportare l’elenco delle pratiche visualizzate a browser. Impostando quindi degli specifici filtri, e cliccando sul pulsante “Scarica i dati della tabella”, verrà generato un file csv con le medesime informazioni ottenute nella tabella visualizzata:</p>
+</section>
+<section id="esportazione-dei-dati-pratiche">
+<h4>Esportazione dei dati pratiche<a class="headerlink" href="#esportazione-dei-dati-pratiche" title="Link to this heading">¶</a></h4>
+<p>Selezionando in “Filtra per” l’opzione “Pratica”, e selezionando successivamente una tipologia di pratica specifica, è possibile esportare in csv l’elenco delle pratiche ottenute, comprensive dei dati inseriti.</p>
+<p><img alt="Schermata: Esportazione dei dati pratiche" src="../_images/p031-0.png" /></p>
+<p>Per lanciare l’esportazione è sufficiente cliccare sul pulsante “Scarica i dati delle pratiche”:</p>
+</section>
+</section>
+<section id="area-personale-cittadino">
+<h3>Area personale cittadino<a class="headerlink" href="#area-personale-cittadino" title="Link to this heading">¶</a></h3>
+<p>L’area personale del cittadino consente al cittadino stesso di verificare lo stato delle pratiche che ha sottomesso, e gli eventuali messaggi pervenuti da parte dell’ente.</p>
+<p>L’accesso all’area personale del cittadino si ha in seguito alla procedura di login tramite SPID.<a class="footnote-reference brackets" href="#n8" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a></p>
+<p>Il pulsante di accesso a tale area è presente nell’area riservata ai dato del cittadino loggato</p>
+<p><img alt="Schermata: Area personale cittadino" src="../_images/p032-0.png" /></p>
+<p><img alt="Schermata: Area personale cittadino" src="../_images/p032-1.png" /></p>
+<section id="dashboard">
+<h4>Dashboard<a class="headerlink" href="#dashboard" title="Link to this heading">¶</a></h4>
+<p>La dashboard del cittadino presenta i seguenti elementi:</p>
+<ul class="simple">
+<li><p>Tab “ <strong>Scrivania</strong> ”</p>
+<ul>
+<li><p>Riassume sia le pratiche dell’utente “Ultime attività”, sia i messaggi (“Ultimi messaggi”) che sono stati inviati dagli operatori dell’ente</p></li>
+<li><p>E’ possibile, cliccando sui link, accedere sia ai messaggi che alle informazioni sulla pratica</p></li>
+</ul>
+</li>
+<li><p>Tab “ <strong>Messaggi</strong></p>
+<ul>
+<li><p>Mostra soltanto i messaggi pervenuti</p></li>
+</ul>
+</li>
+<li><p>Tab “ <strong>Attività</strong> ”</p>
+<ul>
+<li><p>Mostra soltanto le pratiche che il cittadino ha inviato</p></li>
+</ul>
+</li>
+<li><p>Tab “ <strong>Servizi</strong> ”</p>
+<ul>
+<li><p>Mostra i servizi che riguardano le pratiche sottomesse dal cittadino</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="area-personale-operatore">
+<h3>Area personale operatore<a class="headerlink" href="#area-personale-operatore" title="Link to this heading">¶</a></h3>
+<p>La dashboard operatori è il cruscotto che permette agli operatori di back-office di gestire le pratiche; presenta i seguenti elementi:</p>
+<p><img alt="Schermata: Area personale operatore" src="../_images/p033-0.png" /></p>
+<p><img alt="Schermata: Area personale operatore" src="../_images/p033-1.png" /></p>
+<p>Essi rappresentano:</p>
+<ul class="simple">
+<li><p>Filtri per stato della pratica <strong>(1)</strong></p></li>
+<li><p>Ulteriori filtri per le pratiche <strong>(2)</strong> :</p>
+<ul>
+<li><p><strong>Pratica:</strong> nome della pratica</p></li>
+<li><p><strong>Servizio:</strong> il servizio di riferimento della pratica</p></li>
+<li><p><strong>Numero pratica:</strong> assegnato automaticamente dal sistema (oppure altro valore, ad esempio un numero di Protocollo, nel caso sia stata implementata una integrazione con l’applicativo verticale dell’Ente per la gestione del Protocollo)<a class="footnote-reference brackets" href="#n9" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a></p></li>
+<li><p><strong>Data:</strong> la data di sottomissione della pratica</p></li>
+<li><p><strong>Assegnazione:</strong> l’operatore a cui è stata assegnata la pratica</p></li>
+</ul>
+</li>
+<li><p>Elenco delle pratiche <strong>(3):</strong> ordinate per data di sottomissione decrescente (dalla più recente pervenuta, alla più vecchia)</p>
+<ul>
+<li><p>È possibile agire sui campi:</p>
+<ul>
+<li><p><strong>Assegnato a:</strong> per specificare a chi assegnare la pratica tra gli Operatori Pratiche</p></li>
+<li><p><strong>Stato:</strong> per modificare lo stato della pratica</p></li>
+</ul>
+</li>
+<li><p>E’ possibile inviare messaggi all’utente che ha sottomesso la pratica attraverso l’apposito pulsante, comprensivo di eventuali file allegati.</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Schermata: Area personale operatore" src="../_images/p034-0.png" /></p>
+<p><img alt="Schermata: Area personale operatore" src="../_images/p034-1.png" /></p>
+<p>Il caso d’uso tipico è quello dell’operatore che ad esempio, a pratica completata, invia il PDF con il pass ZTL finale al cittadino che lo ha richiesto attraverso la pratica online. Il cittadino troverà il messaggio nella propria area personale, con la possibilità di scaricare gli eventuali allegati, così come nella propria casella di posta elettronica</p>
+<p>Sempre nella stessa vista operatori, sarà possibile visualizzare per ciascuna pratica il numero di messaggi inviati per ciascuna di esse</p>
+<p>e cliccando sul dettaglio, visualizzare l’elenco dei messaggi, compresi eventuali allegati inviati dagli operatori al cittadino</p>
+<p><img alt="Schermata: Area personale operatore" src="../_images/p035-0.png" /></p>
+<p><img alt="Schermata: Area personale operatore" src="../_images/p035-1.png" /></p>
+<p><img alt="Schermata: Area personale operatore" src="../_images/p036-0.png" /></p>
+</section>
+</section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="n1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>La pagina dell’”Informativa sulla privacy” viene tipicamente proposta automaticamente anche per le form Custom, perchè di fatto è sempre la prima e deve essere sempre presente come primo step.</p>
+</aside>
+<aside class="footnote brackets" id="n2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Potrebbe essere necessario, a seconda del tipo di autenticazione, specificare il placeholder “ <code class="docutils literal notranslate"><span class="pre">userid</span></code> ” oppure “ <code class="docutils literal notranslate"><span class="pre">id</span></code> ” al posto di “fiscalNumber”</p>
+</aside>
+<aside class="footnote brackets" id="n3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>SPID restituisce un valore in codice, che dovrebbe essere transcodificato nel luogo secondo una mappatura delle tabelle ministeriali. Si consiglia di mantenere questo campo editabile, anziché automatico</p>
+</aside>
+<aside class="footnote brackets" id="n4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://docs.italia.it/italia/spid/spid-regole-tecniche/it/stabile/attributi.html">https://docs.italia.it/italia/spid/spid-regole-tecniche/it/stabile/attributi.html</a> <a class="reference external" href="https://www.agid.gov.it/sites/default/files/repository_files/spid-avviso-n25-nuova-codifica-domicilio_fisico.pdf">https://www.agid.gov.it/sites/default/files/repository_files/spid-avviso-n25-nuova-codifica-domicilio_fisico.pdf</a></p>
+</aside>
+<aside class="footnote brackets" id="n5" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
+<p>Il principio del once-only non è legato ad un determinato modello pratica, ma viene mantenuto anche tra modelli pratica differenti. Quindi due modelli che utilizzano un campo analogo, per il quale si vuole riproporre lo stesso dato già immesso, possono usare la stessa label del campo “dati” per sfruttare tale automatismo</p>
+</aside>
+<aside class="footnote brackets" id="n6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">6</a><span class="fn-bracket">]</span></span>
+<p>Si rimanda alla sezione degli “Stati della pratica”</p>
+</aside>
+<aside class="footnote brackets" id="riporta-in-bozza" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">7</a><span class="fn-bracket">]</span></span>
+<p>Riportare una pratica “in bozza” significa, di solito, chiedere al cittadino di integrare o modificare dati che servono all’Ente. Il passaggio allo stato “in bozza” invia comunque un messaggio nell’area personale del cittadino e, contestualmente, una mail al cittadino stesso.</p>
+</aside>
+<aside class="footnote brackets" id="n8" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">8</a><span class="fn-bracket">]</span></span>
+<p>Nel caso di installazioni agganciate ad uno SPID di test fornito da AgID, la base dati utenti per le prove è presente a <a class="reference external" href="https://spid-demo.endor.redturtle.it/demo/users">questo link</a></p>
+</aside>
+<aside class="footnote brackets" id="n9" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">9</a><span class="fn-bracket">]</span></span>
+<p>Si rimanda all’apposita sezione per l’integrazione con i protocolli esterni (es, Protocollo Maggioli)</p>
+</aside>
+</aside>
+
+</main>
+						<nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="panoramica.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Panoramica
+    </a>
+    <a class="float-right" href="integrazione-con-il-software-di-protocollo-maggioli.html" title="Next">
+        Integrazione con il software di Protocollo Maggioli <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<a href="#" aria-hidden="true" data-attribute="return-to-top" id="return-to-top" class="return-to-top"  onclick="topFunction()">
+		<i class="it-collapse"></i>
+	</a>
+	<!-- <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+		<span class="navbar-toggler-icon"></span>
+		<span class="sr-only">Menu</span>
+	</button> -->
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            
+    <div class="rt-footer px-3 py-4">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <p class="rt-footer__title">RedTurtle Technology S.r.l.</p>
+          <address class="mb-0">
+            Via Nino Bixio, 4<br>
+            44122 Ferrara (FE)<br>
+            C.F. e P.IVA 01467600381
+          </address>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <p class="rt-footer__title">Contatti</p>
+          <ul class="list-unstyled mb-0">
+            <li>Telefono: <a href="tel:+3905321915958">(+39) 0532 1915958</a></li>
+            <li>Email: <a href="mailto:info@redturtle.it">info@redturtle.it</a></li>
+            <li>PEC: <a href="mailto:redturtle@postecert.it">redturtle@postecert.it</a></li>
+            <li>Sito web: <a href="https://www.redturtle.it/">www.redturtle.it</a></li>
+            <li class="mt-2"><a href="https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F"><i class="fas fa-life-ring mr-1" aria-hidden="true"></i>Help-desk</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 mb-4">
+          <p class="rt-footer__title">Seguici su</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/redturtle-technology-s.r.l./" class="rt-social"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+            <li class="list-inline-item"><a href="https://github.com/RedTurtle" class="rt-social"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+            <li class="list-inline-item"><a href="https://medium.redturtle.it/" class="rt-social"><i class="fab fa-medium" aria-hidden="true"></i>Medium</a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/redturtle/" class="rt-social"><i class="fab fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row rt-footer__colophon pt-3">
+        <div class="col">
+          <ul class="list-inline small mb-0">
+            <li class="list-inline-item"><a href="https://www.redturtle.it/privacy">Privacy policy</a></li>
+            <li class="list-inline-item"><a href="https://www.redturtle.it/cookie">Cookie policy</a></li>
+            <li class="list-inline-item"><a href="https://www.redturtle.it/contatti">Contatti</a></li>
+            <li class="list-inline-item">&copy; 2026, RedTurtle Technology S.r.l.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+        </div>
+    </footer>
+        <script src="../_static/documentation_options.js?v=3586afa7"></script>
+        <script src="../_static/doctools.js?v=9bcbadda"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script src="../_static/translations.js?v=45930005"></script>
+        <script type="text/javascript" src="../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>

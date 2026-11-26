@@ -1,0 +1,633 @@
+<!-- Direct copy of https://github.com/wagtail/sphinx-wagtail-theme/blob/main/sphinx_wagtail_theme/layout.html
+	Doing this to add our custom header
+--><!DOCTYPE html>
+<html class="no-js" lang="it" data-content_root="../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    
+        <title>Manuale io-Sanità &mdash; Documentazione Manuali d&#39;uso 0.1 </title>
+    
+        <link rel="shortcut icon" href="../_static/favicon-redturtle.png" />
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			let rtt = document.getElementById("return-to-top");
+			if(rtt){
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					rtt.style.display = "block";
+				} else {
+					rtt.style.display = "none";
+				}
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const progressBar = document.getElementById("progress-bar");
+			const progressBarContainer = document.getElementById("progress-bar-container");
+			window.addEventListener("scroll", function() {
+				let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				progressBarContainer.style.display = scrollTop? 'block': 'none'
+				let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				let progress = (scrollTop / scrollHeight) * 100;
+				progressBar.style.width = progress + "%";
+			});
+		});
+	</script>
+    <link rel="stylesheet" type="text/css" href="../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=8cc4808c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/redturtle.css?v=8fe9cb8c" />
+            <link rel="index" title="Indice" href="../genindex.html" />
+            <link rel="search" title="Cerca" href="../search.html" />
+            <link rel="top" title="Documentazione Manuali d&#39;uso 0.1 " href="#" />
+            <link rel="next" title="Panoramica" href="panoramica.html" />
+            <link rel="prev" title="Manuale Cittadino" href="../manuale-io-segnalo/manuale-cittadino.html" />
+    </head>
+<body><script>try { localStorage.removeItem("wagtail-theme"); } catch (e) {}</script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Salta al contenuto</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="/"
+                        title="RedTurtle"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../_static/img/tartaruga-cerchio.svg" width="48" height="48" alt="RedTurtle"
+                            class="logo-img"
+                        />
+                        Manuali d'uso
+                    </a>
+                
+                
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            
+                                
+                                
+                                <li class="nav-item"><a class="nav-link"  href="https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F">Help-desk</a></li>
+                            
+                                
+                                
+                                <li class="nav-item"><a class="nav-link"  href="https://www.redturtle.it/">redturtle.it</a></li>
+                            
+                        </ul>
+                    </div>
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+	 
+    <div id="main-content" class="container-fluid">
+		<div id="utility-bar" class="sticky-top">
+			<header class="row align-items-center justify-content-between py-3">
+				<div class="col-sm-6 col-lg-6">
+					
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Cerca nella documentazione" aria-label="Cerca nella documentazione" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+				</div>
+				<div class="col-sm-6 col-lg-auto"><button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none d-none" type="button" hidden aria-hidden="true" tabindex="-1">
+						<span class="dark-only"><i class="fas fa-sun"></i> Modalità chiara</span>
+						<span class="light-only"><i class="fas fa-moon"></i> Modalità scura</span>
+					</button></div>
+			</header>
+			<div id="progress-bar-container">
+				<div id="progress-bar"></div>
+			</div>
+		</div>
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse d-lg-block pt-4"><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Menu principale">
+        <p class="caption" role="heading"><span class="caption-text">Manuali d'uso</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../manuale-io-comune/index.html">Manuale io-Comune</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html">Autenticazione e interfaccia di backend</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html#edit-della-pagina">Edit della pagina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/autenticazione-e-interfaccia-di-backend.html#navigazione-del-piano-editoriale">Navigazione del piano editoriale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/back-end-della-navigazione-autenticata.html">Back-end della navigazione autenticata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/account-e-ruoli.html">Account e ruoli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/account-e-ruoli.html#gestione-utenti-a-livello-di-cartelle-o-particolari-contenuti">Gestione utenti a livello di cartelle o particolari contenuti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/workflow.html">Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/risorse-utili.html">Risorse utili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/index.html">I tipi di contenuto (content-type)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/tipi-di-contenuto-specializzati-per-agid.html">Tipi di contenuto specializzati per AgID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-pagina.html">Content-type “Pagina”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/undo-redo-sulle-pagine.html">Undo/Redo sulle pagine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-cartella.html">Content-type “Cartella”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-file.html">Content-type “File”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-immagine.html">Content-type “Immagine”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-collegamento.html">Content-type “Collegamento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-argomento.html">Content-type “Argomento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-in-testata-leadimage.html">Dimensioni dell’immagine in testata (leadimage)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-di-anteprima.html">Dimensioni dell’immagine di anteprima</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-evento.html">Content-type “Evento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-luogo.html">Content-type “Luogo”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-notizie-e-comunicati-stampa.html">Content-type “Notizie e comunicati stampa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-persona-pubblica.html">Content-type “Persona pubblica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-incarico.html">Content-type “Incarico”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-servizio.html">Content-type “Servizio”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-unita-organizzativa.html">Content-type “Unità organizzativa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-dataset.html">Content-type “Dataset”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-documento.html">Content-type “Documento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-cartella-modulistica.html">Content-type “Cartella Modulistica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-open-data.html">Content-type “Open-data”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-bando.html">Content-type “Bando”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/content-type-punto-di-contatto.html">Content-type “Punto di contatto”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/i-tipi-di-contenuto-content-type/gestione-di-io-prenoto-integrato-in-io-comune-per-il-pnrr.html">Gestione di io-Prenoto integrato in io-Comune per il PNRR</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html">Dimensioni consigliate delle immagini</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html#immagini-dei-contenuti">Immagini dei contenuti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html#blocco-elenco">Blocco Elenco</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html#slider">Slider</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/dimensioni-immagini.html#altri-blocchi">Altri blocchi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/faq.html">FAQ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/faq.html#cartella-faq">Cartella FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/faq.html#id1">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/sottositi.html">Sottositi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/multilinguismo.html">Multilinguismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/menu-di-configurazione-del-sito.html">Menu di configurazione del sito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/menu-configurabile.html">Menu configurabile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-configurabile.html#configurazione-del-menu-di-testata">Configurazione del menu di testata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-configurabile.html#voci-di-un-menu">Voci di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-configurabile.html#configurazione-header-slim">Configurazione header “slim”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/menu-secondario-in-testata.html">Menu secondario in testata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-secondario-in-testata.html#configurazione-di-un-menu">Configurazione di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/menu-secondario-in-testata.html#voci-di-un-menu">Voci di un menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/voci-aggiuntive-nel-footer.html">Voci aggiuntive nel footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configurazione-dei-blocchi-di-ricerca.html">Configurazione dei blocchi di ricerca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configurazione-dei-vocabolari.html">Configurazione dei vocabolari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-del-blocco-contatti.html">Configuratore del blocco contatti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-del-footer.html">Configuratore del footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-subfooter.html">Configuratore subfooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-dei-social-testata-e-footer.html">Configuratore dei social (testata e footer)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/configuratore-dei-social-testata-e-footer.html#lista-icone-social">Lista icone social</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/customer-satisfaction.html">Customer satisfaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configuratore-cookie-banner.html">Configuratore Cookie Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/newsletter.html">Newsletter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/newsletter.html#messaggi-inviabili">Messaggi inviabili</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/newsletter.html#configurazione-dellhtml-del-canale">Configurazione dell’HTML del canale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/volto-alerts.html">Volto Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/configurazioni-varie.html">Configurazioni varie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/configurazioni-varie.html#geolocalizzazione-mappe">Geolocalizzazione mappe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/configurazioni-varie.html#impostazioni-per-linvio-della-posta-attraverso-smtp-del-portale">Impostazioni per l’invio della posta attraverso SMTP del portale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html">Data-element per l’asseverazione PNRR</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#menu-principale">Menu principale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#menu-secondario">Menu secondario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#pagina-argomenti">Pagina Argomenti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#footer">Footer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#pagina-servizi">Pagina Servizi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#altre-pagine-di-secondo-livello">Altre pagine di secondo livello</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#area-personale">Area personale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#note-legali">Note legali</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#scheda-servizio">Scheda servizio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/data-element-pnrr.html#verifica-delle-buone-pratiche">Verifica delle buone pratiche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-comune/appendice.html">Appendice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-comune/appendice.html#campi-speciali-per-la-seo">Campi speciali per la SEO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manuale-io-prenoto/index.html">Manuale io-Prenoto</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-prenoto/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-prenoto/integrazione-con-io-comune.html">Integrazione con io-Comune</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-prenoto/integrazione-con-io-comune.html#attori-coinvolti-nel-processo">Attori coinvolti nel processo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-prenoto/integrazione-con-io-comune.html#content-type-cartella-prenotazioni">Content-type “Cartella prenotazioni”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-prenoto/integrazione-con-io-comune.html#gestione-delle-prenotazioni-pervenute-da-parte-degli-operatori">Gestione delle prenotazioni pervenute da parte degli operatori</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-prenoto/criteri-di-presentazione-degli-slot-di-prenotazione.html">Criteri di presentazione degli slot di prenotazione - cittadino vs operatore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-prenoto/notifiche-personalizzate-sms-e-appio.html">Notifiche personalizzate (SMS e AppIO)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manuale-io-cittadino/index.html">Manuale io-Cittadino</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-cittadino/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-cittadino/integrazione-con-io-comune.html">Integrazione con io-Comune</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-cittadino/integrazione-con-io-comune.html#attori-coinvolti-nel-processo">Attori coinvolti nel processo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-cittadino/integrazione-con-io-comune.html#content-type-modello-pratica">Content-type “Modello pratica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-cittadino/integrazione-con-io-comune.html#creazione-della-form-del-modello-pratica">Creazione della form del Modello pratica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-cittadino/integrazione-con-io-comune.html#pratica-lato-cittadino-collegamento-al-servizio">Pratica lato cittadino - collegamento al Servizio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-cittadino/integrazione-con-il-software-di-protocollo-maggioli.html">Integrazione con il software di Protocollo Maggioli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-cittadino/integrazione-con-il-software-di-protocollo-maggioli.html#configurazione">Configurazione</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manuale-io-segnalo/index.html">Manuale io-Segnalo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/integrazione-con-io-comune.html">Integrazione con io-Comune</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/attori-coinvolti-nel-processo.html">Attori coinvolti nel processo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/manuale-admin-creazione-oggetto-segnalazioni.html">Manuale admin (creazione oggetto Segnalazioni)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-admin-creazione-oggetto-segnalazioni.html#content-type-segnalazioni">Content-type “Segnalazioni”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/manuale-operatore.html">Manuale Operatore</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-operatore.html#workflow-delle-segnalazioni">Workflow delle segnalazioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-operatore.html#gestione-delle-segnalazioni-pervenute">Gestione delle segnalazioni pervenute</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manuale-io-segnalo/manuale-cittadino.html">Manuale Cittadino</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-cittadino.html#autorizzazioni-e-condizioni">Autorizzazioni e Condizioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-cittadino.html#dati-di-segnalazione">Dati di Segnalazione</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manuale-io-segnalo/manuale-cittadino.html#validazione-e-sicurezza-otp">Validazione e Sicurezza (OTP)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Manuale io-Sanità</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="panoramica.html">Panoramica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autenticazione-e-interfaccia-di-backend.html">Autenticazione e interfaccia di backend</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="autenticazione-e-interfaccia-di-backend.html#edit-della-pagina">Edit della pagina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autenticazione-e-interfaccia-di-backend.html#navigazione-del-piano-editoriale">Navigazione del piano editoriale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="back-end-della-navigazione-autenticata.html">Back-end della navigazione autenticata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account-e-ruoli.html">Account e ruoli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="account-e-ruoli.html#gestione-utenti-a-livello-di-cartelle-o-particolari-contenuti">Gestione utenti a livello di cartelle o particolari contenuti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workflow.html">Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/index.html">I tipi di contenuto (content-type)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/tipi-di-contenuto-specializzati-per-agid.html">Tipi di contenuto specializzati per AgID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-pagina.html">Content-type “Pagina”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/undo-redo-sulle-pagine.html">Undo/Redo sulle pagine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-cartella.html">Content-type “Cartella”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-file.html">Content-type “File”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-immagine.html">Content-type “Immagine”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-collegamento.html">Content-type “Collegamento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-in-testata-leadimage.html">Dimensioni dell’immagine in testata (leadimage)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-di-anteprima.html">Dimensioni dell’immagine di anteprima</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-evento.html">Content-type “Evento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-notizie-e-comunicati-stampa.html">Content-type “Notizie e comunicati stampa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-persona.html">Content-type “Persona”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-servizio.html">Content-type “Servizio”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-unita-organizzativa.html">Content-type “Unità organizzativa”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-documento.html">Content-type “Documento”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-cartella-modulistica.html">Content-type “Cartella Modulistica”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-bando.html">Content-type “Bando”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-punto-di-contatto.html">Content-type “Punto di contatto”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-come-fare-per.html">Content-type “Come fare per”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/faq.html">FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i-tipi-di-contenuto-content-type/pagine-di-ricerca-per-argomenti-del-modello-agid.html">Pagine di ricerca per argomenti del modello AgID</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sottositi.html">Sottositi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessibility-checker.html">Accessibility checker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="accessibility-checker.html#come-si-usa">Come si usa</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="multilinguismo.html">Multilinguismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menu-di-configurazione-del-sito.html">Menu di configurazione del sito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menu-configurabile.html">Menu configurabile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="menu-configurabile.html#configurazione-del-menu-di-testata">Configurazione del menu di testata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="menu-configurabile.html#voci-di-un-menu">Voci di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="menu-configurabile.html#configurazione-header-slim">Configurazione header “slim”</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="menu-secondario-in-testata.html">Menu secondario in testata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="menu-secondario-in-testata.html#configurazione-di-un-menu">Configurazione di un menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="menu-secondario-in-testata.html#voci-di-un-menu">Voci di un menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="voci-aggiuntive-nel-footer.html">Voci aggiuntive nel footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configurazione-dei-blocchi-di-ricerca.html">Configurazione dei blocchi di ricerca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configurazione-dei-vocabolari.html">Configurazione dei vocabolari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuratore-del-footer.html">Configuratore del footer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuratore-subfooter.html">Configuratore subfooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuratore-dei-social-testata-e-footer.html">Configuratore dei social (testata e footer)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="configuratore-dei-social-testata-e-footer.html#lista-icone-social">Lista icone social</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="customer-satisfaction.html">Customer satisfaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuratore-cookie-banner.html">Configuratore Cookie Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newsletter.html">Newsletter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="newsletter.html#gestione-di-backoffice-del-canale-newsletter">Gestione di backoffice del canale newsletter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="newsletter.html#configurazione-dellhtml-del-canale">Configurazione dell’HTML del canale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="configurazioni-varie.html">Configurazioni varie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="configurazioni-varie.html#geolocalizzazione-mappe">Geolocalizzazione mappe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configurazioni-varie.html#impostazioni-per-linvio-della-posta-attraverso-smtp-del-portale">Impostazioni per l’invio della posta attraverso SMTP del portale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="appendice.html">Appendice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="appendice.html#campi-speciali-per-la-seo">Campi speciali per la SEO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+	
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Espandi/riduci contenuti del menu</span>
+        </button>
+    </template>
+	<script type="text/javascript">
+		function updateCurrentToc(event) {
+						const hash = window.location.hash;
+			// solo i link ad ancore interne (es. versioni nelle note di rilascio):
+			// le pagine vere mantengono l'evidenziazione impostata da Sphinx
+			const tocLinks = Array.from(document.querySelectorAll(".toctree-l2 a")).filter((link) => { const h = link.getAttribute("href"); return h.startsWith("#") && h.length > 1; });
+			tocLinks.forEach((link) => {
+				if (hash && link.href.includes(hash)) {
+					link.classList.add("active");
+					link.closest("li").classList.add("current");
+					
+				} else {
+					link.classList.remove("active");
+					link.closest("li").classList.remove("current");
+				}
+			});
+		}
+		// highlight current TOC link manually
+		addEventListener("DOMContentLoaded", updateCurrentToc);
+		// nelle note di rilascio le versioni sono ancore: non mostrare il livello sotto (Migliorie, Fix...)
+		addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".site-toc .toctree-l2").forEach((li) => {
+				const a = li.querySelector(":scope > a");
+				const h = a ? a.getAttribute("href") : "";
+				// link a una versione: "#versione-..." sulla stessa pagina, "pagina.html#versione-..." dalle altre
+				if (/#.+/.test(h)) {
+					li.querySelectorAll(":scope > ul, :scope > .toctree-expand").forEach((el) => el.remove());
+				}
+			});
+		});
+		// segnala ai lettori di schermo la pagina corrente
+		addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".site-toc a.current").forEach((link) => {
+				const h = link.getAttribute("href"); if (!(h.startsWith("#") && h.length > 1)) link.setAttribute("aria-current", "page");
+			});
+		});
+		addEventListener("hashchange", updateCurrentToc);
+		// porta in vista nel menu laterale la voce della pagina corrente
+		addEventListener("load", () => {
+			const cur = document.querySelector('.site-toc a[aria-current="page"]');
+			if (!cur) return;
+			let box = cur.parentElement;
+			while (box && box !== document.body) {
+				const st = getComputedStyle(box);
+				if (/(auto|scroll)/.test(st.overflowY) && box.scrollHeight > box.clientHeight) break;
+				box = box.parentElement;
+			}
+			if (!box || box === document.body) return;
+			const offset = cur.getBoundingClientRect().top - box.getBoundingClientRect().top;
+			box.scrollTop += offset - box.clientHeight / 3;
+		});
+
+	</script>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5 ">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="Percorso di navigazione">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../index.html">Manuali d'uso</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Manuale io-Sanità</li>
+    </ol>
+</nav>
+                    </div>
+                    
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+					<!--  -->
+					<div class="col-12 px-5 order-last order-lg-first rst-content">
+						<main role="main" id="main">
+    <img class="rt-logo-manuale" src="../_static/img/prodotti/logo-io-sanita.svg" alt="">
+<section id="manuale-io-sanita">
+<h1>Manuale io-Sanità<a class="headerlink" href="#manuale-io-sanita" title="Link to this heading">¶</a></h1>
+<p>Manuale d’uso per redattori e amministratori dei siti delle aziende sanitarie realizzati con io-Sanità.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Questa versione è stata convertita automaticamente dal manuale PDF (v1.0) ed è in fase di revisione.</p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="panoramica.html">Panoramica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autenticazione-e-interfaccia-di-backend.html">Autenticazione e interfaccia di backend</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="autenticazione-e-interfaccia-di-backend.html#edit-della-pagina">Edit della pagina</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autenticazione-e-interfaccia-di-backend.html#navigazione-del-piano-editoriale">Navigazione del piano editoriale</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="back-end-della-navigazione-autenticata.html">Back-end della navigazione autenticata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account-e-ruoli.html">Account e ruoli</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account-e-ruoli.html#gestione-utenti-a-livello-di-cartelle-o-particolari-contenuti">Gestione utenti a livello di cartelle o particolari contenuti</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflow.html">Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i-tipi-di-contenuto-content-type/index.html">I tipi di contenuto (content-type)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/tipi-di-contenuto-specializzati-per-agid.html">Tipi di contenuto specializzati per AgID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-pagina.html">Content-type “Pagina”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/undo-redo-sulle-pagine.html">Undo/Redo sulle pagine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-cartella.html">Content-type “Cartella”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-file.html">Content-type “File”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-immagine.html">Content-type “Immagine”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-collegamento.html">Content-type “Collegamento”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-in-testata-leadimage.html">Dimensioni dell’immagine in testata (leadimage)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/dimensioni-dell-immagine-di-anteprima.html">Dimensioni dell’immagine di anteprima</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-evento.html">Content-type “Evento”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-notizie-e-comunicati-stampa.html">Content-type “Notizie e comunicati stampa”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-persona.html">Content-type “Persona”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-servizio.html">Content-type “Servizio”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-unita-organizzativa.html">Content-type “Unità organizzativa”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-documento.html">Content-type “Documento”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-cartella-modulistica.html">Content-type “Cartella Modulistica”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-bando.html">Content-type “Bando”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-punto-di-contatto.html">Content-type “Punto di contatto”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/content-type-come-fare-per.html">Content-type “Come fare per”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i-tipi-di-contenuto-content-type/pagine-di-ricerca-per-argomenti-del-modello-agid.html">Pagine di ricerca per argomenti del modello AgID</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sottositi.html">Sottositi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accessibility-checker.html">Accessibility checker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="accessibility-checker.html#come-si-usa">Come si usa</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="multilinguismo.html">Multilinguismo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-di-configurazione-del-sito.html">Menu di configurazione del sito</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-configurabile.html">Menu configurabile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="menu-configurabile.html#configurazione-del-menu-di-testata">Configurazione del menu di testata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menu-configurabile.html#voci-di-un-menu">Voci di un menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menu-configurabile.html#configurazione-header-slim">Configurazione header “slim”</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="menu-secondario-in-testata.html">Menu secondario in testata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="menu-secondario-in-testata.html#configurazione-di-un-menu">Configurazione di un menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menu-secondario-in-testata.html#voci-di-un-menu">Voci di un menu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="voci-aggiuntive-nel-footer.html">Voci aggiuntive nel footer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configurazione-dei-blocchi-di-ricerca.html">Configurazione dei blocchi di ricerca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configurazione-dei-vocabolari.html">Configurazione dei vocabolari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuratore-del-footer.html">Configuratore del footer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuratore-subfooter.html">Configuratore subfooter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuratore-dei-social-testata-e-footer.html">Configuratore dei social (testata e footer)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuratore-dei-social-testata-e-footer.html#lista-icone-social">Lista icone social</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="customer-satisfaction.html">Customer satisfaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuratore-cookie-banner.html">Configuratore Cookie Banner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="newsletter.html">Newsletter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="newsletter.html#gestione-di-backoffice-del-canale-newsletter">Gestione di backoffice del canale newsletter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newsletter.html#configurazione-dellhtml-del-canale">Configurazione dell’HTML del canale</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configurazioni-varie.html">Configurazioni varie</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configurazioni-varie.html#geolocalizzazione-mappe">Geolocalizzazione mappe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configurazioni-varie.html#impostazioni-per-linvio-della-posta-attraverso-smtp-del-portale">Impostazioni per l’invio della posta attraverso SMTP del portale</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendice.html">Appendice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendice.html#campi-speciali-per-la-seo">Campi speciali per la SEO</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+</main>
+						<nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="../manuale-io-segnalo/manuale-cittadino.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Manuale Cittadino
+    </a>
+    <a class="float-right" href="panoramica.html" title="Next">
+        Panoramica <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<a href="#" aria-hidden="true" data-attribute="return-to-top" id="return-to-top" class="return-to-top"  onclick="topFunction()">
+		<i class="it-collapse"></i>
+	</a>
+	<!-- <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+		<span class="navbar-toggler-icon"></span>
+		<span class="sr-only">Menu</span>
+	</button> -->
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            
+    <div class="rt-footer px-3 py-4">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <p class="rt-footer__title">RedTurtle Technology S.r.l.</p>
+          <address class="mb-0">
+            Via Nino Bixio, 4<br>
+            44122 Ferrara (FE)<br>
+            C.F. e P.IVA 01467600381
+          </address>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <p class="rt-footer__title">Contatti</p>
+          <ul class="list-unstyled mb-0">
+            <li>Telefono: <a href="tel:+3905321915958">(+39) 0532 1915958</a></li>
+            <li>Email: <a href="mailto:info@redturtle.it">info@redturtle.it</a></li>
+            <li>PEC: <a href="mailto:redturtle@postecert.it">redturtle@postecert.it</a></li>
+            <li>Sito web: <a href="https://www.redturtle.it/">www.redturtle.it</a></li>
+            <li class="mt-2"><a href="https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F"><i class="fas fa-life-ring mr-1" aria-hidden="true"></i>Help-desk</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 mb-4">
+          <p class="rt-footer__title">Seguici su</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/redturtle-technology-s.r.l./" class="rt-social"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+            <li class="list-inline-item"><a href="https://github.com/RedTurtle" class="rt-social"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+            <li class="list-inline-item"><a href="https://medium.redturtle.it/" class="rt-social"><i class="fab fa-medium" aria-hidden="true"></i>Medium</a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/redturtle/" class="rt-social"><i class="fab fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row rt-footer__colophon pt-3">
+        <div class="col">
+          <ul class="list-inline small mb-0">
+            <li class="list-inline-item"><a href="https://www.redturtle.it/privacy">Privacy policy</a></li>
+            <li class="list-inline-item"><a href="https://www.redturtle.it/cookie">Cookie policy</a></li>
+            <li class="list-inline-item"><a href="https://www.redturtle.it/contatti">Contatti</a></li>
+            <li class="list-inline-item">&copy; 2026, RedTurtle Technology S.r.l.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+        </div>
+    </footer>
+        <script src="../_static/documentation_options.js?v=3586afa7"></script>
+        <script src="../_static/doctools.js?v=9bcbadda"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script src="../_static/translations.js?v=45930005"></script>
+        <script type="text/javascript" src="../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
