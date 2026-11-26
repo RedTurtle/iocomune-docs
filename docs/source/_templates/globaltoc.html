@@ -1,6 +1,6 @@
 <div class="site-toc">
     <nav class="toc mt-3" aria-label="{{ _('Main menu') }}">
-        {{ toctree(includehidden=False, collapse=True, maxdepth=2, titles_only=False) }}
+        {{ toctree(includehidden=False, collapse=False, maxdepth=3, titles_only=False) }}
     </nav>
 	
     <template data-toggle-item-template>
@@ -10,9 +10,10 @@
     </template>
 	<script type="text/javascript">
 		function updateCurrentToc(event) {
-			console.log(event, window.location.hash)
-			const hash = window.location.hash;
-			const tocLinks = document.querySelectorAll(".toctree-l2 a");
+						const hash = window.location.hash;
+			// solo i link ad ancore interne (es. versioni nelle note di rilascio):
+			// le pagine vere mantengono l'evidenziazione impostata da Sphinx
+			const tocLinks = Array.from(document.querySelectorAll(".toctree-l2 a")).filter((link) => { const h = link.getAttribute("href"); return h.startsWith("#") && h.length > 1; });
 			tocLinks.forEach((link) => {
 				if (hash && link.href.includes(hash)) {
 					link.classList.add("active");
@@ -26,7 +27,38 @@
 		}
 		// highlight current TOC link manually
 		addEventListener("DOMContentLoaded", updateCurrentToc);
+		// nelle note di rilascio le versioni sono ancore: non mostrare il livello sotto (Migliorie, Fix...)
+		addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".site-toc .toctree-l2").forEach((li) => {
+				const a = li.querySelector(":scope > a");
+				const h = a ? a.getAttribute("href") : "";
+				// link a una versione: "#versione-..." sulla stessa pagina, "pagina.html#versione-..." dalle altre
+				if (/#.+/.test(h)) {
+					li.querySelectorAll(":scope > ul, :scope > .toctree-expand").forEach((el) => el.remove());
+				}
+			});
+		});
+		// segnala ai lettori di schermo la pagina corrente
+		addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".site-toc a.current").forEach((link) => {
+				const h = link.getAttribute("href"); if (!(h.startsWith("#") && h.length > 1)) link.setAttribute("aria-current", "page");
+			});
+		});
 		addEventListener("hashchange", updateCurrentToc);
+		// porta in vista nel menu laterale la voce della pagina corrente
+		addEventListener("load", () => {
+			const cur = document.querySelector('.site-toc a[aria-current="page"]');
+			if (!cur) return;
+			let box = cur.parentElement;
+			while (box && box !== document.body) {
+				const st = getComputedStyle(box);
+				if (/(auto|scroll)/.test(st.overflowY) && box.scrollHeight > box.clientHeight) break;
+				box = box.parentElement;
+			}
+			if (!box || box === document.body) return;
+			const offset = cur.getBoundingClientRect().top - box.getBoundingClientRect().top;
+			box.scrollTop += offset - box.clientHeight / 3;
+		});
 
 	</script>
 </div>

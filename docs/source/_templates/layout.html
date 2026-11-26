@@ -24,6 +24,7 @@
         {{ metatags }}
     {%- endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     {% block htmltitle %}
         <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
     {% endblock %}
@@ -105,7 +106,9 @@
     {%- block extrahead %}{% endblock -%}
 </head>
 <body>
-    <script type="text/javascript" src="{{ pathto('_static/dist/blocking.js', 1) }}"></script>
+    {#- Modalità scura disattivata: non carichiamo blocking.js (che applica il tema scuro
+        in base alla scelta salvata o alle preferenze del sistema operativo). -#}
+    <script>try { localStorage.removeItem("wagtail-theme"); } catch (e) {}</script>
     <header class="container-fluid bg-primary">
         <a class="btn btn-sm btn-light skip-to-content-link" href="#main">{{ _('Skip to content') }}</a>
         <div class="container-fluid">
@@ -151,16 +154,13 @@
 					{% include "searchbox.html" %}
 				</div>
 				<div class="col-sm-6 col-lg-auto">
-					<noscript>
-						<p>{{ _('JavaScript is required to toggle light/dark mode.') }}.</p>
-					</noscript>
-					<button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+					{#- Pulsante della modalità scura nascosto: resta nella pagina perché theme.js lo cerca all'avvio. -#}
+					<button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none d-none" type="button" hidden aria-hidden="true" tabindex="-1">
 						<span class="dark-only"><i class="fas fa-sun"></i> {{ _('Light mode') }}</span>
 						<span class="light-only"><i class="fas fa-moon"></i> {{ _('Dark mode') }}</span>
 					</button>
-					{%- if pagename != "search" -%}
-					{% include "source-buttons.html" %}
-					{% endif %}
+					{#- Pulsanti "Modifica su GitHub" e "Mostra sorgente" tolti (26/11/2026). Per rimetterli:
+					{%- if pagename != "search" -%}{% include "source-buttons.html" %}{% endif %} -#}
 				</div>
 			</header>
 			<div id="progress-bar-container">
@@ -197,7 +197,7 @@
                         </div>
                     </nav>
                     {% endif %} -->
-					<div class="col-12 col-lg-9 px-5 order-last order-lg-first rst-content">
+					<div class="col-12 px-5 order-last order-lg-first rst-content">
 						<main role="main" id="main">
 							{%- block body %}
 							{% endblock -%}
