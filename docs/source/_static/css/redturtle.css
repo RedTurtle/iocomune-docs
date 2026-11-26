@@ -1,0 +1,359 @@
+/* =====================================================================
+   Tema RedTurtle per i manuali d'uso
+   Colori dal RedTurtle Design System (tokens.json).
+   Caricato dopo style.css: per tornare al tema blu basta toglierlo
+   da html_css_files in conf.py.
+   Le regole stanno nel layer "base", lo stesso di style.css: solo così
+   possono sostituire le sue dichiarazioni !important.
+   ===================================================================== */
+
+:root {
+  /* token del design system */
+  --rt-red: #ce3134;        /* azione primaria, link, header */
+  --rt-red-700: #a8272a;    /* hover */
+  --rt-red-800: #861f21;    /* premuto */
+  --rt-red-50: #fdf3f3;     /* superficie brand tenue */
+  --rt-ink: #373535;        /* testo e titoli */
+  --rt-ink-900: #211f1f;    /* footer, superfici scure */
+  --rt-gray-600: #6b6767;   /* testo secondario */
+  --rt-gray-300: #d6d3d3;   /* bordi */
+  --rt-gray-200: #e8e6e6;   /* bordi tenui */
+  --rt-gray-100: #f4f3f3;   /* superfici alternate */
+  --rt-info: #1f5fa8;
+  --rt-info-bg: #e4eef9;
+  --rt-warning: #9a5b00;
+  --rt-warning-bg: #fdf1dc;
+  --rt-danger: #b3261e;
+  --rt-danger-bg: #fbe6e4;
+
+  /* variabili del tema riportate sui token RedTurtle */
+  --primary: var(--rt-red);
+  --italia: var(--rt-red);
+  --blue: var(--rt-red-700);
+  --red: var(--rt-red);
+  --text-primary: var(--rt-ink);
+  --text-secondary: var(--rt-ink);
+  --dark: var(--rt-ink-900);
+  --cyan: var(--rt-red-50);
+  --teal: var(--rt-red-50);
+  --light: var(--rt-gray-100);
+  --gray-secondary: var(--rt-gray-300);
+  --gray-quaternary: var(--rt-gray-300);
+}
+
+@layer base {
+  /* ---------- Layout: header e footer a tutta larghezza, pagina bianca ---------- */
+  body:not(.theme-dark) {
+    background-color: #fff !important;
+  }
+  header.container-fluid.bg-primary,
+  footer.container-fluid.bg-primary {
+    max-width: none !important;
+    width: 100%;
+  }
+  /* il contenuto di header e footer resta centrato e largo quanto il sito */
+  header.container-fluid.bg-primary > .container-fluid {
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---------- Header: rosso RedTurtle, testo bianco, tartaruga nel cerchio ---------- */
+  header.bg-primary {
+    background-color: var(--rt-red) !important;
+  }
+  header.bg-primary .navbar-brand,
+  header.bg-primary .nav-link {
+    color: #fff !important;
+  }
+  header.bg-primary .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* ---------- Footer: fascia scura inchiostro ---------- */
+  footer.bg-primary {
+    background-color: var(--rt-ink-900) !important;
+  }
+  /* footer largo quanto il sito (container-fluid: 1450px) e allineato al menu */
+  footer.bg-primary > .container {
+    max-width: 1450px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  footer .rt-footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  footer .rt-footer > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer .rt-footer > .row > [class*="col"] {
+    padding-left: 0;
+  }
+
+  /* colonna del testo: tutta la larghezza disponibile (l'indice di pagina a destra è disattivato),
+     ma con un limite per righe di lettura comode */
+  #main-content .rst-content {
+    max-width: 54rem;
+  }
+  /* niente margine sotto l'ultimo paragrafo dentro le celle delle tabelle */
+  .rst-content td > p:last-child,
+  .rst-content th > p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* icone dei pulsanti dentro il testo (estratte dal PDF): alte come una riga */
+  .rst-content img[src*="/icon-p"],
+  .rst-content img[src^="icon-p"] {
+    display: inline-block !important;
+    height: 1.4em !important;
+    width: auto !important;
+    vertical-align: middle;
+    margin: 0 .15em;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+
+  /* note a piè di pagina: numero e testo sulla stessa riga, elenco compatto */
+  .rst-content aside.footnote {
+    display: flex !important;
+    gap: .5rem;
+    margin-bottom: .6rem !important;
+    font-size: .9375rem;
+  }
+  .rst-content aside.footnote > .label {
+    flex: 0 0 auto;
+    float: none !important;
+    display: inline !important;
+  }
+  .rst-content aside.footnote > p {
+    margin: 0 !important;
+  }
+
+  /* tabelle larghe: testo più piccolo e celle più strette */
+  .rt-tabella-compatta table {
+    font-size: .875rem;
+  }
+  .rt-tabella-compatta th,
+  .rt-tabella-compatta td {
+    padding: .45rem .5rem !important;
+    vertical-align: top;
+  }
+  .rt-tabella-compatta th {
+    vertical-align: bottom;
+  }
+  .rt-si {
+    color: var(--rt-success, #1e7f4f);
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+
+  /* social con icona */
+  footer a.rt-social {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    margin-right: .75rem;
+  }
+  footer a.rt-social i {
+    font-size: 1.25rem;
+  }
+  footer .rt-footer__colophon {
+    border-top-color: rgba(255, 255, 255, .25) !important;
+  }
+
+  /* ---------- Titoli e testo (modalità chiara) ---------- */
+  body:not(.theme-dark) #main-content h1,
+  body:not(.theme-dark) #main-content h2,
+  body:not(.theme-dark) #main-content h3,
+  body:not(.theme-dark) #main-content h4,
+  body:not(.theme-dark) #main-content h5 {
+    color: var(--rt-ink) !important;
+  }
+  #main-content h1 {
+    border-bottom: 3px solid var(--rt-red) !important;
+  }
+  #main-content h2 {
+    border-bottom: 1px solid var(--rt-gray-300) !important;
+  }
+  body:not(.theme-dark) {
+    color: var(--rt-ink) !important;
+  }
+  body:not(.theme-dark) #main-content .rst-content a {
+    color: var(--rt-red) !important;
+  }
+  body:not(.theme-dark) #main-content .rst-content a:hover,
+  body:not(.theme-dark) #main-content .rst-content a:focus {
+    color: var(--rt-red-700) !important;
+    text-decoration: underline !important;
+  }
+
+  /* tabelle: intestazione inchiostro */
+  table th {
+    background-color: var(--rt-ink) !important;
+    color: #fff !important;
+  }
+
+  /* ---------- Menu laterale ---------- */
+  body:not(.theme-dark) #collapseSidebar .site-toc a {
+    color: var(--rt-ink) !important;
+  }
+  body:not(.theme-dark) #collapseSidebar .site-toc a:hover {
+    color: var(--rt-red) !important;
+  }
+  body:not(.theme-dark) #collapseSidebar .site-toc .toctree-l2 > a.current,
+  body:not(.theme-dark) #collapseSidebar .site-toc .toctree-l3 > a.current {
+    color: var(--rt-red) !important;
+  }
+  #collapseSidebar .site-toc .toctree-l2 > a.current,
+  #collapseSidebar .site-toc .toctree-l3 > a.current {
+    border-left-color: var(--rt-red) !important;
+  }
+  .site-toc .caption-text {
+    color: var(--rt-gray-600);
+    text-transform: uppercase;
+    font-size: .8125rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+  }
+
+  /* sottovoci del manuale aperto: niente fondo colorato, solo una linea guida */
+  #collapseSidebar .site-toc .toctree-l1.current ul,
+  body.theme-dark #collapseSidebar .site-toc .toctree-l1.current ul {
+    background-color: transparent !important;
+  }
+  #collapseSidebar .site-toc .toctree-l1.current > ul {
+    border-left: 1px solid var(--rt-gray-300);
+    margin-left: 12px;
+  }
+  body.theme-dark #collapseSidebar .site-toc .toctree-l1.current > ul {
+    border-left-color: #4a4747;
+  }
+  body.theme-dark #collapseSidebar .site-toc .toctree-l2.current,
+  body.theme-dark #collapseSidebar .site-toc .toctree-l3.current,
+  body.theme-dark #collapseSidebar .site-toc .toctree-l2 > a.current,
+  body.theme-dark #collapseSidebar .site-toc .toctree-l3 > a.current {
+    background-color: transparent !important;
+  }
+  #collapseSidebar .site-toc .toctree-l2.current {
+    background-color: transparent !important;
+  }
+
+  /* spaziatura delle voci del menu: più compatta */
+  #collapseSidebar .site-toc .toctree-l1 ul li {
+    padding: .2rem .75rem !important;
+    margin: 0 !important;
+  }
+  #collapseSidebar .site-toc .toctree-l1 ul li > a {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+  #collapseSidebar .site-toc .toctree-l1.current > ul {
+    padding-top: .25rem !important;
+    padding-bottom: .25rem !important;
+  }
+  #collapseSidebar .site-toc li > a {
+    line-height: 1.3;
+  }
+  #collapseSidebar .site-toc .toctree-l1 ul li > .toctree-expand {
+    top: calc(.2rem + 12px) !important;
+  }
+
+  /* pulsanti +/– del menu: inchiostro al posto del viola del tema */
+  .toc .toctree-expand {
+    color: var(--rt-ink) !important;
+    background-color: var(--rt-gray-200) !important;
+  }
+  .toc .current > .toctree-expand,
+  body.theme-dark .toc .toctree-expand {
+    background-color: var(--rt-ink) !important;
+    color: #fff !important;
+  }
+  body.theme-dark .toc .current > .toctree-expand {
+    background-color: #f19c9e !important;
+    color: var(--rt-ink-900) !important;
+  }
+
+  /* briciole di pane e barra strumenti */
+  body:not(.theme-dark) .breadcrumb a,
+  body:not(.theme-dark) #utility-bar .btn-light {
+    color: var(--rt-ink) !important;
+  }
+  body:not(.theme-dark) .breadcrumb a:hover {
+    color: var(--rt-red) !important;
+  }
+
+  /* pager (pagina precedente / successiva) */
+  body:not(.theme-dark) #main-content a.pager-link,
+  body:not(.theme-dark) #main-content .pager a {
+    color: var(--rt-red) !important;
+  }
+
+  /* focus da tastiera */
+  *:focus-visible {
+    outline: 2px solid var(--rt-red) !important;
+    outline-offset: 2px;
+  }
+
+  /* ---------- Riquadri (note, avvisi) con i colori di stato ---------- */
+  .admonition.note, .admonition.tip, .admonition.hint, .admonition.seealso {
+    background-color: var(--rt-info-bg) !important;
+    border-left: 6px solid var(--rt-info) !important;
+    color: var(--rt-ink) !important;
+  }
+  .admonition.note .admonition-title, .admonition.tip .admonition-title,
+  .admonition.hint .admonition-title, .admonition.seealso .admonition-title {
+    background-color: #cfe0f4 !important;
+    color: #123a66 !important;
+  }
+  .admonition.warning, .admonition.caution, .admonition.attention, .admonition.important {
+    background-color: var(--rt-warning-bg) !important;
+    border-left: 6px solid var(--rt-warning) !important;
+    color: var(--rt-ink) !important;
+  }
+  .admonition.warning .admonition-title, .admonition.caution .admonition-title,
+  .admonition.attention .admonition-title, .admonition.important .admonition-title {
+    background-color: #f8e0b3 !important;
+    color: #5c3700 !important;
+  }
+  .admonition.danger, .admonition.error {
+    background-color: var(--rt-danger-bg) !important;
+    border-left: 6px solid var(--rt-danger) !important;
+    color: var(--rt-ink) !important;
+  }
+  .admonition.danger .admonition-title, .admonition.error .admonition-title {
+    background-color: #f5c9c5 !important;
+    color: #6e1712 !important;
+  }
+  /* i riquadri restano chiari anche in modalità scura: link scuri leggibili */
+  body.theme-dark .admonition a {
+    color: var(--rt-red-800) !important;
+  }
+
+  /* ---------- Modalità scura ---------- */
+  body.theme-dark #collapseSidebar .site-toc .toctree-l2 > a.current,
+  body.theme-dark #collapseSidebar .site-toc .toctree-l3 > a.current {
+    color: #fff !important;
+    border-left-color: #f19c9e !important;
+  }
+  body.theme-dark #main-content h1 {
+    border-bottom-color: #f19c9e !important;
+  }
+}
+
+/* Loghi dei prodotti: schede della home e pagina iniziale dei manuali */
+@layer base {
+  .rt-nascosto { display: none !important; }
+  .rt-prodotti { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
+  .rst-content a.rt-prodotto { display: flex; flex-direction: column; gap: .75rem; padding: 1.25rem 1.25rem 1rem; border: 1px solid #DDD8D6; border-radius: 8px; background: #fff; color: #373535 !important; text-decoration: none !important; transition: border-color .15s, box-shadow .15s; }
+  .rst-content a.rt-prodotto:hover, .rst-content a.rt-prodotto:focus-visible { border-color: #CE3134; box-shadow: 0 2px 10px rgba(55,53,53,.12); }
+  .rst-content a.rt-prodotto img { height: 44px !important; width: auto !important; max-width: none !important; align-self: flex-start; margin: 0; }
+  .rt-prodotto-nome { display: flex; align-items: center; height: 44px; font-size: 1.7rem; font-weight: 700; color: #3F4142; }
+  .rt-prodotto-desc { font-size: .95rem; line-height: 1.4; color: #373535 !important; }
+  .rt-prodotti-titolo { margin: 1.5rem 0 0; }
+  .rst-content img.rt-logo-manuale { display: block; height: 56px !important; width: auto !important; max-width: none !important; margin: 0 0 1.25rem; }
+}

@@ -386,3 +386,66 @@ aside.sidebar-container {
   color: var(--italia) !important;
   text-decoration: underline;
 }
+
+/* Footer RedTurtle */
+.rt-footer { color: #fff; }
+.rt-footer__title { font-weight: 700; font-size: 1.05rem; margin-bottom: .5rem; }
+.rt-footer address { font-style: normal; }
+.rt-footer a { color: #fff; text-decoration: underline; }
+.rt-footer a:hover, .rt-footer a:focus { color: #fff; text-decoration: none; }
+.rt-footer__colophon { border-top: 1px solid rgba(255,255,255,.4); }
+
+/* Voce corrente nel menu laterale */
+#collapseSidebar .site-toc .toctree-l2 > a.current,
+#collapseSidebar .site-toc .toctree-l3 > a.current {
+  display: block;
+  font-weight: 700;
+  color: var(--primary);
+  background-color: var(--white);
+  border-left: 4px solid var(--primary);
+  padding-left: .5rem;
+  margin-left: calc(-.5rem - 4px);
+}
+#collapseSidebar .site-toc .toctree-l2.current,
+#collapseSidebar .site-toc .toctree-l3.current {
+  width: auto;
+  background-color: transparent;
+}
+#collapseSidebar .site-toc .toctree-l2.current > ul {
+  padding-left: .75rem;
+}
+body.theme-dark #collapseSidebar .site-toc .toctree-l2 > a.current,
+body.theme-dark #collapseSidebar .site-toc .toctree-l3 > a.current {
+  color: var(--white) !important;
+  background-color: transparent;
+  border-left-color: var(--white);
+}
+
+/* Riquadro "Funzionalità aggiuntiva" */
+.admonition.funzionalita-aggiuntiva {
+  background-color: #fff4e5;
+  border-left: 6px solid #b35900;
+  color: #3d2600;
+}
+.admonition.funzionalita-aggiuntiva .admonition-title {
+  background-color: #ffe0b8 !important;
+  color: #5c2e00 !important;
+  font-weight: 700;
+}
+.admonition.funzionalita-aggiuntiva .admonition-title::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f055";
+  margin-right: .5rem;
+}
+.admonition.funzionalita-aggiuntiva a { color: #7a3d00; text-decoration: underline; }
+body.theme-dark .admonition.funzionalita-aggiuntiva {
+  background-color: #3d2600;
+  border-left-color: #ffb366;
+  color: #fff4e5;
+}
+body.theme-dark .admonition.funzionalita-aggiuntiva .admonition-title {
+  background-color: #5c2e00 !important;
+  color: #ffe0b8 !important;
+}
+body.theme-dark .admonition.funzionalita-aggiuntiva a { color: #ffd9b3; }

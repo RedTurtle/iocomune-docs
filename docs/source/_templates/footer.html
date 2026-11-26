@@ -1,61 +1,43 @@
-
 {% block footer %}
-    <div class="px-3 pt-md-3 pb-md-2 mx-md-5 mb-4 mb-md-0">
-      <div class="row align-items-center d-flex">
-        <div class="col-xs-12 col-sm-6 col-lg-4 pt-4 pt-sm-5">
-          <a href="http://teamdigitale.governo.it/" target="_blank" class="d-inline-block" rel="noopener">
-            <div class="d-flex align-items-center">
-              <div class="px-2">
-                <img class="team-logo--icon" src="../_static/images/team-digitale-logo.svg" alt="Team per la Trasformazione Digitale">
-              </div>
-              <div class="px-2 border-white border-left team-logo--text text-white">
-                Team per la Trasformazione Digitale
-              </div>
-            </div>
-          </a>
+    <div class="rt-footer px-3 py-4">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <p class="rt-footer__title">RedTurtle Technology S.r.l.</p>
+          <address class="mb-0">
+            Via Nino Bixio, 4<br>
+            44122 Ferrara (FE)<br>
+            C.F. e P.IVA 01467600381
+          </address>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-4">
-          <span class="d-block m-2 in-collaboration">in collaborazione con</span>
-          <a href="https://www.agid.gov.it/" target="_blank" class="d-inline-block" rel="noopener">
-            <div class="d-flex align-items-center">
-              <div class="px-2">
-                <img class="agid-logo--icon" src="../_static/images/agid-logo.svg" alt="Agenzia per l'Italia Digitale">
-              </div>
-              <span class="agid-logo--separator border-white border-left"></span>
-              <div class="px-2 agid-logo--text text-white">
-                Agenzia per l'Italia Digitale
-              </div>
-            </div>
-          </a>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <p class="rt-footer__title">Contatti</p>
+          <ul class="list-unstyled mb-0">
+            <li>Telefono: <a href="tel:+3905321915958">(+39) 0532 1915958</a></li>
+            <li>Email: <a href="mailto:info@redturtle.it">info@redturtle.it</a></li>
+            <li>PEC: <a href="mailto:redturtle@postecert.it">redturtle@postecert.it</a></li>
+            <li>Sito web: <a href="https://www.redturtle.it/">www.redturtle.it</a></li>
+            <li class="mt-2"><a href="https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F"><i class="fas fa-life-ring mr-1" aria-hidden="true"></i>Help-desk</a></li>
+          </ul>
         </div>
-        <div class="col-sm-12 col-lg-4 pt-4 pt-sm-5">
-          <div class="text-center text-lg-right social d-flex align-items-center justify-content-center justify-content-lg-end flex-column flex-lg-row">
-            <div class="mr-lg-1 mb-2 mb-lg-0">Seguici su</div>
-            <div>
-              <a href="https://github.com/italia/" class="d-inline-flex small-prints mx-1 social__link"><i class="d-inline-block it-github"></i></a>
-              <a href="https://twitter.com/teamdigitaleIT" class="d-inline-flex small-prints mx-1 social__link"><i class="d-inline-block it-twitter"></i></a>
-              <a href="https://www.linkedin.com/company/teamdigitale/" class="d-finline-lex small-prints mx-1 social__link"><i class="d-inline-block it-linkedin"></i></a>
-            </div>
-          </div>
+        <div class="col-12 col-md-12 col-lg-4 mb-4">
+          <p class="rt-footer__title">Seguici su</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/redturtle-technology-s.r.l./" class="rt-social"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+            <li class="list-inline-item"><a href="https://github.com/RedTurtle" class="rt-social"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+            <li class="list-inline-item"><a href="https://medium.redturtle.it/" class="rt-social"><i class="fab fa-medium" aria-hidden="true"></i>Medium</a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/redturtle/" class="rt-social"><i class="fab fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+          </ul>
         </div>
       </div>
-  
-      <div class="row pb-4 colophon mt-md-5 mt-sm-3 pt-3 pt-sm-2">
-        <ul class="col list-inline small">
-          
-          <li class="list-inline-item">
-            <strong><a class="footer-menu__link text-light-blue small-prints" href="/privacy-policy/">Privacy policy</a></strong>
-          </li>
-          
-          <li class="list-inline-item">
-            <strong><a class="footer-menu__link text-light-blue small-prints" href="/cookies-policy/">Cookie policy</a></strong>
-          </li>
-          
-          <li class="list-inline-item">
-            <strong><a class="footer-menu__link text-light-blue small-prints" href="/note-legali/">Note legali</a></strong>
-          </li>
-          
-        </ul>
+      <div class="row rt-footer__colophon pt-3">
+        <div class="col">
+          <ul class="list-inline small mb-0">
+            <li class="list-inline-item"><a href="https://www.redturtle.it/privacy">Privacy policy</a></li>
+            <li class="list-inline-item"><a href="https://www.redturtle.it/cookie">Cookie policy</a></li>
+            <li class="list-inline-item"><a href="https://www.redturtle.it/contatti">Contatti</a></li>
+            <li class="list-inline-item">&copy; {{ copyright }}</li>
+          </ul>
+        </div>
       </div>
     </div>
 {% endblock %}

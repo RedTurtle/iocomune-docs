@@ -6,8 +6,8 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "Documentazione io-Comune"
-copyright = "2025, RedTurtle"
+project = "Manuali d'uso"
+copyright = "2026, RedTurtle Technology S.r.l."
 author = "RedTurtle"
 release = "0.1"
 html_show_copyright = True
@@ -16,9 +16,11 @@ html_show_copyright = True
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ["myst_parser"]
+myst_enable_extensions = ["colon_fence"]  # consente i riquadri con :::{note} ... :::
 
 templates_path = ["_templates"]
-exclude_patterns = []
+# note di rilascio nascoste per ora (vedi index.md)
+exclude_patterns = ["_snippets", "io-comune", "io-prenoto", "io-cittadino"]
 
 # Locales section
 language = "it"
@@ -33,17 +35,19 @@ html_static_path = ["_static"]
 # Aggiungi il percorso dei CSS personalizzati
 html_css_files = [
     "css/style.css",  # Assicurati che il percorso sia relativo a '_static'
+    "css/redturtle.css",  # colori RedTurtle (dal design system): toglierlo per tornare al tema blu
 ]
+html_favicon = "_static/img/favicon-redturtle.png"
 # These are options specifically for the Wagtail Theme.
 html_theme_options = dict(
-    project_name="Documentazione io-Comune",
+    project_name="Manuali d'uso",
     logo_url="/",
-    logo_alt="Documentazione io-Comune",
-    logo_height=59,
-    logo="img/logo.png",
-    logo_width=45,
+    logo_alt="RedTurtle",
+    logo_height=48,
+    logo="img/tartaruga-cerchio.svg",
+    logo_width=48,
     github_url="https://github.com/RedTurtle/iocomune-docs/blob/main/docs/source/",
-    header_links="Top 1|http://example.com/one, Top 2|http://example.com/two",
+    header_links="Help-desk|https://redturtle.tpondemand.com/helpdesk/auth/login?ReturnUrl=%2F,redturtle.it|https://www.redturtle.it/",
     # footer_links=",".join(
     #     [
     #         "About Us|http://example.com/",
@@ -62,3 +66,7 @@ except NameError:
 
 extensions.append("sphinx_wagtail_theme")
 html_theme = "sphinx_wagtail_theme"
+
+# niente sorgenti .md pubblicati né link "mostra sorgente"
+html_copy_source = False
+html_show_sourcelink = False
